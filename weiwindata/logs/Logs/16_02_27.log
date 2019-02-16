@@ -1,0 +1,50 @@
+[ 2016-02-27T04:11:10+08:00 ] 183.136.190.40 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.004866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005063s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.183497s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000483s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php ç¬¬ 69 è¡Œ.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.235404s ]
+INFO: [ view_template ] --END-- [ RunTime:0.065781s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.301252s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.182875s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.484259s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.488368s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.491857s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.496606s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.016258s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.500711s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004325s ]
+
+[ 2016-02-27T19:25:36+08:00 ] 123.125.71.42 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004332s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.066328s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000231s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php ç¬¬ 69 è¡Œ.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.120432s ]
+INFO: [ view_template ] --END-- [ RunTime:0.030466s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.151001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.101228s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.252312s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.254926s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.257061s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.258852s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008476s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.260889s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002474s ]
+
+[ 2016-02-27T19:25:36+08:00 ] 123.125.71.42 /
+NOTIC: [32] PHP Startup: Unable to load dynamic library 'D:\WebServer\php-5.2.5 (x64)\ext\php_fileinfo.dll' - ÕÒ²»µ½Ö¸¶¨µÄÄ£¿é¡£
+ Unknown ç¬¬ 0 è¡Œ.
+

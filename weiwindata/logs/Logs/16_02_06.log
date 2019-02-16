@@ -1,0 +1,27 @@
+[ 2016-02-06T04:09:41+08:00 ] 123.125.71.92 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001505s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001757s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.139730s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000567s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php ç¬¬ 69 è¡Œ.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.310348s ]
+INFO: [ view_template ] --END-- [ RunTime:0.077565s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.387988s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.435650s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.823723s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.826254s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.828785s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.830804s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009302s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.833139s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002708s ]
+
+[ 2016-02-06T04:09:41+08:00 ] 123.125.71.92 /
+NOTIC: [32] PHP Startup: Unable to load dynamic library 'D:\WebServer\php-5.2.5 (x64)\ext\php_fileinfo.dll' - ÕÒ²»µ½Ö¸¶¨µÄÄ£¿é¡£
+ Unknown ç¬¬ 0 è¡Œ.
+

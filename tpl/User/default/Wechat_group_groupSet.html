@@ -1,0 +1,314 @@
+<include file="Public:head"/>
+<script type="text/javascript" src="{weiwin::RES}/js/Province.js"></script>
+<script src="./tpl/static/upyun.js"></script>
+<script src="/tpl/static/artDialog/jquery.artDialog.js?skin=default"></script>
+<script src="/tpl/static/artDialog/plugins/iframeTools.js"></script>
+<script src="{weiwin::RES}/js/date/WdatePicker.js"></script>
+
+<link rel="stylesheet" href="{weiwin::STATICS}/kindeditor/themes/default/default.css" />
+<link rel="stylesheet" href="{weiwin::STATICS}/kindeditor/plugins/code/prettify.css" />
+<script src="{weiwin::STATICS}/kindeditor/kindeditor.js" type="text/javascript"></script>
+<script src="{weiwin::STATICS}/kindeditor/lang/zh_CN.js" type="text/javascript"></script>
+<script src="{weiwin::STATICS}/kindeditor/plugins/code/prettify.js" type="text/javascript"></script>
+<script>
+
+var editor;
+KindEditor.ready(function(K) {
+editor = K.create('#info', {
+resizeType : 1,
+allowPreviewEmoticons : false,
+allowImageUpload : true,
+uploadJson : '/index.php?g=User&m=Upyun&a=kindedtiropic',
+items : [
+            'source','fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+            'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+            'insertunorderedlist', '|', 'emoticons', 'image', 'link', 'music', 'video']
+});
+
+});
+</script>
+
+
+<div class="content">
+          <div class="cLineB"><h4>项目信息维护</h4><a href="{weiwin::U('Wechat_group/groups')}"  class="right btnGrayS vm">返回</a></div>
+         
+          <form method="post"   action=""  enctype="multipart/form-data" >
+          <div class="msgWrap form">
+            <TABLE class="userinfoArea" border="0" cellSpacing="0" cellPadding="0" width="100%">
+                          <TR>
+                            <TH valign="top"><label for="pic">所属地区：</label></TH>
+                            <TD valign="top">
+                                <!-- 数据库省市区 -->
+                                <label for="province" style="font-size:16px;">省 </label>
+                               <select name="province" id="province" style="height:30px;">
+                                    <volist name="pro" id="vo">
+                                      <option value="{weiwin:$vo.code}" <if condition="$thisGroup[0]['pro_code'] eq $vo['code']">selected</if>>{weiwin:$vo['name']}</option>
+                                    </volist>
+                               </select>&nbsp;&nbsp;
+                               <label for="city" style="font-size:16px;">市 </label>
+                              <select name="city" id="city" style="height:30px;">
+                                <option value="0">--请选择--</option>
+                                <if condition="$thisGroup[0]['cit_code'] eq ''">
+                                  <volist name="cit" id="vo">
+                                    <option value="{weiwin:$vo.code}">{weiwin:$vo['name']}</option>
+                                  </volist>
+                                <else/>
+                                  <option value="{weiwin:$thisGroup[0]['cit_code']}" selected>{weiwin:$thisGroup[0]['cit_name']}</option>
+                                </if>
+                              </select>&nbsp;&nbsp;
+                              <label for="area" style="font-size:16px;">区 </label>
+                                <select name="area" id="area" style="height:30px;">
+                                  <option value="0">--请选择--</option>
+                                  <if condition="$thisGroup[0]['are_code'] eq ''">
+                                  <volist name="are" id="vo">
+                                    <option value="{weiwin:$vo.code}">{weiwin:$vo['name']}</option>
+                                  </volist>
+                                  <else/>
+                                    <option value="{weiwin:$thisGroup[0]['are_code']}" selected>{weiwin:$thisGroup[0]['are_name']}</option>
+                                  </if>
+                                </select>
+                            <br />
+                            <script type="text/javascript">
+                            // 选择省份获取城市信息
+                              $('#province').change(function(){
+                                var provincecode=$('#province').val();
+                                $.ajax({
+                                  type:"post",
+                                  url:"{weiwin::U('Wechat_group/showcity')}",
+                                  dataType:"json",
+                                  data:{"provincecode":provincecode},
+                                  success: function(datas){
+                                    var data=eval(datas);
+                                    var length=data.length;
+                                    var str='';
+                                    if(datas!=0){
+                                      str+="<option value='0'>--请选择--</option>";
+                                      for (var i = 0; i < length; i++) {
+                                        
+                                        str+="<option value='"+data[i]['code']+"'>"+data[i]['name']+"</option>";
+                                      };
+                                      $('#city').find("option").remove();
+                                      $('#city').append(str);
+                                    }
+                                  }
+                                })
+                              });
+                              //选择城市获取区域信息
+                              $('#city').change(function(){
+                                var citycode=$('#city').val();
+                                $.ajax({
+                                  type:"post",
+                                  url:"{weiwin::U('Wechat_group/showarea')}",
+                                  dataType:"json",
+                                  data:{"citycode":citycode},
+                                  success: function(datas){
+                                    var data=eval(datas);
+                                    var length=data.length;
+                                    var str='';
+                                    if(datas!=0){
+                                      str+="<option value='0'>--请选择--</option>";
+                                      for (var i = 0; i < length; i++) {
+
+                                        str+="<option value='"+data[i]['code']+"'>"+data[i]['name']+"</option>";
+                                      };
+                                      $('#area').find("option").remove();
+                                      $('#area').append(str);
+                                    }
+                                  }
+                                })
+                              });
+                            </script>
+                            </TD>
+                          </TR>
+                <TR>
+                  <TH valign="top"><label for="pic">项目名称：</label></TH>
+                  <TD><input class="px"  name="LouPanTitle" id="name" value="{weiwin:$thisGroup[0]['LouPanTitle']}" style="width:200px;"  /></TD>
+                </TR>
+                <TR>
+                  <TH valign="top"><label for="pic">项目介绍：</label></TH>
+                  <TD>
+                    <!-- <textarea class="px" name="projectinfo" id="projectinfo" style="width:400px;resize:none;"  >{weiwin:$thisGroup[0]['projectinfo']}</textarea> -->
+                  <script id="editor" name="projectinfo" type="text/plain" style="width:500px;height:300px;">{weiwin:$thisGroup[0]['projectinfo']|htmlspecialchars_decode}</script></TD>
+                </TR>
+                <TR>
+                  <TH valign="top"><label for="pic">项目图片：</label></TH>
+                  <TD>
+                    <img id="pic1_src" src="<if condition="$thisGroup[0]['LouPanUpLoad'] eq ''">/tpl/User/default/common/images/lp/fd039245d688d.jpg<else/>{weiwin:$thisGroup[0]['LouPanUpLoad']}</if>" width="373px" > 
+                    <br />
+                    <input class="px"  name="LouPanUpLoad" value="<if condition="$thisGroup[0]['LouPanUpLoad'] eq ''">/tpl/User/default/common/images/lp/fd039245d688d.jpg<else/>{weiwin:$thisGroup[0]['LouPanUpLoad']}</if>" id="pic1" style="width:363px;"  />
+                    <br />
+                      <a href="###" onclick="upyunPicUpload('pic1',700,420,'{weiwin:$token}')" id="upload" class="a_upload">上传</a> <a href="###" onclick="viewImg('pic1')">预览</a>&nbsp;
+                  </TD>
+                </TR>
+				<TR>
+                  <TH valign="top"><label for="pic">对接人姓名：</label></TH>
+                  <TD><input class="px"  name="djname" id="djname" value="{weiwin:$thisGroup[0]['djname']}" style="width:200px;" /></TD>
+                </TR>
+				<TR>
+                  <TH valign="top"><label for="pic">对接人电话：</label></TH>
+                  <TD><input class="px"  name="djtel" id="djtel" value="{weiwin:$thisGroup[0]['djtel']}" style="width:200px;" /></TD>
+                </TR>
+                <TR>
+                  <TH valign="top"><label for="pic">佣金：</label></TH>
+                  <TD><input class="px"  name="commission" id="commission" value="{weiwin:$thisGroup[0]['commission']}" style="width:200px;" /></TD>
+                </TR>
+                <TR>
+                  <TH valign="top"><label for="pic">激励：</label></TH>
+                  <TD><textarea class="px" name="encourage" id="encourage" style="width:400px;resize:none;" >{weiwin:$thisGroup[0]['encourage']}</textarea></TD>
+                </TR>
+
+                <TR>
+                  <TH valign="top"><label for="pic">排序：</label></TH>
+                  <TD><input class="px"  name="houseSort" id="name" value="{weiwin:$thisGroup[0]['houseSort']}" style="width:200px;"  />
+                    <span>&nbsp;&nbsp;*数值越大排位越高</span>
+                  </TD>
+                </TR>
+				<TR>
+                  <TH valign="top"><label for="pic">报备保护期：</label></TH>
+                  <TD><input class="px"  name="houseSortse" id="name" value="{weiwin:$thisGroup[0]['houseSortse']}" style="width:200px;"  />&nbsp;&nbsp;天
+                    <span>&nbsp;&nbsp;*客户信息不会改变</span>
+                  </TD>
+                </TR>
+                  <input type="hidden" name="type" value="{weiwin:$thisGroup['type']}">
+                  <input type="hidden" name="id" value="{weiwin:$thisGroup['id']}">
+                <TR>
+                  <TH></TH>
+                  <TD><pigcmsif where="$thisGroup"><input type="hidden" name="id" value="{weiwin:$thisGroup['id']}" /></pigcmsif>
+                    <input type="submit" value="保存" name="sbmt" class="btnGreen left">&nbsp;&nbsp;<a href="{weiwin::U('Wechat_group/groups')}" class="btnGray vm">取消</a></TD>
+                </TR>
+              </TBODY>
+            </TABLE>
+            
+          </div>
+          </form>
+          
+        </div>     
+ 
+        <div class="clr"></div>
+      </div>
+    </div>
+  </div> 
+<!--底部-->
+  	</div>
+<script type="text/javascript">
+function setlatlng(longitude,latitude){
+  art.dialog.data('longitude', longitude);
+  art.dialog.data('latitude', latitude);
+  // 此时 iframeA.html 页面可以使用 art.dialog.data('test') 获取到数据，如：
+  // document.getElementById('aInput').value = art.dialog.data('test');
+  art.dialog.open('{weiwin::U('Map/setLatLng',array('token'=>$token,'id'=>$id))}',{lock:false,title:'设置经纬度',width:600,height:400,yesText:'关闭',background: '#000',opacity: 0.87});
+}
+</script>
+<script type="text/javascript">
+
+    //实例化编辑器
+    //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
+    UE.getEditor('editor');
+
+    function isFocus(e){
+        alert(UE.getEditor('editor').isFocus());
+        UE.dom.domUtils.preventDefault(e)
+    }
+    function setblur(e){
+        UE.getEditor('editor').blur();
+        UE.dom.domUtils.preventDefault(e)
+    }
+    function insertHtml() {
+        var value = prompt('插入html代码', '');
+        UE.getEditor('editor').execCommand('insertHtml', value)
+    }
+    function createEditor() {
+        enableBtn();
+        UE.getEditor('editor');
+    }
+    function getAllHtml() {
+        alert(UE.getEditor('editor').getAllHtml())
+    }
+    function getContent() {
+        var arr = [];
+        arr.push("使用editor.getContent()方法可以获得编辑器的内容");
+        arr.push("内容为：");
+        arr.push(UE.getEditor('editor').getContent());
+        alert(arr.join("\n"));
+    }
+    function getPlainTxt() {
+        var arr = [];
+        arr.push("使用editor.getPlainTxt()方法可以获得编辑器的带格式的纯文本内容");
+        arr.push("内容为：");
+        arr.push(UE.getEditor('editor').getPlainTxt());
+        alert(arr.join('\n'))
+    }
+    function setContent(isAppendTo) {
+        var arr = [];
+        arr.push("使用editor.setContent('欢迎使用ueditor')方法可以设置编辑器的内容");
+        UE.getEditor('editor').setContent('欢迎使用ueditor', isAppendTo);
+        alert(arr.join("\n"));
+    }
+    function setDisabled() {
+        UE.getEditor('editor').setDisabled('fullscreen');
+        disableBtn("enable");
+    }
+
+    function setEnabled() {
+        UE.getEditor('editor').setEnabled();
+        enableBtn();
+    }
+
+    function getText() {
+        //当你点击按钮时编辑区域已经失去了焦点，如果直接用getText将不会得到内容，所以要在选回来，然后取得内容
+        var range = UE.getEditor('editor').selection.getRange();
+        range.select();
+        var txt = UE.getEditor('editor').selection.getText();
+        alert(txt)
+    }
+
+    function getContentTxt() {
+        var arr = [];
+        arr.push("使用editor.getContentTxt()方法可以获得编辑器的纯文本内容");
+        arr.push("编辑器的纯文本内容为：");
+        arr.push(UE.getEditor('editor').getContentTxt());
+        alert(arr.join("\n"));
+    }
+    function hasContent() {
+        var arr = [];
+        arr.push("使用editor.hasContents()方法判断编辑器里是否有内容");
+        arr.push("判断结果为：");
+        arr.push(UE.getEditor('editor').hasContents());
+        alert(arr.join("\n"));
+    }
+    function setFocus() {
+        UE.getEditor('editor').focus();
+    }
+    function deleteEditor() {
+        disableBtn();
+        UE.getEditor('editor').destroy();
+    }
+    function disableBtn(str) {
+        var div = document.getElementById('btns');
+        var btns = domUtils.getElementsByTagName(div, "button");
+        for (var i = 0, btn; btn = btns[i++];) {
+            if (btn.id == str) {
+                domUtils.removeAttributes(btn, ["disabled"]);
+            } else {
+                btn.setAttribute("disabled", "true");
+            }
+        }
+    }
+    function enableBtn() {
+        var div = document.getElementById('btns');
+        var btns = domUtils.getElementsByTagName(div, "button");
+        for (var i = 0, btn; btn = btns[i++];) {
+            domUtils.removeAttributes(btn, ["disabled"]);
+        }
+    }
+
+    function getLocalData () {
+        alert(UE.getEditor('editor').execCommand( "getlocaldata" ));
+    }
+
+    function clearLocalData () {
+        UE.getEditor('editor').execCommand( "clearlocaldata" );
+        alert("已清空草稿箱")
+    }
+
+</script>

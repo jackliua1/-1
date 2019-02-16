@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
+<meta content="telephone=no" name="format-detection">
+<meta name="keywords" content="首创置业，买房，看房，房地产">
+<meta name="description" content="首创置业是中国领先的房地产综合营运商。公司于2003年6月19日在香港联合交易所主板上市，综合实力居国内领先地位，目前已进入全国四大区域十三个城市，土地储备规模超过1000万平方米，有相当高的市场知名度和品牌影响力。">
+<title>首创置业</title>
+
+<link href="{weiwin::RES}/css/defstyel.css" rel="stylesheet" type="text/css">
+</head>
+
+ 
+<body>
+
+	 
+	<p  class="mid_reg" style="font-size:20px; line-height:40px; color:#333; margin-top:20px;">我的佣金</p>
+    <div class="my_brokerage_top">
+    	<div class="my_brokerage_suq">可结佣（税前）
+        	<div class="my_brokerage_moe">{weiwin:$jjrarr.DueMoney}</div>
+        </div>
+    </div>  
+    
+    <div class="my_brokerage_top" style=" margin-left:0%; ">
+    	<div class="my_brokerage_suq">已结佣（税前）
+        	<div class="my_brokerage_moe">{weiwin:$jjrarr.YlMoney}</div>
+        </div>
+    </div>  <br clear="all">
+    
+    
+     
+        
+        
+    	<a class="my_brokerage_cli" href="{weiwin::U('Agent/bank',array('token'=>$_GET['token'],'wecha_id'=>$_GET['wecha_id']))}" >  	
+            卡号 
+              <!-- <span>1111</span><span>2222</span><span>3333</span><span>4444</span><span>5555</span>   -->
+              <span>{weiwin:$bank['bankcard']|default="请填写您的银行卡"}</span>
+        </a>
+ 
+
+        
+    	<a class="my_brokerage_cli" href="{weiwin::U('Agent/reward',array('token'=>$_GET['token'],'wecha_id'=>$_GET['wecha_id']))}" style="background-image:none; text-align:center; text-indent:0px; font-size:20px;" >  	
+             领取佣金
+        </a>
+        
+        
+            <p  class="agreement" style="width:90%; height:60px; line-height:60px;">账目明细</p>       
+            <div class="agreement_content_age" style="width:100%; text-align:left; ">
+            
+                    
+                    <div class="my_brokerage_minxi">    
+                        <span style="width:20%;">日期</span>
+                        <span style="width:40%;">详情</span>
+                        <span style="width:20%;">状态</span> 
+                        <span style="width:20%;">备注</span>
+                        
+                    </div> 
+
+                <volist name="info" id="vo">         
+                    <div class="my_brokerage_xianq">
+                        <span style="width:24%;">{weiwin:$vo.srtime|date="Y.m.d",###}</span>
+                        <span style="width:34%;">{weiwin:$vo.customname}{weiwin:$vo.statusname}</span>
+                        <span style="width:19%; font-size:16px;  color:#333;">+{weiwin:$vo.rewardamount}</span> 
+                        <span style="width:19%;">签约后</span>
+                    </div>
+                 </volist>       
+            </div>
+        
+ 
+
+</body>
+</html>

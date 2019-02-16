@@ -1,0 +1,1062 @@
+[ 2018-11-08T08:52:55+08:00 ] 49.66.24.68 /index.php?&g=Wap&m=Agent&a=ydl&token=ynzfui1406882414
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002368s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002525s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\www\js-jifang.com\weiwincms\Lib\Action\WapAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `wy_userinfo` [ RunTime:0.038417s ]
+SQL: SELECT * FROM `wy_userinfo` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `wecha_id` = 'f5a0e0ba3badad06dd7164655d241ba3' ) LIMIT 1   [ RunTime:0.000199s ]
+SQL: SHOW COLUMNS FROM `wy_wechat_group_list` [ RunTime:0.018336s ]
+SQL: SELECT * FROM `wy_wechat_group_list` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `openid` = 'f5a0e0ba3badad06dd7164655d241ba3' ) LIMIT 1   [ RunTime:0.000140s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/e/e/ee20f2c4442ecb2cc8309624583d00f1.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_home` [ RunTime:0.026247s ]
+SQL: SELECT * FROM `wy_home` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000153s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/4/7/4727c3258ec350fbe55a200823142d0c.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_catemenu` [ RunTime:0.048146s ]
+SQL: SELECT * FROM `wy_catemenu` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `status` = 1 ) ORDER BY orderss desc  [ RunTime:0.000187s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/5/c/5c688eb97172111e3217d6600960e392.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_catemenu` [ RunTime:0.016290s ]
+NOTIC: [8] Undefined index:  lpid D:\www\js-jifang.com\weiwincms\Lib\Action\WapAction.class.php 第 127 行.
+SQL: SELECT * FROM `wy_catemenu` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `status` = 1 ) AND ( `lpid` = null )  [ RunTime:0.000161s ]
+SQL: SHOW COLUMNS FROM `wy_company` [ RunTime:0.017702s ]
+SQL: SELECT * FROM `wy_company` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `isbranch` = 0 ) LIMIT 1   [ RunTime:0.000173s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/3/3/33c0276ddfe8a0a78ea18a400890f528.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.018712s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `Token` = 'ynzfui1406882414' ) AND ( `Wecha_id` = 'f5a0e0ba3badad06dd7164655d241ba3' ) LIMIT 1   [ RunTime:0.000161s ]
+SQL: SHOW COLUMNS FROM `wy_agent_rewardinfo` [ RunTime:0.017354s ]
+SQL: SELECT SUM(rewardamount) AS tp_sum FROM `wy_agent_rewardinfo` WHERE wecha_id='f5a0e0ba3badad06dd7164655d241ba3' and token='ynzfui1406882414' and rewardstatus =0 LIMIT 1   [ RunTime:0.000187s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.013801s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `Wecha_id` = 'f5a0e0ba3badad06dd7164655d241ba3' ) AND ( `Token` = 'ynzfui1406882414' ) ORDER BY ID desc LIMIT 1   [ RunTime:0.000158s ]
+SQL: SHOW COLUMNS FROM `wy_brokerage` [ RunTime:0.027501s ]
+SQL: SELECT * FROM `wy_brokerage` WHERE ( `id` = 6 ) LIMIT 1   [ RunTime:0.000160s ]
+SQL: SHOW COLUMNS FROM `wy_share_content` [ RunTime:0.023944s ]
+SQL: SELECT * FROM `wy_share_content` WHERE token='ynzfui1406882414' LIMIT 1   [ RunTime:0.000149s ]
+SQL: SHOW COLUMNS FROM `wy_kh` [ RunTime:0.018548s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_kh` WHERE ( `Token` = 'ynzfui1406882414' ) AND ( `JJ_id` = 340 ) LIMIT 1   [ RunTime:0.000182s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.017406s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `token` = 'ynzfui1406882414' ) ORDER BY houseSort desc,id desc LIMIT 0,20   [ RunTime:0.000497s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\js-jifang.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.393289s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003408s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.396761s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035910s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.432729s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.434760s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.437845s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.440716s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011005s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.443821s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003077s ]
+
+[ 2018-11-08T08:52:55+08:00 ] 49.66.24.68 /index.php?&g=Wap&m=Agent&a=ydl&token=ynzfui1406882414
+NOTIC: [32] PHP Startup: Unable to load dynamic library 'D:\WebServer\php-5.2.5 (x64)\ext\php_fileinfo.dll' - �Ҳ���ָ����ģ�顣
+ Unknown 第 0 行.
+
+[ 2018-11-08T08:52:57+08:00 ] 49.66.24.68 /index.php?g=Wap&m=Agent&a=myCustom&token=ynzfui1406882414&JJ_id=340
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000691s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\www\js-jifang.com\weiwincms\Lib\Action\WapAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `wy_userinfo` [ RunTime:0.015957s ]
+SQL: SELECT * FROM `wy_userinfo` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `wecha_id` = 'f5a0e0ba3badad06dd7164655d241ba3' ) LIMIT 1   [ RunTime:0.000198s ]
+SQL: SHOW COLUMNS FROM `wy_wechat_group_list` [ RunTime:0.016913s ]
+SQL: SELECT * FROM `wy_wechat_group_list` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `openid` = 'f5a0e0ba3badad06dd7164655d241ba3' ) LIMIT 1   [ RunTime:0.000146s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/e/e/ee20f2c4442ecb2cc8309624583d00f1.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_home` [ RunTime:0.017722s ]
+SQL: SELECT * FROM `wy_home` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000163s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/4/7/4727c3258ec350fbe55a200823142d0c.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_catemenu` [ RunTime:0.015387s ]
+SQL: SELECT * FROM `wy_catemenu` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `status` = 1 ) ORDER BY orderss desc  [ RunTime:0.000191s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/5/c/5c688eb97172111e3217d6600960e392.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_catemenu` [ RunTime:0.012965s ]
+NOTIC: [8] Undefined index:  lpid D:\www\js-jifang.com\weiwincms\Lib\Action\WapAction.class.php 第 127 行.
+SQL: SELECT * FROM `wy_catemenu` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `status` = 1 ) AND ( `lpid` = null )  [ RunTime:0.000174s ]
+SQL: SHOW COLUMNS FROM `wy_company` [ RunTime:0.016027s ]
+SQL: SELECT * FROM `wy_company` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `isbranch` = 0 ) LIMIT 1   [ RunTime:0.000194s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/3/3/33c0276ddfe8a0a78ea18a400890f528.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.015551s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `Token` = 'ynzfui1406882414' ) AND ( `Wecha_id` = 'f5a0e0ba3badad06dd7164655d241ba3' ) LIMIT 1   [ RunTime:0.000177s ]
+SQL: SHOW COLUMNS FROM `wy_kh` [ RunTime:0.017493s ]
+NOTIC: [8] Undefined index:  Tel D:\www\js-jifang.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 533 行.
+NOTIC: [8] Undefined index:  times D:\www\js-jifang.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 538 行.
+NOTIC: [8] Undefined index:  page D:\www\js-jifang.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 558 行.
+SQL: SELECT kh.ID,kh.Token,kh.Wecha_id,kh.`Name`,kh.Tel,
+					lp.LouPanTitle,kh.SrTime,status.salesstatus,status.sort 
+					from wy_kh as kh LEFT JOIN wy_lpinfo as lp on kh.LouPanTitle=lp.id 
+					LEFT JOIN wy_agent_status as status on kh.Stutas=status.id 
+					WHERE kh.Token='ynzfui1406882414' AND kh.JJ_id=340  order by kh.SrTime desc limit 0,20 [ RunTime:0.000860s ]
+NOTIC: [8] Undefined index:  is_ajax D:\www\js-jifang.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 570 行.
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.016466s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `Wecha_id` = 'f5a0e0ba3badad06dd7164655d241ba3' ) AND ( `Token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000844s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `Token` = 'ynzfui1406882414' )  [ RunTime:0.000758s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\js-jifang.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.182753s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002728s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: times D:\www\js-jifang.com\weiwindata\logs\Cache\Wap\7b3f8a961d5d80a7edb669466f605c79.php 第 86 行.
+NOTIC: [8] Undefined variable: times D:\www\js-jifang.com\weiwindata\logs\Cache\Wap\7b3f8a961d5d80a7edb669466f605c79.php 第 87 行.
+NOTIC: [8] Undefined variable: times D:\www\js-jifang.com\weiwindata\logs\Cache\Wap\7b3f8a961d5d80a7edb669466f605c79.php 第 88 行.
+NOTIC: [8] Undefined variable: times D:\www\js-jifang.com\weiwindata\logs\Cache\Wap\7b3f8a961d5d80a7edb669466f605c79.php 第 89 行.
+NOTIC: [8] Undefined variable: Tel D:\www\js-jifang.com\weiwindata\logs\Cache\Wap\7b3f8a961d5d80a7edb669466f605c79.php 第 91 行.
+NOTIC: [8] Undefined variable: kh D:\www\js-jifang.com\weiwindata\logs\Cache\Wap\7b3f8a961d5d80a7edb669466f605c79.php 第 131 行.
+NOTIC: [8] Undefined variable: kh D:\www\js-jifang.com\weiwindata\logs\Cache\Wap\7b3f8a961d5d80a7edb669466f605c79.php 第 131 行.
+NOTIC: [8] Undefined index:  id D:\www\js-jifang.com\weiwindata\logs\Cache\Wap\7b3f8a961d5d80a7edb669466f605c79.php 第 131 行.
+NOTIC: [8] Undefined variable: kh D:\www\js-jifang.com\weiwindata\logs\Cache\Wap\7b3f8a961d5d80a7edb669466f605c79.php 第 131 行.
+NOTIC: [8] Undefined variable: datas D:\www\js-jifang.com\weiwindata\logs\Cache\Wap\7b3f8a961d5d80a7edb669466f605c79.php 第 132 行.
+NOTIC: [8] Undefined variable: datas D:\www\js-jifang.com\weiwindata\logs\Cache\Wap\7b3f8a961d5d80a7edb669466f605c79.php 第 133 行.
+NOTIC: [8] Undefined variable: jjrinfo D:\www\js-jifang.com\weiwindata\logs\Cache\Wap\7b3f8a961d5d80a7edb669466f605c79.php 第 202 行.
+NOTIC: [8] Undefined variable: Tel D:\www\js-jifang.com\weiwindata\logs\Cache\Wap\7b3f8a961d5d80a7edb669466f605c79.php 第 316 行.
+NOTIC: [8] Undefined variable: times D:\www\js-jifang.com\weiwindata\logs\Cache\Wap\7b3f8a961d5d80a7edb669466f605c79.php 第 316 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.185540s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070121s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.255727s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.256988s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.259666s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.262107s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009041s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.264853s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002742s ]
+
+[ 2018-11-08T08:52:59+08:00 ] 49.66.24.68 /index.php?g=Wap&m=Agent&a=myInfo&token=ynzfui1406882414
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000690s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\www\js-jifang.com\weiwincms\Lib\Action\WapAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `wy_userinfo` [ RunTime:0.015900s ]
+SQL: SELECT * FROM `wy_userinfo` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `wecha_id` = 'f5a0e0ba3badad06dd7164655d241ba3' ) LIMIT 1   [ RunTime:0.000185s ]
+SQL: SHOW COLUMNS FROM `wy_wechat_group_list` [ RunTime:0.015757s ]
+SQL: SELECT * FROM `wy_wechat_group_list` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `openid` = 'f5a0e0ba3badad06dd7164655d241ba3' ) LIMIT 1   [ RunTime:0.000144s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/e/e/ee20f2c4442ecb2cc8309624583d00f1.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_home` [ RunTime:0.016654s ]
+SQL: SELECT * FROM `wy_home` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000154s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/4/7/4727c3258ec350fbe55a200823142d0c.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_catemenu` [ RunTime:0.016467s ]
+SQL: SELECT * FROM `wy_catemenu` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `status` = 1 ) ORDER BY orderss desc  [ RunTime:0.000181s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/5/c/5c688eb97172111e3217d6600960e392.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_catemenu` [ RunTime:0.016388s ]
+NOTIC: [8] Undefined index:  lpid D:\www\js-jifang.com\weiwincms\Lib\Action\WapAction.class.php 第 127 行.
+SQL: SELECT * FROM `wy_catemenu` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `status` = 1 ) AND ( `lpid` = null )  [ RunTime:0.000188s ]
+SQL: SHOW COLUMNS FROM `wy_company` [ RunTime:0.015101s ]
+SQL: SELECT * FROM `wy_company` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `isbranch` = 0 ) LIMIT 1   [ RunTime:0.000167s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/3/3/33c0276ddfe8a0a78ea18a400890f528.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.011515s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `Token` = 'ynzfui1406882414' ) AND ( `Wecha_id` = 'f5a0e0ba3badad06dd7164655d241ba3' ) LIMIT 1   [ RunTime:0.000220s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `Token` = 'ynzfui1406882414' ) AND ( `Wecha_id` = 'f5a0e0ba3badad06dd7164655d241ba3' ) LIMIT 1   [ RunTime:0.000129s ]
+SQL: SHOW COLUMNS FROM `wy_agent_type` [ RunTime:0.014772s ]
+SQL: SELECT * FROM `wy_agent_type` WHERE ( `token` = 'ynzfui1406882414' )  [ RunTime:0.000173s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\js-jifang.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.156321s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002185s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.158565s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025197s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.183821s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.184884s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.187425s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.190099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008869s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.192753s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002732s ]
+
+[ 2018-11-08T08:53:08+08:00 ] 49.66.24.68 /index.php?g=Wap&m=Agent&a=ydl&token=ynzfui1406882414
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000756s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\www\js-jifang.com\weiwincms\Lib\Action\WapAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `wy_userinfo` [ RunTime:0.017093s ]
+SQL: SELECT * FROM `wy_userinfo` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `wecha_id` = 'f5a0e0ba3badad06dd7164655d241ba3' ) LIMIT 1   [ RunTime:0.000612s ]
+SQL: SHOW COLUMNS FROM `wy_wechat_group_list` [ RunTime:0.017790s ]
+SQL: SELECT * FROM `wy_wechat_group_list` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `openid` = 'f5a0e0ba3badad06dd7164655d241ba3' ) LIMIT 1   [ RunTime:0.000200s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/e/e/ee20f2c4442ecb2cc8309624583d00f1.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_home` [ RunTime:0.013593s ]
+SQL: SELECT * FROM `wy_home` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000219s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/4/7/4727c3258ec350fbe55a200823142d0c.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_catemenu` [ RunTime:0.017639s ]
+SQL: SELECT * FROM `wy_catemenu` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `status` = 1 ) ORDER BY orderss desc  [ RunTime:0.000162s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/5/c/5c688eb97172111e3217d6600960e392.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_catemenu` [ RunTime:0.017028s ]
+NOTIC: [8] Undefined index:  lpid D:\www\js-jifang.com\weiwincms\Lib\Action\WapAction.class.php 第 127 行.
+SQL: SELECT * FROM `wy_catemenu` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `status` = 1 ) AND ( `lpid` = null )  [ RunTime:0.000163s ]
+SQL: SHOW COLUMNS FROM `wy_company` [ RunTime:0.017617s ]
+SQL: SELECT * FROM `wy_company` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `isbranch` = 0 ) LIMIT 1   [ RunTime:0.000193s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/3/3/33c0276ddfe8a0a78ea18a400890f528.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.018578s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `Token` = 'ynzfui1406882414' ) AND ( `Wecha_id` = 'f5a0e0ba3badad06dd7164655d241ba3' ) LIMIT 1   [ RunTime:0.000178s ]
+SQL: SHOW COLUMNS FROM `wy_agent_rewardinfo` [ RunTime:0.023182s ]
+SQL: SELECT SUM(rewardamount) AS tp_sum FROM `wy_agent_rewardinfo` WHERE wecha_id='f5a0e0ba3badad06dd7164655d241ba3' and token='ynzfui1406882414' and rewardstatus =0 LIMIT 1   [ RunTime:0.000171s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.019394s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `Wecha_id` = 'f5a0e0ba3badad06dd7164655d241ba3' ) AND ( `Token` = 'ynzfui1406882414' ) ORDER BY ID desc LIMIT 1   [ RunTime:0.000210s ]
+SQL: SHOW COLUMNS FROM `wy_brokerage` [ RunTime:0.022303s ]
+SQL: SELECT * FROM `wy_brokerage` WHERE ( `id` = 6 ) LIMIT 1   [ RunTime:0.000185s ]
+SQL: SHOW COLUMNS FROM `wy_share_content` [ RunTime:0.018411s ]
+SQL: SELECT * FROM `wy_share_content` WHERE token='ynzfui1406882414' LIMIT 1   [ RunTime:0.000141s ]
+SQL: SHOW COLUMNS FROM `wy_kh` [ RunTime:0.024345s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_kh` WHERE ( `Token` = 'ynzfui1406882414' ) AND ( `JJ_id` = 340 ) LIMIT 1   [ RunTime:0.000164s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.017447s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `token` = 'ynzfui1406882414' ) ORDER BY houseSort desc,id desc LIMIT 0,20   [ RunTime:0.000388s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\js-jifang.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.295125s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000643s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.295815s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017086s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.312982s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.314353s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.317155s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.319851s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009787s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.322855s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003032s ]
+
+[ 2018-11-08T13:19:16+08:00 ] 223.104.145.202 /index.php?&g=Wap&m=Agent&a=ydl&token=ynzfui1406882414
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002214s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\www\js-jifang.com\weiwincms\Lib\Action\WapAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `wy_userinfo` [ RunTime:0.005075s ]
+SQL: SELECT * FROM `wy_userinfo` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `wecha_id` = 'f5a0e0ba3badad06dd7164655d241ba3' ) LIMIT 1   [ RunTime:0.000178s ]
+SQL: SHOW COLUMNS FROM `wy_wechat_group_list` [ RunTime:0.004169s ]
+SQL: SELECT * FROM `wy_wechat_group_list` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `openid` = 'f5a0e0ba3badad06dd7164655d241ba3' ) LIMIT 1   [ RunTime:0.000127s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/e/e/ee20f2c4442ecb2cc8309624583d00f1.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_home` [ RunTime:0.004379s ]
+SQL: SELECT * FROM `wy_home` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000130s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/4/7/4727c3258ec350fbe55a200823142d0c.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_catemenu` [ RunTime:0.004090s ]
+SQL: SELECT * FROM `wy_catemenu` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `status` = 1 ) ORDER BY orderss desc  [ RunTime:0.000120s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/5/c/5c688eb97172111e3217d6600960e392.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_catemenu` [ RunTime:0.003131s ]
+NOTIC: [8] Undefined index:  lpid D:\www\js-jifang.com\weiwincms\Lib\Action\WapAction.class.php 第 127 行.
+SQL: SELECT * FROM `wy_catemenu` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `status` = 1 ) AND ( `lpid` = null )  [ RunTime:0.000123s ]
+SQL: SHOW COLUMNS FROM `wy_company` [ RunTime:0.004426s ]
+SQL: SELECT * FROM `wy_company` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `isbranch` = 0 ) LIMIT 1   [ RunTime:0.000140s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/3/3/33c0276ddfe8a0a78ea18a400890f528.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.003426s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `Token` = 'ynzfui1406882414' ) AND ( `Wecha_id` = 'f5a0e0ba3badad06dd7164655d241ba3' ) LIMIT 1   [ RunTime:0.000117s ]
+SQL: SHOW COLUMNS FROM `wy_agent_rewardinfo` [ RunTime:0.003300s ]
+SQL: SELECT SUM(rewardamount) AS tp_sum FROM `wy_agent_rewardinfo` WHERE wecha_id='f5a0e0ba3badad06dd7164655d241ba3' and token='ynzfui1406882414' and rewardstatus =0 LIMIT 1   [ RunTime:0.000106s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.003298s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `Wecha_id` = 'f5a0e0ba3badad06dd7164655d241ba3' ) AND ( `Token` = 'ynzfui1406882414' ) ORDER BY ID desc LIMIT 1   [ RunTime:0.000173s ]
+SQL: SHOW COLUMNS FROM `wy_brokerage` [ RunTime:0.004114s ]
+SQL: SELECT * FROM `wy_brokerage` WHERE ( `id` = 6 ) LIMIT 1   [ RunTime:0.000174s ]
+SQL: SHOW COLUMNS FROM `wy_share_content` [ RunTime:0.003230s ]
+SQL: SELECT * FROM `wy_share_content` WHERE token='ynzfui1406882414' LIMIT 1   [ RunTime:0.000133s ]
+SQL: SHOW COLUMNS FROM `wy_kh` [ RunTime:0.004707s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_kh` WHERE ( `Token` = 'ynzfui1406882414' ) AND ( `JJ_id` = 340 ) LIMIT 1   [ RunTime:0.000120s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.003639s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `token` = 'ynzfui1406882414' ) ORDER BY houseSort desc,id desc LIMIT 0,20   [ RunTime:0.000405s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\js-jifang.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.120187s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003056s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.123356s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032694s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.156116s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.158138s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.161653s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.164700s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011883s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.168080s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003283s ]
+
+[ 2018-11-08T13:19:17+08:00 ] 223.104.145.202 /index.php?&g=Wap&m=Agent&a=ydl&token=ynzfui1406882414
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000594s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\www\js-jifang.com\weiwincms\Lib\Action\WapAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `wy_userinfo` [ RunTime:0.004540s ]
+SQL: SELECT * FROM `wy_userinfo` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `wecha_id` = 'f5a0e0ba3badad06dd7164655d241ba3' ) LIMIT 1   [ RunTime:0.000152s ]
+SQL: SHOW COLUMNS FROM `wy_wechat_group_list` [ RunTime:0.003629s ]
+SQL: SELECT * FROM `wy_wechat_group_list` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `openid` = 'f5a0e0ba3badad06dd7164655d241ba3' ) LIMIT 1   [ RunTime:0.000177s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/e/e/ee20f2c4442ecb2cc8309624583d00f1.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_home` [ RunTime:0.003360s ]
+SQL: SELECT * FROM `wy_home` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000135s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/4/7/4727c3258ec350fbe55a200823142d0c.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_catemenu` [ RunTime:0.003075s ]
+SQL: SELECT * FROM `wy_catemenu` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `status` = 1 ) ORDER BY orderss desc  [ RunTime:0.000224s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/5/c/5c688eb97172111e3217d6600960e392.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_catemenu` [ RunTime:0.003003s ]
+NOTIC: [8] Undefined index:  lpid D:\www\js-jifang.com\weiwincms\Lib\Action\WapAction.class.php 第 127 行.
+SQL: SELECT * FROM `wy_catemenu` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `status` = 1 ) AND ( `lpid` = null )  [ RunTime:0.000133s ]
+SQL: SHOW COLUMNS FROM `wy_company` [ RunTime:0.003452s ]
+SQL: SELECT * FROM `wy_company` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `isbranch` = 0 ) LIMIT 1   [ RunTime:0.000136s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/3/3/33c0276ddfe8a0a78ea18a400890f528.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.003256s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `Token` = 'ynzfui1406882414' ) AND ( `Wecha_id` = 'f5a0e0ba3badad06dd7164655d241ba3' ) LIMIT 1   [ RunTime:0.000146s ]
+SQL: SHOW COLUMNS FROM `wy_agent_rewardinfo` [ RunTime:0.003076s ]
+SQL: SELECT SUM(rewardamount) AS tp_sum FROM `wy_agent_rewardinfo` WHERE wecha_id='f5a0e0ba3badad06dd7164655d241ba3' and token='ynzfui1406882414' and rewardstatus =0 LIMIT 1   [ RunTime:0.000129s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.003534s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `Wecha_id` = 'f5a0e0ba3badad06dd7164655d241ba3' ) AND ( `Token` = 'ynzfui1406882414' ) ORDER BY ID desc LIMIT 1   [ RunTime:0.000133s ]
+SQL: SHOW COLUMNS FROM `wy_brokerage` [ RunTime:0.003253s ]
+SQL: SELECT * FROM `wy_brokerage` WHERE ( `id` = 6 ) LIMIT 1   [ RunTime:0.000132s ]
+SQL: SHOW COLUMNS FROM `wy_share_content` [ RunTime:0.002957s ]
+SQL: SELECT * FROM `wy_share_content` WHERE token='ynzfui1406882414' LIMIT 1   [ RunTime:0.000127s ]
+SQL: SHOW COLUMNS FROM `wy_kh` [ RunTime:0.004424s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_kh` WHERE ( `Token` = 'ynzfui1406882414' ) AND ( `JJ_id` = 340 ) LIMIT 1   [ RunTime:0.000131s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.003545s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `token` = 'ynzfui1406882414' ) ORDER BY houseSort desc,id desc LIMIT 0,20   [ RunTime:0.000407s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\js-jifang.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.087198s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000573s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.087797s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014688s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.102537s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.103695s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.106194s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.108818s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009593s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.112218s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002993s ]
+
+[ 2018-11-08T13:19:29+08:00 ] 223.104.145.202 /index.php?g=Wap&m=Agent&a=ajaxlp&token=ynzfui1406882414&wecha_id=f5a0e0ba3badad06dd7164655d241ba3&t=0.35454995859823124
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000586s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000672s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\www\js-jifang.com\weiwincms\Lib\Action\WapAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `wy_userinfo` [ RunTime:0.003972s ]
+SQL: SELECT * FROM `wy_userinfo` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `wecha_id` = 'f5a0e0ba3badad06dd7164655d241ba3' ) LIMIT 1   [ RunTime:0.000150s ]
+SQL: SHOW COLUMNS FROM `wy_wechat_group_list` [ RunTime:0.003281s ]
+SQL: SELECT * FROM `wy_wechat_group_list` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `openid` = 'f5a0e0ba3badad06dd7164655d241ba3' ) LIMIT 1   [ RunTime:0.000110s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/e/e/ee20f2c4442ecb2cc8309624583d00f1.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_home` [ RunTime:0.003483s ]
+SQL: SELECT * FROM `wy_home` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000151s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/4/7/4727c3258ec350fbe55a200823142d0c.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_catemenu` [ RunTime:0.003378s ]
+SQL: SELECT * FROM `wy_catemenu` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `status` = 1 ) ORDER BY orderss desc  [ RunTime:0.000129s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/5/c/5c688eb97172111e3217d6600960e392.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_catemenu` [ RunTime:0.003654s ]
+NOTIC: [8] Undefined index:  lpid D:\www\js-jifang.com\weiwincms\Lib\Action\WapAction.class.php 第 127 行.
+SQL: SELECT * FROM `wy_catemenu` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `status` = 1 ) AND ( `lpid` = null )  [ RunTime:0.000145s ]
+SQL: SHOW COLUMNS FROM `wy_company` [ RunTime:0.003735s ]
+SQL: SELECT * FROM `wy_company` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `isbranch` = 0 ) LIMIT 1   [ RunTime:0.000166s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/3/3/33c0276ddfe8a0a78ea18a400890f528.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.003422s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `Token` = 'ynzfui1406882414' ) AND ( `Wecha_id` = 'f5a0e0ba3badad06dd7164655d241ba3' ) LIMIT 1   [ RunTime:0.000173s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.003721s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `token` = 'ynzfui1406882414' ) ORDER BY id desc LIMIT 20,4   [ RunTime:0.000563s ]
+
+[ 2018-11-08T13:19:31+08:00 ] 223.104.145.202 /index.php?g=Wap&m=Agent&a=loupanInfo&token=ynzfui1406882414&wecha_id=f5a0e0ba3badad06dd7164655d241ba3&id=56
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000525s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\www\js-jifang.com\weiwincms\Lib\Action\WapAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `wy_userinfo` [ RunTime:0.003916s ]
+SQL: SELECT * FROM `wy_userinfo` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `wecha_id` = 'f5a0e0ba3badad06dd7164655d241ba3' ) LIMIT 1   [ RunTime:0.000163s ]
+SQL: SHOW COLUMNS FROM `wy_wechat_group_list` [ RunTime:0.003221s ]
+SQL: SELECT * FROM `wy_wechat_group_list` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `openid` = 'f5a0e0ba3badad06dd7164655d241ba3' ) LIMIT 1   [ RunTime:0.000109s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/e/e/ee20f2c4442ecb2cc8309624583d00f1.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_home` [ RunTime:0.004777s ]
+SQL: SELECT * FROM `wy_home` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000127s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/4/7/4727c3258ec350fbe55a200823142d0c.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_catemenu` [ RunTime:0.003404s ]
+SQL: SELECT * FROM `wy_catemenu` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `status` = 1 ) ORDER BY orderss desc  [ RunTime:0.000129s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/5/c/5c688eb97172111e3217d6600960e392.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_catemenu` [ RunTime:0.003301s ]
+NOTIC: [8] Undefined index:  lpid D:\www\js-jifang.com\weiwincms\Lib\Action\WapAction.class.php 第 127 行.
+SQL: SELECT * FROM `wy_catemenu` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `status` = 1 ) AND ( `lpid` = null )  [ RunTime:0.000113s ]
+SQL: SHOW COLUMNS FROM `wy_company` [ RunTime:0.003363s ]
+SQL: SELECT * FROM `wy_company` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `isbranch` = 0 ) LIMIT 1   [ RunTime:0.000175s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/3/3/33c0276ddfe8a0a78ea18a400890f528.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.003362s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `Token` = 'ynzfui1406882414' ) AND ( `Wecha_id` = 'f5a0e0ba3badad06dd7164655d241ba3' ) LIMIT 1   [ RunTime:0.000160s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.003723s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = 56 ) AND ( `token` = 'ynzfui1406882414' ) [ RunTime:0.005311s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = 56 ) AND ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000303s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\js-jifang.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.066720s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001990s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\js-jifang.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 36 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.068763s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012145s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.080944s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.081988s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.084535s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.086955s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008581s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.089593s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002664s ]
+
+[ 2018-11-08T13:19:59+08:00 ] 223.104.145.202 /index.php?g=Wap&m=Agent&a=ajaxlp&token=ynzfui1406882414&wecha_id=f5a0e0ba3badad06dd7164655d241ba3&t=0.2299488710368891
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000622s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\www\js-jifang.com\weiwincms\Lib\Action\WapAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `wy_userinfo` [ RunTime:0.004189s ]
+SQL: SELECT * FROM `wy_userinfo` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `wecha_id` = 'f5a0e0ba3badad06dd7164655d241ba3' ) LIMIT 1   [ RunTime:0.000144s ]
+SQL: SHOW COLUMNS FROM `wy_wechat_group_list` [ RunTime:0.003574s ]
+SQL: SELECT * FROM `wy_wechat_group_list` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `openid` = 'f5a0e0ba3badad06dd7164655d241ba3' ) LIMIT 1   [ RunTime:0.000117s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/e/e/ee20f2c4442ecb2cc8309624583d00f1.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_home` [ RunTime:0.003820s ]
+SQL: SELECT * FROM `wy_home` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000140s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/4/7/4727c3258ec350fbe55a200823142d0c.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_catemenu` [ RunTime:0.003400s ]
+SQL: SELECT * FROM `wy_catemenu` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `status` = 1 ) ORDER BY orderss desc  [ RunTime:0.000127s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/5/c/5c688eb97172111e3217d6600960e392.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_catemenu` [ RunTime:0.004569s ]
+NOTIC: [8] Undefined index:  lpid D:\www\js-jifang.com\weiwincms\Lib\Action\WapAction.class.php 第 127 行.
+SQL: SELECT * FROM `wy_catemenu` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `status` = 1 ) AND ( `lpid` = null )  [ RunTime:0.000124s ]
+SQL: SHOW COLUMNS FROM `wy_company` [ RunTime:0.004666s ]
+SQL: SELECT * FROM `wy_company` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `isbranch` = 0 ) LIMIT 1   [ RunTime:0.000142s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/3/3/33c0276ddfe8a0a78ea18a400890f528.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.005107s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `Token` = 'ynzfui1406882414' ) AND ( `Wecha_id` = 'f5a0e0ba3badad06dd7164655d241ba3' ) LIMIT 1   [ RunTime:0.000157s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.005299s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `token` = 'ynzfui1406882414' ) ORDER BY id desc LIMIT 20,4   [ RunTime:0.000765s ]
+
+[ 2018-11-08T13:20:04+08:00 ] 223.104.145.202 /index.php?g=Wap&m=Agent&a=ajaxlp&token=ynzfui1406882414&wecha_id=f5a0e0ba3badad06dd7164655d241ba3&t=0.4771538405065987
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\www\js-jifang.com\weiwincms\Lib\Action\WapAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `wy_userinfo` [ RunTime:0.003698s ]
+SQL: SELECT * FROM `wy_userinfo` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `wecha_id` = 'f5a0e0ba3badad06dd7164655d241ba3' ) LIMIT 1   [ RunTime:0.000169s ]
+SQL: SHOW COLUMNS FROM `wy_wechat_group_list` [ RunTime:0.003173s ]
+SQL: SELECT * FROM `wy_wechat_group_list` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `openid` = 'f5a0e0ba3badad06dd7164655d241ba3' ) LIMIT 1   [ RunTime:0.000134s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/e/e/ee20f2c4442ecb2cc8309624583d00f1.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_home` [ RunTime:0.003876s ]
+SQL: SELECT * FROM `wy_home` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000149s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/4/7/4727c3258ec350fbe55a200823142d0c.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_catemenu` [ RunTime:0.003294s ]
+SQL: SELECT * FROM `wy_catemenu` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `status` = 1 ) ORDER BY orderss desc  [ RunTime:0.000200s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/5/c/5c688eb97172111e3217d6600960e392.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_catemenu` [ RunTime:0.003396s ]
+NOTIC: [8] Undefined index:  lpid D:\www\js-jifang.com\weiwincms\Lib\Action\WapAction.class.php 第 127 行.
+SQL: SELECT * FROM `wy_catemenu` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `status` = 1 ) AND ( `lpid` = null )  [ RunTime:0.000127s ]
+SQL: SHOW COLUMNS FROM `wy_company` [ RunTime:0.003854s ]
+SQL: SELECT * FROM `wy_company` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `isbranch` = 0 ) LIMIT 1   [ RunTime:0.000139s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/3/3/33c0276ddfe8a0a78ea18a400890f528.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.003876s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `Token` = 'ynzfui1406882414' ) AND ( `Wecha_id` = 'f5a0e0ba3badad06dd7164655d241ba3' ) LIMIT 1   [ RunTime:0.000164s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.003538s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `token` = 'ynzfui1406882414' ) ORDER BY id desc LIMIT 22,4   [ RunTime:0.000573s ]
+
+[ 2018-11-08T14:41:04+08:00 ] 221.178.182.206 /index.php?g=User&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001924s ]
+NOTIC: [2048] Declaration of IndexAction::insert() should be compatible with that of BaseAction::insert() D:\www\js-jifang.com\weiwincms\Lib\Action\User\IndexAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.007293s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000309s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.006531s ]
+NOTIC: [8] Undefined index:  uid D:\www\js-jifang.com\weiwincms\Lib\Action\UserAction.class.php 第 11 行.
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = null ) LIMIT 1   [ RunTime:0.000306s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.006743s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = null ) AND ( `uid` = null ) LIMIT 1   [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.005474s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = null ) LIMIT 1   [ RunTime:0.000220s ]
+NOTIC: [32] PHP Startup: Unable to load dynamic library 'D:\WebServer\php-5.2.5 (x64)\ext\php_fileinfo.dll' - �Ҳ���ָ����ģ�顣
+ Unknown 第 0 行.
+
+[ 2018-11-08T14:41:04+08:00 ] 221.178.182.157 /index.php?g=Home&m=Index&a=login
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000635s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\js-jifang.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.031492s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001907s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.033448s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020700s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.054209s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.055948s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.057795s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.059382s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007369s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.061661s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001851s ]
+
+[ 2018-11-08T14:41:09+08:00 ] 221.178.182.31 /index.php?m=Users&a=checklogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.003876s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `username` = 'chancle' ) LIMIT 1   [ RunTime:0.000332s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.003284s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000477s ]
+SQL: UPDATE `wy_users` SET `lasttime`='1541659269',`lastloginmonth`='11',`lastip`='221.178.182.31' WHERE ( `id` = 1 ) [ RunTime:0.000327s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\js-jifang.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.025952s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001959s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.027970s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008833s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.036845s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.037267s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.037685s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.038035s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001674s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.038575s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000607s ]
+
+[ 2018-11-08T14:41:11+08:00 ] 221.178.182.206 /index.php?g=User&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000984s ]
+NOTIC: [2048] Declaration of IndexAction::insert() should be compatible with that of BaseAction::insert() D:\www\js-jifang.com\weiwincms\Lib\Action\User\IndexAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.004729s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000137s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.004387s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000366s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.004990s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = null ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000842s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.004074s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = null ) LIMIT 1   [ RunTime:0.000141s ]
+NOTIC: [8] Undefined index:  width D:\www\js-jifang.com\weiwincms\Lib\Action\UserAction.class.php 第 62 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.004343s ]
+SQL: SELECT * FROM `wy_user_group`  [ RunTime:0.000283s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_wxuser` WHERE ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000768s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `uid` = 1 ) LIMIT 0,25   [ RunTime:0.000462s ]
+SQL: SHOW COLUMNS FROM `wy_diymen_set` [ RunTime:0.004514s ]
+SQL: SELECT * FROM `wy_diymen_set` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000428s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\js-jifang.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.059755s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002798s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  id D:\www\js-jifang.com\weiwindata\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 76 行.
+NOTIC: [8] Undefined index:  id D:\www\js-jifang.com\weiwindata\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 77 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.062629s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058987s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.121663s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.122212s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.122652s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.123116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001954s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.123818s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000916s ]
+
+[ 2018-11-08T14:41:12+08:00 ] 221.178.182.206 /index.php?g=User&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000625s ]
+NOTIC: [2048] Declaration of IndexAction::insert() should be compatible with that of BaseAction::insert() D:\www\js-jifang.com\weiwincms\Lib\Action\User\IndexAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.003940s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000137s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.004609s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000155s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.005558s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = null ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000248s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.004077s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = null ) LIMIT 1   [ RunTime:0.000137s ]
+NOTIC: [8] Undefined index:  width D:\www\js-jifang.com\weiwincms\Lib\Action\UserAction.class.php 第 62 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.004930s ]
+SQL: SELECT * FROM `wy_user_group`  [ RunTime:0.000165s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_wxuser` WHERE ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000113s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `uid` = 1 ) LIMIT 0,25   [ RunTime:0.000198s ]
+SQL: SHOW COLUMNS FROM `wy_diymen_set` [ RunTime:0.003709s ]
+SQL: SELECT * FROM `wy_diymen_set` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000115s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\js-jifang.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.048519s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002038s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  id D:\www\js-jifang.com\weiwindata\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 76 行.
+NOTIC: [8] Undefined index:  id D:\www\js-jifang.com\weiwindata\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 77 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.050633s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018049s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.068736s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.069224s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.069683s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.070045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001820s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.070619s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000628s ]
+
+[ 2018-11-08T14:41:17+08:00 ] 221.178.182.141 /index.php?g=User&m=Function&a=index&id=1&token=ynzfui1406882414
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000496s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000598s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.003583s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000189s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.003646s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000172s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.003983s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = null ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000213s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.002667s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = null ) LIMIT 1   [ RunTime:0.000164s ]
+NOTIC: [8] Undefined index:  width D:\www\js-jifang.com\weiwincms\Lib\Action\UserAction.class.php 第 62 行.
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000500s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.003253s ]
+SQL: SELECT `id`,`queryname` FROM `wy_token_open` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000999s ]
+SQL: SELECT `id`,`name` FROM `wy_user_group` WHERE status=1  [ RunTime:0.000211s ]
+SQL: SHOW COLUMNS FROM `wy_function` [ RunTime:0.004299s ]
+SQL: SELECT * FROM `wy_function` WHERE ( `status` = 1 ) AND ( `gid` = 1 )  [ RunTime:0.000709s ]
+SQL: SELECT * FROM `wy_function` WHERE ( `status` = 1 ) AND ( `gid` = 2 )  [ RunTime:0.000666s ]
+SQL: SELECT * FROM `wy_function` WHERE ( `status` = 1 ) AND ( `gid` = 3 )  [ RunTime:0.000509s ]
+SQL: SELECT * FROM `wy_function` WHERE ( `status` = 1 ) AND ( `gid` = 4 )  [ RunTime:0.000779s ]
+SQL: SELECT `wxname`,`wxid`,`headerpic`,`weixin` FROM `wy_wxuser` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000385s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\js-jifang.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.065095s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002778s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\52858e5695fc543ba4c03ea48eacfeda.php 第 120 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\52858e5695fc543ba4c03ea48eacfeda.php 第 121 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\52858e5695fc543ba4c03ea48eacfeda.php 第 122 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\52858e5695fc543ba4c03ea48eacfeda.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\52858e5695fc543ba4c03ea48eacfeda.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\52858e5695fc543ba4c03ea48eacfeda.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\52858e5695fc543ba4c03ea48eacfeda.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\52858e5695fc543ba4c03ea48eacfeda.php 第 123 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.067951s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041471s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.109521s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.110344s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.111051s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.111516s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002539s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.112144s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000808s ]
+
+[ 2018-11-08T14:41:22+08:00 ] 221.178.182.134 /index.php?g=User&m=Wechat_behavior&a=rule&token=ynzfui1406882414&WebShieldDRSessionVerify=EHT90Klemjgx7yrwF6Bt
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000792s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.003809s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000141s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.004099s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000165s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.005095s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000452s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.003506s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000622s ]
+NOTIC: [8] Undefined index:  width D:\www\js-jifang.com\weiwincms\Lib\Action\UserAction.class.php 第 62 行.
+SQL: SHOW COLUMNS FROM `wy_behavior` [ RunTime:0.004999s ]
+SQL: SHOW COLUMNS FROM `wy_lp_rule` [ RunTime:0.003785s ]
+SQL: SELECT * FROM `wy_lp_rule` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000296s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\js-jifang.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.051764s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002448s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  id D:\www\js-jifang.com\weiwindata\logs\Cache\User\5420157186efb0825f7c501a8490c3b0.php 第 108 行.
+NOTIC: [8] Undefined index:  id D:\www\js-jifang.com\weiwindata\logs\Cache\User\5420157186efb0825f7c501a8490c3b0.php 第 109 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\5420157186efb0825f7c501a8490c3b0.php 第 120 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\5420157186efb0825f7c501a8490c3b0.php 第 121 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\5420157186efb0825f7c501a8490c3b0.php 第 122 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\5420157186efb0825f7c501a8490c3b0.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\5420157186efb0825f7c501a8490c3b0.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\5420157186efb0825f7c501a8490c3b0.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\5420157186efb0825f7c501a8490c3b0.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\5420157186efb0825f7c501a8490c3b0.php 第 123 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.054266s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036482s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.090822s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.091585s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.092280s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.092715s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002448s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.093346s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000646s ]
+
+[ 2018-11-08T14:41:31+08:00 ] 221.178.182.140 /index.php?g=User&m=ServiceUser&a=index&token=ynzfui1406882414
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.003689s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000118s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.003505s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000145s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.004237s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000195s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.002953s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000110s ]
+NOTIC: [8] Undefined index:  width D:\www\js-jifang.com\weiwincms\Lib\Action\UserAction.class.php 第 62 行.
+SQL: SHOW COLUMNS FROM `wy_service_user` [ RunTime:0.004082s ]
+SQL: SHOW COLUMNS FROM `wy_kh` [ RunTime:0.005180s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_kh` WHERE ( `Token` = 'ynzfui1406882414' ) AND ( `JJ_id` NOT IN ('0') ) LIMIT 1   [ RunTime:0.000870s ]
+SQL: select kh.ID,kh.Token,kh.Wecha_id,kh.`Name`,kh.Tel,lp.LouPanTitle,
+                jjr.`Name` as jjr_name,zy.Name as zy_name, kh.Stutas,kh.SrTime,
+                kh.yxTime,kh.DcTime,kh.RcTime,kh.RgTime,kh.QyTime,kh.HkTime,status.salesstatus  
+                from wy_kh as kh LEFT JOIN wy_jjr as jjr ON kh.JJ_id=jjr.ID 
+                LEFT JOIN wy_lpinfo as lp ON kh.LouPanTitle=lp.id 
+                LEFT JOIN wy_zy as zy on kh.zy_id=zy.ID 
+                LEFT JOIN wy_agent_status as status on kh.Stutas=status.id 
+                where 1=1 and kh.Token='ynzfui1406882414' and kh.JJ_id not in (0) 
+                ORDER BY kh.ID DESC 
+                LIMIT 0,20 [ RunTime:0.000940s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\js-jifang.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.054365s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002566s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  id D:\www\js-jifang.com\weiwindata\logs\Cache\User\cab2f9276e04265534be881b6385f9eb.php 第 108 行.
+NOTIC: [8] Undefined index:  id D:\www\js-jifang.com\weiwindata\logs\Cache\User\cab2f9276e04265534be881b6385f9eb.php 第 109 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\cab2f9276e04265534be881b6385f9eb.php 第 120 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\cab2f9276e04265534be881b6385f9eb.php 第 121 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\cab2f9276e04265534be881b6385f9eb.php 第 122 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\cab2f9276e04265534be881b6385f9eb.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\cab2f9276e04265534be881b6385f9eb.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\cab2f9276e04265534be881b6385f9eb.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\cab2f9276e04265534be881b6385f9eb.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\cab2f9276e04265534be881b6385f9eb.php 第 123 行.
+NOTIC: [8] Use of undefined constant Common - assumed 'Common' D:\www\js-jifang.com\weiwindata\logs\Cache\User\cab2f9276e04265534be881b6385f9eb.php 第 455 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given D:\www\js-jifang.com\weiwindata\logs\Cache\User\cab2f9276e04265534be881b6385f9eb.php 第 660 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given D:\www\js-jifang.com\weiwindata\logs\Cache\User\cab2f9276e04265534be881b6385f9eb.php 第 660 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given D:\www\js-jifang.com\weiwindata\logs\Cache\User\cab2f9276e04265534be881b6385f9eb.php 第 660 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given D:\www\js-jifang.com\weiwindata\logs\Cache\User\cab2f9276e04265534be881b6385f9eb.php 第 660 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given D:\www\js-jifang.com\weiwindata\logs\Cache\User\cab2f9276e04265534be881b6385f9eb.php 第 660 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given D:\www\js-jifang.com\weiwindata\logs\Cache\User\cab2f9276e04265534be881b6385f9eb.php 第 660 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.056979s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047149s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.104206s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.105113s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.105861s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.106396s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002746s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.107041s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000572s ]
+
+[ 2018-11-08T14:41:41+08:00 ] 218.205.17.168 /index.php?g=User&m=Brokerage&a=index&token=ynzfui1406882414
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000705s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.003806s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000148s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.003717s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000152s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.004268s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000167s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.003279s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000099s ]
+NOTIC: [8] Undefined index:  width D:\www\js-jifang.com\weiwincms\Lib\Action\UserAction.class.php 第 62 行.
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000089s ]
+SQL: SHOW COLUMNS FROM `wy_function` [ RunTime:0.003851s ]
+SQL: SELECT * FROM `wy_function` WHERE ( `funname` = 'share' ) LIMIT 1   [ RunTime:0.000590s ]
+SQL: SHOW COLUMNS FROM `wy_brokerage` [ RunTime:0.004388s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_brokerage` LIMIT 1   [ RunTime:0.000238s ]
+SQL: SELECT wy_brokerage.*,a.areaName FROM `wy_brokerage` left join wy_areas as a on a.ID=wy_brokerage.areas_ID WHERE wy_brokerage.Token='ynzfui1406882414' ORDER BY wy_brokerage.id desc LIMIT 0,20   [ RunTime:0.002563s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\js-jifang.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.050996s ]
+INFO: [ view_template ] --END-- [ RunTime:0.026971s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  id D:\www\js-jifang.com\weiwindata\logs\Cache\User\3b7fbe7f9eaba24b2377a4c6618d0010.php 第 108 行.
+NOTIC: [8] Undefined index:  id D:\www\js-jifang.com\weiwindata\logs\Cache\User\3b7fbe7f9eaba24b2377a4c6618d0010.php 第 109 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\3b7fbe7f9eaba24b2377a4c6618d0010.php 第 120 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\3b7fbe7f9eaba24b2377a4c6618d0010.php 第 121 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\3b7fbe7f9eaba24b2377a4c6618d0010.php 第 122 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\3b7fbe7f9eaba24b2377a4c6618d0010.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\3b7fbe7f9eaba24b2377a4c6618d0010.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\3b7fbe7f9eaba24b2377a4c6618d0010.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\3b7fbe7f9eaba24b2377a4c6618d0010.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\3b7fbe7f9eaba24b2377a4c6618d0010.php 第 123 行.
+NOTIC: [8] Undefined variable: tab D:\www\js-jifang.com\weiwindata\logs\Cache\User\3b7fbe7f9eaba24b2377a4c6618d0010.php 第 458 行.
+NOTIC: [8] Undefined variable: tab D:\www\js-jifang.com\weiwindata\logs\Cache\User\3b7fbe7f9eaba24b2377a4c6618d0010.php 第 461 行.
+NOTIC: [8] Undefined variable: tab D:\www\js-jifang.com\weiwindata\logs\Cache\User\3b7fbe7f9eaba24b2377a4c6618d0010.php 第 464 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.078057s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040883s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.119000s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.119718s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.120403s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.120758s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002330s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.121439s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000576s ]
+
+[ 2018-11-08T14:42:15+08:00 ] 221.178.182.131 /index.php?g=User&m=Product&a=index&token=ynzfui1406882414
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000644s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.003629s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000133s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.003577s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000213s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.004432s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000185s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.003129s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000105s ]
+NOTIC: [8] Undefined index:  width D:\www\js-jifang.com\weiwincms\Lib\Action\UserAction.class.php 第 62 行.
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000112s ]
+NOTIC: [8] Undefined index:  dining D:\www\js-jifang.com\weiwincms\Lib\Action\User\ProductAction.class.php 第 11 行.
+NOTIC: [8] Undefined index:  dining D:\www\js-jifang.com\weiwincms\Lib\Action\User\ProductAction.class.php 第 11 行.
+NOTIC: [8] Undefined index:  catid D:\www\js-jifang.com\weiwincms\Lib\Action\User\ProductAction.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `wy_product` [ RunTime:0.045417s ]
+SQL: SHOW COLUMNS FROM `wy_product_cat` [ RunTime:0.004715s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_product` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `dining` = 0 ) AND ( `groupon` <> 1 ) LIMIT 1   [ RunTime:0.022714s ]
+SQL: SELECT * FROM `wy_product` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `dining` = 0 ) AND ( `groupon` <> 1 ) ORDER BY id desc LIMIT 0,20   [ RunTime:0.002134s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\js-jifang.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.125990s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002763s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  id D:\www\js-jifang.com\weiwindata\logs\Cache\User\b7417a956dcaddc2780c9684a494cee5.php 第 108 行.
+NOTIC: [8] Undefined index:  id D:\www\js-jifang.com\weiwindata\logs\Cache\User\b7417a956dcaddc2780c9684a494cee5.php 第 109 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\b7417a956dcaddc2780c9684a494cee5.php 第 120 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\b7417a956dcaddc2780c9684a494cee5.php 第 121 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\b7417a956dcaddc2780c9684a494cee5.php 第 122 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\b7417a956dcaddc2780c9684a494cee5.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\b7417a956dcaddc2780c9684a494cee5.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\b7417a956dcaddc2780c9684a494cee5.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\b7417a956dcaddc2780c9684a494cee5.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\b7417a956dcaddc2780c9684a494cee5.php 第 123 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.128825s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070629s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.199516s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.200197s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.200956s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.201404s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002442s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.202033s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000658s ]
+
+[ 2018-11-08T14:42:22+08:00 ] 221.178.182.131 /index.php?g=User&m=Product&a=index&token=ynzfui1406882414
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000664s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.004020s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000126s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.003817s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000151s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.009042s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000192s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.003310s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000117s ]
+NOTIC: [8] Undefined index:  width D:\www\js-jifang.com\weiwincms\Lib\Action\UserAction.class.php 第 62 行.
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000229s ]
+NOTIC: [8] Undefined index:  dining D:\www\js-jifang.com\weiwincms\Lib\Action\User\ProductAction.class.php 第 11 行.
+NOTIC: [8] Undefined index:  dining D:\www\js-jifang.com\weiwincms\Lib\Action\User\ProductAction.class.php 第 11 行.
+NOTIC: [8] Undefined index:  catid D:\www\js-jifang.com\weiwincms\Lib\Action\User\ProductAction.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `wy_product` [ RunTime:0.004169s ]
+SQL: SHOW COLUMNS FROM `wy_product_cat` [ RunTime:0.003346s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_product` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `dining` = 0 ) AND ( `groupon` <> 1 ) LIMIT 1   [ RunTime:0.000122s ]
+SQL: SELECT * FROM `wy_product` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `dining` = 0 ) AND ( `groupon` <> 1 ) ORDER BY id desc LIMIT 0,20   [ RunTime:0.000256s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\js-jifang.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.050983s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002134s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  id D:\www\js-jifang.com\weiwindata\logs\Cache\User\b7417a956dcaddc2780c9684a494cee5.php 第 108 行.
+NOTIC: [8] Undefined index:  id D:\www\js-jifang.com\weiwindata\logs\Cache\User\b7417a956dcaddc2780c9684a494cee5.php 第 109 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\b7417a956dcaddc2780c9684a494cee5.php 第 120 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\b7417a956dcaddc2780c9684a494cee5.php 第 121 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\b7417a956dcaddc2780c9684a494cee5.php 第 122 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\b7417a956dcaddc2780c9684a494cee5.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\b7417a956dcaddc2780c9684a494cee5.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\b7417a956dcaddc2780c9684a494cee5.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\b7417a956dcaddc2780c9684a494cee5.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\b7417a956dcaddc2780c9684a494cee5.php 第 123 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.053176s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038029s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.091270s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.091941s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.092659s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.093007s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002357s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.093707s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000648s ]
+
+[ 2018-11-08T14:42:26+08:00 ] 218.205.17.176 /index.php?g=User&m=Wechat_behavior&a=rule&token=ynzfui1406882414
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000564s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000660s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.003270s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000152s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.003130s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000215s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.003767s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000194s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.002628s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000101s ]
+NOTIC: [8] Undefined index:  width D:\www\js-jifang.com\weiwincms\Lib\Action\UserAction.class.php 第 62 行.
+SQL: SHOW COLUMNS FROM `wy_behavior` [ RunTime:0.003032s ]
+SQL: SHOW COLUMNS FROM `wy_lp_rule` [ RunTime:0.002547s ]
+SQL: SELECT * FROM `wy_lp_rule` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000143s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\js-jifang.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.044158s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002003s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  id D:\www\js-jifang.com\weiwindata\logs\Cache\User\5420157186efb0825f7c501a8490c3b0.php 第 108 行.
+NOTIC: [8] Undefined index:  id D:\www\js-jifang.com\weiwindata\logs\Cache\User\5420157186efb0825f7c501a8490c3b0.php 第 109 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\5420157186efb0825f7c501a8490c3b0.php 第 120 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\5420157186efb0825f7c501a8490c3b0.php 第 121 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\5420157186efb0825f7c501a8490c3b0.php 第 122 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\5420157186efb0825f7c501a8490c3b0.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\5420157186efb0825f7c501a8490c3b0.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\5420157186efb0825f7c501a8490c3b0.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\5420157186efb0825f7c501a8490c3b0.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\5420157186efb0825f7c501a8490c3b0.php 第 123 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.046224s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033484s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.079769s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.080366s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.080995s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.081336s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002304s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.082151s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000640s ]
+
+[ 2018-11-08T14:42:28+08:00 ] 221.178.182.131 /index.php?g=User&m=Product&a=index&token=ynzfui1406882414
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000932s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001102s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.004241s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000155s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.005240s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000189s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.004573s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000205s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.003146s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000106s ]
+NOTIC: [8] Undefined index:  width D:\www\js-jifang.com\weiwincms\Lib\Action\UserAction.class.php 第 62 行.
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000097s ]
+NOTIC: [8] Undefined index:  dining D:\www\js-jifang.com\weiwincms\Lib\Action\User\ProductAction.class.php 第 11 行.
+NOTIC: [8] Undefined index:  dining D:\www\js-jifang.com\weiwincms\Lib\Action\User\ProductAction.class.php 第 11 行.
+NOTIC: [8] Undefined index:  catid D:\www\js-jifang.com\weiwincms\Lib\Action\User\ProductAction.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `wy_product` [ RunTime:0.004123s ]
+SQL: SHOW COLUMNS FROM `wy_product_cat` [ RunTime:0.003253s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_product` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `dining` = 0 ) AND ( `groupon` <> 1 ) LIMIT 1   [ RunTime:0.000111s ]
+SQL: SELECT * FROM `wy_product` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `dining` = 0 ) AND ( `groupon` <> 1 ) ORDER BY id desc LIMIT 0,20   [ RunTime:0.000201s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\js-jifang.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.054083s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001906s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  id D:\www\js-jifang.com\weiwindata\logs\Cache\User\b7417a956dcaddc2780c9684a494cee5.php 第 108 行.
+NOTIC: [8] Undefined index:  id D:\www\js-jifang.com\weiwindata\logs\Cache\User\b7417a956dcaddc2780c9684a494cee5.php 第 109 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\b7417a956dcaddc2780c9684a494cee5.php 第 120 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\b7417a956dcaddc2780c9684a494cee5.php 第 121 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\b7417a956dcaddc2780c9684a494cee5.php 第 122 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\b7417a956dcaddc2780c9684a494cee5.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\b7417a956dcaddc2780c9684a494cee5.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\b7417a956dcaddc2780c9684a494cee5.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\b7417a956dcaddc2780c9684a494cee5.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\b7417a956dcaddc2780c9684a494cee5.php 第 123 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.056035s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035805s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.091901s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.092548s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.093179s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.093516s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002137s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.094127s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000539s ]
+
+[ 2018-11-08T14:42:34+08:00 ] 221.178.182.203 /index.php?g=User&m=Product&a=add&token=ynzfui1406882414&dining=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000576s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.003652s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000167s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.003765s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000138s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.004324s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000189s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.003251s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000102s ]
+NOTIC: [8] Undefined index:  width D:\www\js-jifang.com\weiwincms\Lib\Action\UserAction.class.php 第 62 行.
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000090s ]
+SQL: SHOW COLUMNS FROM `wy_product_cat` [ RunTime:0.003227s ]
+SQL: SELECT * FROM `wy_product_cat` WHERE ( `parentid` = 0 ) AND ( `token` = 'ynzfui1406882414' ) AND ( `dining` = 0 )  [ RunTime:0.000742s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\js-jifang.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.036960s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002341s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  id D:\www\js-jifang.com\weiwindata\logs\Cache\User\21090f89b08855279e35dba09e7f3f2c.php 第 108 行.
+NOTIC: [8] Undefined index:  id D:\www\js-jifang.com\weiwindata\logs\Cache\User\21090f89b08855279e35dba09e7f3f2c.php 第 109 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\21090f89b08855279e35dba09e7f3f2c.php 第 120 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\21090f89b08855279e35dba09e7f3f2c.php 第 121 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\21090f89b08855279e35dba09e7f3f2c.php 第 122 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\21090f89b08855279e35dba09e7f3f2c.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\21090f89b08855279e35dba09e7f3f2c.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\21090f89b08855279e35dba09e7f3f2c.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\21090f89b08855279e35dba09e7f3f2c.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\js-jifang.com\weiwindata\logs\Cache\User\21090f89b08855279e35dba09e7f3f2c.php 第 123 行.
+NOTIC: [8] Undefined variable: isUpdate D:\www\js-jifang.com\weiwindata\logs\Cache\User\21090f89b08855279e35dba09e7f3f2c.php 第 518 行.
+NOTIC: [8] Undefined variable: set D:\www\js-jifang.com\weiwindata\logs\Cache\User\21090f89b08855279e35dba09e7f3f2c.php 第 519 行.
+NOTIC: [8] Undefined variable: set D:\www\js-jifang.com\weiwindata\logs\Cache\User\21090f89b08855279e35dba09e7f3f2c.php 第 525 行.
+NOTIC: [8] Undefined variable: set D:\www\js-jifang.com\weiwindata\logs\Cache\User\21090f89b08855279e35dba09e7f3f2c.php 第 537 行.
+NOTIC: [8] Undefined variable: set D:\www\js-jifang.com\weiwindata\logs\Cache\User\21090f89b08855279e35dba09e7f3f2c.php 第 541 行.
+NOTIC: [8] Undefined variable: set D:\www\js-jifang.com\weiwindata\logs\Cache\User\21090f89b08855279e35dba09e7f3f2c.php 第 545 行.
+NOTIC: [8] Undefined variable: set D:\www\js-jifang.com\weiwindata\logs\Cache\User\21090f89b08855279e35dba09e7f3f2c.php 第 549 行.
+NOTIC: [8] Undefined variable: set D:\www\js-jifang.com\weiwindata\logs\Cache\User\21090f89b08855279e35dba09e7f3f2c.php 第 553 行.
+NOTIC: [8] Undefined variable: set D:\www\js-jifang.com\weiwindata\logs\Cache\User\21090f89b08855279e35dba09e7f3f2c.php 第 557 行.
+NOTIC: [8] Undefined variable: set D:\www\js-jifang.com\weiwindata\logs\Cache\User\21090f89b08855279e35dba09e7f3f2c.php 第 561 行.
+NOTIC: [8] Undefined variable: set D:\www\js-jifang.com\weiwindata\logs\Cache\User\21090f89b08855279e35dba09e7f3f2c.php 第 565 行.
+NOTIC: [8] Undefined variable: set D:\www\js-jifang.com\weiwindata\logs\Cache\User\21090f89b08855279e35dba09e7f3f2c.php 第 569 行.
+NOTIC: [8] Undefined variable: set D:\www\js-jifang.com\weiwindata\logs\Cache\User\21090f89b08855279e35dba09e7f3f2c.php 第 573 行.
+NOTIC: [8] Undefined variable: set D:\www\js-jifang.com\weiwindata\logs\Cache\User\21090f89b08855279e35dba09e7f3f2c.php 第 577 行.
+NOTIC: [8] Undefined variable: set D:\www\js-jifang.com\weiwindata\logs\Cache\User\21090f89b08855279e35dba09e7f3f2c.php 第 582 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.039423s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054710s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.094132s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.094793s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.095517s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.095867s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002286s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.096504s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000552s ]
+
+[ 2018-11-08T19:49:28+08:00 ] 202.108.211.56 /index.php?g=Duoduo&m=Admin&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001950s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\js-jifang.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.006579s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002763s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.009434s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046528s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.056007s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.058023s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.059994s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.061474s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007033s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.063304s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002054s ]
+

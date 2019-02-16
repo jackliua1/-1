@@ -1,0 +1,87 @@
+<include file="Public:head"/>
+<script type="text/javascript" src="{weiwin::RES}/js/Province.js"></script>
+<script src="./tpl/static/upyun.js"></script>
+<script src="/tpl/static/artDialog/jquery.artDialog.js?skin=default"></script>
+<script src="/tpl/static/artDialog/plugins/iframeTools.js"></script>
+<script src="{weiwin::RES}/js/date/WdatePicker.js"></script>
+
+<div class="content">
+         
+          <div class="cLineB">
+              <h4 class="left">基础信息维护</h4>
+                  
+              <div class="clr"></div>
+          </div>
+ <div class="cLineD">
+
+         </div>
+
+          <div class="cLine">
+		    <div class="ftip" style="margin:0 auto">首页分享内容</div>
+		</div>
+
+		<div class="msgWrap form">
+			<ul id="tags" style="width:100%">
+				
+        <li>
+          <a href="{weiwin::U('Wechat_behavior/rule',array('token'=>$_GET['token']))}">活动细则</a> 
+        </li>
+        <li>
+          <a href="{weiwin::U('Wechat_behavior/salesstatus',array('token'=>$_GET['token']))}">项目销售状态</a> 
+        </li>
+        <li>
+          <a href="{weiwin::U('Wechat_behavior/rewardparam',array('token'=>$_GET['token']))}">奖励类型设置</a> 
+        </li>
+        <li>
+          <a href="{weiwin::U('Wechat_behavior/rewardinfo',array('token'=>$_GET['token']))}">项目奖励</a> 
+        </li>
+        <li>
+          <a href="{weiwin::U('Wechat_behavior/agenttype',array('token'=>$_GET['token']))}">会员类别</a> 
+        </li>
+        <li>
+          <a href="{weiwin::U('Wechat_behavior/invitationcode',array('token'=>$_GET['token']))}">邀请码</a> 
+        </li>
+        <li class="selectTag">
+          <a href="{weiwin::U('Wechat_behavior/shareindex',array('token'=>$_GET['token']))}">首页分享</a> 
+        </li>
+				<div class="clr" style="height:1px;background:#eee;margin-bottom:20px;"></div>
+			</ul>
+		</div>
+
+    <div class="cLine">
+    <div class="pageNavigator left">
+    </div>
+    <div class="clr"></div>
+  </div>
+  <div class="msgWrap bgfc" style=" padding:5px 10px; margin:0">
+    <form method="post"   action=""  enctype="multipart/form-data" >
+          <div class="msgWrap form">
+            <TABLE class="userinfoArea" border="0" cellSpacing="0" cellPadding="0" width="100%">
+                <TR>
+                  <TH valign="top"><label for="pic">分享标题：</label></TH>
+                  <TD><input class="px"  name="sharetitle" id="name" value="{weiwin:$info['sharetitle']}" style="width:200px;"  /></TD>
+                </TR>
+                <TR>
+                  <TH valign="top"><label for="pic">项目图片：</label></TH>
+                  <TD>
+                    <input class="px"  name="shareimg" value="<if condition="$info['shareimg'] eq ''">/tpl/User/default/common/images/lp/fd039245d688d.jpg<else/>{weiwin:$info['shareimg']}</if>" id="pic1" style="width:363px;"  />
+                    <br />
+                      <a href="###" onclick="upyunPicUpload('pic1',700,420,'{weiwin:$token}')" id="upload" class="a_upload">上传</a> <a href="###" onclick="viewImg('pic1')">预览</a>&nbsp;
+                  </TD>
+                </TR>
+                 <TR>
+                  <TH valign="top"><label for="pic">分享内容：</label></TH>
+                  <TD><textarea class="px" name="sharecontent" id="sharecontent" style="width:400px;resize:none;" >{weiwin:$info['sharecontent']}</textarea></TD>
+                </TR>
+                <TR>
+                  <TD>
+                    <input type="submit" value="保存" name="sbmt" class="btnGreen left"></TD>
+                </TR>
+              </TBODY>
+            </TABLE>
+            
+          </div>
+          </form>
+    <div class="clear"></div>
+  </div>
+</div>

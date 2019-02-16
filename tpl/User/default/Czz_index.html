@@ -1,0 +1,122 @@
+<include file="Public:head"/>
+
+<script src="/tpl/static/artDialog/jquery.artDialog.js?skin=default"></script>
+
+<script src="/tpl/static/artDialog/plugins/iframeTools.js"></script>
+
+<link rel="stylesheet" type="text/css" href="{weiwin::RES}/css/cymain.css" />
+
+<div class="content">
+
+<!--tab start-->
+
+
+
+<!--tab end-->
+
+
+
+      
+
+    <div class="msgWrap bgfc" style="margin-top:10px;">
+
+	  <form class="form" method="post" action="" target="iframe" enctype="multipart/form-data">	 
+
+		<table class="userinfoArea" style=" margin:0;" border="0" cellspacing="0" cellpadding="0" width="100%">
+
+			<tbody>
+
+				<tr>
+
+				  <th valign="top"><span class="red">*</span>关键词：</th>
+
+				  <td>
+
+					<span class="red">吃粽子 —— 当用户输入该关键词时，将会触发此回复。</span></td>
+
+				</tr>
+
+				<tr>
+
+					<th width="120"><span class="red">*</span>回复标题：</th>
+
+					<td><input type="text" name="title" value="{weiwin:$set.title}" class="px" style="width:550px;"></td>
+
+				</tr>
+
+				<tr>
+
+					<th width="120">内容介绍：</th>
+
+					<td><textarea style="width:560px;height:75px" name="info" id="info" class="px">{weiwin:$set.info}</textarea><br/>最多填写120个字</td>
+
+				</tr>
+
+				<tr>
+
+					<th>回复图片：</th>
+
+					<td><input type="text" name="picurl" value="{weiwin:$set.picurl}" id="pic" class="px" style="width:550px;"> <script src="/tpl/static/upyun.js"></script><a href="#" onclick="upyunPicUpload('pic',700,420,'{weiwin:$token}')" class="a_upload">上传</a> <a href="#" onclick="viewImg('pic')">预览</a>   &nbsp; 大小为720x400</td>
+
+				</tr>
+                <tr>
+
+					<th>游戏背景图片：</th>
+
+					<td><input type="text" name="bg" value="{weiwin:$set.bg}" id="bg" class="px" style="width:550px;"> <script src="/tpl/static/upyun.js"></script>
+					<a href="#" onclick="upyunPicUpload('bg',700,420,'{weiwin:$token}')" class="a_upload">上传</a> <a href="#" onclick="viewImg('bg')">预览</a>   &nbsp; 大小为320x555</td>
+
+				</tr>
+                	<tr>
+
+					<th>logo图片：</th>
+
+					<td><input type="text" name="picurls1" value="{weiwin:$set.picurls1}" id="pic1" class="px" style="width:550px;"> <script src="/tpl/static/upyun.js"></script><a href="#" onclick="upyunPicUpload('pic1',700,420,'{weiwin:$token}')" class="a_upload">上传</a> <a href="#" onclick="viewImg('pic1')">预览</a>   &nbsp; 大小为190*50</td>
+
+				</tr>
+                <tr>
+
+					<th>首页粽子图片：</th>
+
+					<td><input type="text" name="zz" value="{weiwin:$set.zz}" id="zz" class="px" style="width:550px;"> <script src="/tpl/static/upyun.js"></script><a href="#" onclick="upyunPicUpload('zz',700,420,'{weiwin:$token}')" class="a_upload">上传</a> <a href="#" onclick="viewImg('zz')">预览</a>   &nbsp; <a href="http://wzweixiang.com/tpl/Wap/default/common/czz/images/c4.png">下载图标模板</a></td>
+
+				</tr>
+                <tr>
+
+					<th>关注微信的图标：</th>
+
+					<td><input type="text" name="wx" value="{weiwin:$set.wx}" id="wx" class="px" style="width:550px;"> <script src="/tpl/static/upyun.js"></script><a href="#" onclick="upyunPicUpload('wx',700,420,'{weiwin:$token}')" class="a_upload">上传</a> <a href="#" onclick="viewImg('wx')">预览</a>   &nbsp; <a href="http://wzweixiang.com/tpl/Wap/default/common/czz/images/c18.png">下载图标模板</a></td>
+
+				</tr>
+
+
+				<th>&nbsp;</th>
+
+					<td>
+
+
+					<input type="hidden" name="token" value="{weiwin:$token}" />
+
+						<button type="submit" name="button" class="btnGreen">保存</button>
+
+						<a href="javascript:history.go(-1);" class="btnGray vm">取消</a>
+
+					</td>
+
+				</tr>
+
+			</tbody>
+
+		</table>
+
+	</form>
+
+  </div> 
+
+ 
+
+  
+
+        </div>
+
+<include file="Public:footer"/>

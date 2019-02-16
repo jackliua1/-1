@@ -1,0 +1,437 @@
+﻿html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td {
+	margin: 0;
+	padding: 0
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+fieldset,img {
+	border: 0;
+	vertical-align: top
+}
+abbr,acronym {
+	border: 0;
+	font-variant: normal
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style: normal;
+	font-weight: 400
+}
+ol,ul {
+	list-style: none
+}
+caption,th {
+	text-align: left
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size: 100%;
+	font-weight: 400
+}
+q:before,q:after {
+	content: ''
+}
+sup {
+	vertical-align: text-top
+}
+sub {
+	vertical-align: text-bottom
+}
+input,textarea,select {
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	*font-size: 100%
+}
+legend {
+	color: #000
+}
+.clearfix:after { 
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+body {
+	font-size: 14px;
+    line-height: 1.6;
+    color: #333;
+	font-family: Arial, Helvetica, sans-serif
+}
+a:link, a:visited {
+    color: #333;
+	text-decoration: none
+}
+a:hover, a:active {
+    color: #333;
+	text-decoration: none
+}
+.meeting {
+    overflow-x: hidden;
+    background-image: url("../images/bg.png");
+    background-size: 15% auto;
+}
+.loadingWrap ,
+.loadingWrap img {
+    width: 32px;
+    height: 32px
+}
+.loadingWrap {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 200;
+    margin-top: -32px;
+    margin-left: -16px
+}
+.faceWrap {
+    position: fixed;
+    z-index: 30;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #b90010;
+    /*background-image: url("../images/cover.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;*/
+    overflow: hidden
+}
+.faceWrap img {
+    width: 100%
+}
+header {
+    position: relative;
+    margin-top: 6px;
+    height: 74px
+}
+header .bg {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    padding: 1px 0;
+    width: 100%;
+    height: 30px;
+    overflow: hidden;
+    background: #d82d11;
+    border-color: #ed7c5c;
+    border-style: dashed none;
+    border-width: 1px;
+    color: #fff;
+    text-indent: 90px;
+    line-height: 30px
+}
+header .music {
+    position: absolute;
+    top: 11px;
+    right: 6px;
+    z-index: 2;
+    display: block;
+    width: 28px;
+    height: 28px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 14px;
+    overflow: hidden;
+    cursor: pointer
+}
+header .music img {
+    margin-top: 3px;
+    margin-left: 4px;
+    width: 18px;
+    height: 20px
+}
+header .mute {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -2px;
+    width: 28px;
+    height: 3px;
+    font-size: 0;
+    line-height: 0;
+    background-color: #fff;
+    -webkit-transform: rotate(45deg)
+}
+header #logo {
+    position: absolute;
+    top: 0;
+    left: 6px;
+    z-index: 10;
+    width: 125px;
+    height: 74px;
+    background-image: url("../images/logo.png");
+    background-size: 50%;
+    background-repeat: no-repeat
+}
+section {
+    margin: 6px;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.7)
+}
+section p {
+    padding: 3px 0
+}
+section img {
+    width: 100%
+}
+.notic {
+    margin-top: 10px;
+    background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#aa1101), to(#f5302a));
+    color: #fff
+}
+.notic .tit {
+    height: 28px;
+    background: url("bg5.png") no-repeat center center;
+    background-size: auto 22px
+}
+.notic .con {
+    padding: 0 10px 40px;
+    background-size: auto 70px;
+    line-height: 1.6em
+}
+.menu {
+    margin-top: 15px
+}
+.menu li {
+    width: 100%;
+    height: 48px;
+    overflow: hidden;
+    margin-bottom: 2px;
+    background-color: #f5e4d0
+}
+.menu .icon {
+    display: block;
+    float: right;
+    width: 60px;
+    height: 48px;
+    text-align: center;
+    font-size: 12px;
+    background: #960202 url("../images/date.png") no-repeat center 5px;
+    background-size: 18px;
+    color: #fff;
+    line-height: 68px
+}
+.menu .location {
+    background-image: url("../images/location.png")
+}
+.menu .tel {
+    background-image: url("../images/tel.png")
+}
+.menu .con {
+    padding: 0 0 0 10px;
+    line-height: 48px
+}
+.menu a {
+    display: block
+}
+.menu .f12 {
+    font-size: 12px;
+    line-height: 18px;
+    padding-top: 5px;
+    height: 43px;
+    overflow: hidden
+}
+.goBtns {
+    margin: 20px auto;
+    text-align: center
+}
+.goBtns span {
+    font-size: 14px;
+    color: #fff;
+    margin: 0 3px;
+    display: inline-block;
+    background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#c21a00), to(#800000));
+    border-radius: 5px;
+    padding: 10px 13px;
+    line-height: 1.1em;
+    box-shadow: 0 1px 2px #333
+}
+.mask {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 40;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7)
+}
+.submitBox {
+    display: none;
+    position: absolute;
+    z-index: 42;
+    top: 10px;
+    left: 50%;
+    margin-left: -140px;
+    width: 280px;
+    background: #fff;
+    border-radius: 6px;
+}
+.submitBox .close {
+    position: absolute;
+    top: 6px;
+    right: 0;
+    z-index: 45;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #fff url("../images/close.png") no-repeat center center;
+    background-size: 22px 22px;
+    box-shadow: 1px 0 1px rgba(0,0,0,0.2)
+}
+.submitBox .title {
+    margin: 10px auto 0;
+    width: 220px;
+    line-height: 24px;
+    border-radius: 15px;
+    background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#fa040f), to(#c90302));
+    color: #fff;
+    text-align: center
+}
+.submitBox ul {
+    margin-top: 10px;
+    padding-left: 10px;
+    width: 220px    
+}
+.submitBox li {
+    margin-bottom: 10px;
+    width: 100%;
+    overflow: hidden
+}
+.submitBox label {
+    float: left;
+    width: 2em;
+    line-height: 28px;
+    font-size: 16px
+}
+.submitBox .iptWrap {
+    margin-left: 40px
+}
+.submitBox .iptWrap input,
+.submitBox textarea {
+    height: 28px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #bcbcbc;
+    box-sizing: border-box;
+    padding-left: 2px;
+    outline: none
+}
+.submitBox textarea {
+    height: 100px;
+    padding: 10px 2px
+}
+.sendBtn {
+    margin: 0 0 10px 90px;
+    display: inline-block;
+    width: 90px;
+    height: 32px;
+    background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#c21a00), to(#800000));
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 1px 2px #333;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 32px
+}
+#mcover {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 200;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none
+}
+#mcover img {
+    position: fixed;
+    right: 18px;
+    top: 5px;
+    width: 260px!important;
+    height: 180px!important;
+    z-index: 20001
+}
+footer {
+    margin-top: 10px;
+    color: #fff;
+    text-align: center
+}
+footer img {
+    margin-top: 4px;
+    width: 30%
+}
+.header {
+    width: 100%
+}
+.header a {
+    float: left;
+    display: block;
+    width: 50%;
+    height: 100px;
+    background-color: #dcdddd;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    font-size: 20px;
+    line-height: 100px
+}
+.header a:nth-last-child(odd) {
+    border-right: 1px solid #ccc
+}
+
+.list {
+    padding: 0 6px;
+    background-color: #f1f1f1;
+}
+.list a {
+    display: block;
+    width: 100%;
+    height: 60px;
+    overflow: hidden;
+    border-bottom: 1px dashed #ccc;
+    font-size: 16px;
+    line-height: 60px
+}
+.list span {
+    float: right
+}
+#geturl {
+    margin-top: 200px;
+    text-align: center
+}
+.geturl {
+    margin-bottom: 20px;
+    padding: 4px 3px;
+    width: 200px
+}
+.getbtn {
+    padding: 6px;
+    width: 80px;
+    border: 0;
+    border-radius: 6px;
+    box-shadow: 0 1px 1px #999;
+    background: #dcdddd
+}
+.pic{
+	background-color:#fff;
+	position:absolute;
+	display:inline-block;
+	width:60px;
+	height:60px;
+	border-radius:60px;
+	top:-1px;
+	left:1px;
+	z-index: 4000;
+	border:5px solid #d7455d;
+	overflow:hidden;
+}
+.pic img{
+	border-radius:80px;
+	width:100%;
+	height:100%
+}

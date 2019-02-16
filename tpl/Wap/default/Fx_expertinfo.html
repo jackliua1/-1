@@ -1,0 +1,45 @@
+<!doctype html> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" >
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link href="{weiwin::RES}/css/fx_style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body style="background:url({weiwin::RES}/img/tx_1_bg.jpg) top center no-repeat; background-size:cover;"> 
+	<div class="wait"  >
+    		<span class="kon_t"></span>
+            
+            <div class="fx_txiang">
+            	<img src="{weiwin::RES}/img/fx_txiang.png" />
+                <div class="fx_grmas">
+                	{weiwin:$info.expertname}<br />
+                    <span>{weiwin:$info.expertphone}</span>
+                </div>
+            </div>
+            
+            
+            <div class="txiang_cli">
+            	<a href="{weiwin::U('Fx/mycustom',array('token'=>$_GET['token'],'wecha_id'=>$_GET['wecha_id']))}" class="txiang_cli_">我的客人</a>
+            	<a href="{weiwin::U('Fx/howexpert',array('token'=>$_GET['token'],'wecha_id'=>$_GET['wecha_id']))}" class="txiang_cli_">如何玩转达人？</a>
+            	<a href="{weiwin::U('Fx/expert',array('token'=>$_GET['token'],'wecha_id'=>$_GET['wecha_id']))}" class="txiang_cli_">了解达人</a>
+            </div>
+            
+            <div class="foot">
+				<a href="{weiwin::U('Fx/index',array('token'=>$_GET['token'],'wecha_id'=>$_GET['wecha_id']))}" class="foot_drhd"></span>
+        <a href="{weiwin::U('Fx/myactivite',array('token'=>$_GET['token'],'wecha_id'=>$_GET['wecha_id']))}" class="foot_wdhd"></span>
+        <a class="foot_grzx_"></span>
+            </div>
+    </div>
+
+
+</body>
+<script language="javascript">
+	var a=document.body.scrollHeight;
+	var b=document.body.clientHeight;
+ 
+	document.body.style.height=(a)+"px";
+</script>
+</html>

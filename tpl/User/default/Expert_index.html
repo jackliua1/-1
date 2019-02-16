@@ -1,0 +1,78 @@
+<include file="Public:head"/>
+<link rel="stylesheet" type="text/css" href="./tpl/User/default/common/css/cymain.css" />
+<div class="content">
+         
+          <div class="cLineB">
+              <h4 class="left">达人信息维护</h4>
+              <div class="clr"></div>
+          </div>
+
+        <div class="msgWrap form">
+          <ul id="tags" style="width:100%">
+            <li class="selectTag">
+              <a>达人基础信息</a> 
+            </li>
+            <li>
+              <a href="?g=User&m=Expert&a=index1&token={weiwin:$list[0]['token']}">达人参与活动</a> 
+            </li>
+          <div class="clr" style="height:1px;background:#eee;margin-bottom:20px;"></div>
+          </ul>
+        </div>
+          
+          <div class="cLine">
+            <!-- <div class="pageNavigator left">
+      				<a href="{weiwin::U('Share_activite/add')}" class="btnGrayS vm bigbtn">
+      					<img src="tpl/User/default/common/images/text.png" class="vm">新增活动
+      				</a>
+      				&nbsp;
+      				&nbsp;
+            </div> -->
+            <div class="clr"></div>
+          </div>
+          <div class="msgWrap">
+          <form method="post" action="" id="info">
+          <input name="delall" type="hidden" value="del">
+           <input name="wxid" type="hidden" value="gh_423dwjkewad">
+            <table class="ListProduct" border="0" cellspacing="0" cellpadding="0" width="100%">
+              <thead>
+                <tr>
+                  <th width="40%">达人姓名</th>
+        					<th width="40%">达人电话</th>
+        					
+        					<th class="norightborder" width="20%">操作</th>
+                </tr>
+              </thead>
+              <tbody>
+              <if condition="$list eq null">
+                <tr>
+                  <td colspan="3" style="text-align:center; height:30px;"><strong>暂无达人信息</strong></td>
+                </tr>
+              </if>
+    			   <pigcmslist array="list" foreach="list">
+                <tr>
+                  <td width="100px">{weiwin:$list.expertname}</td>
+                  
+                 
+				          <td>{weiwin:$list.expertphone}</td>
+                  
+                  
+                  <td class="norightborder">
+    						<a href="{weiwin::U('Expert/edit',array('id'=>$list['id'],'token'=>$list['token']))}">修改</a>&nbsp;&nbsp;
+                <a href="{weiwin::U('Expert/del',array('id'=>$list['id'],'token'=>$list['token']))}"  onclick="return(confirm('确定要删除吗？'))">删除</a>
+    				   </td>
+                </tr>
+      			</pigcmslist>
+                 <tr>
+
+                </tr>
+              </tbody>
+            </table>
+           </form> 
+          </div>
+          <div class="cLine">
+            <div class="pageNavigator right">
+                 <div class="pages">{weiwin:$page}</div>
+            </div>
+            <div class="clr"></div>
+          </div>
+        </div>	

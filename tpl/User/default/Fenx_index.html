@@ -1,0 +1,199 @@
+<include file="Public:head"/>
+<script src="/tpl/static/fushionCharts/JSClass/FusionCharts.js" type="text/javascript"></script>   
+<link rel="stylesheet" type="text/css" href="./tpl/User/default/common/css/cymain.css" />
+<script src="/tpl/static/artDialog/jquery.artDialog.js?skin=default"></script>
+<script src="/tpl/static/artDialog/plugins/iframeTools.js"></script>
+<link rel="stylesheet" href="{weiwin::STATICS}/kindeditor/themes/default/default.css" />
+<link rel="stylesheet" href="{weiwin::STATICS}/kindeditor/plugins/code/prettify.css" />
+<script src="{weiwin::STATICS}/kindeditor/kindeditor.js" type="text/javascript"></script>
+<script src="{weiwin::STATICS}/kindeditor/lang/zh_CN.js" type="text/javascript"></script>
+<script src="{weiwin::STATICS}/kindeditor/plugins/code/prettify.js" type="text/javascript"></script>
+<script>
+
+var editor;
+KindEditor.ready(function(K) {
+editor = K.create('#info', {
+resizeType : 1,
+allowPreviewEmoticons : false,
+allowImageUpload : true,
+uploadJson : '/index.php?g=User&m=Upyun&a=kindedtiropic',
+items : [
+            'source','fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+            'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+            'insertunorderedlist', '|', 'emoticons', 'image', 'link', 'music', 'video']
+});
+
+});
+</script>
+
+
+<div class="content">
+         
+          <div class="cLineB">
+              <h4 class="left">了解达人，如何玩转达人</h4>
+                  
+              <div class="clr"></div>
+          </div>
+ <div class="cLineD">
+
+         </div>
+
+          <div class="cLine">
+        <div class="ftip" style="margin:0 auto">达人介绍</div>
+    </div>
+
+    <!-- <div class="msgWrap form">
+      <ul id="tags" style="width:100%">
+        
+        <li class="selectTag">
+          <a href="{weiwin::U('Wechat_behavior/rule',array('token'=>$_GET['token']))}">活动细则</a> 
+        </li>
+        <div class="clr" style="height:1px;background:#eee;margin-bottom:20px;"></div>
+      </ul>
+    </div> -->
+
+    <div class="cLine">
+    <div class="pageNavigator left">
+    </div>
+    <div class="clr"></div>
+  </div>
+  <div class="msgWrap bgfc" style=" padding:5px 10px; margin:0">
+    <form class="form" method="post" action="{weiwin::U('Fenx/upsave',array('token'=>$_GET['token']))}" target="_top" enctype="multipart/form-data">
+      <table class="userinfoArea" style=" margin:20px 0 0 0;" border="0" cellspacing="0" cellpadding="0" width="100%">
+        <thead>
+          <TR>
+            <TH valign="top"><label for="info">了解达人：</label></TH>
+           <script id="editor" name="aboutexpert" type="text/plain" style="width:500px;height:300px;">{weiwin:$info.aboutexpert|htmlspecialchars_decode}</script>
+          </TR>
+          <TR>
+            <TH valign="top"><label for="info">如何玩转达人：</label></TH>
+           <script id="editor1" name="howexpert" type="text/plain" style="width:500px;height:300px;">{weiwin:$info.howexpert|htmlspecialchars_decode}</script>
+          </TR>
+          <tr>
+            <td>
+              <input type="hidden" name="id" value="{weiwin:$info.id}">
+            </td>
+            <td>
+              <button type="submit" name="button" class="btnGreen left">保存</button> 
+            </td>
+          </tr>
+        </thead>
+      </table>
+    </form>
+    <div class="clear"></div>
+  </div>
+</div>
+<script type="text/javascript">
+
+    //实例化编辑器
+    //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
+    UE.getEditor('editor');
+     UE.getEditor('editor1');
+
+    function isFocus(e){
+        alert(UE.getEditor('editor').isFocus());
+        UE.dom.domUtils.preventDefault(e)
+    }
+    function setblur(e){
+        UE.getEditor('editor').blur();
+        UE.dom.domUtils.preventDefault(e)
+    }
+    function insertHtml() {
+        var value = prompt('插入html代码', '');
+        UE.getEditor('editor').execCommand('insertHtml', value)
+    }
+    function createEditor() {
+        enableBtn();
+        UE.getEditor('editor');
+    }
+    function getAllHtml() {
+        alert(UE.getEditor('editor').getAllHtml())
+    }
+    function getContent() {
+        var arr = [];
+        arr.push("使用editor.getContent()方法可以获得编辑器的内容");
+        arr.push("内容为：");
+        arr.push(UE.getEditor('editor').getContent());
+        alert(arr.join("\n"));
+    }
+    function getPlainTxt() {
+        var arr = [];
+        arr.push("使用editor.getPlainTxt()方法可以获得编辑器的带格式的纯文本内容");
+        arr.push("内容为：");
+        arr.push(UE.getEditor('editor').getPlainTxt());
+        alert(arr.join('\n'))
+    }
+    function setContent(isAppendTo) {
+        var arr = [];
+        arr.push("使用editor.setContent('欢迎使用ueditor')方法可以设置编辑器的内容");
+        UE.getEditor('editor').setContent('欢迎使用ueditor', isAppendTo);
+        alert(arr.join("\n"));
+    }
+    function setDisabled() {
+        UE.getEditor('editor').setDisabled('fullscreen');
+        disableBtn("enable");
+    }
+
+    function setEnabled() {
+        UE.getEditor('editor').setEnabled();
+        enableBtn();
+    }
+
+    function getText() {
+        //当你点击按钮时编辑区域已经失去了焦点，如果直接用getText将不会得到内容，所以要在选回来，然后取得内容
+        var range = UE.getEditor('editor').selection.getRange();
+        range.select();
+        var txt = UE.getEditor('editor').selection.getText();
+        alert(txt)
+    }
+
+    function getContentTxt() {
+        var arr = [];
+        arr.push("使用editor.getContentTxt()方法可以获得编辑器的纯文本内容");
+        arr.push("编辑器的纯文本内容为：");
+        arr.push(UE.getEditor('editor').getContentTxt());
+        alert(arr.join("\n"));
+    }
+    function hasContent() {
+        var arr = [];
+        arr.push("使用editor.hasContents()方法判断编辑器里是否有内容");
+        arr.push("判断结果为：");
+        arr.push(UE.getEditor('editor').hasContents());
+        alert(arr.join("\n"));
+    }
+    function setFocus() {
+        UE.getEditor('editor').focus();
+    }
+    function deleteEditor() {
+        disableBtn();
+        UE.getEditor('editor').destroy();
+    }
+    function disableBtn(str) {
+        var div = document.getElementById('btns');
+        var btns = domUtils.getElementsByTagName(div, "button");
+        for (var i = 0, btn; btn = btns[i++];) {
+            if (btn.id == str) {
+                domUtils.removeAttributes(btn, ["disabled"]);
+            } else {
+                btn.setAttribute("disabled", "true");
+            }
+        }
+    }
+    function enableBtn() {
+        var div = document.getElementById('btns');
+        var btns = domUtils.getElementsByTagName(div, "button");
+        for (var i = 0, btn; btn = btns[i++];) {
+            domUtils.removeAttributes(btn, ["disabled"]);
+        }
+    }
+
+    function getLocalData () {
+        alert(UE.getEditor('editor').execCommand( "getlocaldata" ));
+    }
+
+    function clearLocalData () {
+        UE.getEditor('editor').execCommand( "clearlocaldata" );
+        alert("已清空草稿箱")
+    }
+
+</script>

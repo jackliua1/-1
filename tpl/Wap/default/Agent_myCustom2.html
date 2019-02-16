@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
+<meta content="telephone=no" name="format-detection">
+<meta name="keywords" content="首创置业，买房，看房，房地产">
+<meta name="description" content="首创置业是中国领先的房地产综合营运商。公司于2003年6月19日在香港联合交易所主板上市，综合实力居国内领先地位，目前已进入全国四大区域十三个城市，土地储备规模超过1000万平方米，有相当高的市场知名度和品牌影响力。">
+<title></title>
+
+<!-- <link href="{weiwin::RES}/css/defstyel.css" rel="stylesheet" type="text/css"> -->
+<link href="{weiwin::RES}/css/yjstyle.css" rel="stylesheet" type="text/css">
+</head>
+<body  >
+    <div id="img_" style="overflow:hidden;">
+    <div class="tato">
+        <div class="wdkhtop">
+            <div class="wdkhxs">姓名</div>
+            <div class="wdkhxs">消费需求</div>
+            <div class="wdkhxs">电话</div>
+            <div class="wdkhxs">状态</div>
+        </div>
+        
+        <if condition="$list eq null">
+            <div class="agreement_content_" >
+                您还没有客户哦，赶快推荐您的客户吧
+            </div>
+        <else/> 
+        <volist name="list" id="vo" >
+        <div class="wdkhtop baididi">
+            <div class="wdkhxs fonta">{weiwin:$vo.Name}</div>
+            <div class="wdkhxs fonta">{weiwin:$vo.LouPanTitle}</div>
+            <div class="wdkhxs fonta">{weiwin:$vo.Tel}</div>
+            <div class="wdkhxs fonta"> 
+                <if condition="$vo['salesstatus'] eq '无效'">
+                    <!-- <a class="my_client_a_gray">{weiwin:$vo.salesstatus}</a> -->
+                    <a class="my_client_a">已跟进</a>
+                <elseif condition="$vo['salesstatus'] eq '回款'"/>
+                    <a class="my_client_a_red">{weiwin:$vo.salesstatus}</a>
+                <else/>
+                    <a class="my_client_a">{weiwin:$vo.salesstatus}</a>
+                </if>
+            </div>
+        </div>
+         </volist>
+        </if>
+    </div>
+
+
+
+    </div>
+    <div id="ads" style=" margin:auto;  width:100%; max-width:640px;text-align:center;    ">
+      <img  src="{weiwin::RES}/img/wocaobg_.png" style=" width:100%;margin-bottom:-4px; float:none;">
+    </div>
+    
+</body>   
+
+
+
+<script type="text/javascript">
+
+     function duiqi(){
+        var wid=document.body.scrollHeight; 
+          document.getElementById("img_").style.minHeight=wid+"px"; 
+        aa=document.getElementById("ads").offsetHeight; 
+        document.getElementById("ads").style.marginTop=-aa+"px"; 
+    }
+     window.onload=function(){ 
+           duiqi();}
+
+</script>  
+</html>

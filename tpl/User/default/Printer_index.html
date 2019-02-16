@@ -1,0 +1,31 @@
+<include file="Public:head"/>
+<div class="content"  >
+<div class="cLineB">
+
+<h4>&nbsp;&nbsp;无线打印设置</h4>
+<span class="FAQ">填写错误将不能打印,接口请向管理员申请！</span>
+</div>
+<div class="msgWrap">
+<form method="post"  action="">
+<table class="userinfoArea" border="0" cellspacing="0" cellpadding="0" width="100%">
+<thead>
+<tr><th><span class="red">*</span>商户代码：</th><td><input type="text" required="" class="px" name="memberCode" value="{weiwin:$set.memberCode}" tabindex="1" size="35"> <span class="red">&nbsp;&nbsp;&nbsp;登录飞印后在"API集成"-&gt;"获取API集成信息"获取</span></td></tr>
+<tr><th><span class="red">*</span>API 密钥：</th><td><input type="text" required="" class="px" name="feiyin_key" value="{weiwin:$set.feiyin_key}" tabindex="1" size="25"> <span class="red">&nbsp;&nbsp;&nbsp;获取方法同上</span></td></tr>
+<tr><th><span class="red">*</span>设备编码：</th><td><input type="text" required="" class="px" name="deviceNo" value="{weiwin:$set.deviceNo}" tabindex="1" size="25"> <span class="red">&nbsp;&nbsp;&nbsp;通过打印机后面的激活按键获取，为16位数字，例如"4600365507768327"</span></td></tr>
+ <tr>
+    <th><span class="red">*</span>是否开启：</th>
+    <td>
+	开启&nbsp;<input type="radio" name="status" <if condition="$set.status eq 1">checked</if> id="statu-1" value="1">&nbsp;&nbsp;
+	关闭&nbsp;<input type="radio" name="status" <if condition="$set.status eq 0">checked</if> id="statu-0" value="0">
+    </td>	
+    </tr>
+    <tr>
+    <td height="50" colspan="2">
+    <input type="submit" value="保存"  name="sbmt"  class="btnGreen"  style="float:left; margin-right:20px;" /> <a href="{weiwin::U('Printer/test',array('token'=>$token))}" class="btnGray">测试打印</a>&nbsp;&nbsp;&nbsp;<a href="http://my.feyin.net/simulator/show" target="_blank">无打印机，请进入模拟打印地址看效果：http://my.feyin.net/simulator/show</a></td>
+    </tr></tbody></table></div>
+</form>
+
+</div>
+</div>
+
+<include file="Public:footer"/>	

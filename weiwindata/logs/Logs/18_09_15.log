@@ -1,0 +1,41 @@
+[ 2018-09-15T13:42:23+08:00 ] 60.6.68.102 /index.php?g=Wap&m=Agent&a=ydl&token=ynzfui1406882414&wecha_id=111
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003692s ]
+SQL: SHOW COLUMNS FROM `wy_agent_rewardinfo` [ RunTime:0.079136s ]
+SQL: SELECT SUM(rewardamount) AS tp_sum FROM `wy_agent_rewardinfo` WHERE wecha_id='111' and token='ynzfui1406882414' and rewardstatus =0 LIMIT 1   [ RunTime:0.000546s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.019974s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `Wecha_id` = '111' ) AND ( `Token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000755s ]
+SQL: SHOW COLUMNS FROM `wy_share_content` [ RunTime:0.020817s ]
+SQL: SELECT * FROM `wy_share_content` WHERE token='ynzfui1406882414' LIMIT 1   [ RunTime:0.000326s ]
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 77 行.
+NOTIC: [8] Undefined variable: var D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Common\functions.php 第 234 行.
+NOTIC: [2] array_reverse() [<a href='function.array-reverse'>function.array-reverse</a>]: The argument should be an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Common\functions.php 第 234 行.
+NOTIC: [2] http_build_query() [<a href='function.http-build-query'>function.http-build-query</a>]: Parameter 1 expected to be Array or Object.  Incorrect value given D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Common\functions.php 第 234 行.
+NOTIC: [32] PHP Startup: Unable to load dynamic library 'D:\WebServer\php-5.2.5 (x64)\ext\php_fileinfo.dll' - �Ҳ���ָ����ģ�顣
+ Unknown 第 0 行.
+
+[ 2018-09-15T13:42:23+08:00 ] 60.6.68.102 /index.php?&g=Wap&m=Agent&a=register&token=ynzfui1406882414
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000452s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000558s ]
+NOTIC: [8] Undefined index:  wecha_id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.131186s ]
+SQL: SELECT `wxname`,`headerpic` FROM `wy_wxuser` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.001544s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.150248s ]
+INFO: [ view_template ] --END-- [ RunTime:0.044980s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.195316s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060137s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.255518s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.257797s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.259955s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.262053s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008629s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.264209s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002243s ]
+

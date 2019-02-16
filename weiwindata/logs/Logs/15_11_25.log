@@ -1,0 +1,47 @@
+[ 2015-11-25T03:56:42+08:00 ] 183.136.190.62 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.004771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004991s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.130076s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000361s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.203405s ]
+INFO: [ view_template ] --END-- [ RunTime:0.040022s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.243539s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.108311s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.351930s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.354805s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.357308s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.359527s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009851s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.361881s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002499s ]
+
+[ 2015-11-25T12:48:13+08:00 ] 123.125.71.86 /index.php?g=Wap&m=Agent&a=register&token=jeifef1412084627
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003579s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003726s ]
+NOTIC: [8] Undefined index:  wecha_id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 130 行.
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.081228s ]
+SQL: SELECT `wxname`,`headerpic` FROM `wy_wxuser` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.002258s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.198196s ]
+INFO: [ view_template ] --END-- [ RunTime:0.086121s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.284478s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045917s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.330470s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.333343s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.335918s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.338115s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009932s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.340499s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002651s ]
+

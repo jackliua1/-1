@@ -1,0 +1,59 @@
+[ 2014-10-02T16:47:04+08:00 ] 140.207.54.73 /index.php/api/jeifef1412084627?signature=642a0a0bdc938413d10b14d20cded42cd9478e6b&timestamp=1412239623&nonce=1921815252
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001550s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001749s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.001353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001232s ]
+SQL: SHOW COLUMNS FROM `wy_userinfo` [ RunTime:0.002774s ]
+SQL: SELECT * FROM `wy_userinfo` WHERE ( `token` = 'jeifef1412084627' ) AND ( `wecha_id` = 'oI5B3uHMoeXyLCxmv1G4TEN1vtB4' ) LIMIT 1   [ RunTime:0.000406s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/e/1/e1b361dbf1b27f9a5e000abe98257409.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.003091s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000260s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.002561s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000235s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.002628s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000357s ]
+NOTIC: [2048] Non-static method apiServer::getServerUrl() should not be called statically, assuming $this from incompatible context D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.002078s ]
+SQL: SELECT * FROM `wy_token_open` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000200s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser_message` [ RunTime:0.002448s ]
+SQL: INSERT INTO `wy_wxuser_message` (`ToUserName`,`FromUserName`,`CreateTime`,`MsgType`) VALUES ('gh_c4fefcfc9a96','oI5B3uHMoeXyLCxmv1G4TEN1vtB4','1412239622','event') [ RunTime:0.000310s ]
+SQL: SHOW COLUMNS FROM `wy_requestdata` [ RunTime:0.002320s ]
+SQL: SELECT `id` FROM `wy_requestdata` WHERE ( `year` = 2014 ) AND ( `month` = 10 ) AND ( `day` = 2 ) AND ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000378s ]
+SQL: INSERT INTO `wy_requestdata` (`year`,`month`,`day`,`token`,`time`,`unfollownum`) VALUES ('2014','10','2','jeifef1412084627','1412239624','1') [ RunTime:0.000291s ]
+NOTIC: [8] Undefined index:  Content D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 153 行.
+NOTIC: [8] Undefined index:  Content D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 156 行.
+NOTIC: [8] Undefined index:  Content D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 185 行.
+NOTIC: [8] Undefined index:  Content D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 193 行.
+NOTIC: [8] Undefined index:  Content D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 193 行.
+NOTIC: [8] Undefined index:  Content D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 220 行.
+NOTIC: [8] Undefined index:  Content D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 224 行.
+NOTIC: [8] Undefined index:  Content D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 318 行.
+NOTIC: [8] Undefined index:  Content D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 321 行.
+NOTIC: [8] Undefined index:  Content D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 323 行.
+SQL: SELECT `uid` FROM `wy_wxuser` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000170s ]
+SQL: SELECT `gid`,`diynum`,`connectnum`,`activitynum`,`viptime` FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000161s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.002361s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000179s ]
+SQL: UPDATE `wy_users` SET `connectnum`=connectnum+1 WHERE ( `id` = 1 ) [ RunTime:0.000451s ]
+NOTIC: [8] Undefined index:  Content D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 331 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 2445 行.
+NOTIC: [8] Undefined index:  Location_X D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 379 行.
+SQL: SELECT `uid` FROM `wy_wxuser` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000203s ]
+SQL: SELECT `gid`,`diynum`,`connectnum`,`activitynum`,`viptime` FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000318s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000195s ]
+SQL: SHOW COLUMNS FROM `wy_keyword` [ RunTime:0.002287s ]
+SQL: SELECT * FROM `wy_keyword` WHERE ( `keyword` LIKE '%%' ) AND ( `token` = 'jeifef1412084627' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000171s ]
+NOTIC: [8] Undefined index:  Content D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 1884 行.
+SQL: SHOW COLUMNS FROM `wy_behavior` [ RunTime:0.002228s ]
+SQL: SELECT `id` FROM `wy_behavior` WHERE ( `date` = '2014-10-02' ) AND ( `token` = 'jeifef1412084627' ) AND ( `openid` = 'oI5B3uHMoeXyLCxmv1G4TEN1vtB4' ) AND ( `keyword` = '用户关注' ) AND ( `model` = 'Text' ) AND ( `fid` = 20 ) LIMIT 1   [ RunTime:0.000403s ]
+SQL: SHOW COLUMNS FROM `wy_wehcat_member_enddate` [ RunTime:0.002368s ]
+SQL: SELECT `id` FROM `wy_wehcat_member_enddate` WHERE ( `openid` = 'oI5B3uHMoeXyLCxmv1G4TEN1vtB4' ) LIMIT 1   [ RunTime:0.000396s ]
+SQL: INSERT INTO `wy_wehcat_member_enddate` (`enddate`,`openid`,`token`) VALUES ('1412239624','oI5B3uHMoeXyLCxmv1G4TEN1vtB4','jeifef1412084627') [ RunTime:0.000416s ]
+SQL: INSERT INTO `wy_behavior` (`date`,`token`,`openid`,`keyword`,`model`,`fid`,`num`,`enddate`) VALUES ('2014-10-02','jeifef1412084627','oI5B3uHMoeXyLCxmv1G4TEN1vtB4','用户关注','Text','20','1','1412239624') [ RunTime:0.000299s ]
+SQL: SELECT `id` FROM `wy_requestdata` WHERE ( `year` = 2014 ) AND ( `month` = 10 ) AND ( `day` = 2 ) AND ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000354s ]
+SQL: UPDATE `wy_requestdata` SET `textnum`=textnum+1 WHERE ( `year` = 2014 ) AND ( `month` = 10 ) AND ( `day` = 2 ) AND ( `token` = 'jeifef1412084627' ) [ RunTime:0.000876s ]
+SQL: SHOW COLUMNS FROM `wy_text` [ RunTime:0.002272s ]
+SQL: SELECT * FROM `wy_text` WHERE ( `id` = 20 ) ORDER BY id desc LIMIT 1   [ RunTime:0.000176s ]
+

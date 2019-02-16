@@ -1,0 +1,345 @@
+[ 2014-10-06T05:56:21+08:00 ] ERR: (ThinkException) 无法加载模块:agent
+[ 2014-10-06T19:57:28+08:00 ] 140.207.54.76 /index.php/api/jeifef1412084627?signature=4b49eabc1233cc82e6fa37afb94167feee869dc7&timestamp=1412596647&nonce=1922226602
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001755s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001972s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.002095s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001403s ]
+SQL: SHOW COLUMNS FROM `wy_userinfo` [ RunTime:0.002712s ]
+SQL: SELECT * FROM `wy_userinfo` WHERE ( `token` = 'jeifef1412084627' ) AND ( `wecha_id` = 'oI5B3uHGq8yHRRUMIfO7_ezGPcFU' ) LIMIT 1   [ RunTime:0.000405s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/c/8/c8fb89318a59983e1ddd669d3b9e6877.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.003234s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000257s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.002791s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000276s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.002890s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000265s ]
+NOTIC: [2048] Non-static method apiServer::getServerUrl() should not be called statically, assuming $this from incompatible context D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.002331s ]
+SQL: SELECT * FROM `wy_token_open` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser_message` [ RunTime:0.002486s ]
+SQL: INSERT INTO `wy_wxuser_message` (`ToUserName`,`FromUserName`,`CreateTime`,`MsgType`) VALUES ('gh_c4fefcfc9a96','oI5B3uHGq8yHRRUMIfO7_ezGPcFU','1412596648','event') [ RunTime:0.000362s ]
+SQL: SHOW COLUMNS FROM `wy_api` [ RunTime:0.002535s ]
+SQL: SELECT * FROM `wy_api` WHERE ( `token` = 'jeifef1412084627' ) AND ( `status` = 1 )  [ RunTime:0.000424s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 158 行.
+NOTIC: [8] Undefined variable: api D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 165 行.
+SQL: SELECT `uid` FROM `wy_wxuser` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000506s ]
+SQL: SELECT `gid`,`diynum`,`connectnum`,`activitynum`,`viptime` FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000358s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.002842s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000196s ]
+SQL: UPDATE `wy_users` SET `connectnum`=connectnum+1 WHERE ( `id` = 1 ) [ RunTime:0.000642s ]
+NOTIC: [8] Undefined index:  Location_X D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 379 行.
+SQL: SELECT `uid` FROM `wy_wxuser` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000211s ]
+SQL: SELECT `gid`,`diynum`,`connectnum`,`activitynum`,`viptime` FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000359s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000207s ]
+SQL: SHOW COLUMNS FROM `wy_keyword` [ RunTime:0.118859s ]
+SQL: SELECT * FROM `wy_keyword` WHERE ( `keyword` LIKE '%家居建材%' ) AND ( `token` = 'jeifef1412084627' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000579s ]
+SQL: SHOW COLUMNS FROM `wy_behavior` [ RunTime:0.002333s ]
+SQL: SELECT `id` FROM `wy_behavior` WHERE ( `date` = '2014-10-06' ) AND ( `token` = 'jeifef1412084627' ) AND ( `openid` = 'oI5B3uHGq8yHRRUMIfO7_ezGPcFU' ) AND ( `keyword` = '家居建材' ) AND ( `model` = 'Text' ) AND ( `fid` = 18 ) LIMIT 1   [ RunTime:0.000385s ]
+SQL: SHOW COLUMNS FROM `wy_wehcat_member_enddate` [ RunTime:0.002269s ]
+SQL: SELECT `id` FROM `wy_wehcat_member_enddate` WHERE ( `openid` = 'oI5B3uHGq8yHRRUMIfO7_ezGPcFU' ) LIMIT 1   [ RunTime:0.000449s ]
+SQL: INSERT INTO `wy_wehcat_member_enddate` (`enddate`,`openid`,`token`) VALUES ('1412596648','oI5B3uHGq8yHRRUMIfO7_ezGPcFU','jeifef1412084627') [ RunTime:0.000469s ]
+SQL: INSERT INTO `wy_behavior` (`date`,`token`,`openid`,`keyword`,`model`,`fid`,`num`,`enddate`) VALUES ('2014-10-06','jeifef1412084627','oI5B3uHGq8yHRRUMIfO7_ezGPcFU','家居建材','Text','18','1','1412596648') [ RunTime:0.000321s ]
+SQL: SHOW COLUMNS FROM `wy_requestdata` [ RunTime:0.002350s ]
+SQL: SELECT `id` FROM `wy_requestdata` WHERE ( `year` = 2014 ) AND ( `month` = 10 ) AND ( `day` = 6 ) AND ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000398s ]
+SQL: INSERT INTO `wy_requestdata` (`year`,`month`,`day`,`token`,`time`,`textnum`) VALUES ('2014','10','6','jeifef1412084627','1412596648','1') [ RunTime:0.000316s ]
+SQL: SHOW COLUMNS FROM `wy_text` [ RunTime:0.002283s ]
+SQL: SELECT * FROM `wy_text` WHERE ( `id` = 18 ) ORDER BY id desc LIMIT 1   [ RunTime:0.000568s ]
+
+[ 2014-10-06T19:58:33+08:00 ] 140.207.54.76 /index.php/api/jeifef1412084627?signature=64f7bcd681f79e898adbdf788142b1f6395069fd&timestamp=1412596712&nonce=683793658
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001314s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001448s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.001264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001407s ]
+SQL: SHOW COLUMNS FROM `wy_userinfo` [ RunTime:0.025984s ]
+SQL: SELECT * FROM `wy_userinfo` WHERE ( `token` = 'jeifef1412084627' ) AND ( `wecha_id` = 'oI5B3uHGq8yHRRUMIfO7_ezGPcFU' ) LIMIT 1   [ RunTime:0.000255s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/c/8/c8fb89318a59983e1ddd669d3b9e6877.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.003184s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000292s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.003221s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000279s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.002467s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000372s ]
+NOTIC: [2048] Non-static method apiServer::getServerUrl() should not be called statically, assuming $this from incompatible context D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.001818s ]
+SQL: SELECT * FROM `wy_token_open` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000168s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser_message` [ RunTime:0.002222s ]
+SQL: INSERT INTO `wy_wxuser_message` (`ToUserName`,`FromUserName`,`CreateTime`,`MsgType`) VALUES ('gh_c4fefcfc9a96','oI5B3uHGq8yHRRUMIfO7_ezGPcFU','1412596713','event') [ RunTime:0.000263s ]
+SQL: SHOW COLUMNS FROM `wy_api` [ RunTime:0.001989s ]
+SQL: SELECT * FROM `wy_api` WHERE ( `token` = 'jeifef1412084627' ) AND ( `status` = 1 )  [ RunTime:0.000206s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 158 行.
+NOTIC: [8] Undefined variable: api D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 165 行.
+SQL: SELECT `uid` FROM `wy_wxuser` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000235s ]
+SQL: SELECT `gid`,`diynum`,`connectnum`,`activitynum`,`viptime` FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000181s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.003199s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000202s ]
+SQL: UPDATE `wy_users` SET `connectnum`=connectnum+1 WHERE ( `id` = 1 ) [ RunTime:0.000598s ]
+NOTIC: [8] Undefined index:  Location_X D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 379 行.
+SQL: SELECT `uid` FROM `wy_wxuser` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000247s ]
+SQL: SELECT `gid`,`diynum`,`connectnum`,`activitynum`,`viptime` FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000355s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000191s ]
+SQL: SHOW COLUMNS FROM `wy_keyword` [ RunTime:0.002174s ]
+SQL: SELECT * FROM `wy_keyword` WHERE ( `keyword` LIKE '%帮帮团员%' ) AND ( `token` = 'jeifef1412084627' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000470s ]
+SQL: SHOW COLUMNS FROM `wy_behavior` [ RunTime:0.001954s ]
+SQL: SELECT `id` FROM `wy_behavior` WHERE ( `date` = '2014-10-06' ) AND ( `token` = 'jeifef1412084627' ) AND ( `openid` = 'oI5B3uHGq8yHRRUMIfO7_ezGPcFU' ) AND ( `keyword` = '帮帮团员' ) AND ( `model` = 'Img' ) AND ( `fid` = 22 ) LIMIT 1   [ RunTime:0.000394s ]
+SQL: SHOW COLUMNS FROM `wy_wehcat_member_enddate` [ RunTime:0.001973s ]
+SQL: SELECT `id` FROM `wy_wehcat_member_enddate` WHERE ( `openid` = 'oI5B3uHGq8yHRRUMIfO7_ezGPcFU' ) LIMIT 1   [ RunTime:0.000390s ]
+SQL: UPDATE `wy_wehcat_member_enddate` SET `enddate`='1412596713',`openid`='oI5B3uHGq8yHRRUMIfO7_ezGPcFU',`token`='jeifef1412084627' WHERE ( `id` = 345 ) [ RunTime:0.000459s ]
+SQL: INSERT INTO `wy_behavior` (`date`,`token`,`openid`,`keyword`,`model`,`fid`,`num`,`enddate`) VALUES ('2014-10-06','jeifef1412084627','oI5B3uHGq8yHRRUMIfO7_ezGPcFU','帮帮团员','Img','22','1','1412596713') [ RunTime:0.000293s ]
+SQL: SHOW COLUMNS FROM `wy_requestdata` [ RunTime:0.002541s ]
+SQL: SELECT `id` FROM `wy_requestdata` WHERE ( `year` = 2014 ) AND ( `month` = 10 ) AND ( `day` = 6 ) AND ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000396s ]
+SQL: UPDATE `wy_requestdata` SET `imgnum`=imgnum+1 WHERE ( `year` = 2014 ) AND ( `month` = 10 ) AND ( `day` = 6 ) AND ( `token` = 'jeifef1412084627' ) [ RunTime:0.001035s ]
+SQL: SHOW COLUMNS FROM `wy_img` [ RunTime:0.002787s ]
+SQL: SELECT `id`,`text`,`pic`,`url`,`title` FROM `wy_img` WHERE ( `keyword` LIKE '%帮帮团员%' ) AND ( `token` = 'jeifef1412084627' ) ORDER BY usort desc LIMIT 9   [ RunTime:0.000423s ]
+SQL: UPDATE `wy_img` SET `click`=click+1 WHERE id in (22) [ RunTime:0.000396s ]
+
+[ 2014-10-06T19:58:33+08:00 ] 101.226.66.21 /index.php/api/jeifef1412084627
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001319s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001465s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.001165s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000995s ]
+NOTIC: [8] Undefined index:  echostr D:\www\qmyx.wuyelaile.com\weiwincms\Lib\ORG\Wechat.class.php 第 10 行.
+
+[ 2014-10-06T19:59:29+08:00 ] 140.207.54.76 /index.php/api/jeifef1412084627?signature=33c843aac2cf009c88ac2fa4697a384c4d5fecf2&timestamp=1412596768&nonce=1542577957
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.000899s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001031s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.000725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+SQL: SHOW COLUMNS FROM `wy_userinfo` [ RunTime:0.006212s ]
+SQL: SELECT * FROM `wy_userinfo` WHERE ( `token` = 'jeifef1412084627' ) AND ( `wecha_id` = 'oI5B3uHGq8yHRRUMIfO7_ezGPcFU' ) LIMIT 1   [ RunTime:0.000535s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/c/8/c8fb89318a59983e1ddd669d3b9e6877.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.002788s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000259s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.002681s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000308s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.003295s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000506s ]
+NOTIC: [2048] Non-static method apiServer::getServerUrl() should not be called statically, assuming $this from incompatible context D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.002020s ]
+SQL: SELECT * FROM `wy_token_open` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000172s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser_message` [ RunTime:0.002269s ]
+SQL: INSERT INTO `wy_wxuser_message` (`ToUserName`,`FromUserName`,`CreateTime`,`MsgType`) VALUES ('gh_c4fefcfc9a96','oI5B3uHGq8yHRRUMIfO7_ezGPcFU','1412596769','event') [ RunTime:0.000265s ]
+SQL: SHOW COLUMNS FROM `wy_api` [ RunTime:0.002872s ]
+SQL: SELECT * FROM `wy_api` WHERE ( `token` = 'jeifef1412084627' ) AND ( `status` = 1 )  [ RunTime:0.000195s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 158 行.
+NOTIC: [8] Undefined variable: api D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 165 行.
+SQL: SELECT `uid` FROM `wy_wxuser` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000184s ]
+SQL: SELECT `gid`,`diynum`,`connectnum`,`activitynum`,`viptime` FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000176s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.002360s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000238s ]
+SQL: UPDATE `wy_users` SET `connectnum`=connectnum+1 WHERE ( `id` = 1 ) [ RunTime:0.000568s ]
+NOTIC: [8] Undefined index:  Location_X D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 379 行.
+SQL: SELECT `uid` FROM `wy_wxuser` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000208s ]
+SQL: SELECT `gid`,`diynum`,`connectnum`,`activitynum`,`viptime` FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000333s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000216s ]
+SQL: SHOW COLUMNS FROM `wy_keyword` [ RunTime:0.002307s ]
+SQL: SELECT * FROM `wy_keyword` WHERE ( `keyword` LIKE '%帮帮团顾问%' ) AND ( `token` = 'jeifef1412084627' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000612s ]
+SQL: SHOW COLUMNS FROM `wy_behavior` [ RunTime:0.002825s ]
+SQL: SELECT `id` FROM `wy_behavior` WHERE ( `date` = '2014-10-06' ) AND ( `token` = 'jeifef1412084627' ) AND ( `openid` = 'oI5B3uHGq8yHRRUMIfO7_ezGPcFU' ) AND ( `keyword` = '帮帮团顾问' ) AND ( `model` = 'Img' ) AND ( `fid` = 24 ) LIMIT 1   [ RunTime:0.000435s ]
+SQL: SHOW COLUMNS FROM `wy_wehcat_member_enddate` [ RunTime:0.002448s ]
+SQL: SELECT `id` FROM `wy_wehcat_member_enddate` WHERE ( `openid` = 'oI5B3uHGq8yHRRUMIfO7_ezGPcFU' ) LIMIT 1   [ RunTime:0.000391s ]
+SQL: UPDATE `wy_wehcat_member_enddate` SET `enddate`='1412596769',`openid`='oI5B3uHGq8yHRRUMIfO7_ezGPcFU',`token`='jeifef1412084627' WHERE ( `id` = 345 ) [ RunTime:0.000422s ]
+SQL: INSERT INTO `wy_behavior` (`date`,`token`,`openid`,`keyword`,`model`,`fid`,`num`,`enddate`) VALUES ('2014-10-06','jeifef1412084627','oI5B3uHGq8yHRRUMIfO7_ezGPcFU','帮帮团顾问','Img','24','1','1412596769') [ RunTime:0.000279s ]
+SQL: SHOW COLUMNS FROM `wy_requestdata` [ RunTime:0.002053s ]
+SQL: SELECT `id` FROM `wy_requestdata` WHERE ( `year` = 2014 ) AND ( `month` = 10 ) AND ( `day` = 6 ) AND ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000367s ]
+SQL: UPDATE `wy_requestdata` SET `imgnum`=imgnum+1 WHERE ( `year` = 2014 ) AND ( `month` = 10 ) AND ( `day` = 6 ) AND ( `token` = 'jeifef1412084627' ) [ RunTime:0.000873s ]
+SQL: SHOW COLUMNS FROM `wy_img` [ RunTime:0.002250s ]
+SQL: SELECT `id`,`text`,`pic`,`url`,`title` FROM `wy_img` WHERE ( `keyword` LIKE '%帮帮团顾问%' ) AND ( `token` = 'jeifef1412084627' ) ORDER BY usort desc LIMIT 9   [ RunTime:0.000343s ]
+SQL: UPDATE `wy_img` SET `click`=click+1 WHERE id in (24) [ RunTime:0.000288s ]
+
+[ 2014-10-06T19:59:43+08:00 ] 140.207.54.76 /index.php/api/jeifef1412084627?signature=d902fecdf3e668a906c49694579bb4e1fef1c6bf&timestamp=1412596782&nonce=1009994074
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001391s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001548s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.001312s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001182s ]
+SQL: SHOW COLUMNS FROM `wy_userinfo` [ RunTime:0.007212s ]
+SQL: SELECT * FROM `wy_userinfo` WHERE ( `token` = 'jeifef1412084627' ) AND ( `wecha_id` = 'oI5B3uHGq8yHRRUMIfO7_ezGPcFU' ) LIMIT 1   [ RunTime:0.000332s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/c/8/c8fb89318a59983e1ddd669d3b9e6877.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.003033s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000257s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.002994s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000285s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.002707s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000419s ]
+NOTIC: [2048] Non-static method apiServer::getServerUrl() should not be called statically, assuming $this from incompatible context D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.002731s ]
+SQL: SELECT * FROM `wy_token_open` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000198s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser_message` [ RunTime:0.002209s ]
+SQL: INSERT INTO `wy_wxuser_message` (`ToUserName`,`FromUserName`,`CreateTime`,`MsgType`) VALUES ('gh_c4fefcfc9a96','oI5B3uHGq8yHRRUMIfO7_ezGPcFU','1412596783','event') [ RunTime:0.000287s ]
+SQL: SHOW COLUMNS FROM `wy_api` [ RunTime:0.002154s ]
+SQL: SELECT * FROM `wy_api` WHERE ( `token` = 'jeifef1412084627' ) AND ( `status` = 1 )  [ RunTime:0.000189s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 158 行.
+NOTIC: [8] Undefined variable: api D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 165 行.
+SQL: SELECT `uid` FROM `wy_wxuser` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000181s ]
+SQL: SELECT `gid`,`diynum`,`connectnum`,`activitynum`,`viptime` FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000247s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.002200s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000184s ]
+SQL: UPDATE `wy_users` SET `connectnum`=connectnum+1 WHERE ( `id` = 1 ) [ RunTime:0.000590s ]
+NOTIC: [8] Undefined index:  Location_X D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 379 行.
+SQL: SELECT `uid` FROM `wy_wxuser` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000315s ]
+SQL: SELECT `gid`,`diynum`,`connectnum`,`activitynum`,`viptime` FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000473s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000221s ]
+SQL: SHOW COLUMNS FROM `wy_keyword` [ RunTime:0.003218s ]
+SQL: SELECT * FROM `wy_keyword` WHERE ( `keyword` LIKE '%帮帮团经理%' ) AND ( `token` = 'jeifef1412084627' ) ORDER BY id desc LIMIT 1   [ RunTime:0.000605s ]
+SQL: SHOW COLUMNS FROM `wy_behavior` [ RunTime:0.003222s ]
+SQL: SELECT `id` FROM `wy_behavior` WHERE ( `date` = '2014-10-06' ) AND ( `token` = 'jeifef1412084627' ) AND ( `openid` = 'oI5B3uHGq8yHRRUMIfO7_ezGPcFU' ) AND ( `keyword` = '帮帮团经理' ) AND ( `model` = 'Img' ) AND ( `fid` = 23 ) LIMIT 1   [ RunTime:0.000531s ]
+SQL: SHOW COLUMNS FROM `wy_wehcat_member_enddate` [ RunTime:0.003048s ]
+SQL: SELECT `id` FROM `wy_wehcat_member_enddate` WHERE ( `openid` = 'oI5B3uHGq8yHRRUMIfO7_ezGPcFU' ) LIMIT 1   [ RunTime:0.000508s ]
+SQL: UPDATE `wy_wehcat_member_enddate` SET `enddate`='1412596782',`openid`='oI5B3uHGq8yHRRUMIfO7_ezGPcFU',`token`='jeifef1412084627' WHERE ( `id` = 345 ) [ RunTime:0.000591s ]
+SQL: INSERT INTO `wy_behavior` (`date`,`token`,`openid`,`keyword`,`model`,`fid`,`num`,`enddate`) VALUES ('2014-10-06','jeifef1412084627','oI5B3uHGq8yHRRUMIfO7_ezGPcFU','帮帮团经理','Img','23','1','1412596782') [ RunTime:0.000493s ]
+SQL: SHOW COLUMNS FROM `wy_requestdata` [ RunTime:0.003175s ]
+SQL: SELECT `id` FROM `wy_requestdata` WHERE ( `year` = 2014 ) AND ( `month` = 10 ) AND ( `day` = 6 ) AND ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000479s ]
+SQL: UPDATE `wy_requestdata` SET `imgnum`=imgnum+1 WHERE ( `year` = 2014 ) AND ( `month` = 10 ) AND ( `day` = 6 ) AND ( `token` = 'jeifef1412084627' ) [ RunTime:0.001396s ]
+SQL: SHOW COLUMNS FROM `wy_img` [ RunTime:0.002730s ]
+SQL: SELECT `id`,`text`,`pic`,`url`,`title` FROM `wy_img` WHERE ( `keyword` LIKE '%帮帮团经理%' ) AND ( `token` = 'jeifef1412084627' ) ORDER BY usort desc LIMIT 9   [ RunTime:0.000438s ]
+SQL: UPDATE `wy_img` SET `click`=click+1 WHERE id in (23) [ RunTime:0.000440s ]
+
+[ 2014-10-06T20:00:04+08:00 ] 10.167.202.122 /index.php?g=Wap&m=Agent&a=index&token=jeifef1412084627&wecha_id=oI5B3uG4lQD8sHReX8F-bEtjryb4
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000917s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001064s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.002689s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `token` = 'jeifef1412084627' ) ORDER BY id desc LIMIT 0,8   [ RunTime:0.000221s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.002249s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `Wecha_id` = 'oI5B3uG4lQD8sHReX8F-bEtjryb4' ) AND ( `Token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000191s ]
+NOTIC: [8] Undefined variable: var D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Common\functions.php 第 234 行.
+NOTIC: [2] array_reverse() [<a href='function.array-reverse'>function.array-reverse</a>]: The argument should be an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Common\functions.php 第 234 行.
+NOTIC: [2] http_build_query() [<a href='function.http-build-query'>function.http-build-query</a>]: Parameter 1 expected to be Array or Object.  Incorrect value given D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Common\functions.php 第 234 行.
+
+[ 2014-10-06T20:00:05+08:00 ] 10.167.202.122 /index.php?&g=Wap&m=Agent&a=ydl&token=jeifef1412084627&wecha_id=oI5B3uG4lQD8sHReX8F-bEtjryb4
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000726s ]
+SQL: SHOW COLUMNS FROM `wy_agent_rewardinfo` [ RunTime:0.002778s ]
+SQL: SELECT SUM(rewardamount) AS tp_sum FROM `wy_agent_rewardinfo` WHERE ( `wecha_id` = 'oI5B3uG4lQD8sHReX8F-bEtjryb4' ) AND ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000210s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.002310s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `Wecha_id` = 'oI5B3uG4lQD8sHReX8F-bEtjryb4' ) AND ( `Token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000181s ]
+SQL: SHOW COLUMNS FROM `wy_kh` [ RunTime:0.002324s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_kh` WHERE ( `Token` = 'jeifef1412084627' ) AND ( `JJ_id` = 31 ) LIMIT 1   [ RunTime:0.000167s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.002398s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `token` = 'jeifef1412084627' ) ORDER BY id desc LIMIT 0,8   [ RunTime:0.000275s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.028048s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001541s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.029778s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029105s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.058900s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.059796s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.060796s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.061795s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004134s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.063134s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001446s ]
+
+[ 2014-10-06T20:00:26+08:00 ] 10.167.202.122 /index.php?g=Wap&m=Agent&a=myCustom&token=jeifef1412084627&wecha_id=oI5B3uG4lQD8sHReX8F-bEtjryb4&JJ_id=31
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000708s ]
+SQL: SHOW COLUMNS FROM `wy_kh` [ RunTime:0.002396s ]
+SQL: SELECT kh.ID,kh.Token,kh.Wecha_id,kh.`Name`,kh.Tel,
+					lp.LouPanTitle,kh.SrTime,status.salesstatus 
+					from wy_kh as kh LEFT JOIN wy_lpinfo as lp on kh.LouPanTitle=lp.id 
+					LEFT JOIN wy_agent_status as status on kh.Stutas=status.id 
+					WHERE kh.Token='jeifef1412084627' AND kh.JJ_id=31 order by kh.SrTime desc [ RunTime:0.000216s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.002688s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `Wecha_id` = 'oI5B3uG4lQD8sHReX8F-bEtjryb4' ) AND ( `Token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000197s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `Token` = 'jeifef1412084627' )  [ RunTime:0.000230s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.021553s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001505s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.023178s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013943s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.037169s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.037656s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.038300s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.039384s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003496s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.040764s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001471s ]
+
+[ 2014-10-06T20:00:55+08:00 ] 10.167.202.122 /index.php?g=Wap&m=Agent&a=loupanInfo&token=jeifef1412084627&wecha_id=oI5B3uG4lQD8sHReX8F-bEtjryb4&id=25
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000724s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.002395s ]
+SQL: SELECT `id` FROM `wy_jjr` WHERE ( `Wecha_id` = 'oI5B3uG4lQD8sHReX8F-bEtjryb4' ) AND ( `Token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000288s ]
+NOTIC: [8] Undefined variable: var D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Common\functions.php 第 234 行.
+NOTIC: [2] array_reverse() [<a href='function.array-reverse'>function.array-reverse</a>]: The argument should be an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Common\functions.php 第 234 行.
+NOTIC: [2] http_build_query() [<a href='function.http-build-query'>function.http-build-query</a>]: Parameter 1 expected to be Array or Object.  Incorrect value given D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Common\functions.php 第 234 行.
+
+[ 2014-10-06T20:00:55+08:00 ] 10.167.202.122 /index.php?&g=Wap&m=Agent&a=weimaoa&token=jeifef1412084627&wecha_id=oI5B3uG4lQD8sHReX8F-bEtjryb4&uid=25&jid=31
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000721s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.003159s ]
+SQL: SELECT `id` FROM `wy_lpinfo` WHERE ( `id` = 25 ) AND ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000236s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.002552s ]
+SQL: SELECT `id` FROM `wy_xmfx` WHERE ( `token` = 'jeifef1412084627' ) AND ( `jid` = 31 ) AND ( `uid` = 25 ) LIMIT 1   [ RunTime:0.000212s ]
+
+[ 2014-10-06T20:01:00+08:00 ] 10.167.202.122 /index.php?g=Wap&m=Agent&a=aiya&code=008904a6fc91a42059e012f82b0c2dbb&state=19
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000920s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx_list` [ RunTime:0.002233s ]
+SQL: SELECT * FROM `wy_xmfx_list` WHERE ( `wecha_id` = 'oqsrSjlrdeqwkLNpbalWg-t94xA8' ) LIMIT 1   [ RunTime:0.000187s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.001773s ]
+SQL: SELECT * FROM `wy_xmfx` WHERE ( `id` = 19 ) LIMIT 1   [ RunTime:0.000171s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.001990s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `ID` = 31 ) LIMIT 1   [ RunTime:0.000177s ]
+NOTIC: [8] Undefined variable: var D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Common\functions.php 第 234 行.
+NOTIC: [2] array_reverse() [<a href='function.array-reverse'>function.array-reverse</a>]: The argument should be an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Common\functions.php 第 234 行.
+NOTIC: [2] http_build_query() [<a href='function.http-build-query'>function.http-build-query</a>]: Parameter 1 expected to be Array or Object.  Incorrect value given D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Common\functions.php 第 234 行.
+
+[ 2014-10-06T20:01:01+08:00 ] 10.167.202.122 /index.php?&g=Wap&m=Agent&a=loupanInfo&state=19&wecha_id=oI5B3uG4lQD8sHReX8F-bEtjryb4&token=jeifef1412084627
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000782s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.003010s ]
+SQL: SELECT * FROM `wy_xmfx` WHERE ( `id` = 19 ) LIMIT 1   [ RunTime:0.000208s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.002392s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = 25 ) LIMIT 1   [ RunTime:0.000263s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.002107s ]
+SQL: SELECT * FROM `wy_jjr` LIMIT 1   [ RunTime:0.000222s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.025472s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001075s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.026630s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012418s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.039189s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.039874s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.041277s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.042882s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005294s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.044669s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001646s ]
+
+[ 2014-10-06T20:23:11+08:00 ] 101.226.66.172 /index.php/api/jeifef1412084627
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.001320s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001489s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.001216s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001010s ]
+NOTIC: [8] Undefined index:  echostr D:\www\qmyx.wuyelaile.com\weiwincms\Lib\ORG\Wechat.class.php 第 10 行.
+

@@ -1,0 +1,76 @@
+<include file="Public:head"/>
+<link rel="stylesheet" type="text/css" href="./tpl/User/default/common/css/cymain.css" />
+<div class="content">
+         
+          <div class="cLineB">
+              <h4 class="left">省份</h4>
+              <div class="clr"></div>
+          </div>
+<!--  <div class="cLineD">
+
+         </div>
+          <div class="cLine">
+    <div class="ftip" style="margin:0 auto">
+   微信接口不支持删除分组操作，所以添加的时候请您谨慎操作，如需删除请到公众平台删除，本系统会与公众平台同步
+    </div>
+</div> -->
+          
+          <div class="cLine">
+            <div class="pageNavigator left">
+				<a href="{weiwin::U('User/Wechat_group/groupSet')}" class="btnGrayS vm bigbtn">
+					<img src="tpl/User/default/common/images/text.png" class="vm">添加
+				</a>
+				&nbsp;
+				&nbsp;
+				<a href="{weiwin::U('User/Wechat_group/provinceset')}" class="btnGrayS vm bigbtn">
+					<img src="tpl/User/default/common/images/text.png" class="vm">维护省份
+				</a>
+            </div>
+            <div class="clr"></div>
+          </div>
+          <div class="msgWrap">
+          <form method="post" action="" id="info">
+          <input name="delall" type="hidden" value="del">
+           <input name="wxid" type="hidden" value="gh_423dwjkewad">
+            <table class="ListProduct" border="0" cellspacing="0" cellpadding="0" width="100%">
+              <thead>
+                <tr>
+                  <th class="select">序号</th>
+        					<th class="select">省</th>
+        					<th>市</th>
+        					<th>区 </th>
+                  <th>楼盘名称 </th>
+                  <th>楼盘介绍 </th>
+                  <th>楼盘地址 </th>
+                  <th>排序 </th>
+        					<th>入驻时间</th>
+        					<th class="norightborder">操作</th>
+                </tr>
+              </thead>
+              <tbody>
+			  <pigcmslist array="groups" foreach="list">
+                <tr>
+                  <td width="30px">{weiwin:$list.lp_id}</td>
+                  <td width="50px">{weiwin:$list.pro_name}</td>
+                  <td>{weiwin:$list.cit_name}</td>
+                  <td>{weiwin:$list.are_name}</td>
+                  <td>{weiwin:$list.LouPanTitle}</td>
+				          <td>{weiwin:$list.LouPanJieShao|mb_substr=0,15,'utf-8'}...</td>
+                  <td>{weiwin:$list.LouPanAddress}</td>
+                  <td>{weiwin:$list.houseSort}</td>
+                  <td>{weiwin:$list.BeginTime|date="Y-m-d",###}</td>
+                  <td class="norightborder">
+						<a href="{weiwin::U('Wechat_group/groupSet',array('id'=>$list['lp_id'],'type'=>'1'))}">修改</a>&nbsp;&nbsp;
+            <a href="{weiwin::U('Wechat_group/groupDelete',array('id'=>$list['lp_id']))}"  onclick="return(confirm('确定要删除吗？'))">删除</a>
+				   </td>
+                </tr>
+      			</pigcmslist>
+                 <tr>
+
+                </tr>
+              </tbody>
+            </table>
+           </form> 
+          </div>
+
+        </div>	

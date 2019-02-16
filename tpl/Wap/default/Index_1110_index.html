@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>{weiwin:$tpl['wxname']}</title>
+<base href="." />
+<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<link href="{weiwin::RES}/css/yl/news.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="{weiwin::RES}/css/yuesh/wz.css" />
+  <link rel="stylesheet" type="text/css" href="{weiwin::RES}/css/template/snower.css" media="all" />
+<link rel="stylesheet" type="text/css" href="{weiwin::RES}/css/template/common.css" media="all" />
+<link rel="stylesheet" type="text/css" href="{weiwin::RES}/css/template/reset.css" media="all" />
+<link rel="stylesheet" type="text/css" href="{weiwin::RES}/css/template/home-32.css" media="all" />
+<script type="text/javascript" src="{weiwin::RES}/src/template/maivl.js"></script>
+<script type="text/javascript" src="{weiwin::RES}/src/jQuery.js"></script>
+<link rel="stylesheet" type="text/css" href="{weiwin::RES}/css/template/music-left.css" media="all" />
+  <style>
+#iframe_screen{
+    background:#fff;
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    z-index:300000;
+    overflow:hidden;
+}
+</style>
+</head>
+<body id="cate1"><script>
+	function dourl(url){
+	window.location.href=url;
+}
+</script>
+<if condition="$dh['animation'] neq false"><iframe id="iframe_screen" src="./tpl/Wap/default/Index_an{weiwin:$dh.animation}.html" frameborder="0"></iframe></if> <if condition="$homeInfo['musicurl'] neq false">
+			<include file="Index:music"/>
+		</if>
+<ul class="mainmenu">
+	<volist name="info" id="vo">
+<li>
+	<div class="menubtn">
+		<a href="<if condition="$vo['url'] eq ''">{weiwin::U('Wap/Index/lists',array('classid'=>$vo['id'],'token'=>$vo['token']))}<else/>{weiwin:$vo.url}</if>">
+			<div class="menumesg">
+				<div class="menuimg">
+					<img src="{weiwin:$vo.img}" />
+				</div>
+				<div class="menutitle">{weiwin:$vo.name}</div>
+			</div>
+		</a>
+	</div>
+</li>
+	</volist>  	
+<!--播放器开始-->	
+				<script type="text/javascript" src="{weiwin::RES}/js/heka/audio.js"></script>
+				<script>
+			window.addEventListener("DOMContentLoaded", function(){
+				playbox.init("playbox");
+			}, false);
+		</script>
+				<if condition="$homeInfo.musicurl neq false"><span id="playbox" class="btn_music" onclick="playbox.init(this).play();"><audio src="{weiwin:$homeInfo.musicurl}" loop id="audio"></audio></span><else/></if>	
+        		<!--播放器结束-->	
+<div class="clr"></div></ul>
+<div class="copyright" style="text-align:center; >
+<if condition="$iscopyright eq 1">
+{weiwin:$homeInfo.copyright}
+<else/>
+{weiwin:$siteCopyright}
+</if>
+</div>
+</div>              
+    <include file="Index:styleInclude"/> 
+	<if condition="$kefuonline.info neq false">{weiwin:$kefuonline.info}</if><include file="$cateMenuFileName"/> 
+	<if condition="ACTION_NAME eq 'index'">
+		<script type="text/javascript">
+			window.shareData = {  
+					"moduleName":"Index",
+					"moduleID": '0',
+					"imgUrl": "{weiwin:$homeInfo.picurl}", 
+					"timeLineLink": "{weiwin::C('site_url')}{weiwin::U(Index/ACTION_NAME,array('token'=>$_GET['token']))}",
+					"sendFriendLink": "{weiwin::C('site_url')}{weiwin::U(Index/ACTION_NAME,array('token'=>$_GET['token']))}",
+					"weiboLink": "{weiwin::C('site_url')}{weiwin::U(Index/ACTION_NAME,array('token'=>$_GET['token']))}",
+					"tTitle": "{weiwin:$homeInfo.title}",
+					"tContent": "{weiwin:$homeInfo.title}"
+				};
+		</script>
+	<else />
+		<script type="text/javascript">
+			window.shareData = {  
+				"moduleName":"Index",
+				"moduleID": '1',
+				"imgUrl": "{weiwin:$homeInfo.picurl}", 
+				"timeLineLink": "{weiwin::C('site_url')}{weiwin::U(Index/ACTION_NAME,array('token'=>$_GET['token'],'classid'=>$_GET['classid']))}",
+				"sendFriendLink": "{weiwin::C('site_url')}{weiwin::U(MODULE_NAME/ACTION_NAME,array('token'=>$_GET['token'],'classid'=>$_GET['classid']))}",
+				"weiboLink": "{weiwin::C('site_url')}{weiwin::U(MODULE_NAME/ACTION_NAME,array('token'=>$_GET['token'],'classid'=>$_GET['classid']))}",
+				"tTitle": "{weiwin:$homeInfo.title}",
+				"tContent": "{weiwin:$homeInfo.title}"
+			};
+		</script>	
+	
+	</if>
+{weiwin:$shareScript}
+	<section id="Page_wrapper">
+<div id="pNavDemo" class="c-pnav-con">
+<section class="c-p-sec">
+<div class='c-p-pre <eq name="p" value="1"> c-p-grey </eq> '><span class="c-p-p"><em></em></span><a <eq name="p" value="1"><else/>href="{weiwin::C('site_url')}/index.php?g=Wap&m=Index&a=index&classid=<php>echo $_GET['classid'];</php>&token={weiwin:$tpl.token}&p=<php>echo $p-1;</php>"</eq>  >上一页</a></div>
+<div class="c-p-cur">
+<div class="c-p-arrow c-p-down"><span>{weiwin:$p}/{weiwin:$page}</span><span></span></div>
+	<select class="c-p-select" onchange="dourl('{weiwin::C('site_url')}/index.php?g=Wap&m=Index&a=index&classid=<php>echo $_GET['classid'];</php>&token={weiwin:$tpl.token}&p='+this.value)">
+		<?php
+			for($i=1;$i<=$page;$i++){
+				if($i==$p){
+					echo '<option value="'.$i.'" selected>第'.$i.'页</option>';
+				}else{
+					echo '<option value="'.$i.'">第'.$i.'页</option>';
+				}
+			}
+		?>
+	</select>
+</div>
+<div class='c-p-next <eq name="p" value="$page"> c-p-grey </eq>'  >
+<?php
+	if($p<$page){
+		echo '<a href="'.C('site_url').'/index.php?g=Wap&m=Index&a=index&classid='.(int)$_GET['classid'].'&token='.$tpl['token'].'&p='.($p+1).'">';
+	}else{
+		echo '<a>';
+	}
+?>
+下一页</a><span class="c-p-p"><em></em></span></div>
+</section>
+</div>
+</section>
+</body>
+</html>

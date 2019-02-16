@@ -1,0 +1,139 @@
+[ 2016-06-07T08:25:07+08:00 ] 121.42.0.33 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001604s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.072513s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000669s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.098346s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002296s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.100759s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025744s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.126596s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.128111s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.129837s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.131162s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006120s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.132819s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001785s ]
+
+[ 2016-06-07T09:54:43+08:00 ] 180.153.206.23 /index.php?g=Wap&m=Agent&a=loupanInfo
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001295s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 183 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.573133s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.000465s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000384s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.883778s ]
+INFO: [ view_template ] --END-- [ RunTime:0.111190s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.995156s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.296903s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.292196s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.293678s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.295521s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.296920s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006337s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.298602s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001800s ]
+
+[ 2016-06-07T09:54:43+08:00 ] 180.153.206.23 /index.php?g=Wap&m=Agent&a=loupanInfo
+NOTIC: [32] PHP Startup: Unable to load dynamic library 'D:\WebServer\php-5.2.5 (x64)\ext\php_fileinfo.dll' - �Ҳ���ָ����ģ�顣
+ Unknown 第 0 行.
+
+[ 2016-06-07T09:54:43+08:00 ] 101.226.227.95 /index.php?g=Wap&m=Agent&a=loupanInfo
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001620s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001769s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 183 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.570367s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.000632s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000496s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.020098s ]
+INFO: [ view_template ] --END-- [ RunTime:0.111576s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-1.131878s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.296877s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.428821s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.431537s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.433245s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.435128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008264s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.437189s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002863s ]
+
+[ 2016-06-07T09:54:49+08:00 ] 180.153.163.190 /index.php?g=Wap&m=Agent&a=loupanInfo
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001635s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 183 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.004638s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.000287s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000213s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.027768s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002124s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.029986s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018311s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.048371s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.049755s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.051115s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.052313s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005374s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.053845s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001553s ]
+
+[ 2016-06-07T09:55:20+08:00 ] 180.153.206.13 /index.php?g=Wap&m=Agent&a=loupanInfo
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001645s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 183 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.004669s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.000341s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000213s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.031644s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002130s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.033908s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017288s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.051262s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.052720s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.054147s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.055430s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005712s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.057076s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001670s ]
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- saved from url=(0123)http://dkt.weizhi.in/Wap/Daren/submitdetail/waid/268/uid/50412/wz_time/1410744521/wz_token/2b3d631853a1fdfb69645c98d7af3c4a -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title></title>
+<meta charset="utf-8"> 
+<link rel="stylesheet" href="{weiwin::RES}/css/mobi1.css"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+<meta http-equiv="Cache-Control" content="max-age=0">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+<meta name="format-detection" content="telephone=no">
+</head>
+<body>
+<section class="main animated fadeInDown">
+	<div class="main-box">
+		<div class="my-client">
+			<if condition="$count eq 0">
+	          <span style=" display:block; margin:auto; width:90%; height:40px; line-height:40px; font-size:14px; text-indent:10px; background:#fff; border-radius:5px;">暂无我的客户</span>
+	        <else/>
+			<div class="client-text">
+					<p class="regular my-tips">您转发的活动带来了<span>{weiwin:$count}</span>个意向客户</p>
+					<p class="jjr-link">建议您注册成为<a href="{weiwin::U('Agent/index',array('token'=>$list[0]['token'],'wecha_id'=>$list[0]['wecha_id']))}" class="register-jjr">@经纪人</a>推荐意向客户!</p>
+					<p>客户成交后您将获得销售佣金。</p> 
+		  	</div>
+		  	<volist name="list" id="info">
+			<div class="client-list regular">
+				<h1>{weiwin:$info.sharename}</h1>
+				<div class="client-box">
+					<ul class="fn-clear">
+						<li>{weiwin:$info.customname}</li>
+						<li>{weiwin:$info.customphone}</li>
+						<li class="recommend able"><a href="{weiwin::U('Agent/index',array('token'=>$list[0]['token'],'wecha_id'=>$list[0]['wecha_id']))}">推荐</a></li>
+					</ul>							
+				</div>
+	  		</div>
+	  		</volist>
+			</if>										
+		</div>
+	</div> 
+</section> 
+
+</body></html>

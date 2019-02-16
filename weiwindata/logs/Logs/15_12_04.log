@@ -1,0 +1,238 @@
+[ 2015-12-04T01:38:47+08:00 ] 123.125.71.73 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.005549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005713s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.526330s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000379s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.600058s ]
+INFO: [ view_template ] --END-- [ RunTime:0.054050s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.654184s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.104733s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.759000s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.762010s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.765334s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.767465s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011595s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.770716s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002836s ]
+
+[ 2015-12-04T04:12:55+08:00 ] ERR: (ThinkException) 无法加载模块:upyun
+[ 2015-12-04T16:04:45+08:00 ] ERR: (ThinkException) 模板不存在[./tpl/Wap/default/Index_index.html]
+[ 2015-12-04T16:04:45+08:00 ] 180.153.201.79 /index.php?g=Wap
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001745s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001906s ]
+SQL: SHOW COLUMNS FROM `wy_userinfo` [ RunTime:0.165317s ]
+SQL: SELECT * FROM `wy_userinfo` WHERE ( `token` = null ) AND ( `wecha_id` = null ) LIMIT 1   [ RunTime:0.000550s ]
+SQL: SHOW COLUMNS FROM `wy_wechat_group_list` [ RunTime:0.109197s ]
+SQL: SELECT * FROM `wy_wechat_group_list` WHERE ( `token` = null ) AND ( `openid` = null ) LIMIT 1   [ RunTime:0.014989s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/5/f/5fe1fc0e0fdbfbaff4ab677cf3a37648.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_home` [ RunTime:0.113689s ]
+SQL: SELECT * FROM `wy_home` WHERE ( `token` = null ) LIMIT 1   [ RunTime:0.016967s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/0/d/0d2c1c12d6393e604b6e35e960614004.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.079623s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = null ) LIMIT 1   [ RunTime:0.001996s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/8/b/8b27330c23d5c53e2409cb5a50d9703d.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_catemenu` [ RunTime:0.143014s ]
+SQL: SELECT * FROM `wy_catemenu` WHERE ( `token` = null ) AND ( `status` = 1 ) ORDER BY orderss desc  [ RunTime:0.007413s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/5/8/5848d5204b5e414e87c386581aa4207f.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_catemenu` [ RunTime:0.034405s ]
+NOTIC: [8] Undefined index:  lpid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\WapAction.class.php 第 80 行.
+SQL: SELECT * FROM `wy_catemenu` WHERE ( `token` = null ) AND ( `status` = 1 ) AND ( `lpid` = null )  [ RunTime:0.000548s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.068580s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 0 ) LIMIT 1   [ RunTime:0.000418s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/e/f/efe21af28ac2c16b2c3515b7a677c7a3.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.063626s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 0 ) LIMIT 1   [ RunTime:0.000429s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/c/1/c12b83863679c53a027170a94c2d1853.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_company` [ RunTime:0.700630s ]
+SQL: SELECT * FROM `wy_company` WHERE ( `token` = null ) AND ( `isbranch` = 0 ) LIMIT 1   [ RunTime:0.000565s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/5/f/5f590e6483487102f9aedcd019d413c0.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_classify` [ RunTime:0.473202s ]
+NOTIC: [8] Undefined index:  lpid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 25 行.
+SQL: SELECT * FROM `wy_classify` WHERE ( `token` = null ) AND ( `status` = 1 ) AND ( `lpid` = null ) ORDER BY sorts desc  [ RunTime:0.001879s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 506 行.
+SQL: SHOW COLUMNS FROM `wy_home` [ RunTime:0.036584s ]
+SQL: SELECT * FROM `wy_home` WHERE ( `token` = null ) LIMIT 1   [ RunTime:0.000248s ]
+SQL: SHOW COLUMNS FROM `wy_kefuonline` [ RunTime:0.083916s ]
+SQL: SELECT * FROM `wy_kefuonline` WHERE ( `token` = null ) LIMIT 1   [ RunTime:0.005921s ]
+SQL: SELECT * FROM `wy_home` WHERE ( `token` = null ) LIMIT 1   [ RunTime:0.000236s ]
+NOTIC: [8] Undefined index:  lpid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.178093s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `token` = null ) LIMIT 1   [ RunTime:0.095268s ]
+SQL: SHOW COLUMNS FROM `wy_flash` [ RunTime:0.132244s ]
+SQL: SELECT * FROM `wy_flash` WHERE ( `token` = null ) AND ( `lpid` = null ) ORDER BY sort asc  [ RunTime:0.002229s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 506 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 99 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined variable: tplinfo D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 136 行.
+NOTIC: [8] Undefined variable: tplinfo D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 137 行.
+NOTIC: [8] Undefined index:  tpltypename D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 170 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+NOTIC: [8] Undefined index:  class D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  class D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  file D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [8] Undefined index:  line D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [4096] Object of class IndexAction could not be converted to string D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Undefined index:  class D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  class D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+

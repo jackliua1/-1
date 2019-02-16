@@ -1,0 +1,252 @@
+<?php 
+//经纪人控制
+
+	class AgentAction extends BaseAction{
+		public $token;
+		public $wecha_id;
+		
+		public function _initialize() {
+			parent::_initialize();
+			$this->token    = filter_var($this->_get('token'),FILTER_SANITIZE_STRING);
+			$this->wecha_id = filter_var($this->_get('wecha_id'),FILTER_SANITIZE_STRING);
+			if(!isset($_GET['wecha_id'])){
+				$this->error('请通过微信浏览器访问~！');
+			}
+		}
+		//未注册经纪人登录首页
+		public function index(){
+			//楼盘信息
+			$token = $this->_get("token");
+			$loupanwhere = array('token'=>$token);
+			$loupaninfo = M('lpinfo') ->where($loupanwhere)->select();
+			$this->assign('lpinfo',$loupaninfo);
+			
+			$where['Wecha_id']=$_GET['wecha_id'];
+			$jjrarr=M('jjr')->where($where)->find();
+
+			if($jjrarr){
+				$this->assign('jjrarr',$jjrarr);
+				$this->redirect(U('Agent/ydl',array('token'=>$this->_get('token'),'wecha_id'=>$jjrarr['Wecha_id'])));
+			}else{			
+				$this->display();
+			}
+		}
+
+		//已注册经纪人登录首页
+		public function ydl(){
+			//查找当前经纪人信息
+			$where['Wecha_id']=$_GET['wecha_id'];
+			$where['Token']=$_GET['token'];
+			$jjrinfo=M('jjr')->where($where)->find();
+			$jjrid=intval($jjrinfo['ID']);
+			//查找当前经纪人客户信息
+			$countkh=D("kh")->where(array("Token"=>$where['Token'],"JJ_id"=>$jjrid))->count();
+
+			//楼盘信息
+			$loupanwhere = array('token'=>$where['Token']);
+			$loupaninfo = M('lpinfo') ->where($loupanwhere)->select();
+			$this->assign('lpinfo',$loupaninfo);
+			$this->assign("jjrinfo",$jjrinfo);
+			$this->assign("countkh",$countkh);
+			$this->display();
+		}
+		//经纪人注册
+		public function register(){
+			if($_POST){
+				$data['Token']=$_POST['token'];
+	            $data['Wecha_id']=$_POST['wecha_id'];
+	            if(D('jjr')->where($data)->find()){
+	            	$this->redirect(U("Agent/ydl",array("wecha_id"=>$data['Wecha_id'],"token"=>$data['Token'])));
+	            }
+	            $data['Name']=trim($_POST['Name']);
+	            $data['Tel']=trim($_POST['Tel']);
+	            // $data['leibie']=trim($_POST['leibie']);
+	            $data['leibie']=trim($_POST['typeid']);
+	            $data['companyname']=trim($_POST['companyname']);
+	            $data['Mtime']=time();
+	            $jjrarr=D('jjr')->add($data);
+	            if($jjrarr){
+	                $this->success("注册成功",U('Agent/ydl',array("wecha_id"=>$data['Wecha_id'],"token"=>$data['Token'])));
+	            }else{
+	                $this->error("注册失败");
+	            }
+			}else{
+				$token=$_GET['token'];
+			 	$wecha_id=$_GET['wecha_id'];
+			 	//查询注册条款  cate=1表示经纪人
+			 	$jjrtk=D("zc")->field("TiaoKuan")->where(array('Token'=>$token,'cate'=>1))->find();
+			 	//查询经纪人类型
+			 	$type=D("agent_type")->where(array('token'=>$token))->select();
+	            $this->assign("list",$list);
+	            $this->assign("wecha_id",$_GET['wecha_id']);
+	            $this->assign("token",$_GET['token']);
+		        $this->assign("TiaoKuan",$jjrtk['TiaoKuan']);
+		        $this->assign("type",$type);
+
+                $this->display();
+			}
+		}
+
+
+		//点击楼盘进入楼盘详情页面
+		public function loupanInfo(){
+			$where['id']=$_GET['id'];
+			// $where['Wecha_id']=$_GET['wecha_id'];
+			$where['token']=$_GET['token'];
+			$lpinfo=D("lpinfo")->where($where)->find();
+			$this->assign("lpinfo",$lpinfo);
+			$this->display();
+			// $jjrInfo = $this->getjjr();
+		}
+
+		//录入客户信息
+		public function addCustom(){
+			$where['Wecha_id']=$_GET['wecha_id'];
+			$where['Token']=$_GET['token'];
+			//查看在售楼盘
+			$loupanwhere = array('token'=>$where['Token']);
+			$loupaninfo = M('lpinfo') ->where($loupanwhere)->select();
+			$this->assign('lpinfo',$loupaninfo);
+			$jjrInfo = $this->getjjr();
+
+		}
+
+		//通过手机号验证客户是否唯一
+		public function khyz(){
+			$where['Token']=$_POST['token'];
+			$where['Tel']=$_POST['tel'];
+			if(D('kh')->where($where)->find()){
+				echo "1";die();
+			}else{
+				echo "0";die();
+			}
+
+		}
+
+		//添加客户处理
+		public function addCustomHandle(){
+			if($_POST){
+				$data['Token']=$_GET['token'];
+				$data['Name']=$_POST['name'];
+				$data['JJ_id']=$_POST['JJ_id'];
+				$data['Tel']=$_POST['tel'];
+				if(D('kh')->where(array('Tel'=>$data['Tel']))->select()){
+					$this->redirect(U('Agent/ydl',array('token'=>$data['Token'],'wecha_id'=>$_GET['wecha_id'],'JJ_id'=>$data['JJ_id'])));
+				}
+				$data['LouPanTitle']=$_POST['LouPanTitle'];
+				$data['Stutas']="新客户";             //0：表示新客户
+				$data['Stutas']=D("agent_status")->where("sort=0")->getField();
+				var_dump($data);die();
+				$data['SrTime']=time();
+				if(D("kh")->add($data)){
+					$this->success("推荐成功",U('Agent/myCustom',array('token'=>$data['Token'],'wecha_id'=>$_GET['wecha_id'],'JJ_id'=>$data['JJ_id'])));
+				}else{
+					$this->error("推荐失败");
+				}
+			}
+		}
+		
+		//我的客户信息页
+		public function myCustom(){
+			$kh=D("kh");
+			// $where['Token']=$_GET['token'];
+			// $where['Wecha_id']=$_GET['wecha_id'];
+			// $where['JJ_id']=intval($_GET['JJ_id']);
+			$token=$_GET['token'];
+			$jjid=intval($_GET['JJ_id']);
+			$sql="SELECT kh.ID,kh.Token,kh.Wecha_id,kh.`Name`,kh.Tel,lp.LouPanTitle,kh.Stutas,kh.SrTime 
+					from wy_kh as kh LEFT JOIN wy_lpinfo as lp on kh.LouPanTitle=lp.id 
+					WHERE kh.Token='$token' AND kh.JJ_id=$jjid AND kh.Stutas!='无效' order by kh.SrTime desc";
+        	$list=$kh->query($sql);
+        	$this->assign("list",$list);
+			$jjrInfo = $this->getjjr();
+		}
+
+		//活动细则
+		public function rule(){
+			$rule=D("lp_rule")->select();
+			$this->assign("rule",$rule);
+			$jjrInfo = $this->getjjr();
+		}	
+
+		//我的佣金页面
+		public function commission(){
+			$where['token']=$_GET['token'];
+			$where['wecha_id']=$_GET['wecha_id'];
+			$rewardinfo=D("agent_rewardinfo");
+			$info=$rewardinfo->where($where)->select();
+			//查看银行卡
+			$bank=D("agent_bank")->where($where)->find();
+			$this->assign("bank",$bank);
+			$this->assign("info",$info);
+			$jjrInfo = $this->getjjr();
+		}
+
+		//绑定银行卡
+		public function bank(){
+			$bank=D("agent_bank");
+			$where['token']=$_GET['token'];
+			$where['wecha_id']=$_GET['wecha_id'];
+			if($_POST){
+				$data['name']=$_POST['name'];
+				$data['bankcard']=$_POST['bankcard'];
+				$data['bankname']=$_POST['bankname'];
+				if($bank->where($where)->find()){
+					$list=$bank->where($where)->save($data);
+				}else{
+					$data['token']=$_GET['token'];
+					$data['wecha_id']=$_GET['wecha_id'];
+					$list=$bank->add($data);
+				}
+				if($list){
+					$this->success("修改成功",U('Agent/commission',array('token'=>$_GET['token'],'wecha_id'=>$_GET['wecha_id'])));
+				}else{
+					$this->error("修改失败");
+				}
+			}else{
+				$info=$bank->where($where)->find();
+				$this->assign("info",$info);
+				$this->display();
+			}
+		}
+		
+		//领取佣金奖励页面
+		public function reward(){
+			$token=$_GET['token'];
+			$wecha_id=$_GET['wecha_id'];
+			$sql="select rewardname ,sum(rewardamount) as reward from wy_agent_rewardinfo  
+			where (token='$token' and wecha_id='$wecha_id' and rewardstatus=0) 
+			GROUP BY(rewardname)";
+			$list=D('agent_rewardinfo')->query($sql);
+			$this->assign("list",$list);
+			$jjrInfo = $this->getjjr();
+
+		}
+		//处理领取佣金
+		public function rewardHandle(){
+			$where['token']=$_GET['token'];
+			$where['wecha_id']=$_GET['wecha_id'];
+			$where['rewardname']=$_GET['rewardname'];
+			$data['rewardstatus']=1;
+			if(D('agent_rewardinfo')->where($where)->save($data)){
+				$this->success("领取成功",U('Agent/reward',array('token'=>$_GET['token'],'wecha_id'=>$_GET['wecha_id'])));
+			}else{
+				$this->success("领取失败");
+			}
+		}
+		
+		//通过wecha_id获取经纪人信息；Index页不能使用
+		private function getjjr(){
+			$where['Wecha_id']=$_GET['wecha_id'];
+			$jjrarr=M('jjr')->where($where)->find();
+			if($jjrarr){//已经注册返回注册信息
+				$this->assign('jjrarr',$jjrarr);
+				$this->display();
+			}else{//未注册，跳转注册页面
+				$this->redirect(U('Agent/register',array('token'=>$this->_get('token'),'wecha_id'=>$jjrInfo['wecha_id'])));
+			}
+		}
+
+	}
+
+ ?>

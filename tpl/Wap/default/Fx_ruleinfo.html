@@ -1,0 +1,31 @@
+<!doctype html> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" >
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link href="{weiwin::RES}/css/fx_style.css" rel="stylesheet" type="text/css" /> 
+ 
+</head>
+
+<body style="background:#BFBFC5 url({weiwin::RES}/img/zhyzbg.png) bottom center no-repeat  ; background-size:cover "> 
+	<div class="wait"  >  
+    
+    
+    		<span class="kon_t"></span>
+    	     <div	class="huodongguiz" style=" background-color:rgba(255,255,255,0.8);">
+             	<div class="huodongguiz_title" style="border:none; color:#000;">规则详情</div>
+                <div class="hdgz_cli" style=" color:#000; margin:auto;">
+                
+                		活动规则：<br> 
+                        {weiwin:$info.sharecontent|htmlspecialchars_decode}
+
+                	 <br clear="all" /> <br>
+                   <a href="{weiwin::U('Fx/activiteindexs',array('esid'=>$esid))}" class="aniu"  style="  float:none;margin:auto; width:80%;">返回首页</a> 
+                
+                </div>
+             </div>
+    </div>
+</body>
+</html>

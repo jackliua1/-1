@@ -1,0 +1,88 @@
+<include file="Public:head"/>
+<script src="./tpl/User/default/common/js/date/WdatePicker.js"></script>
+<script src="/tpl/static/artDialog/jquery.artDialog.js?skin=default"></script>
+<script src="/tpl/static/artDialog/plugins/iframeTools.js"></script>
+<script src="{weiwin::RES}/js/date/WdatePicker.js"></script>
+ 
+ <link rel="stylesheet" type="text/css" href="/tpl/static/dl/css/chosen.min.css"/>
+ <script src="/tpl/static/dl/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+ <script src="/tpl/static/dl/js/chosen.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+ 
+ <script src="/tpl/static/upyun.js"></script>
+ 
+<div class="content">
+<style>
+.msgWrap .control-group {
+margin-bottom: 20px;
+}
+.msgWrap .control-label {
+text-align: left;
+width: 140px;
+font-weight: bold;
+padding-top: 5px;
+float: left;
+display: block;
+margin-bottom: 5px;
+}
+.msgWrap .controls {
+margin-left: 160px;
+}
+.msgWrap .form-actions {
+padding: 19px 20px 20px 160px;
+margin-top: 20px;
+}
+.span4, .span1, .option, .valid, .input-large{
+	background: url(../images/px.png) repeat-x scroll 0 0 #FFFFFF;
+    border-color: #848484 #E0E0E0 #E0E0E0 #848484;
+    border-style: solid;
+    border-width: 1px;
+	border-radius: 2px 2px 2px 2px;
+	padding:5px;
+	width: 210px;
+}
+</style>
+<div class="cLineB">
+  <h4>新增驻场经理</h4><a href="javascript:history.back(-1);" class="right btnGrayS vm">返回</a>
+ </div> 
+  <div class="msgWrap bgfc">
+  <form action="" method="post" class="form-horizontal form-validate" novalidate="novalidate">
+	<div class="control-group">
+		<label for="Name" class="control-label">驻场经理姓名：</label>
+		<div class="controls">
+			<input type="text" name="Name" id="Name" maxlength="10" class="span4" value="{weiwin:$list.Name}" data-rule-required="true"><span class="help-inline"></span>
+		</div>
+	</div>
+	<div class="control-group">
+		<label for="Tel" class="control-label">驻场经理电话：</label>
+		<div class="controls">
+			<input type="text" name="Tel" id="Tel" class="span4" data-rule-required="true" value="{weiwin:$list.Tel}"><span class="maroon">*</span><span class="help-inline">请填写正确的手机号码</span>
+		</div>
+	</div>
+	<div class="control-group">
+		<label for="password" class="control-label">登录密码：</label>
+		<div class="controls">
+			<input type="password" name="password" id="password" class="span4" data-rule-required="true" value=""><span class="maroon">*</span><span class="help-inline">手机端登录使用</span>
+		</div>
+	</div>
+	<div class="control-group">
+		<label for="Uid" class="control-label">所属项目：</label>
+		<div class="controls">
+			<select name="Uid[]" class="chosen-select" data-placeholder="选择所属项目" id="Uid" multiple>
+				<option value=""></option>
+		        <volist name="lp" id="lp">
+		          <option value="{weiwin:$lp.ID}">{weiwin:$lp.LouPanTitle}</option>
+		        </volist>
+		      </select>
+		</div>
+	</div>
+   <div class="form-actions">
+			<button id="bsubmit" type="submit" data-loading-text="提交中..." class="btnGreen">保存</button>　<a href="javascript:history.back(-1);" class="btnGray vm">取消</a>
+		</div>
+</form>
+  </div> 
+ <script>
+	$('.chosen-select').chosen({search_contains: true,width:"250px",allow_single_deselect : true});
+ </script>
+  
+        </div>
+		

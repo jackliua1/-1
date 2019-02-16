@@ -1,0 +1,147 @@
+<include file="Public:head"/>
+<script src="./tpl/User/default/common/js/date/WdatePicker.js"></script>
+<script src="/tpl/static/artDialog/jquery.artDialog.js?skin=default"></script>
+<script src="/tpl/static/artDialog/plugins/iframeTools.js"></script>
+<script src="{weiwin::RES}/js/date/WdatePicker.js"></script>
+ <script src="/tpl/static/upyun.js"></script>
+<div class="content">
+<style>
+.msgWrap .control-group {
+margin-bottom: 20px;
+}
+.msgWrap .control-label {
+text-align: left;
+width: 140px;
+font-weight: bold;
+padding-top: 5px;
+float: left;
+display: block;
+margin-bottom: 5px;
+}
+.msgWrap .controls {
+margin-left: 160px;
+}
+.msgWrap .form-actions {
+padding: 19px 20px 20px 160px;
+margin-top: 20px;
+}
+.span4, .span1, .option, .valid, .input-large{
+	background: url(../images/px.png) repeat-x scroll 0 0 #FFFFFF;
+    border-color: #848484 #E0E0E0 #E0E0E0 #848484;
+    border-style: solid;
+    border-width: 1px;
+	border-radius: 2px 2px 2px 2px;
+	padding:5px;
+	width: 210px;
+}
+</style>
+<div class="cLineB">
+  <h4>新增意向客户</h4><a href="{weiwin::U('ServiceUser/index')}" class="right btnGrayS vm" style="margin-top:-27px">返回</a>
+ </div> 
+  <div class="msgWrap bgfc">
+  <form action="{weiwin::U('ServiceUser/addHandle')}" method="post" class="form-horizontal form-validate" novalidate="novalidate">
+	<div class="control-group">
+		<label for="title" class="control-label">客户姓名：</label>
+		<div class="controls">
+			<input type="text" name="Name" id="title" maxlength="10" class="span4" value="{weiwin:$list[0].Name}" data-rule-required="true"><span class="maroon">*</span><span class="help-inline"></span>
+		</div>
+	</div>
+	<div class="control-group">
+		<label for="Tel" class="control-label">客户电话：</label>
+		<div class="controls">
+			<input type="text" name="Tel" id="Tel" class="span4" data-rule-required="true" value="{weiwin:$list[0].Name}"><span class="maroon">*</span><span class="help-inline">请填写正确的手机号码</span>
+		</div>
+	</div>
+	<div class="control-group">
+		<label for="LouPanTitle" class="control-label">意向项目：</label>
+		<div class="controls">
+			<select name="Uid" >
+		        <volist name="lp" id="lp">
+		          <option value="{weiwin:$lp.ID}" <if condition="$lp['ID'] eq $list['Uid']">selected</if>>{weiwin:$lp.LouPanTitle}</option>
+		        </volist>
+		      </select>
+		</div>
+	</div>
+	<div class="control-group">
+		<label for="JJ_id" class="control-label">会员：</label>
+		<div class="controls">
+			<select name="JJ_id" >
+		        <volist name="jjr" id="jjr">
+		          <option value="{weiwin:$jjr.ID}" <if condition="$jjr['ID'] eq $list['Uid']">selected</if>>{weiwin:$jjr.Name}</option>
+		        </volist>
+		      </select>
+		</div>
+	</div>
+	<!-- <div class="control-group">
+		<label for="zy_id" class="control-label">驻场经理：</label>
+		<div class="controls">
+			<input type="text" name="zy_id" id="zy_id" class="span4" data-rule-required="true" value="{weiwin:$list[0].zy_name}"><span class="maroon">*</span><span class="help-inline"></span>
+		</div>
+	</div> -->
+	<div class="control-group">
+		<label for="Stutas" class="control-label">状态：</label>
+		<div class="controls">
+				<select name="Stutas" style="width:100px;height:30px;">
+					<option value="新客户" <if condition="$list['Stutas'] eq '新客户'">selected</if>>新客户</option>
+					<option value="无效" <if condition="$list['Stutas'] eq '无效'">selected</if>>无效</option>
+					<option value="有效" <if condition="$list['Stutas'] eq '有效'">selected</if>>有效</option>
+					<option value="到场" <if condition="$list['Stutas'] eq '到场'">selected</if>>到场</option>
+					<option value="认筹" <if condition="$list['Stutas'] eq '认筹'">selected</if>>认筹</option>
+					<option value="认购" <if condition="$list['Stutas'] eq '认购'">selected</if>>认购</option>
+					<option value="签约" <if condition="$list['Stutas'] eq '签约'">selected</if>>签约</option>
+					<option value="回款" <if condition="$list['Stutas'] eq '回款'">selected</if>>回款</option>
+				</select>
+				<span class="maroon">*</span><span class="help-inline"></span>
+		</div>
+	</div>
+	<!-- <div class="control-group">
+		<label for="SrTime" class="control-label">输入日期：</label>
+		<div class="controls">
+			<input type="text" name="SrTime" id="SrTime" class="span4" data-rule-required="true" value="{weiwin:$list[0].SrTime}" onClick="WdatePicker()"><span class="maroon">*</span><span class="help-inline"></span>
+		</div>
+	</div> -->
+	<!-- <div class="control-group">
+		<label for="userName" class="control-label">有效日期：</label>
+		<div class="controls">
+			<input type="text" name="userName" id="userName" class="span4" data-rule-required="true" value="{weiwin:$serviceUser.userName|default='XXXX-XX-XX'}"><span class="maroon">*</span><span class="help-inline"></span>
+		</div>
+	</div> -->
+	<!-- <div class="control-group">
+		<label for="DcTime" class="control-label">到场时间：</label>
+		<div class="controls">
+			<input type="text" name="DcTime" id="DcTime" class="span4" data-rule-required="true" value="{weiwin:$list[0].DcTime}" onClick="WdatePicker()"><span class="maroon">*</span><span class="help-inline"></span>
+		</div>
+	</div>
+	<div class="control-group">
+		<label for="RcTime" class="control-label">认筹时间：</label>
+		<div class="controls">
+			<input type="text" name="RcTime" id="RcTime" class="span4" data-rule-required="true" value="{weiwin:$list[0].RcTime}" onClick="WdatePicker()"><span class="maroon">*</span><span class="help-inline"></span>
+		</div>
+	</div>
+	<div class="control-group">
+		<label for="RgTime" class="control-label">认购时间：</label>
+		<div class="controls">
+			<input type="text" name="RgTime" id="RgTime" class="span4" data-rule-required="true" value="{weiwin:$list[0].RgTime}" onClick="WdatePicker()"><span class="maroon">*</span><span class="help-inline"></span>
+		</div>
+	</div>
+	<div class="control-group">
+		<label for="QyTime" class="control-label">签约时间：</label>
+		<div class="controls">
+			<input type="text" name="QyTime" id="QyTime" class="span4" data-rule-required="true" value="{weiwin:$list[0].QyTime}" onClick="WdatePicker()"><span class="maroon">*</span><span class="help-inline"></span>
+		</div>
+	</div>
+	<div class="control-group">
+		<label for="HkTime" class="control-label">回款时间：</label>
+		<div class="controls">
+			<input type="text" name="HkTime" id="HkTime" class="span4" data-rule-required="true" value="{weiwin:$list[0].HkTime}" onClick="WdatePicker()"><span class="maroon">*</span><span class="help-inline"></span>
+		</div>
+	</div> -->
+   <div class="form-actions">
+			<button id="bsubmit" type="submit" data-loading-text="提交中..." class="btnGreen">保存</button>　<a href="{weiwin::U('ServiceUser/index')}" class="btnGray vm">取消</a>
+		</div>
+</form>
+  </div> 
+ 
+  
+        </div>
+		

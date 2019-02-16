@@ -1,0 +1,1 @@
+(function(){var cookieName="showDetailQRCode";if(jQuery){var val=jQuery.cookie(cookieName);if(!val){jQuery(".appdown_xfnew").show()}jQuery(".close_xfnew").on("click",function(){jQuery(".appdown_xfnew").hide();jQuery.cookie(cookieName,"1",{expires:1,domain:"fang.com"})})}}());

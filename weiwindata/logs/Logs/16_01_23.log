@@ -1,0 +1,46 @@
+[ 2016-01-23T00:37:10+08:00 ] 220.181.108.111 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002995s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.063817s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000472s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.158631s ]
+INFO: [ view_template ] --END-- [ RunTime:0.021038s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.179768s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.200142s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.380084s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.387860s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.391374s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.394113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.025763s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.405947s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003083s ]
+
+[ 2016-01-23T04:45:27+08:00 ] 183.136.190.62 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001271s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.036462s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000245s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.062379s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002472s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.064936s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028840s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.093897s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.095380s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.097097s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.098386s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006149s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.100161s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001968s ]
+

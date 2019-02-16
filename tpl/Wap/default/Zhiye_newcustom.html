@@ -1,0 +1,173 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
+<meta content="telephone=no" name="format-detection">
+<meta name="keywords" content="首创置业，买房，看房，房地产">
+<meta name="description" content="首创置业是中国领先的房地产综合营运商。公司于2003年6月19日在香港联合交易所主板上市，综合实力居国内领先地位，目前已进入全国四大区域十三个城市，土地储备规模超过1000万平方米，有相当高的市场知名度和品牌影响力。">
+<title></title>
+<script type="text/javascript" src="{weiwin::RES}/js/jQuery.js"></script>                                                      
+<link href="{weiwin::RES}/css/defstyel.css" rel="stylesheet" type="text/css">
+<link href="{weiwin::RES}/css/nestyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<!--返回上一页-->
+	<div class="goback">
+		<a href="javascript:history.go(-1);">&nbsp;&nbsp;<&nbsp;&nbsp;</a>
+		我的客户
+	</div>
+	<p  class="mid_reg"> </p>
+	<!--返回上一页-->
+	<!-- <p  class="mid_reg">我的客户</p> -->
+	 
+     <div class="mykh_top">
+     	
+		<if condition="$status eq 1">
+		<div class="top_newkh_">
+			报备客户
+		<else/>
+		<div class="top_newkh">
+			<a href="{weiwin::U('Zhiye/newcustom',array('token'=>$token,'status'=>1))}">报备客户</a>
+		</if>
+		</div> 
+     	
+		 <if condition="$status eq 2">
+		 <div class="top_nowkh_">
+			带看客户
+		 <else/>
+     	<div class="top_nowkh">
+            <a href="{weiwin::U('Zhiye/newcustom',array('token'=>$token,'status'=>2))}">带看客户</a>
+		</if>
+        </div> 
+		
+		 <if condition="$status eq 3">
+		 <div class="top_ovekh_">
+			成交客户
+		<else/>
+     	<div class="top_ovekh">
+            <a href="{weiwin::U('Zhiye/newcustom',array('token'=>$token,'status'=>3))}">成交客户</a>
+		</if>
+        </div>
+		
+     </div>
+	 
+	<div class="search_div">
+		<form action="{weiwin::U('Zhiye/newcustom',array('token'=>$token,'status'=>$status))}" method="post">
+			<select name="times" class="times">
+				<option value="0" <if condition="$times eq 0">selected</if>>全部</option>
+				<option value="1" <if condition="$times eq 1">selected</if>>一星期</option>
+				<option value="2" <if condition="$times eq 2">selected</if>>一个月</option>
+				<option value="3" <if condition="$times eq 3">selected</if>>一年内</option>
+			</select>
+		   <input type="tel" name="Tel" placeholder="请输入客户电话" value="{weiwin:$Tel}" id="tel" class="sear_inp">
+			<input type="submit" value="搜索" class="sear_btn">
+		</form>
+	</div>
+        
+         <!--新客户-->
+  		  <div id="newkh" class="my_client_" style="min-height:200px; width:90%;">  
+            <if condition="$kh eq ''">
+                <div class="mykh_cli" style="background-color:#fff;">
+                    暂无新客户
+                </div>   
+            <else/>
+                <volist name="kh" id="vo">    
+                <div class="mykh_cli" style="background-color:#fff;">
+                  <a href="{weiwin::U('Zhiye/newcustominfo',array('token'=>$token,'id'=>$vo['ID']))}">
+					<span class="my_client_name w35">{weiwin:$vo.LouPanTitle}</span>
+                    <span class="my_client_name w25">{weiwin:$vo.Name}</span>
+                   
+				 <if condition="$vo.Stutas eq 1">
+					<span class="my_client_phone w40">{weiwin:$vo.Tel}</span></a>
+				<else/>
+					</a><a href="tel:{weiwin:$vo.Tel}"><span class="my_client_phone w40">{weiwin:$vo.Tel}</span></a>
+				</if>
+                    <span  class="my_client_name"  style=" width:25%;display:none;">
+                     <!-- <a href="tel:{weiwin:$vo.Tel}" class="mykhhk_a" style="background:url({weiwin::RES}/img/dh.jpg) no-repeat; height:29px; margin-top:8px;"> </a> -->
+					 <a href="javascript:void(0);" class="mykhhk_a" style="background:url({weiwin::RES}/img/dh.jpg) no-repeat; height:29px; margin-top:8px;"> </a>
+                    </span>
+                </div>
+                </volist>   
+            </if>
+
+        </div>
+            
+</body>
+ <script type="text/javascript">
+	//分页加载
+	function getScrollTop() { 
+		var scrollTop = 0; 
+		if (document.documentElement && document.documentElement.scrollTop) { 
+			scrollTop = document.documentElement.scrollTop; 
+		}else if (document.body) { 
+			scrollTop = document.body.scrollTop; 
+		} 
+		return scrollTop; 
+	} 
+	
+	//获取当前可是范围的高度 
+	function getClientHeight() { 
+		var clientHeight = 0; 
+		if (document.body.clientHeight && document.documentElement.clientHeight) { 
+			clientHeight = Math.min(document.body.clientHeight, document.documentElement.clientHeight); 
+		}else { 
+			clientHeight = Math.max(document.body.clientHeight, document.documentElement.clientHeight); 
+		} 
+		return clientHeight; 
+	} 
+	
+	//获取文档完整的高度 
+	function getScrollHeight() { 
+		return Math.max(document.body.scrollHeight, document.documentElement.scrollHeight); 
+	} 
+	var flag = false;//上拉加载的开关
+	var page = 1; //页码
+	window.onscroll= function () { 
+	
+		if (getScrollTop() + getClientHeight() == getScrollHeight()) { 
+			if(flag){
+				return false;
+			}
+			flag = true;
+			var nextpage = page+1;//下一页
+			var url="{weiwin::U('Zhiye/newcustom',array('token'=>$token,status=>$status,'Tel'=>$Tel,'times'=>$times))}";
+			$.ajax({
+				type:'get',
+				url:url+"&t="+Math.random(),
+				dataType:"json",
+				data:{'page':nextpage,'is_ajax':1},
+				success: function(datas){
+							if(datas.status==1){
+								//返回的列表个数
+								var length=datas.data.length;
+								//定义需要显示的字符串
+								var str="";
+								if(length<1){
+									str = '<div class="mykh_cli" style="background-color:#fff;">没有更多了</div>';
+									$(".my_client_").append(str);
+									return false;
+								}
+								for(var i=0;i<length;i++){
+									var id=parseInt(datas.data[i].ID);
+									str += '<div class="mykh_cli" style="background-color:#fff;"><a href="{weiwin::U(\'Zhiye/newcustominfo\',array(\'token\'=>$token))}&id='+id+'"><span class="my_client_name w35">'+datas.data[i].LouPanTitle+'</span><span class="my_client_name w25">'+datas.data[i].Name+'</span>';
+									if(datas.data[i].Stutas == 1){
+										str += '<span class="my_client_phone w40">'+datas.data[i].Tel+'</span></a>';
+									}else{
+										str += '</a><a href="'+datas.data[i].Tel+'"><span class="my_client_phone w40">'+datas.data[i].Tel+'</span></a>';
+									}
+									str += '</div>';
+								}
+								$(".my_client_").append(str);
+								page = datas.info;//当前页码
+								flag = false;
+							}
+						  }
+			});
+				 
+		} 
+	
+	}
+ </script>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>chech captcha</title>
+</head>
+<body>
+<div class="error">
+    <p class="maybe">访问太频繁了,请输入验证码</p>
+    <div><img id="captchaimg" src="/data/user/captcha" alt="" class="authcode-image"></div>
+    <input id="captcha" type="text" name="captcha">
+    <input id="submit" type="submit" value="提交">
+</div>
+</body>
+
+</script>
+
+    $(document).ready(function(){
+        $('#captchaimg').attr("src", "/data/user/captcha?"+Math.random());
+        $("#submit").click(function(){
+            var captcha = $("#captcha").val();
+            if(captcha) {
+                $.post("/data/User/check",
+                    {
+                        captcha: $("#captcha").val()
+                    },
+                    function (data, status) {
+                        if (data.code === '00000')
+                            window.location.replace(data.data);
+                        else{
+                            alert("验证码错误");
+                            $('#captchaimg').attr("src", "/data/user/captcha?"+Math.random());
+                        }
+                    });
+            }
+            else{
+                alert("验证码错误");
+            }
+        });
+        $("#captchaimg").click(function(){
+//            var picSrc = $("#captchaimg").attr("src");
+            $('#captchaimg').attr("src", "/data/user/captcha?"+Math.random());
+        });
+    });
+</script>
+</html>

@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
+<meta content="telephone=no" name="format-detection">
+<meta name="keywords" content="首创置业，买房，看房，房地产">
+<meta name="description" content="首创置业是中国领先的房地产综合。公司于2003年6月19日在香港联合交易所主板上市，综合实力居国内领先地位，目前已进入全国四大区域十三个城市，土地储备规模超过1000万平方米，有相当高的市场知名度和品牌影响力。">
+<title>首创置业</title>
+<script type="text/javascript" src="{weiwin::RES}/js/jQuery.js"></script>
+<link href="{weiwin::RES}/css/defstyel.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<a href="{weiwin::U('Agent/register',array('token'=>$_GET['token'],'wecha_id'=>$_GET['wecha_id']))}" class="topbanner">
+    	<img src="{weiwin::RES}/img/banner.jpg"  >
+    </a>
+    
+    <nav>    	
+        <a href="{weiwin::U('Agent/register',array('token'=>$_GET['token'],'wecha_id'=>$_GET['wecha_id']))}" class="navbut">
+            <img src="{weiwin::RES}/img/nav_RCM.jpg"  >
+        </a>
+        <a href="{weiwin::U('Agent/register',array('token'=>$_GET['token'],'wecha_id'=>$_GET['wecha_id']))}" class="navbut">
+            <img src="{weiwin::RES}/img/nav_CLi.jpg"  >
+        </a>
+        <a href="{weiwin::U('Agent/register',array('token'=>$_GET['token'],'wecha_id'=>$_GET['wecha_id']))}" class="navbut">
+            <img src="{weiwin::RES}/img/nav_CMM.jpg"  >
+        </a>
+        <a href="{weiwin::U('Agent/register',array('token'=>$_GET['token'],'wecha_id'=>$_GET['wecha_id']))}" class="navbut">
+            <img src="{weiwin::RES}/img/nav_RUL.jpg"  >
+        </a>
+    </nav>
+    
+    
+    <div class="sale_">
+    	
+    <p class="headline">在售项目</p>
+		<volist name="lpinfo" id="vo">
+            <a href="{weiwin::U('Agent/loupanInfo1',array('token'=>$_GET['token'],'wecha_id'=>$_GET['wecha_id'],'id'=>$vo['id']))}">
+                <img src="{weiwin:$vo.LouPanUpLoad}">
+                <span class="salespan" >{weiwin:$vo.LouPanTitle}</span>
+                <if condition="$vo['commission'] neq ''">
+                <p  class="personal_yjk">佣金：<span class="personal_fand">{weiwin:$vo.commission}</span></p>
+                </if>
+                <if condition="$vo['encourage'] neq ''">
+                <p  class="personal_yjk">激励：<span class="personal_fand">{weiwin:$vo.encourage}</span></p>
+                </if>
+                <p class="personal_bz"> 
+                    备注<span>{weiwin:$vo.remark|mb_substr=0,20,"utf-8"}</span>
+                </p>
+            </a>
+        </volist>
+    </div>
+    <input type="hidden" value="{weiwin:$num}" id="num">
+    <p class="personal_bz" style="text-align:center"><span id="ts"></span></p>
+</body>
+<script type="text/javascript">
+    //获取滚动条当前的位置 
+    window.onload=function(){
+        function getScrollTop() { 
+            var scrollTop = 0; 
+            if (document.documentElement && document.documentElement.scrollTop) { 
+                scrollTop = document.documentElement.scrollTop; 
+            }else if (document.body) { 
+                scrollTop = document.body.scrollTop; 
+            } 
+            return scrollTop; 
+        } 
+        
+        //获取当前可是范围的高度 
+        function getClientHeight() { 
+            var clientHeight = 0; 
+            if (document.body.clientHeight && document.documentElement.clientHeight) { 
+                clientHeight = Math.min(document.body.clientHeight, document.documentElement.clientHeight); 
+            }else { 
+                clientHeight = Math.max(document.body.clientHeight, document.documentElement.clientHeight); 
+            } 
+            return clientHeight; 
+        } 
+        
+        //获取文档完整的高度 
+        function getScrollHeight() { 
+            return Math.max(document.body.scrollHeight, document.documentElement.scrollHeight); 
+        } 
+        window.onscroll= function () { 
+            if (getScrollTop() + getClientHeight() == getScrollHeight()) { 
+                var num=document.getElementById('num').value;
+                var url="{weiwin::U('Agent/ajaxlp',array('token'=>$_GET['token'],'wecha_id'=>$_GET['wecha_id']))}";
+                $.ajax({
+                    type:'post',
+                    url:url+"&t="+Math.random(),
+                    dataType:"json",
+                    data:{'num':num},
+                    success: function(datas){
+                                if(datas.status==1){
+                                    //返回的列表个数
+                                    var length=datas.data.length;
+                                    //定义需要显示的字符串
+                                    var str="";
+                                    for(var i=0;i<length;i++){
+                                        var id=parseInt(datas.data[i].id);
+                                        str="<a href=\"{weiwin::U('Agent/loupanInfo',array('token'=>'"+datas.data[i].token+"','wecha_id'=>$_GET['wecha_id'],'id'=>'"+id+"'))}\">";
+                                        str+="<img src='"+datas.data[i].LouPanUpLoad+"'>";
+                                        str+="<span class='salespan' >"+datas.data[i].LouPanTitle+"</span>";
+                                        str+=datas.data[i].commission?"<p  class='personal_yjk'>佣金：<span class='personal_fand'>"+datas.data[i].commission+"</span></p>":"";
+                                        str+=datas.data[i].encourage?"<p  class='personal_yjk'>激励：<span class='personal_fand'>"+datas.data[i].encourage+"</span></p>":"";
+                                        str+="<p class='personal_bz'>备注<span>";
+                                        str+=datas.data[i].remark?datas.data[i].remark:'';
+                                        str+="</span></p></a>";
+                                        document.getElementsByClassName("sale_")[0].push=str;
+                                        document.getElementById('num').value=num+length;
+                                    }
+                                }else{
+                                    document.getElementById("ts").innerHTML="已经是最后一条数据了";
+                                }
+                              }
+                });
+                     
+            } 
+        
+        }
+    }
+     
+</script>
+</html>

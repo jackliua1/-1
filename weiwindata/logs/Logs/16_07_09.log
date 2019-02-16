@@ -1,0 +1,23 @@
+[ 2016-07-09T06:43:19+08:00 ] 220.181.108.92 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001869s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.034631s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000625s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.065021s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002520s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.067643s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029376s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.097094s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.098525s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.099762s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.101008s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005457s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.102655s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001638s ]
+

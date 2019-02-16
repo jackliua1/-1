@@ -1,0 +1,59 @@
+[ 2018-07-28T10:03:43+08:00 ] 49.80.144.104 /index.php?g=Wap&m=Agent&a=index&token=ynzfui1406882414&wecha_id={wechat_id}
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.005483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005637s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.110679s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `token` = 'ynzfui1406882414' ) ORDER BY houseSort desc,id desc LIMIT 0,20   [ RunTime:0.000677s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.060260s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `Wecha_id` = '{wechat_id}' ) AND ( `Token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000612s ]
+SQL: SHOW COLUMNS FROM `wy_share_content` [ RunTime:0.122425s ]
+SQL: SELECT * FROM `wy_share_content` WHERE token='ynzfui1406882414' LIMIT 1   [ RunTime:0.000386s ]
+NOTIC: [8] Undefined variable: var D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Common\functions.php 第 234 行.
+NOTIC: [2] array_reverse() [<a href='function.array-reverse'>function.array-reverse</a>]: The argument should be an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Common\functions.php 第 234 行.
+NOTIC: [2] http_build_query() [<a href='function.http-build-query'>function.http-build-query</a>]: Parameter 1 expected to be Array or Object.  Incorrect value given D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Common\functions.php 第 234 行.
+
+[ 2018-07-28T10:03:44+08:00 ] 49.80.144.104 /index.php?&g=Wap&m=Agent&a=ydl&token=ynzfui1406882414&wecha_id={wechat_id}
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002590s ]
+SQL: SHOW COLUMNS FROM `wy_agent_rewardinfo` [ RunTime:0.090319s ]
+SQL: SELECT SUM(rewardamount) AS tp_sum FROM `wy_agent_rewardinfo` WHERE wecha_id='{wechat_id}' and token='ynzfui1406882414' and rewardstatus =0 LIMIT 1   [ RunTime:0.000417s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.002547s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `Wecha_id` = '{wechat_id}' ) AND ( `Token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000121s ]
+SQL: SHOW COLUMNS FROM `wy_share_content` [ RunTime:0.002011s ]
+SQL: SELECT * FROM `wy_share_content` WHERE token='ynzfui1406882414' LIMIT 1   [ RunTime:0.000108s ]
+SQL: SHOW COLUMNS FROM `wy_kh` [ RunTime:0.071911s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_kh` WHERE ( `Token` = 'ynzfui1406882414' ) AND ( `JJ_id` = 295 ) LIMIT 1   [ RunTime:0.000957s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.004995s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `token` = 'ynzfui1406882414' ) ORDER BY houseSort desc,id desc LIMIT 0,20   [ RunTime:0.000189s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.259065s ]
+INFO: [ view_template ] --END-- [ RunTime:0.103490s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.362698s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.110998s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.473760s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.487837s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.491029s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.494620s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.023863s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.497705s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003121s ]
+
+[ 2018-07-28T10:04:11+08:00 ] 49.80.144.104 /index.php?g=Wap&m=Agent&a=ajaxlp&token=ynzfui1406882414&wecha_id={wechat_id}&t=0.7804579510513894
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002109s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002215s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.003464s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `token` = 'ynzfui1406882414' ) ORDER BY id desc LIMIT 20,4   [ RunTime:0.000549s ]
+
+[ 2018-07-28T10:04:20+08:00 ] 49.80.144.104 /index.php?g=Wap&m=Agent&a=ajaxlp&token=ynzfui1406882414&wecha_id={wechat_id}&t=0.9929586160885095
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002150s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002258s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.003977s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `token` = 'ynzfui1406882414' ) ORDER BY id desc LIMIT 20,4   [ RunTime:0.000172s ]
+

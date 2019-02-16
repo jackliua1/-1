@@ -1,0 +1,2779 @@
+[ 2014-08-04T08:44:46+08:00 ] 127.0.0.1 /gs/houseSales/index.php?g=Home&m=Index&a=login
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001641s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\Action.class.php 第 57 行.
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.009725s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004395s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.014194s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028750s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.043003s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.046599s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.054844s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.056358s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014864s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.057971s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001729s ]
+
+[ 2014-08-04T08:45:31+08:00 ] 127.0.0.1 /gs/houseSales/index.php?m=Users&a=checklogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000927s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001026s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\Action.class.php 第 57 行.
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.006333s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `username` = 'chancle' ) LIMIT 1   [ RunTime:0.001056s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.005931s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.009282s ]
+SQL: UPDATE `wy_users` SET `lasttime`='1407113131',`lastloginmonth`='8',`lastip`='127.0.0.1' WHERE ( `id` = 1 ) [ RunTime:0.000917s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.057591s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001189s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.058850s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016641s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.075571s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.076477s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.077380s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.078119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003539s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.079203s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001052s ]
+
+[ 2014-08-04T08:45:32+08:00 ] 127.0.0.1 /gs/houseSales/index.php?g=User&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000884s ]
+NOTIC: [2048] Declaration of IndexAction::insert() should be compatible with BaseAction::insert($name = '', $back = '/index') D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\User\IndexAction.class.php 第 2 行.
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\Action.class.php 第 57 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.006330s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000674s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.005645s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000765s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.006708s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = null ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.001025s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.005474s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = null ) LIMIT 1   [ RunTime:0.000433s ]
+NOTIC: [8] Undefined index: width D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\UserAction.class.php 第 1 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.005659s ]
+SQL: SELECT * FROM `wy_user_group`  [ RunTime:0.000579s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_wxuser` WHERE ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000476s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `uid` = 1 ) LIMIT 0,25   [ RunTime:0.001050s ]
+SQL: SHOW COLUMNS FROM `wy_diymen_set` [ RunTime:0.021015s ]
+SQL: SELECT * FROM `wy_diymen_set` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000664s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.108148s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001689s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: id D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 75 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 76 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.109920s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037718s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.147719s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.148777s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.149806s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.150695s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004442s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.152350s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001484s ]
+
+[ 2014-08-04T08:46:16+08:00 ] 127.0.0.1 /gs/houseSales/index.php?g=User&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000978s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001081s ]
+NOTIC: [2048] Declaration of IndexAction::insert() should be compatible with BaseAction::insert($name = '', $back = '/index') D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\User\IndexAction.class.php 第 2 行.
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\Action.class.php 第 57 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.006376s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000708s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.006381s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000883s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.006333s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = null ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000941s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.005178s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = null ) LIMIT 1   [ RunTime:0.000485s ]
+NOTIC: [8] Undefined index: width D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\UserAction.class.php 第 1 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.005797s ]
+SQL: SELECT * FROM `wy_user_group`  [ RunTime:0.000626s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_wxuser` WHERE ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000483s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `uid` = 1 ) LIMIT 0,25   [ RunTime:0.000970s ]
+SQL: SHOW COLUMNS FROM `wy_diymen_set` [ RunTime:0.005380s ]
+SQL: SELECT * FROM `wy_diymen_set` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000593s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.065757s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002043s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: id D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 75 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 76 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.067884s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019385s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.087314s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.088287s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.089159s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.089879s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003512s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.090940s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001016s ]
+
+[ 2014-08-04T08:46:18+08:00 ] 127.0.0.1 /gs/houseSales/index.php?g=User&m=Function&a=index&id=1&token=ynzfui1406882414
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000918s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\Action.class.php 第 57 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.005500s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000608s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.005935s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000846s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.006436s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = null ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.001392s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.007435s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = null ) LIMIT 1   [ RunTime:0.000435s ]
+NOTIC: [8] Undefined index: width D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\UserAction.class.php 第 1 行.
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001081s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.005618s ]
+SQL: SELECT `id`,`queryname` FROM `wy_token_open` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.006768s ]
+SQL: SELECT `id`,`name` FROM `wy_user_group` WHERE status=1  [ RunTime:0.000469s ]
+SQL: SHOW COLUMNS FROM `wy_function` [ RunTime:0.016366s ]
+SQL: SELECT * FROM `wy_function` WHERE ( `status` = 1 ) AND ( `gid` = 1 )  [ RunTime:0.001291s ]
+SQL: SELECT * FROM `wy_function` WHERE ( `status` = 1 ) AND ( `gid` = 2 )  [ RunTime:0.000804s ]
+SQL: SELECT * FROM `wy_function` WHERE ( `status` = 1 ) AND ( `gid` = 3 )  [ RunTime:0.000434s ]
+SQL: SELECT * FROM `wy_function` WHERE ( `status` = 1 ) AND ( `gid` = 4 )  [ RunTime:0.001049s ]
+SQL: SELECT `wxname`,`wxid`,`headerpic`,`weixin` FROM `wy_wxuser` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000382s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.107121s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001883s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\52858e5695fc543ba4c03ea48eacfeda.php 第 114 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\52858e5695fc543ba4c03ea48eacfeda.php 第 115 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\52858e5695fc543ba4c03ea48eacfeda.php 第 116 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\52858e5695fc543ba4c03ea48eacfeda.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\52858e5695fc543ba4c03ea48eacfeda.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\52858e5695fc543ba4c03ea48eacfeda.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\52858e5695fc543ba4c03ea48eacfeda.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\52858e5695fc543ba4c03ea48eacfeda.php 第 117 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.109082s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.133954s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.243095s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.244447s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.245530s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.246314s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004278s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.247479s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001047s ]
+
+[ 2014-08-04T08:46:26+08:00 ] 127.0.0.1 /gs/houseSales/index.php?g=User&m=Wechat_behavior&a=statistics&token=ynzfui1406882414
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000951s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001048s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\Action.class.php 第 57 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.006400s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000745s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.006028s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000934s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.006318s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.001128s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.005747s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000793s ]
+NOTIC: [8] Undefined index: width D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\UserAction.class.php 第 1 行.
+SQL: SHOW COLUMNS FROM `wy_behavior` [ RunTime:0.033977s ]
+SQL: SHOW COLUMNS FROM `wy_behavior` [ RunTime:0.005853s ]
+SQL: SELECT * FROM `wy_behavior` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `enddate` > 1406508386 ) ORDER BY num DESC  [ RunTime:0.001490s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.091743s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001892s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: id D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\3b63aa504a55e3f317e664283537b475.php 第 102 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\3b63aa504a55e3f317e664283537b475.php 第 103 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\3b63aa504a55e3f317e664283537b475.php 第 114 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\3b63aa504a55e3f317e664283537b475.php 第 115 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\3b63aa504a55e3f317e664283537b475.php 第 116 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\3b63aa504a55e3f317e664283537b475.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\3b63aa504a55e3f317e664283537b475.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\3b63aa504a55e3f317e664283537b475.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\3b63aa504a55e3f317e664283537b475.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\3b63aa504a55e3f317e664283537b475.php 第 117 行.
+NOTIC: [8] Undefined variable: detail D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\3b63aa504a55e3f317e664283537b475.php 第 388 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.093711s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045384s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.139157s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.140321s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.141318s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.142063s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003921s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.143184s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001235s ]
+
+[ 2014-08-04T08:46:28+08:00 ] 127.0.0.1 /gs/houseSales/index.php?g=User&m=Wechat_behavior&a=statisticsTrend
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000874s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\Action.class.php 第 57 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.005659s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000763s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.005803s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000878s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.006116s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.001109s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.007581s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000463s ]
+NOTIC: [8] Undefined index: width D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\UserAction.class.php 第 1 行.
+SQL: SHOW COLUMNS FROM `wy_behavior` [ RunTime:0.005761s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.062735s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001450s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: id D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\2d51067ca44dd5fffc7482108f2c30f4.php 第 102 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\2d51067ca44dd5fffc7482108f2c30f4.php 第 103 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\2d51067ca44dd5fffc7482108f2c30f4.php 第 114 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\2d51067ca44dd5fffc7482108f2c30f4.php 第 115 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\2d51067ca44dd5fffc7482108f2c30f4.php 第 116 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\2d51067ca44dd5fffc7482108f2c30f4.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\2d51067ca44dd5fffc7482108f2c30f4.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\2d51067ca44dd5fffc7482108f2c30f4.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\2d51067ca44dd5fffc7482108f2c30f4.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\2d51067ca44dd5fffc7482108f2c30f4.php 第 117 行.
+NOTIC: [8] Undefined variable: detail D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\2d51067ca44dd5fffc7482108f2c30f4.php 第 383 行.
+NOTIC: [8] Undefined variable: list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\2d51067ca44dd5fffc7482108f2c30f4.php 第 387 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.064285s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044380s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.108720s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.109774s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.110805s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.111679s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003980s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.112805s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000975s ]
+
+[ 2014-08-04T08:46:29+08:00 ] 127.0.0.1 /gs/houseSales/index.php?g=User&m=Wechat_behavior&a=statistics
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000919s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\Action.class.php 第 57 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.006262s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000671s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.005921s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000830s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.006646s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.001012s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.005821s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000514s ]
+NOTIC: [8] Undefined index: width D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\UserAction.class.php 第 1 行.
+SQL: SHOW COLUMNS FROM `wy_behavior` [ RunTime:0.005889s ]
+SQL: SHOW COLUMNS FROM `wy_behavior` [ RunTime:0.006073s ]
+SQL: SELECT * FROM `wy_behavior` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `enddate` > 1406508389 ) ORDER BY num DESC  [ RunTime:0.000830s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.059651s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001083s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: id D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\3b63aa504a55e3f317e664283537b475.php 第 102 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\3b63aa504a55e3f317e664283537b475.php 第 103 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\3b63aa504a55e3f317e664283537b475.php 第 114 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\3b63aa504a55e3f317e664283537b475.php 第 115 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\3b63aa504a55e3f317e664283537b475.php 第 116 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\3b63aa504a55e3f317e664283537b475.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\3b63aa504a55e3f317e664283537b475.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\3b63aa504a55e3f317e664283537b475.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\3b63aa504a55e3f317e664283537b475.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\3b63aa504a55e3f317e664283537b475.php 第 117 行.
+NOTIC: [8] Undefined variable: detail D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\3b63aa504a55e3f317e664283537b475.php 第 388 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.060784s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031218s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.092061s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.093250s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.094238s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.095032s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004046s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.096271s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001497s ]
+
+[ 2014-08-04T08:52:24+08:00 ] 127.0.0.1 /gs/houseSales/index.php?g=User&m=Wechat_group&a=groups&token=ynzfui1406882414
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001159s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\Action.class.php 第 57 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.005582s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000894s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.006396s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000767s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.006360s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.001226s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.005443s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000489s ]
+NOTIC: [8] Undefined index: width D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\UserAction.class.php 第 1 行.
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000614s ]
+SQL: SHOW COLUMNS FROM `wy_wechat_group` [ RunTime:0.016816s ]
+SQL: SELECT * FROM `wy_wechat_group` WHERE ( `token` = 'ynzfui1406882414' ) ORDER BY id ASC  [ RunTime:0.000639s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.081902s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001804s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: id D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\bf1552ceedc8718a967cf54353e21571.php 第 102 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\bf1552ceedc8718a967cf54353e21571.php 第 103 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\bf1552ceedc8718a967cf54353e21571.php 第 114 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\bf1552ceedc8718a967cf54353e21571.php 第 115 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\bf1552ceedc8718a967cf54353e21571.php 第 116 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\bf1552ceedc8718a967cf54353e21571.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\bf1552ceedc8718a967cf54353e21571.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\bf1552ceedc8718a967cf54353e21571.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\bf1552ceedc8718a967cf54353e21571.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\bf1552ceedc8718a967cf54353e21571.php 第 117 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.083776s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038878s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.122712s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.123835s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.124822s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.125550s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003795s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.126608s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000989s ]
+
+[ 2014-08-04T08:52:25+08:00 ] 127.0.0.1 /gs/houseSales/index.php?g=User&m=Wechat_zhiye&a=index&token=ynzfui1406882414
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000908s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001010s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\Action.class.php 第 57 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.006128s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000807s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.006186s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001232s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.006346s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.005542s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000824s ]
+NOTIC: [8] Undefined index: width D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\UserAction.class.php 第 1 行.
+SQL: SHOW COLUMNS FROM `wy_service_user` [ RunTime:0.017346s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.102689s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001993s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: id D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\1fbe53d8da974a832ae267af6d7b3084.php 第 102 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\1fbe53d8da974a832ae267af6d7b3084.php 第 103 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\1fbe53d8da974a832ae267af6d7b3084.php 第 114 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\1fbe53d8da974a832ae267af6d7b3084.php 第 115 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\1fbe53d8da974a832ae267af6d7b3084.php 第 116 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\1fbe53d8da974a832ae267af6d7b3084.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\1fbe53d8da974a832ae267af6d7b3084.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\1fbe53d8da974a832ae267af6d7b3084.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\1fbe53d8da974a832ae267af6d7b3084.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\1fbe53d8da974a832ae267af6d7b3084.php 第 117 行.
+NOTIC: [8] Undefined variable: list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\1fbe53d8da974a832ae267af6d7b3084.php 第 373 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\1fbe53d8da974a832ae267af6d7b3084.php 第 392 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.104761s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044260s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.149078s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.150155s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.151115s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.151901s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003901s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.153083s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000969s ]
+
+[ 2014-08-04T08:52:27+08:00 ] 127.0.0.1 /gs/houseSales/index.php?g=User&m=Wechat_zhiye&a=custom
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000888s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\Action.class.php 第 57 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.005827s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000622s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.005596s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000858s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.006201s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.001369s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.005923s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000539s ]
+NOTIC: [8] Undefined index: width D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\UserAction.class.php 第 1 行.
+SQL: SHOW COLUMNS FROM `wy_service_user` [ RunTime:0.006295s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.062108s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001497s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: id D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\6b323a58eaea9025dca00ee3a85b2f76.php 第 102 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\6b323a58eaea9025dca00ee3a85b2f76.php 第 103 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\6b323a58eaea9025dca00ee3a85b2f76.php 第 114 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\6b323a58eaea9025dca00ee3a85b2f76.php 第 115 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\6b323a58eaea9025dca00ee3a85b2f76.php 第 116 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\6b323a58eaea9025dca00ee3a85b2f76.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\6b323a58eaea9025dca00ee3a85b2f76.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\6b323a58eaea9025dca00ee3a85b2f76.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\6b323a58eaea9025dca00ee3a85b2f76.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\6b323a58eaea9025dca00ee3a85b2f76.php 第 117 行.
+NOTIC: [8] Undefined variable: list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\6b323a58eaea9025dca00ee3a85b2f76.php 第 374 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\6b323a58eaea9025dca00ee3a85b2f76.php 第 393 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.063673s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031496s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.095228s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.096355s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.097563s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.098525s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004272s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.099605s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000982s ]
+
+[ 2014-08-04T08:52:29+08:00 ] 127.0.0.1 /gs/houseSales/index.php?g=User&m=Recognition&a=index&token=ynzfui1406882414
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\Action.class.php 第 57 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.006153s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000648s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.005873s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000998s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.006852s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.001116s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.005625s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000589s ]
+NOTIC: [8] Undefined index: width D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\UserAction.class.php 第 1 行.
+SQL: SHOW COLUMNS FROM `wy_diymen_set` [ RunTime:0.005313s ]
+SQL: SELECT * FROM `wy_diymen_set` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000580s ]
+SQL: SHOW COLUMNS FROM `wy_recognition` [ RunTime:0.014183s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_recognition` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000695s ]
+SQL: SELECT * FROM `wy_recognition` WHERE ( `token` = 'ynzfui1406882414' ) ORDER BY id desc LIMIT 0,25   [ RunTime:0.000506s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.135578s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001814s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: id D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\27faf5eeb608f30ba6118efa423cd8da.php 第 102 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\27faf5eeb608f30ba6118efa423cd8da.php 第 103 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\27faf5eeb608f30ba6118efa423cd8da.php 第 114 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\27faf5eeb608f30ba6118efa423cd8da.php 第 115 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\27faf5eeb608f30ba6118efa423cd8da.php 第 116 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\27faf5eeb608f30ba6118efa423cd8da.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\27faf5eeb608f30ba6118efa423cd8da.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\27faf5eeb608f30ba6118efa423cd8da.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\27faf5eeb608f30ba6118efa423cd8da.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\27faf5eeb608f30ba6118efa423cd8da.php 第 117 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.137470s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031526s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.169052s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.170207s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.171251s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.172041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004022s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.173174s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001071s ]
+
+[ 2014-08-04T08:52:30+08:00 ] 127.0.0.1 /gs/houseSales/index.php?g=User&m=ServiceUser&a=index&token=ynzfui1406882414
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000750s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000854s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\Action.class.php 第 57 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.006179s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000696s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.006006s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000928s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.006460s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.001253s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.005439s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000603s ]
+NOTIC: [8] Undefined index: width D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\UserAction.class.php 第 1 行.
+SQL: SHOW COLUMNS FROM `wy_service_user` [ RunTime:0.005870s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_service_user` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000961s ]
+SQL: SELECT * FROM `wy_service_user` WHERE ( `token` = 'ynzfui1406882414' ) ORDER BY id desc LIMIT 0,25   [ RunTime:0.000600s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.062443s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001677s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: id D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\cab2f9276e04265534be881b6385f9eb.php 第 102 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\cab2f9276e04265534be881b6385f9eb.php 第 103 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\cab2f9276e04265534be881b6385f9eb.php 第 114 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\cab2f9276e04265534be881b6385f9eb.php 第 115 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\cab2f9276e04265534be881b6385f9eb.php 第 116 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\cab2f9276e04265534be881b6385f9eb.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\cab2f9276e04265534be881b6385f9eb.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\cab2f9276e04265534be881b6385f9eb.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\cab2f9276e04265534be881b6385f9eb.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\cab2f9276e04265534be881b6385f9eb.php 第 117 行.
+NOTIC: [8] Use of undefined constant Common - assumed 'Common' D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\cab2f9276e04265534be881b6385f9eb.php 第 332 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.064196s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064397s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.128649s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.129854s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.130863s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.131584s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003899s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.132653s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000992s ]
+
+[ 2014-08-04T08:52:32+08:00 ] 127.0.0.1 /gs/houseSales/index.php?g=User&m=Message&a=index&token=ynzfui1406882414
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000797s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\Action.class.php 第 57 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.005997s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000534s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.005789s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000840s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.006650s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.001285s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.005439s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000568s ]
+NOTIC: [8] Undefined index: width D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\UserAction.class.php 第 1 行.
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000686s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000477s ]
+SQL: SHOW COLUMNS FROM `wy_function` [ RunTime:0.006051s ]
+SQL: SELECT * FROM `wy_function` WHERE ( `funname` = 'message' ) LIMIT 1   [ RunTime:0.000561s ]
+SQL: SHOW COLUMNS FROM `wy_wechat_group` [ RunTime:0.005938s ]
+SQL: SELECT * FROM `wy_wechat_group` WHERE ( `token` = 'ynzfui1406882414' ) ORDER BY id ASC  [ RunTime:0.000663s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.082707s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001403s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: id D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\7735aaf593246deb8be8909e398947ce.php 第 102 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\7735aaf593246deb8be8909e398947ce.php 第 103 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\7735aaf593246deb8be8909e398947ce.php 第 114 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\7735aaf593246deb8be8909e398947ce.php 第 115 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\7735aaf593246deb8be8909e398947ce.php 第 116 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\7735aaf593246deb8be8909e398947ce.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\7735aaf593246deb8be8909e398947ce.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\7735aaf593246deb8be8909e398947ce.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\7735aaf593246deb8be8909e398947ce.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\7735aaf593246deb8be8909e398947ce.php 第 117 行.
+NOTIC: [8] Undefined variable: list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\7735aaf593246deb8be8909e398947ce.php 第 375 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\7735aaf593246deb8be8909e398947ce.php 第 394 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.084181s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061636s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.145875s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.147015s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.148113s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.148804s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003854s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.149835s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000946s ]
+
+[ 2014-08-04T08:52:33+08:00 ] 127.0.0.1 /gs/houseSales/index.php?g=User&m=Message&a=index2
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001008s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001116s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\Action.class.php 第 57 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.007825s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000731s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.007068s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000825s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.006747s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.001055s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.005858s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000660s ]
+NOTIC: [8] Undefined index: width D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\UserAction.class.php 第 1 行.
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000643s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000731s ]
+SQL: SHOW COLUMNS FROM `wy_function` [ RunTime:0.006319s ]
+SQL: SELECT * FROM `wy_function` WHERE ( `funname` = 'message' ) LIMIT 1   [ RunTime:0.000809s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.063609s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001781s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: id D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\28911063f4a3a41ca0735a7ccca420d4.php 第 102 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\28911063f4a3a41ca0735a7ccca420d4.php 第 103 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\28911063f4a3a41ca0735a7ccca420d4.php 第 114 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\28911063f4a3a41ca0735a7ccca420d4.php 第 115 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\28911063f4a3a41ca0735a7ccca420d4.php 第 116 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\28911063f4a3a41ca0735a7ccca420d4.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\28911063f4a3a41ca0735a7ccca420d4.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\28911063f4a3a41ca0735a7ccca420d4.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\28911063f4a3a41ca0735a7ccca420d4.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\28911063f4a3a41ca0735a7ccca420d4.php 第 117 行.
+NOTIC: [8] Undefined variable: list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\28911063f4a3a41ca0735a7ccca420d4.php 第 371 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\28911063f4a3a41ca0735a7ccca420d4.php 第 390 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.065461s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045268s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.110798s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.111913s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.112951s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.113680s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003880s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.114768s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000994s ]
+
+[ 2014-08-04T08:52:35+08:00 ] 127.0.0.1 /gs/houseSales/index.php?g=User&m=Share&a=index&token=ynzfui1406882414
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000815s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000914s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\Action.class.php 第 57 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.006429s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000851s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.005670s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000878s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.006778s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.001210s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.005350s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000721s ]
+NOTIC: [8] Undefined index: width D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\UserAction.class.php 第 1 行.
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000507s ]
+SQL: SHOW COLUMNS FROM `wy_function` [ RunTime:0.005445s ]
+SQL: SELECT * FROM `wy_function` WHERE ( `funname` = 'share' ) LIMIT 1   [ RunTime:0.000695s ]
+SQL: SHOW COLUMNS FROM `wy_share` [ RunTime:0.020913s ]
+SQL: SELECT * FROM `wy_share` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `time` > 1406508755 ) AND ( `module` <> '' )  [ RunTime:0.000910s ]
+NOTIC: [8] Undefined offset: 1 D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.096472s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001422s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: id D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\36de09c51f0e5a6f5bc2f4763bf3a056.php 第 102 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\36de09c51f0e5a6f5bc2f4763bf3a056.php 第 103 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\36de09c51f0e5a6f5bc2f4763bf3a056.php 第 114 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\36de09c51f0e5a6f5bc2f4763bf3a056.php 第 115 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\36de09c51f0e5a6f5bc2f4763bf3a056.php 第 116 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\36de09c51f0e5a6f5bc2f4763bf3a056.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\36de09c51f0e5a6f5bc2f4763bf3a056.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\36de09c51f0e5a6f5bc2f4763bf3a056.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\36de09c51f0e5a6f5bc2f4763bf3a056.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\36de09c51f0e5a6f5bc2f4763bf3a056.php 第 117 行.
+NOTIC: [8] Undefined variable: page D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\36de09c51f0e5a6f5bc2f4763bf3a056.php 第 395 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.097965s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051953s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.149976s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.151152s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.152127s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.152839s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003795s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.153872s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000988s ]
+
+[ 2014-08-04T11:21:16+08:00 ] 127.0.0.1 /gs/houseSales/
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001956s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.015309s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000808s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.069550s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001925s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\Home\59dc4e272c863fa1855c7b8d72a51a92.php 第 34 行.
+NOTIC: [8] Undefined index: uid D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\Home\59dc4e272c863fa1855c7b8d72a51a92.php 第 34 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.071546s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042493s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.114139s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.115798s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.117158s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.117964s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005268s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.119496s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001207s ]
+
+[ 2014-08-04T14:20:13+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001788s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.008829s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000627s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.048695s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001481s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\Home\59dc4e272c863fa1855c7b8d72a51a92.php 第 34 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.050242s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022612s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.072913s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.073995s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.074869s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.075559s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003553s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.076560s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000958s ]
+
+[ 2014-08-04T14:20:13+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001009s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001117s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.006282s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000530s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.081150s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001820s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\Home\59dc4e272c863fa1855c7b8d72a51a92.php 第 34 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.083020s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022408s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.105520s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.106691s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.107673s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.108622s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004120s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.109721s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001041s ]
+
+[ 2014-08-04T14:20:31+08:00 ] 127.0.0.1 /index.php?g=User&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001349s ]
+NOTIC: [2048] Declaration of IndexAction::insert() should be compatible with BaseAction::insert($name = '', $back = '/index') D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\User\IndexAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.058476s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.008056s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.029265s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.015329s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.016400s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'ngomya1406776377' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.002546s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.013949s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ngomya1406776377' ) LIMIT 1   [ RunTime:0.000531s ]
+NOTIC: [8] Undefined index: width D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\UserAction.class.php 第 1 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.006031s ]
+SQL: SELECT * FROM `wy_user_group`  [ RunTime:0.000682s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_wxuser` WHERE ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000607s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `uid` = 1 ) LIMIT 0,25   [ RunTime:0.001212s ]
+SQL: SHOW COLUMNS FROM `wy_diymen_set` [ RunTime:0.021332s ]
+SQL: SELECT * FROM `wy_diymen_set` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000666s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.232586s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001785s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: id D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 75 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 76 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.234454s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037137s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.271636s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.272615s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.273585s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.274332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003607s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.275340s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000962s ]
+
+[ 2014-08-04T14:20:36+08:00 ] 127.0.0.1 /index.php?g=User&m=Index&a=edit&id=1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000971s ]
+NOTIC: [2048] Declaration of IndexAction::insert() should be compatible with BaseAction::insert($name = '', $back = '/index') D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\User\IndexAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.008635s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.001324s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.008724s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001079s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.008516s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'ngomya1406776377' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.001375s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.006986s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ngomya1406776377' ) LIMIT 1   [ RunTime:0.000507s ]
+NOTIC: [8] Undefined index: width D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\UserAction.class.php 第 1 行.
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001472s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.063057s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001695s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.064823s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038506s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.103389s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.104373s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.105487s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.106413s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004368s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.107936s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001315s ]
+
+[ 2014-08-04T14:22:05+08:00 ] 127.0.0.1 /index.php?g=User&m=Index&a=upsave
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001085s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001219s ]
+NOTIC: [2048] Declaration of IndexAction::insert() should be compatible with BaseAction::insert($name = '', $back = '/index') D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\User\IndexAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.008866s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000943s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.008278s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001319s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.009201s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'ngomya1406776377' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.001837s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.007537s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ngomya1406776377' ) LIMIT 1   [ RunTime:0.000530s ]
+NOTIC: [8] Undefined index: width D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\UserAction.class.php 第 1 行.
+SQL: SHOW COLUMNS FROM `wy_diymen_set` [ RunTime:0.007292s ]
+SQL: UPDATE `wy_diymen_set` SET `appid`='wx75d16d1c51ca3b00',`appsecret`='e40eb78d8b5656eef454fba00ae0e306' WHERE ( `token` = 'ngomya1406776377' ) [ RunTime:0.000776s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.011220s ]
+SQL: UPDATE `wy_wxuser` SET `wxname`='管理测试号',`wxid`='gh_cdfddc6d7765',`weixin`='gh_cdfddc6d7765',`headerpic`='./tpl/User/default/common/images/portrait.jpg',`token`='ynzfui1406882414',`appid`='wx75d16d1c51ca3b00',`appsecret`='e40eb78d8b5656eef454fba00ae0e306',`winxintype`='3',`province`='p',`city`='c',`qq`='1406882414@yourdomain.com',`wxfans`='0',`email`='weiwinkeji@163.com',`emailuser`='weiwinkeji',`emailpassword`='341341324',`emailstatus`='0',`updatetime`='1407133324',`typeid`='8',`typename`='服务' WHERE ( `id` = 1 ) [ RunTime:0.000698s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.102741s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001419s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.104265s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019336s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.123724s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.124681s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.125550s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.126553s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004325s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.128133s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001652s ]
+
+[ 2014-08-04T14:22:06+08:00 ] 127.0.0.1 /index.php?g=User&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001143s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001250s ]
+NOTIC: [2048] Declaration of IndexAction::insert() should be compatible with BaseAction::insert($name = '', $back = '/index') D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\User\IndexAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.008218s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.001223s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.007857s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001643s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.008722s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'ngomya1406776377' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.001733s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.006782s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ngomya1406776377' ) LIMIT 1   [ RunTime:0.001075s ]
+NOTIC: [8] Undefined index: width D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\UserAction.class.php 第 1 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.007423s ]
+SQL: SELECT * FROM `wy_user_group`  [ RunTime:0.001010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_wxuser` WHERE ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000856s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `uid` = 1 ) LIMIT 0,25   [ RunTime:0.001666s ]
+SQL: SHOW COLUMNS FROM `wy_diymen_set` [ RunTime:0.008976s ]
+SQL: SELECT * FROM `wy_diymen_set` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000799s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.089802s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001516s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: id D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 75 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 76 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.091399s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025996s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.117464s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.118418s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.119600s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.120679s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004716s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.122367s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001779s ]
+
+[ 2014-08-04T14:22:09+08:00 ] 127.0.0.1 /index.php?g=Home&m=Index&a=help&id=1&token=ynzfui1406882414
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000774s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000873s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.004034s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001167s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.005267s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070467s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.075799s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.076936s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.077966s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.078844s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004140s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.080038s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001633s ]
+
+[ 2014-08-04T14:24:04+08:00 ] 127.0.0.1 /index.php?m=Index&a=login
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001707s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.005368s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000947s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.006391s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024902s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.031354s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.032447s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.033392s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.034128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003701s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.035151s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001011s ]
+
+[ 2014-08-04T14:24:12+08:00 ] 127.0.0.1 /index.php?m=Users&a=checklogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001531s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001737s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.009385s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `username` = 'chancle' ) LIMIT 1   [ RunTime:0.001972s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.006908s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.001212s ]
+SQL: UPDATE `wy_users` SET `lasttime`='1407133452',`lastloginmonth`='8',`lastip`='127.0.0.1' WHERE ( `id` = 1 ) [ RunTime:0.001090s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.064886s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001241s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.066197s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012374s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.078690s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.079594s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.080581s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.081734s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004769s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.083580s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001127s ]
+
+[ 2014-08-04T14:24:13+08:00 ] 127.0.0.1 /index.php?g=User&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000731s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+NOTIC: [2048] Declaration of IndexAction::insert() should be compatible with BaseAction::insert($name = '', $back = '/index') D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\User\IndexAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.006947s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.002162s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.008907s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001161s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.009837s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'ngomya1406776377' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.001216s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.006902s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ngomya1406776377' ) LIMIT 1   [ RunTime:0.000920s ]
+NOTIC: [8] Undefined index: width D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\UserAction.class.php 第 1 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.008952s ]
+SQL: SELECT * FROM `wy_user_group`  [ RunTime:0.000709s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_wxuser` WHERE ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000603s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `uid` = 1 ) LIMIT 0,25   [ RunTime:0.001918s ]
+SQL: SHOW COLUMNS FROM `wy_diymen_set` [ RunTime:0.007988s ]
+SQL: SELECT * FROM `wy_diymen_set` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000645s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.089477s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002579s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: id D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 75 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 76 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.092175s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022069s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.114326s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.115682s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.116906s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.117756s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004385s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.118779s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-08-04T14:24:20+08:00 ] 127.0.0.1 /index.php?g=User&m=Index&a=edit&id=1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000835s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000943s ]
+NOTIC: [2048] Declaration of IndexAction::insert() should be compatible with BaseAction::insert($name = '', $back = '/index') D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\User\IndexAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.006537s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.001006s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.006368s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001246s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.008418s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'ngomya1406776377' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.001426s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.006604s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ngomya1406776377' ) LIMIT 1   [ RunTime:0.000789s ]
+NOTIC: [8] Undefined index: width D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\UserAction.class.php 第 1 行.
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001060s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.064376s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001959s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.066423s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021634s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.088102s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.089448s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.090530s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.091269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004161s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.092365s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001413s ]
+
+[ 2014-08-04T14:24:39+08:00 ] 127.0.0.1 /index.php?g=User&m=Index&a=edit&id=1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000940s ]
+NOTIC: [2048] Declaration of IndexAction::insert() should be compatible with BaseAction::insert($name = '', $back = '/index') D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\User\IndexAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.007607s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000791s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.006083s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000959s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.007737s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'ngomya1406776377' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.001150s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.005805s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ngomya1406776377' ) LIMIT 1   [ RunTime:0.000604s ]
+NOTIC: [8] Undefined index: width D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\UserAction.class.php 第 1 行.
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000987s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.054075s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001664s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.055815s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020976s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.076853s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.077843s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.078759s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.079458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003507s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.080455s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000967s ]
+
+[ 2014-08-04T14:24:41+08:00 ] 127.0.0.1 /index.php?g=User&m=Index&a=edit&id=1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001172s ]
+NOTIC: [2048] Declaration of IndexAction::insert() should be compatible with BaseAction::insert($name = '', $back = '/index') D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\User\IndexAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.006984s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000718s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.007105s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000863s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.006722s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'ngomya1406776377' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000994s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.006175s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ngomya1406776377' ) LIMIT 1   [ RunTime:0.000595s ]
+NOTIC: [8] Undefined index: width D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\UserAction.class.php 第 1 行.
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001168s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.050518s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001618s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.052201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020414s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.072676s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.074115s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.075118s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.075828s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004077s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.076852s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000970s ]
+
+[ 2014-08-04T14:24:50+08:00 ] 127.0.0.1 /index.php?g=User&m=Function&a=index&id=1&token=ynzfui1406882414
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002544s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.006142s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000607s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.006119s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000798s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.006527s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'ngomya1406776377' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000842s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.006366s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ngomya1406776377' ) LIMIT 1   [ RunTime:0.000495s ]
+NOTIC: [8] Undefined index: width D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\UserAction.class.php 第 1 行.
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000858s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.005809s ]
+SQL: SELECT `id`,`queryname` FROM `wy_token_open` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.006719s ]
+SQL: SELECT `id`,`name` FROM `wy_user_group` WHERE status=1  [ RunTime:0.000395s ]
+SQL: SHOW COLUMNS FROM `wy_function` [ RunTime:0.015973s ]
+SQL: SELECT * FROM `wy_function` WHERE ( `status` = 1 ) AND ( `gid` = 1 )  [ RunTime:0.001155s ]
+SQL: SELECT * FROM `wy_function` WHERE ( `status` = 1 ) AND ( `gid` = 2 )  [ RunTime:0.000684s ]
+SQL: SELECT * FROM `wy_function` WHERE ( `status` = 1 ) AND ( `gid` = 3 )  [ RunTime:0.000423s ]
+SQL: SELECT * FROM `wy_function` WHERE ( `status` = 1 ) AND ( `gid` = 4 )  [ RunTime:0.000865s ]
+SQL: SELECT `wxname`,`wxid`,`headerpic`,`weixin` FROM `wy_wxuser` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000528s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.102866s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001779s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\52858e5695fc543ba4c03ea48eacfeda.php 第 114 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\52858e5695fc543ba4c03ea48eacfeda.php 第 115 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\52858e5695fc543ba4c03ea48eacfeda.php 第 116 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\52858e5695fc543ba4c03ea48eacfeda.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\52858e5695fc543ba4c03ea48eacfeda.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\52858e5695fc543ba4c03ea48eacfeda.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\52858e5695fc543ba4c03ea48eacfeda.php 第 117 行.
+NOTIC: [8] Undefined variable: statistics_list D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\52858e5695fc543ba4c03ea48eacfeda.php 第 117 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.104716s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056277s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.161057s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.162396s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.163570s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.164377s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004362s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.165525s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001038s ]
+
+[ 2014-08-04T14:24:55+08:00 ] 127.0.0.1 /index.php?g=User&m=Index&a=edit&id=1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000961s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001071s ]
+NOTIC: [2048] Declaration of IndexAction::insert() should be compatible with BaseAction::insert($name = '', $back = '/index') D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\User\IndexAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.006711s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000584s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.005965s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000930s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.006999s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000997s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.007051s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000942s ]
+NOTIC: [8] Undefined index: width D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\UserAction.class.php 第 1 行.
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000790s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.055174s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001672s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.056913s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021149s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.078124s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.079167s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.080246s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.081036s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003854s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.082069s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000990s ]
+
+[ 2014-08-04T14:25:06+08:00 ] 127.0.0.1 /index.php?g=User&m=Index&a=edit&id=1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000992s ]
+NOTIC: [2048] Declaration of IndexAction::insert() should be compatible with BaseAction::insert($name = '', $back = '/index') D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\User\IndexAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.007575s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000912s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.006561s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001100s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.007248s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.001828s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.007330s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.001058s ]
+NOTIC: [8] Undefined index: width D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\UserAction.class.php 第 1 行.
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001012s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.056003s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001555s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.057629s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022826s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.080512s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.081511s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.082563s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.083811s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004368s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.085012s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001143s ]
+
+[ 2014-08-04T14:25:14+08:00 ] 127.0.0.1 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000842s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.008453s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000771s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.038827s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001739s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant uid - assumed 'uid' D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\Home\59dc4e272c863fa1855c7b8d72a51a92.php 第 34 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.040674s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027017s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.067729s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.068935s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.070010s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.071354s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005135s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.072967s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001266s ]
+
+[ 2014-08-04T14:25:21+08:00 ] 127.0.0.1 /index.php?g=User&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000864s ]
+NOTIC: [2048] Declaration of IndexAction::insert() should be compatible with BaseAction::insert($name = '', $back = '/index') D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\User\IndexAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.005872s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.001135s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.007150s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001002s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.007096s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.001715s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.007917s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000985s ]
+NOTIC: [8] Undefined index: width D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\UserAction.class.php 第 1 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.007309s ]
+SQL: SELECT * FROM `wy_user_group`  [ RunTime:0.000758s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_wxuser` WHERE ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000505s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `uid` = 1 ) LIMIT 0,25   [ RunTime:0.000821s ]
+SQL: SHOW COLUMNS FROM `wy_diymen_set` [ RunTime:0.006645s ]
+SQL: SELECT * FROM `wy_diymen_set` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000701s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.075652s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001536s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: id D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 75 行.
+NOTIC: [8] Undefined index: id D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 76 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.077264s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020225s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.097542s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.098523s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.099369s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.100055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003403s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.101038s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000942s ]
+
+[ 2014-08-04T14:25:39+08:00 ] 127.0.0.1 /index.php?g=System&m=Admin&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000982s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.010725s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001671s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: errorMsg D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\0ac5617eb2d3cba46a940e61fff06d9f.php 第 57 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.012463s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018635s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.031161s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.032210s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.033222s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.034054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003977s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.035244s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001114s ]
+
+[ 2014-08-04T14:25:43+08:00 ] 127.0.0.1 /index.php?g=System&m=System&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000953s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.018564s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = null ) AND ( `pid` = 2 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.001598s ]
+SQL: CREATE TABLE IF NOT EXISTS `wy_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.020328s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: CREATE TABLE IF NOT EXISTS `wy_update_record` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `msg` varchar(600) NOT NULL DEFAULT '',
+  `type` varchar(20) NOT NULL DEFAULT '',
+  `time` int(10) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MYISAM DEFAULT CHARSET=utf8 [ RunTime:0.018606s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.006302s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `display` = 1 ) AND ( `status` = 1 ) ORDER BY `sort` asc  [ RunTime:0.021746s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.132946s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001590s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.134610s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021567s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.156237s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.157251s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.158263s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.159052s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003791s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.160128s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001093s ]
+
+[ 2014-08-04T14:25:43+08:00 ] 127.0.0.1 /index.php?g=System&m=System&a=menu
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.007180s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007407s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.013156s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = null ) AND ( `pid` = 2 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.000805s ]
+SQL: CREATE TABLE IF NOT EXISTS `wy_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000805s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: CREATE TABLE IF NOT EXISTS `wy_update_record` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `msg` varchar(600) NOT NULL DEFAULT '',
+  `type` varchar(20) NOT NULL DEFAULT '',
+  `time` int(10) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MYISAM DEFAULT CHARSET=utf8 [ RunTime:0.000719s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.006808s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `display` = 2 ) AND ( `status` = 1 ) AND ( `pid` = 2 ) AND ( `level` = 2 ) ORDER BY `sort` asc  [ RunTime:0.001415s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.100429s ]
+INFO: [ view_template ] --END-- [ RunTime:0.005898s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.106429s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014496s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.121015s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.122307s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.123263s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.123998s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003906s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.125028s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2014-08-04T14:25:43+08:00 ] 127.0.0.1 /index.php?g=System&m=System&a=main
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002063s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.006800s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = null ) AND ( `pid` = 2 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.001438s ]
+SQL: CREATE TABLE IF NOT EXISTS `wy_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.001721s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: CREATE TABLE IF NOT EXISTS `wy_update_record` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `msg` varchar(600) NOT NULL DEFAULT '',
+  `type` varchar(20) NOT NULL DEFAULT '',
+  `time` int(10) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MYISAM DEFAULT CHARSET=utf8 [ RunTime:0.001900s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: SHOW COLUMNS FROM `wy_system_info` [ RunTime:0.012690s ]
+SQL: SELECT * FROM `wy_system_info` ORDER BY lastsqlupdate DESC LIMIT 1   [ RunTime:0.001094s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.144611s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001516s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant SERVER_SOFTWARE - assumed 'SERVER_SOFTWARE' D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\70671f3fb4cc556d45e03bff5207b695.php 第 15 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.146201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030736s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.177051s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.178426s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.179658s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.180398s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004287s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.181414s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001442s ]
+
+[ 2014-08-04T14:25:44+08:00 ] 127.0.0.1 /index.php?g=System&m=System&a=menu&pid=3&level=2&title=%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000973s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001070s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.005499s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 2 ) AND ( `pid` = 3 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.000789s ]
+SQL: CREATE TABLE IF NOT EXISTS `wy_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000647s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: CREATE TABLE IF NOT EXISTS `wy_update_record` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `msg` varchar(600) NOT NULL DEFAULT '',
+  `type` varchar(20) NOT NULL DEFAULT '',
+  `time` int(10) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MYISAM DEFAULT CHARSET=utf8 [ RunTime:0.000920s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.039505s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002405s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.041973s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017775s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.059869s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.061664s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.063203s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.064432s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009287s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.069275s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002076s ]
+
+[ 2014-08-04T14:25:46+08:00 ] 127.0.0.1 /index.php?g=System&m=Users&a=index&pid=50&level=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001482s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.005580s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 3 ) AND ( `pid` = 50 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.001021s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.006088s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.006624s ]
+SQL: SELECT `id`,`name` FROM `wy_user_group` ORDER BY id desc  [ RunTime:0.001016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_users` LIMIT 1   [ RunTime:0.000619s ]
+SQL: SELECT * FROM `wy_users` ORDER BY id desc LIMIT 0,25   [ RunTime:0.001835s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.056679s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001539s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.058290s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027849s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.086198s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.087258s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.088154s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.088840s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003573s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.089865s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001073s ]
+
+[ 2014-08-04T14:25:52+08:00 ] 127.0.0.1 /index.php?g=System&m=Users&a=edit&id=1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001144s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.005787s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = null ) AND ( `pid` = 2 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.000579s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.006674s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.007509s ]
+SQL: SELECT `id`,`name` FROM `wy_user_group` WHERE ( `status` = 1 )  [ RunTime:0.000527s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000807s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_users` WHERE ( `inviter` = 1 ) LIMIT 1   [ RunTime:0.000656s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.052426s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001939s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: remark D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\b81454eb26260e3d7f6f170dcced847b.php 第 107 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.054437s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.324022s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.378540s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.379766s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.380965s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.381987s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004796s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.383460s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001297s ]
+
+[ 2014-08-04T14:26:04+08:00 ] 127.0.0.1 /index.php?g=System&m=Users&a=edit
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000766s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000873s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.007231s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = null ) AND ( `pid` = 2 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.000797s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.007278s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/3/f/3f49044c1469c6990a665f46ec6c0a41.php): No such file or directory D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.014051s ]
+SQL: SELECT `gid` FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001541s ]
+SQL: UPDATE `wy_users` SET `username`='chancle',`mp`='15865273728',`email`='123456@qq.com',`gid`='4',`status`='1',`wechat_card_num`='1',`card_num`='0',`activitynum`='0',`money`='0',`attachmentsize`='0',`viptime`='1441468800' WHERE ( `id` = 1 ) [ RunTime:0.001543s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.154004s ]
+INFO: [ view_template ] --END-- [ RunTime:0.008133s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.162269s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025503s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.187815s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.190484s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.193504s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.196441s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011953s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.199875s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002838s ]
+
+[ 2014-08-04T14:26:06+08:00 ] 127.0.0.1 /index.php?g=System&m=Users&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002621s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.006847s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = null ) AND ( `pid` = 2 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.000559s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.006114s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.005893s ]
+SQL: SELECT `id`,`name` FROM `wy_user_group` ORDER BY id desc  [ RunTime:0.000539s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_users` LIMIT 1   [ RunTime:0.000304s ]
+SQL: SELECT * FROM `wy_users` ORDER BY id desc LIMIT 0,25   [ RunTime:0.001312s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.073948s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003733s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.077752s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025408s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.103226s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.105445s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.107695s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.110244s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009146s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.112462s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002164s ]
+
+[ 2014-08-04T14:26:56+08:00 ] 127.0.0.1 /index.php?g=System&m=Group&a=index&pid=25&level=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002475s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.006870s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 3 ) AND ( `pid` = 25 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.001070s ]
+SQL: SHOW COLUMNS FROM `wy_role` [ RunTime:0.024455s ]
+SQL: SELECT * FROM `wy_role` ORDER BY sort DESC  [ RunTime:0.001144s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.090985s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003485s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.094543s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030815s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.125411s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.127528s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.129844s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.131904s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008657s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.134165s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002475s ]
+
+[ 2014-08-04T14:26:57+08:00 ] 127.0.0.1 /index.php?g=System&m=User_group&a=index&pid=48&level=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002283s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.006099s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 3 ) AND ( `pid` = 48 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.000859s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.006597s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_user_group` LIMIT 1   [ RunTime:0.000859s ]
+SQL: SELECT * FROM `wy_user_group` ORDER BY id ASC LIMIT 0,15   [ RunTime:0.001113s ]
+SQL: UPDATE `wy_user_group` SET `taxisid`='1' WHERE ( `id` = 1 ) [ RunTime:0.000636s ]
+SQL: UPDATE `wy_user_group` SET `taxisid`='2' WHERE ( `id` = 2 ) [ RunTime:0.000550s ]
+SQL: UPDATE `wy_user_group` SET `taxisid`='3' WHERE ( `id` = 3 ) [ RunTime:0.000533s ]
+SQL: UPDATE `wy_user_group` SET `taxisid`='4' WHERE ( `id` = 4 ) [ RunTime:0.000520s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.073329s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003943s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\b15a6f5abc04991d5de23405aba73860.php 第 43 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\b15a6f5abc04991d5de23405aba73860.php 第 43 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\b15a6f5abc04991d5de23405aba73860.php 第 43 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\b15a6f5abc04991d5de23405aba73860.php 第 43 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.077351s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035043s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.112445s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.114601s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.116653s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.118579s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008272s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.120814s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002783s ]
+
+[ 2014-08-04T14:26:59+08:00 ] 127.0.0.1 /index.php?g=System&m=User&a=index&pid=18&level=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002404s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.006701s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 3 ) AND ( `pid` = 18 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.001089s ]
+SQL: SHOW COLUMNS FROM `wy_role` [ RunTime:0.006193s ]
+SQL: SELECT `id`,`name` FROM `wy_role`  [ RunTime:0.000755s ]
+SQL: SHOW COLUMNS FROM `wy_user` [ RunTime:0.006500s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_user` LIMIT 1   [ RunTime:0.000780s ]
+SQL: SELECT * FROM `wy_user` ORDER BY id ASC LIMIT 0,15   [ RunTime:0.001083s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.104857s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003784s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\985575ccd787e2af15b5ff1340471de1.php 第 34 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.108715s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040145s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.148941s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.151148s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.153788s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.156166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009909s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.158987s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002525s ]
+
+[ 2014-08-04T14:27:02+08:00 ] 127.0.0.1 /index.php?g=System&m=System&a=menu&pid=5&level=2&title=%E5%86%85%E5%AE%B9%E7%AE%A1%E7%90%86
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003251s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003419s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.006290s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 2 ) AND ( `pid` = 5 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.000900s ]
+SQL: CREATE TABLE IF NOT EXISTS `wy_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000805s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: CREATE TABLE IF NOT EXISTS `wy_update_record` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `msg` varchar(600) NOT NULL DEFAULT '',
+  `type` varchar(20) NOT NULL DEFAULT '',
+  `time` int(10) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MYISAM DEFAULT CHARSET=utf8 [ RunTime:0.000783s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.041584s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003878s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.045508s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020426s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.065997s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.068170s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.070305s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.072274s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008873s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.074975s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002256s ]
+
+[ 2014-08-04T14:27:03+08:00 ] 127.0.0.1 /index.php?g=System&m=Article&a=index&pid=38&level=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002158s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002256s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.007232s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 3 ) AND ( `pid` = 38 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.000814s ]
+SQL: SHOW COLUMNS FROM `wy_img` [ RunTime:0.017355s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.007327s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_img` LIMIT 1   [ RunTime:0.000920s ]
+SQL: SELECT * FROM `wy_img` LIMIT 0,25   [ RunTime:0.001106s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\System\ArticleAction.class.php 第 10 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.098985s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003311s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.102369s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026386s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.128813s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.130916s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.133159s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.135099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008552s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.137461s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002336s ]
+
+[ 2014-08-04T14:27:04+08:00 ] 127.0.0.1 /index.php?g=System&m=Text&a=index&pid=57&level=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002798s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.006861s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 3 ) AND ( `pid` = 57 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.001229s ]
+SQL: SHOW COLUMNS FROM `wy_text` [ RunTime:0.029711s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.007479s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_text` LIMIT 1   [ RunTime:0.000515s ]
+SQL: SELECT * FROM `wy_text` LIMIT 0,25   [ RunTime:0.001945s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'zlsibc1399748090' ) AND ( `uid` = 13 ) LIMIT 1   [ RunTime:0.001298s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'eawfce1399780777' ) AND ( `uid` = 19 ) LIMIT 1   [ RunTime:0.001629s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'rhvbvp1400731169' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.001489s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'lylmkx1400730355' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.001229s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'tshhtj1400813819' ) AND ( `uid` = 5 ) LIMIT 1   [ RunTime:0.000996s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'a717713db81322c' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.001107s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = '5e8aeeeabe2d84d' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.001170s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'oudsvk1400937241' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.001178s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'a717713db81322c' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000983s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'uqnrmt1401086437' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000996s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'prxpct1401098941' ) AND ( `uid` = 35 ) LIMIT 1   [ RunTime:0.001058s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = '70186bfea033361' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.001169s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'prxpct1401098941' ) AND ( `uid` = 35 ) LIMIT 1   [ RunTime:0.001071s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.159637s ]
+INFO: [ view_template ] --END-- [ RunTime:0.017435s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.177122s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050774s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.227949s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.230275s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.234392s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.236423s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010618s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.238666s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002342s ]
+
+[ 2014-08-04T14:27:05+08:00 ] 127.0.0.1 /index.php?g=System&m=Custom&a=index&pid=60&level=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002341s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.009266s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 3 ) AND ( `pid` = 60 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.001294s ]
+NOTIC: [8] Undefined variable: list D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\System\CustomAction.class.php 第 34 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.065138s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003579s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.068875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030239s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.099157s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.101795s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.104313s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.106503s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010086s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.109395s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003362s ]
+
+[ 2014-08-04T14:27:06+08:00 ] 127.0.0.1 /index.php?g=System&m=System&a=menu&pid=80&level=2&title=%E5%85%AC%E4%BC%97%E5%8F%B7%E7%AE%A1%E7%90%86
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002276s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.006633s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 2 ) AND ( `pid` = 80 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.000893s ]
+SQL: CREATE TABLE IF NOT EXISTS `wy_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000668s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: CREATE TABLE IF NOT EXISTS `wy_update_record` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `msg` varchar(600) NOT NULL DEFAULT '',
+  `type` varchar(20) NOT NULL DEFAULT '',
+  `time` int(10) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MYISAM DEFAULT CHARSET=utf8 [ RunTime:0.000660s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.040595s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003240s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.043903s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017203s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.061165s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.063568s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.065684s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.067851s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009116s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.070382s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002301s ]
+
+[ 2014-08-04T14:27:07+08:00 ] 127.0.0.1 /index.php?g=System&m=Token&a=index&pid=81&level=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002398s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002506s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.006119s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 3 ) AND ( `pid` = 81 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.000856s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.007625s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_wxuser` LIMIT 1   [ RunTime:0.000668s ]
+SQL: SELECT * FROM `wy_wxuser` ORDER BY id desc LIMIT 0,5   [ RunTime:0.001826s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.006566s ]
+SQL: SELECT `id`,`gid`,`username` FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000917s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.062597s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003722s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: usr D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\950628be34e37b243a8b1458b633128c.php 第 33 行.
+NOTIC: [8] Undefined index: usenum D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\950628be34e37b243a8b1458b633128c.php 第 35 行.
+NOTIC: [8] Undefined index: status D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\950628be34e37b243a8b1458b633128c.php 第 36 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.066388s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024486s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.090951s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.094065s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.096254s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.098232s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009424s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.100458s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002177s ]
+
+[ 2014-08-04T14:27:26+08:00 ] 127.0.0.1 /index.php?g=System&m=System&a=menu&pid=45&level=2&title=%E5%8A%9F%E8%83%BD%E6%A8%A1%E5%9D%97
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002671s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.005888s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 2 ) AND ( `pid` = 45 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.000702s ]
+SQL: CREATE TABLE IF NOT EXISTS `wy_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000655s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: CREATE TABLE IF NOT EXISTS `wy_update_record` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `msg` varchar(600) NOT NULL DEFAULT '',
+  `type` varchar(20) NOT NULL DEFAULT '',
+  `time` int(10) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MYISAM DEFAULT CHARSET=utf8 [ RunTime:0.000611s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.049386s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004283s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.053816s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017865s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.071718s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.074202s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.076506s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.078490s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008963s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.080774s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002319s ]
+
+[ 2014-08-04T14:27:27+08:00 ] 127.0.0.1 /index.php?g=System&m=Function&a=index&pid=46&level=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003571s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.005704s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 3 ) AND ( `pid` = 46 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.000787s ]
+SQL: SHOW COLUMNS FROM `wy_function` [ RunTime:0.007193s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_function` LIMIT 1   [ RunTime:0.000950s ]
+SQL: SELECT * FROM `wy_function` ORDER BY id ASC LIMIT 0,30   [ RunTime:0.001485s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.057444s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003419s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\6d42f15109526ab3a09b0ed22d9cf95e.php 第 42 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\6d42f15109526ab3a09b0ed22d9cf95e.php 第 42 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\6d42f15109526ab3a09b0ed22d9cf95e.php 第 42 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\6d42f15109526ab3a09b0ed22d9cf95e.php 第 42 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\6d42f15109526ab3a09b0ed22d9cf95e.php 第 42 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\6d42f15109526ab3a09b0ed22d9cf95e.php 第 42 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\6d42f15109526ab3a09b0ed22d9cf95e.php 第 42 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\6d42f15109526ab3a09b0ed22d9cf95e.php 第 42 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\6d42f15109526ab3a09b0ed22d9cf95e.php 第 42 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\6d42f15109526ab3a09b0ed22d9cf95e.php 第 42 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\6d42f15109526ab3a09b0ed22d9cf95e.php 第 42 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\6d42f15109526ab3a09b0ed22d9cf95e.php 第 42 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\6d42f15109526ab3a09b0ed22d9cf95e.php 第 42 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\6d42f15109526ab3a09b0ed22d9cf95e.php 第 42 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\6d42f15109526ab3a09b0ed22d9cf95e.php 第 42 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\6d42f15109526ab3a09b0ed22d9cf95e.php 第 42 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\6d42f15109526ab3a09b0ed22d9cf95e.php 第 42 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\6d42f15109526ab3a09b0ed22d9cf95e.php 第 42 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\6d42f15109526ab3a09b0ed22d9cf95e.php 第 42 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\6d42f15109526ab3a09b0ed22d9cf95e.php 第 42 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\6d42f15109526ab3a09b0ed22d9cf95e.php 第 42 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\6d42f15109526ab3a09b0ed22d9cf95e.php 第 42 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\6d42f15109526ab3a09b0ed22d9cf95e.php 第 42 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\6d42f15109526ab3a09b0ed22d9cf95e.php 第 42 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\6d42f15109526ab3a09b0ed22d9cf95e.php 第 42 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\6d42f15109526ab3a09b0ed22d9cf95e.php 第 42 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\6d42f15109526ab3a09b0ed22d9cf95e.php 第 42 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\6d42f15109526ab3a09b0ed22d9cf95e.php 第 42 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\6d42f15109526ab3a09b0ed22d9cf95e.php 第 42 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\6d42f15109526ab3a09b0ed22d9cf95e.php 第 42 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.060934s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053559s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.114564s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.117324s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.119539s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.121552s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009220s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.123882s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002886s ]
+
+[ 2014-08-04T14:27:29+08:00 ] 127.0.0.1 /index.php?g=System&m=System&a=menu&pid=84&level=2&title=%E4%BB%A3%E7%90%86%E5%95%86%E7%AE%A1%E7%90%86
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003749s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003874s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.006111s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 2 ) AND ( `pid` = 84 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.000809s ]
+SQL: CREATE TABLE IF NOT EXISTS `wy_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000741s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: CREATE TABLE IF NOT EXISTS `wy_update_record` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `msg` varchar(600) NOT NULL DEFAULT '',
+  `type` varchar(20) NOT NULL DEFAULT '',
+  `time` int(10) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MYISAM DEFAULT CHARSET=utf8 [ RunTime:0.000652s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.047749s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003240s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.051059s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017787s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.068904s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.070964s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.073139s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.075288s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008874s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.077873s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002367s ]
+
+[ 2014-08-04T14:27:30+08:00 ] 127.0.0.1 /index.php?g=System&m=Agent&a=index&pid=85&level=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002376s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002480s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.008114s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 3 ) AND ( `pid` = 85 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.001101s ]
+SQL: SHOW COLUMNS FROM `wy_agent` [ RunTime:0.018840s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_agent` LIMIT 1   [ RunTime:0.000908s ]
+SQL: SELECT * FROM `wy_agent` LIMIT 0,20   [ RunTime:0.001283s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.064861s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003501s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.068438s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030824s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.099320s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.101493s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.103534s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.105742s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008695s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.108115s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002247s ]
+
+[ 2014-08-04T14:27:31+08:00 ] 127.0.0.1 /index.php?g=System&m=System&a=menu&pid=4&level=2&title=%E6%89%A9%E5%B1%95%E7%AE%A1%E7%90%86
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002209s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002305s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.006295s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 2 ) AND ( `pid` = 4 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.001282s ]
+SQL: CREATE TABLE IF NOT EXISTS `wy_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.001000s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: CREATE TABLE IF NOT EXISTS `wy_update_record` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `msg` varchar(600) NOT NULL DEFAULT '',
+  `type` varchar(20) NOT NULL DEFAULT '',
+  `time` int(10) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MYISAM DEFAULT CHARSET=utf8 [ RunTime:0.000795s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.041252s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003534s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.044859s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017284s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.062200s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.064282s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.067810s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.070976s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012074s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.074478s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003123s ]
+
+[ 2014-08-04T14:27:33+08:00 ] 127.0.0.1 /index.php?g=System&m=Records&a=index&pid=64&level=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002175s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002273s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.007084s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 3 ) AND ( `pid` = 64 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.000913s ]
+SQL: SHOW COLUMNS FROM `wy_indent` [ RunTime:0.030016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_indent` LIMIT 1   [ RunTime:0.000980s ]
+SQL: SELECT * FROM `wy_indent` ORDER BY id desc LIMIT 0,25   [ RunTime:0.009516s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.082972s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003781s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.086829s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024223s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.111106s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.114577s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.117034s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.119054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010134s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.121337s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002578s ]
+
+[ 2014-08-04T14:27:45+08:00 ] 127.0.0.1 /index.php?g=System&m=Case&a=index&pid=66&level=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001378s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001478s ]
+NOTIC: [2048] Declaration of CaseAction::insert() should be compatible with BaseAction::insert($name = '', $back = '/index') D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\System\CaseAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.005700s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 3 ) AND ( `pid` = 66 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.000798s ]
+SQL: SHOW COLUMNS FROM `wy_case` [ RunTime:0.022922s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/c/d/cd14c323902024e72c850aa828d634a7.php): No such file or directory D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SELECT * FROM `wy_case` WHERE status=1 LIMIT 32   [ RunTime:0.001107s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/c/d/cd14c323902024e72c850aa828d634a7.php): No such file or directory D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_case` LIMIT 1   [ RunTime:0.000853s ]
+SQL: SELECT * FROM `wy_case` LIMIT 0,25   [ RunTime:0.000846s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.110735s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002394s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.113205s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015709s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.129037s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.130267s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.131442s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.132470s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004523s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.133651s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001716s ]
+
+[ 2014-08-04T14:27:47+08:00 ] 127.0.0.1 /index.php?g=System&m=Links&a=index&pid=73&level=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001171s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001280s ]
+NOTIC: [2048] Declaration of LinksAction::insert() should be compatible with BaseAction::insert($name = '', $back = '/index') D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\System\LinksAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.006660s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 3 ) AND ( `pid` = 73 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.000732s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.006939s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/8/0/807765384d9d5527da8848df14a4f02f.php): No such file or directory D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.005983s ]
+SQL: SELECT * FROM `wy_links`  [ RunTime:0.000551s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/8/0/807765384d9d5527da8848df14a4f02f.php): No such file or directory D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_links` LIMIT 1   [ RunTime:0.000392s ]
+SQL: SELECT * FROM `wy_links` LIMIT 0,25   [ RunTime:0.000557s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.080351s ]
+INFO: [ view_template ] --END-- [ RunTime:0.007888s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.088320s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016895s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.105270s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.106536s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.107643s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.108599s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004471s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.109834s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001178s ]
+
+[ 2014-08-04T14:27:48+08:00 ] 127.0.0.1 /index.php?g=System&m=System&a=menu&pid=2&level=2&title=%E7%AB%99%E7%82%B9%E7%AE%A1%E7%90%86
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001724s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.006654s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 2 ) AND ( `pid` = 2 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.001086s ]
+SQL: CREATE TABLE IF NOT EXISTS `wy_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000733s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: CREATE TABLE IF NOT EXISTS `wy_update_record` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `msg` varchar(600) NOT NULL DEFAULT '',
+  `type` varchar(20) NOT NULL DEFAULT '',
+  `time` int(10) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MYISAM DEFAULT CHARSET=utf8 [ RunTime:0.000605s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.042208s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001519s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.043796s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011700s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.055557s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.056566s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.057885s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.059033s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004718s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.060372s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001396s ]
+
+[ 2014-08-04T14:27:49+08:00 ] 127.0.0.1 /index.php?g=System&m=Site&a=index&pid=6&level=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001090s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001187s ]
+NOTIC: [2048] Declaration of SiteAction::insert() should be compatible with BaseAction::insert($name = '', $back = '/index') D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\System\SiteAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.005925s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 3 ) AND ( `pid` = 6 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.000839s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.005722s ]
+SQL: SELECT * FROM `wy_user_group` ORDER BY id ASC  [ RunTime:0.001045s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.039212s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001729s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: token D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\290787b61e1d188e50b8f6a79194f6f3.php 第 41 行.
+NOTIC: [8] Use of undefined constant checked - assumed 'checked' D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\290787b61e1d188e50b8f6a79194f6f3.php 第 72 行.
+NOTIC: [8] Use of undefined constant checked - assumed 'checked' D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\290787b61e1d188e50b8f6a79194f6f3.php 第 76 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.040965s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019386s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.060407s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.061683s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.062838s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.063773s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004620s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.065142s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001440s ]
+
+[ 2014-08-04T14:28:53+08:00 ] 127.0.0.1 /index.php?g=System&m=Site&a=safe&pid=6&level=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002202s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002345s ]
+NOTIC: [2048] Declaration of SiteAction::insert() should be compatible with BaseAction::insert($name = '', $back = '/index') D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\System\SiteAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.005649s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 3 ) AND ( `pid` = 6 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.001039s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.034159s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001570s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant checked - assumed 'checked' D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\8b1c3759371091711969cec00ac6476d.php 第 27 行.
+NOTIC: [8] Use of undefined constant checked - assumed 'checked' D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\8b1c3759371091711969cec00ac6476d.php 第 42 行.
+NOTIC: [8] Use of undefined constant checked - assumed 'checked' D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\8b1c3759371091711969cec00ac6476d.php 第 48 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.035798s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014329s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.050184s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.051095s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.052121s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.052875s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003643s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.053921s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001097s ]
+
+[ 2014-08-04T14:28:59+08:00 ] 127.0.0.1 /index.php?g=System&m=Site&a=email&pid=6&level=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001043s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001166s ]
+NOTIC: [2048] Declaration of SiteAction::insert() should be compatible with BaseAction::insert($name = '', $back = '/index') D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\System\SiteAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.010099s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 3 ) AND ( `pid` = 6 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.001263s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.032752s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001416s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant checked - assumed 'checked' D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\79615060fa4752be7ea8b85138687132.php 第 25 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.034240s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014899s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.049194s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.050103s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.051055s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.051788s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003544s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.052835s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001588s ]
+
+[ 2014-08-04T14:29:03+08:00 ] 127.0.0.1 /index.php?g=System&m=Site&a=upfile&pid=6&level=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000841s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000965s ]
+NOTIC: [2048] Declaration of SiteAction::insert() should be compatible with BaseAction::insert($name = '', $back = '/index') D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\System\SiteAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.007861s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 3 ) AND ( `pid` = 6 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.001263s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.027506s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001705s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.029252s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.166504s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.195824s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.196978s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.198071s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.198940s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004281s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.200275s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001566s ]
+
+[ 2014-08-04T14:29:05+08:00 ] 127.0.0.1 /index.php?g=System&m=Site&a=alipay&pid=6&level=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000984s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001096s ]
+NOTIC: [2048] Declaration of SiteAction::insert() should be compatible with BaseAction::insert($name = '', $back = '/index') D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\System\SiteAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.006021s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 3 ) AND ( `pid` = 6 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.000885s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.037386s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001575s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.039036s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013601s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.052697s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.053644s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.054605s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.055371s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003609s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.056404s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001006s ]
+
+[ 2014-08-04T14:29:06+08:00 ] 127.0.0.1 /index.php?g=System&m=Node&a=index&pid=11&level=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000777s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000876s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.007600s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 3 ) AND ( `pid` = 11 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.001105s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.006186s ]
+SQL: SELECT * FROM `wy_node` ORDER BY sort DESC  [ RunTime:0.002152s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.142425s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001599s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.144104s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014970s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.159135s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.160808s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.162274s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.163099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005180s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.164420s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001051s ]
+
+[ 2014-08-04T14:29:08+08:00 ] 127.0.0.1 /index.php?g=System&m=Site&a=index&pid=6&level=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001004s ]
+NOTIC: [2048] Declaration of SiteAction::insert() should be compatible with BaseAction::insert($name = '', $back = '/index') D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\System\SiteAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.006700s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 3 ) AND ( `pid` = 6 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.001114s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.006981s ]
+SQL: SELECT * FROM `wy_user_group` ORDER BY id ASC  [ RunTime:0.001059s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.035123s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001343s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: token D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\290787b61e1d188e50b8f6a79194f6f3.php 第 41 行.
+NOTIC: [8] Use of undefined constant checked - assumed 'checked' D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\290787b61e1d188e50b8f6a79194f6f3.php 第 72 行.
+NOTIC: [8] Use of undefined constant checked - assumed 'checked' D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\290787b61e1d188e50b8f6a79194f6f3.php 第 76 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.036534s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016840s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.053429s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.054370s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.055287s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.056027s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003535s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.057058s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001003s ]
+
+[ 2014-08-04T14:29:41+08:00 ] 127.0.0.1 /index.php?g=System&m=System&a=menu&pid=3&level=2&title=%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000782s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000955s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.006104s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 2 ) AND ( `pid` = 3 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.001088s ]
+SQL: CREATE TABLE IF NOT EXISTS `wy_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.000737s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: CREATE TABLE IF NOT EXISTS `wy_update_record` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `msg` varchar(600) NOT NULL DEFAULT '',
+  `type` varchar(20) NOT NULL DEFAULT '',
+  `time` int(10) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MYISAM DEFAULT CHARSET=utf8 [ RunTime:0.000603s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.036515s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001377s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.037961s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012209s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.050242s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.051172s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.052512s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.053419s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004195s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.054531s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001039s ]
+
+[ 2014-08-04T14:29:43+08:00 ] 127.0.0.1 /index.php?g=System&m=User&a=index&pid=18&level=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000850s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000951s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.006930s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 3 ) AND ( `pid` = 18 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.001075s ]
+SQL: SHOW COLUMNS FROM `wy_role` [ RunTime:0.005834s ]
+SQL: SELECT `id`,`name` FROM `wy_role`  [ RunTime:0.000745s ]
+SQL: SHOW COLUMNS FROM `wy_user` [ RunTime:0.007149s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_user` LIMIT 1   [ RunTime:0.000666s ]
+SQL: SELECT * FROM `wy_user` ORDER BY id ASC LIMIT 0,15   [ RunTime:0.001064s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.052062s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001333s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined offset: 5 D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\985575ccd787e2af15b5ff1340471de1.php 第 34 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.053464s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016600s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.070121s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.070995s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.071850s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.072561s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003397s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.073610s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001430s ]
+
+[ 2014-08-04T14:29:47+08:00 ] 127.0.0.1 /index.php?g=System&m=User&a=edit&id=1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000955s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.006552s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = null ) AND ( `pid` = 2 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.000584s ]
+SQL: SHOW COLUMNS FROM `wy_user` [ RunTime:0.007268s ]
+SQL: SHOW COLUMNS FROM `wy_role` [ RunTime:0.006549s ]
+SQL: SELECT * FROM `wy_role` WHERE ( `status` = 1 ) ORDER BY sort DESC  [ RunTime:0.000557s ]
+SQL: SELECT * FROM `wy_user` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000516s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.056885s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001756s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.058718s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016243s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.075018s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.075937s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.076812s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.077513s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003430s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.078545s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001034s ]
+
+[ 2014-08-04T14:29:57+08:00 ] 127.0.0.1 /index.php?g=System&m=Users&a=index&pid=50&level=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001364s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.010357s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 3 ) AND ( `pid` = 50 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.001306s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.009896s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.007258s ]
+SQL: SELECT `id`,`name` FROM `wy_user_group` ORDER BY id desc  [ RunTime:0.000787s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_users` LIMIT 1   [ RunTime:0.000514s ]
+SQL: SELECT * FROM `wy_users` ORDER BY id desc LIMIT 0,25   [ RunTime:0.001288s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.054716s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001319s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.056105s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015476s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.071652s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.072909s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.073865s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.074574s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003842s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.075585s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001031s ]
+
+[ 2014-08-04T14:29:59+08:00 ] 127.0.0.1 /index.php?g=System&m=Users&a=edit&id=1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000789s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000894s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.008168s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = null ) AND ( `pid` = 2 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.000657s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.007220s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.006716s ]
+SQL: SELECT `id`,`name` FROM `wy_user_group` WHERE ( `status` = 1 )  [ RunTime:0.000598s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000889s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_users` WHERE ( `inviter` = 1 ) LIMIT 1   [ RunTime:0.000435s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.049287s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001425s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: remark D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\b81454eb26260e3d7f6f170dcced847b.php 第 107 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.050781s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015451s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.066289s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.067241s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.068176s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.068932s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003598s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.069996s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001016s ]
+
+[ 2014-08-04T14:30:32+08:00 ] 127.0.0.1 /index.php?g=System&m=Users&a=edit
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001197s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001352s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.006242s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = null ) AND ( `pid` = 2 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.000849s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.007746s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/3/f/3f49044c1469c6990a665f46ec6c0a41.php): No such file or directory D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.008883s ]
+SQL: SELECT `gid` FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000619s ]
+SQL: UPDATE `wy_users` SET `username`='chancle',`mp`='15865273728',`email`='123456@qq.com',`gid`='4',`status`='1',`wechat_card_num`='999',`card_num`='999',`activitynum`='999',`money`='999',`attachmentsize`='999',`viptime`='1441468800' WHERE ( `id` = 1 ) [ RunTime:0.000704s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.057400s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004607s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.062053s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020204s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.082394s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.084391s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.086910s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.089962s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009700s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.092162s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002129s ]
+
+[ 2014-08-04T14:30:34+08:00 ] 127.0.0.1 /index.php?g=System&m=Users&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002303s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002443s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.007130s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = null ) AND ( `pid` = 2 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.000738s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.006634s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.006484s ]
+SQL: SELECT `id`,`name` FROM `wy_user_group` ORDER BY id desc  [ RunTime:0.000642s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_users` LIMIT 1   [ RunTime:0.000777s ]
+SQL: SELECT * FROM `wy_users` ORDER BY id desc LIMIT 0,25   [ RunTime:0.001447s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.058999s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003235s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.062307s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023532s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.085897s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.087883s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.089842s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.092025s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008150s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.094155s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002306s ]
+
+[ 2014-08-04T14:33:05+08:00 ] 127.0.0.1 /index.php?g=System&m=User_group&a=index&pid=48&level=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001552s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.009376s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 3 ) AND ( `pid` = 48 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.000912s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.006571s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_user_group` LIMIT 1   [ RunTime:0.000529s ]
+SQL: SELECT * FROM `wy_user_group` ORDER BY id ASC LIMIT 0,15   [ RunTime:0.001118s ]
+SQL: UPDATE `wy_user_group` SET `taxisid`='1' WHERE ( `id` = 1 ) [ RunTime:0.000603s ]
+SQL: UPDATE `wy_user_group` SET `taxisid`='2' WHERE ( `id` = 2 ) [ RunTime:0.000443s ]
+SQL: UPDATE `wy_user_group` SET `taxisid`='3' WHERE ( `id` = 3 ) [ RunTime:0.000427s ]
+SQL: UPDATE `wy_user_group` SET `taxisid`='4' WHERE ( `id` = 4 ) [ RunTime:0.000450s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.051881s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001962s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\b15a6f5abc04991d5de23405aba73860.php 第 43 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\b15a6f5abc04991d5de23405aba73860.php 第 43 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\b15a6f5abc04991d5de23405aba73860.php 第 43 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\b15a6f5abc04991d5de23405aba73860.php 第 43 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.053914s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018232s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.072199s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.073430s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.074605s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.075775s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004833s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.077130s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001280s ]
+
+[ 2014-08-04T14:33:06+08:00 ] 127.0.0.1 /index.php?g=System&m=Group&a=index&pid=25&level=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001384s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.006708s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 3 ) AND ( `pid` = 25 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.000886s ]
+SQL: SHOW COLUMNS FROM `wy_role` [ RunTime:0.006005s ]
+SQL: SELECT * FROM `wy_role` ORDER BY sort DESC  [ RunTime:0.000637s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.037710s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001712s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.039490s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017838s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.057474s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.058897s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.060150s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.061131s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004871s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.062412s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001264s ]
+
+[ 2014-08-04T14:33:06+08:00 ] 127.0.0.1 /index.php?g=System&m=User_group&a=index&pid=48&level=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001331s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.006279s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 3 ) AND ( `pid` = 48 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.000870s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.006604s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_user_group` LIMIT 1   [ RunTime:0.000563s ]
+SQL: SELECT * FROM `wy_user_group` ORDER BY id ASC LIMIT 0,15   [ RunTime:0.000898s ]
+SQL: UPDATE `wy_user_group` SET `taxisid`='1' WHERE ( `id` = 1 ) [ RunTime:0.001338s ]
+SQL: UPDATE `wy_user_group` SET `taxisid`='2' WHERE ( `id` = 2 ) [ RunTime:0.001038s ]
+SQL: UPDATE `wy_user_group` SET `taxisid`='3' WHERE ( `id` = 3 ) [ RunTime:0.000730s ]
+SQL: UPDATE `wy_user_group` SET `taxisid`='4' WHERE ( `id` = 4 ) [ RunTime:0.000514s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.054878s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001719s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: username D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\b15a6f5abc04991d5de23405aba73860.php 第 43 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\b15a6f5abc04991d5de23405aba73860.php 第 43 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\b15a6f5abc04991d5de23405aba73860.php 第 43 行.
+NOTIC: [8] Undefined index: username D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\b15a6f5abc04991d5de23405aba73860.php 第 43 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.056746s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018503s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.075318s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.077212s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.078681s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.079918s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005841s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.081255s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001311s ]
+
+[ 2014-08-04T14:33:06+08:00 ] 127.0.0.1 /index.php?g=System&m=Users&a=index&pid=50&level=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001485s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.006276s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 3 ) AND ( `pid` = 50 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.000830s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.006135s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.006141s ]
+SQL: SELECT `id`,`name` FROM `wy_user_group` ORDER BY id desc  [ RunTime:0.001371s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_users` LIMIT 1   [ RunTime:0.001207s ]
+SQL: SELECT * FROM `wy_users` ORDER BY id desc LIMIT 0,25   [ RunTime:0.001532s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.059603s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001732s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.061409s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018206s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.079672s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.080927s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.082378s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.083419s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005012s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.084781s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001609s ]
+
+[ 2014-08-04T14:44:50+08:00 ] 127.0.0.1 /index.php?g=System&m=System&a=menu&pid=2&level=2&title=%E7%AB%99%E7%82%B9%E7%AE%A1%E7%90%86
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001373s ]
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.006138s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 2 ) AND ( `pid` = 2 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.001196s ]
+SQL: CREATE TABLE IF NOT EXISTS `wy_system_info` (`lastsqlupdate` INT( 10 ) NOT NULL ,`version` VARCHAR( 10 ) NOT NULL) ENGINE = MYISAM CHARACTER SET utf8 [ RunTime:0.001011s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] mysql_free_result() expects parameter 1 to be resource, boolean given D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Db\DbMysql.class.php 第 82 行.
+SQL: CREATE TABLE IF NOT EXISTS `wy_update_record` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `msg` varchar(600) NOT NULL DEFAULT '',
+  `type` varchar(20) NOT NULL DEFAULT '',
+  `time` int(10) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=MYISAM DEFAULT CHARSET=utf8 [ RunTime:0.000848s ]
+NOTIC: [2] mysql_num_rows() expects parameter 1 to be resource, boolean given D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Driver\Db\DbMysql.class.php 第 110 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.034674s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001892s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.036634s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013723s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.050493s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.051794s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.052993s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.054074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004825s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.055389s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001272s ]
+
+[ 2014-08-04T14:44:51+08:00 ] 127.0.0.1 /index.php?g=System&m=Site&a=index&pid=6&level=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001428s ]
+NOTIC: [2048] Declaration of SiteAction::insert() should be compatible with BaseAction::insert($name = '', $back = '/index') D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\System\SiteAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.007496s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 3 ) AND ( `pid` = 6 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.000963s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.006573s ]
+SQL: SELECT * FROM `wy_user_group` ORDER BY id ASC  [ RunTime:0.000726s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.040940s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001926s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: token D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\290787b61e1d188e50b8f6a79194f6f3.php 第 41 行.
+NOTIC: [8] Use of undefined constant checked - assumed 'checked' D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\290787b61e1d188e50b8f6a79194f6f3.php 第 72 行.
+NOTIC: [8] Use of undefined constant checked - assumed 'checked' D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\290787b61e1d188e50b8f6a79194f6f3.php 第 76 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.042940s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020585s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.063586s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.065037s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.066358s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.067375s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005002s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.068683s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001332s ]
+
+[ 2014-08-04T14:45:08+08:00 ] 127.0.0.1 /index.php?g=System&m=Site&a=insert
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001366s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001724s ]
+NOTIC: [2048] Declaration of SiteAction::insert() should be compatible with BaseAction::insert($name = '', $back = '/index') D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\System\SiteAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.005994s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = null ) AND ( `pid` = 2 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.000634s ]
+NOTIC: [2] unlink(./weiwindata/logs/~runtime.php): No such file or directory D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\System\SiteAction.class.php 第 50 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.057203s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001648s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.058919s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011435s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.070417s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.071617s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.072917s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.073977s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004833s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.075349s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002880s ]
+
+[ 2014-08-04T14:45:09+08:00 ] 127.0.0.1 /index.php?g=System&m=Site&a=index&pid=6&level=3
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001561s ]
+NOTIC: [2048] Declaration of SiteAction::insert() should be compatible with BaseAction::insert($name = '', $back = '/index') D:\wamp\www\gs\houseSales\weiwincms\Lib\Action\System\SiteAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `wy_node` [ RunTime:0.010099s ]
+SQL: SELECT * FROM `wy_node` WHERE ( `level` = 3 ) AND ( `pid` = 6 ) AND ( `status` = 1 ) AND ( `display` > 0 ) ORDER BY `sort` asc  [ RunTime:0.001687s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.009289s ]
+SQL: SELECT * FROM `wy_user_group` ORDER BY id ASC  [ RunTime:0.001270s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\wamp\www\gs\houseSales\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.045850s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002803s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: token D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\290787b61e1d188e50b8f6a79194f6f3.php 第 41 行.
+NOTIC: [8] Use of undefined constant checked - assumed 'checked' D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\290787b61e1d188e50b8f6a79194f6f3.php 第 72 行.
+NOTIC: [8] Use of undefined constant checked - assumed 'checked' D:\wamp\www\gs\houseSales\weiwindata\logs\Cache\System\290787b61e1d188e50b8f6a79194f6f3.php 第 76 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.048774s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021537s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.070341s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.071580s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.072945s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.073982s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004851s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.075367s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001921s ]
+

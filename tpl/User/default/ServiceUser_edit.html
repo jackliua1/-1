@@ -1,0 +1,550 @@
+<include file="Public:head"/>
+<script src="./tpl/User/default/common/js/date/WdatePicker.js"></script>
+<script src="/tpl/static/artDialog/jquery.artDialog.js?skin=default"></script>
+<script src="/tpl/static/artDialog/plugins/iframeTools.js"></script>
+
+ <link rel="stylesheet" type="text/css" href="/tpl/static/dl/css/chosen.min.css"/>
+ <script src="/tpl/static/dl/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+ <script src="/tpl/static/dl/js/chosen.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+ 
+ <script src="/tpl/static/upyun.js"></script>
+<div class="content">
+<style>
+.msgWrap .control-group {
+margin-bottom: 20px;
+}
+.msgWrap .control-label {
+text-align: left;
+width: 140px;
+font-weight: bold;
+padding-top: 5px;
+float: left;
+display: block;
+margin-bottom: 5px;
+}
+.msgWrap .controls {
+margin-left: 160px;
+}
+.msgWrap .form-actions {
+padding: 19px 20px 20px 160px;
+margin-top: 20px;
+}
+.span4, .span1, .option, .valid, .input-large{
+	background: url(../images/px.png) repeat-x scroll 0 0 #FFFFFF;
+    border-color: #848484 #E0E0E0 #E0E0E0 #848484;
+    border-style: solid;
+    border-width: 1px;
+	border-radius: 2px 2px 2px 2px;
+	padding:5px;
+	width: 210px;
+}
+select{
+	width: 220px;
+    height: 30px;
+}
+</style>
+<div class="cLineB">
+  <h4>客户信息维护</h4><a href="{weiwin::U('ServiceUser/index')}" class="right btnGrayS vm">返回</a>
+ </div> 
+  <div class="msgWrap bgfc">
+  <form action="" method="post" class="form-horizontal form-validate" novalidate="novalidate">
+  	<input type="hidden" name="ID" value="{weiwin:$list.ID}">
+	<div class="control-group">
+		<label for="title" class="control-label">客户姓名：</label>
+		<div class="controls">
+			<input type="text" name="Name" id="title" class="span4" value="{weiwin:$list.Name}" data-rule-required="true">
+		</div>
+	</div>
+	<div class="control-group">
+		<label for="Tel" class="control-label">客户电话：</label>
+		<div class="controls">
+			<input type="text" name="Tel" id="Tel" class="span4" data-rule-required="true" value="{weiwin:$list.Tel}">
+		</div>
+	</div>
+	<div class="control-group">
+		<label for="LouPanTitle" class="control-label">项目名称：</label>
+		<div class="controls">
+			<select name="Uid" class="chosen-select lp">
+		        <volist name="lp" id="lp">
+		          <option value="{weiwin:$lp.ID}" <if condition="$lp['ID'] eq $list['Uid']">selected</if>>{weiwin:$lp.LouPanTitle}</option>
+		        </volist>
+		      </select>
+		</div>
+	</div>
+	<div class="control-group">
+		<label for="zy_id" class="control-label">驻场经理：</label>
+		<div class="controls">
+			<select name="zy_id" class="chosen-select zy">
+				<option value="0" >--请选择--</option>
+				<volist name="zy" id="vo">
+		          <option value="{weiwin:$vo.ID}" <if condition="$vo['ID'] eq $list['zy_id']">selected</if>>{weiwin:$vo.Name}</option>
+		        </volist>
+		      </select>
+		</div>
+	</div>
+	<div class="control-group">
+		<label for="jdname" class="control-label">现场接待人：</label>
+		<div class="controls">
+			<input type="text" name="jdname" id="jdname"  class="span4" value="{weiwin:$list.jdname}" data-rule-required="true">
+		</div>
+	</div>
+	<div class="control-group">
+		<label for="jdtel" class="control-label">接待人电话：</label>
+		<div class="controls">
+			<input type="text" name="jdtel" id="jdtel" class="span4" data-rule-required="true" value="{weiwin:$list.jdtel}">
+		</div>
+	</div>
+	<div class="control-group">
+		<label for="title" class="control-label">经纪公司：</label>
+		<div class="controls">
+			<select class="chosen-select jjgs" data-placeholder="选择经纪公司">
+				<option value="0" ></option>
+				<volist name="jjgs" id="vo">
+		          <option value="{weiwin:$vo.id}" <if condition="$vo['id'] eq $list['jjgs_id']">selected</if>>{weiwin:$vo.usersname}</option>
+		        </volist>
+		      </select>
+		</div>
+	</div>
+	<div class="control-group">
+		<label for="JJ_id" class="control-label">经纪人：</label>
+		<div class="controls">
+			<select name="JJ_id" class="chosen-select jjr" data-placeholder="选择经纪人">
+				<option value="0" ></option>
+				<if condition="$jjr">
+				<volist name="jjr" id="vo">
+		          <option value="{weiwin:$vo.ID}" <if condition="$vo['ID'] eq $list['JJ_id']">selected</if>>{weiwin:$vo.Name}</option>
+		        </volist>
+				</if>
+		      </select>
+		</div>
+	</div>
+	<!-- <div class="control-group">
+		<label for="jjrtel" class="control-label">经纪人电话：</label>
+		<div class="controls">
+			<input type="text" name="jjrtel" id="jjrtel" class="span4" data-rule-required="true" value="{weiwin:$list.jjrtel}">
+		</div>
+	</div> -->
+	<div class="control-group">
+		<label for="Stutas" class="control-label">状态：</label>
+		<div class="controls">
+			<select name="Stutas">
+				<volist name="status" id="vo">
+					<option value="{weiwin:$vo.id}" <if condition="$vo['id'] eq $list['Stutas']">selected</if>>{weiwin:$vo.salesstatus}</option>
+				</volist>
+			</select>
+		</div>
+	</div>
+	
+	<div class="control-group">
+		<label for="SrTime" class="control-label">输入日期：</label>
+		<div class="controls">
+			<input type="date" name="SrTime" id="SrTime" class="span4" data-rule-required="true" value="{weiwin:$list.SrTime|date='Y-m-d',###}">
+		</div>
+	</div>
+	<div class="control-group">
+		<label for="yxTime" class="control-label">有效日期：</label>
+		<div class="controls">
+			<input type="date" name="yxTime" id="yxTime" class="span4" data-rule-required="true" value="{weiwin:$list.yxTime|date='Y-m-d',###}">
+		</div>
+	</div>
+	
+	<div class="control-group">
+		<label for="title" class="control-label">产品：</label>
+		<div class="controls">
+			<input type="text" name="products" id="products"  class="span4" value="{weiwin:$list.products}" data-rule-required="true"><span class="maroon">*</span><span class="help-inline"></span>
+		</div>
+	</div>
+	<div class="control-group">
+		<label for="title" class="control-label">楼栋号：</label>
+		<div class="controls">
+			<input type="text" name="ldh" id="ldh"  class="span4" value="{weiwin:$list.ldh}" data-rule-required="true">
+		</div>
+	</div>
+	<div class="control-group">
+		<label for="title" class="control-label">房号：</label>
+		<div class="controls">
+			<input type="text" name="houseno" id="houseno"  class="span4" value="{weiwin:$list.houseno}" data-rule-required="true">
+		</div>
+	</div>
+	<div class="control-group">
+		<label for="title" class="control-label">合同面积(平方)：</label>
+		<div class="controls">
+			<input type="text" name="htmj" id="htmj"  class="span4" value="{weiwin:$list.htmj}" data-rule-required="true">
+		</div>
+	</div>
+	<div class="control-group">
+		<label for="title" class="control-label">合同总价：</label>
+		<div class="controls">
+			<input type="text" name="htzj" id="htzj"  class="span4" value="{weiwin:$list.htzj}" data-rule-required="true">
+		</div>
+	</div>
+	<div class="control-group">
+		<label for="title" class="control-label">预约日期：</label>
+		<div class="controls">
+			<input type="date" name="yydate" id="yydate"  class="span4" value="{weiwin:$list.yydate}" data-rule-required="true">
+		</div>
+	</div>
+	<div class="control-group">
+		<label for="title" class="control-label">认购日期：</label>
+		<div class="controls">
+			<input type="date" name="rgdate" id="rgdate"  class="span4" value="{weiwin:$list.rgdate}" data-rule-required="true">
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">签约日期：</label>
+		<div class="controls">
+			<input type="date" name="qydate" id="qydate"  class="span4" value="{weiwin:$list.qydate}" data-rule-required="true">
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">应收金额：</label>
+		<div class="controls">
+			<input type="text" name="ysje" class="ysje span4" value="{weiwin:$list.ysje}" data-rule-required="true">
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">实收金额：</label>
+		<div class="controls">
+			<input type="text" name="ssje" class="span4 ssje" value="{weiwin:$list.ssje}" readonly>
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">收款金额1：</label>
+		<div class="controls">
+			<input type="text" name="skje1" class="span4 skje1" value="{weiwin:$list.skje1}" data-rule-required="true">
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">收款日期1：</label>
+		<div class="controls">
+			<input type="date" name="skrq1" id="skrq1"  class="span4" value="{weiwin:$list.skrq1}" data-rule-required="true">
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">收款方式1：</label>
+		<div class="controls">
+			<input type="text" name="skfs1" id="skfs1"  class="span4" value="{weiwin:$list.skfs1}" data-rule-required="true">
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">客户卡号1：</label>
+		<div class="controls">
+			<input type="text" name="khcard1" id="khcard1"  class="span4" value="{weiwin:$list.khcard1}" data-rule-required="true">
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">POS单凭证号1：</label>
+		<div class="controls">
+			<input type="text" name="pos_pzh1" id="pos_pzh1"  class="span4" value="{weiwin:$list.pos_pzh1}" data-rule-required="true">
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">收据编号1：</label>
+		<div class="controls">
+			<input type="text" name="sjnum1" id="sjnum1"  class="span4" value="{weiwin:$list.sjnum1}" data-rule-required="true">
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">收款金额2：</label>
+		<div class="controls">
+			<input type="text" name="skje2" class="span4 skje2" value="{weiwin:$list.skje2}" data-rule-required="true">
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">收款日期2：</label>
+		<div class="controls">
+			<input type="date" name="skrq2" id="skrq2"  class="span4" value="{weiwin:$list.skrq2}" data-rule-required="true">
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">收款方式2：</label>
+		<div class="controls">
+			<input type="text" name="skfs2" id="skfs2"  class="span4" value="{weiwin:$list.skfs2}" data-rule-required="true">
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">客户卡号2：</label>
+		<div class="controls">
+			<input type="text" name="khcard2" id="khcard2"  class="span4" value="{weiwin:$list.khcard2}" data-rule-required="true">
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">POS单凭证号2：</label>
+		<div class="controls">
+			<input type="text" name="pos_pzh2" id="pos_pzh2"  class="span4" value="{weiwin:$list.pos_pzh2}" data-rule-required="true">
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">收据编号2：</label>
+		<div class="controls">
+			<input type="text" name="sjnum2" id="sjnum2"  class="span4" value="{weiwin:$list.sjnum2}" data-rule-required="true">
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">收款金额3：</label>
+		<div class="controls">
+			<input type="text" name="skje3" class="span4 skje3" value="{weiwin:$list.skje3}" data-rule-required="true">
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">收款日期3：</label>
+		<div class="controls">
+			<input type="date" name="skrq3" id="skrq3"  class="span4" value="{weiwin:$list.skrq3}" data-rule-required="true">
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">收款方式3：</label>
+		<div class="controls">
+			<input type="text" name="skfs3" id="skfs3"  class="span4" value="{weiwin:$list.skfs3}" data-rule-required="true">
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">客户卡号3：</label>
+		<div class="controls">
+			<input type="text" name="khcard3" id="khcard3"  class="span4" value="{weiwin:$list.khcard3}" data-rule-required="true">
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">POS单凭证号3：</label>
+		<div class="controls">
+			<input type="text" name="pos_pzh3" id="pos_pzh3"  class="span4" value="{weiwin:$list.pos_pzh3}" data-rule-required="true">
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">收据编号3：</label>
+		<div class="controls">
+			<input type="text" name="sjnum3" id="sjnum3"  class="span4" value="{weiwin:$list.sjnum3}" data-rule-required="true">
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">应付金额：</label>
+		<div class="controls">
+			<input type="text" name="yfje" id="yfje"  class="span4" value="{weiwin:$list.yfje}" data-rule-required="true">
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">中介奖励：</label>
+		<div class="controls">
+			<input type="text" name="jjrjl" id="jjrjl"  class="span4" value="{weiwin:$list.jjrjl}" data-rule-required="true">
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">请佣金额1：</label>
+		<div class="controls">
+			<input type="text" name="qyje1"  class="span4 qyje1" value="{weiwin:$list.qyje1}" data-rule-required="true">
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">请佣日期1：</label>
+		<div class="controls">
+			<input type="date" name="qyrq1" id="qyrq1"  class="span4" value="{weiwin:$list.qyrq1}" data-rule-required="true">
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">打款日期1：</label>
+		<div class="controls">
+			<input type="text" name="dkrq1" class="span4 dkrq1" value="{weiwin:$list.dkrq1}" data-rule-required="true">
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">请佣金额2：</label>
+		<div class="controls">
+			<input type="text" name="qyje2" class="span4 qyje2" value="{weiwin:$list.qyje2}" data-rule-required="true">
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">请佣日期2：</label>
+		<div class="controls">
+			<input type="date" name="qyrq2" class="span4 qyrq2" value="{weiwin:$list.qyrq2}" data-rule-required="true">
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">打款日期2：</label>
+		<div class="controls">
+			<input type="text" name="dkrq2" id="dkrq2"  class="span4" value="{weiwin:$list.dkrq2}" data-rule-required="true">
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">总付款：</label>
+		<div class="controls">
+			<input type="text" name="zfk" readonly class="span4 zfk" value="{weiwin:$list.zfk}">
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">是否已付：</label>
+		<div class="controls">
+			<select name="isfk" class="isfk">
+				<option value="">--是否已付--</option>
+				<option value="1" <if condition="$list[isfk] eq 1">selected</if>>否</option>
+				<option value="2" <if condition="$list[isfk] eq 2">selected</if>>是</option>
+			</select>
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">是否退房：</label>
+		<div class="controls">
+			<select name="istf" class="istf">
+				<option value="">--是否退房--</option>
+				<option value="1" <if condition="$list[istf] eq 1">selected</if>>否</option>
+				<option value="2" <if condition="$list[istf] eq 2">selected</if>>是</option>
+			</select>
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">备注：</label>
+		<div class="controls">
+			<input type="text" name="remark" id="remark"  class="span4" value="{weiwin:$list.remark}" data-rule-required="true">
+		</div>
+	</div>
+	
+	
+   <div class="form-actions">
+			<button id="bsubmit" type="submit" data-loading-text="提交中..." class="btnGreen">保存</button>　<a href="{weiwin::U('ServiceUser/index')}" class="btnGray vm">取消</a>
+		</div>
+</form>
+  </div> 
+  <script>
+	$('.lp').chosen({search_contains: true,width:"220px",allow_single_deselect : true}).on("change", function (evt, params) {
+		var lpid = params.selected
+		$.ajax({
+			type:'post',
+			url:"{weiwin::U('ServiceUser/ajax_zy',array('token'=>$token))}",
+			dataType:"json",
+			data:{"lpid":lpid},
+			success: function(datas){
+						var str = '<option value=""></option>';
+						if(datas.data){
+							$.each(datas.data, function (index, val) {
+								str += '<option value="'+val.ID+'">'+val.Name+'</option>';
+							});
+						}
+						$(".zy").html(str);
+						$(".zy").trigger("liszt:updated");
+					}
+		});
+	});
+	$('.zy').chosen({search_contains: true,width:"220px"});
+	$('.jjgs').chosen({search_contains: true,width:"220px"}).on("change", function (evt, params) {
+		var brokerage_id = params.selected
+		$.ajax({
+			type:'post',
+			url:"{weiwin::U('ServiceUser/ajax_jjr',array('token'=>$token))}",
+			dataType:"json",
+			data:{"brokerage_id":brokerage_id},
+			success: function(datas){
+						var str = '<option value=""></option>';
+						if(datas.data){
+							$.each(datas.data, function (index, val) {
+								str += '<option value="'+val.ID+'">'+val.Name+'</option>';
+							});
+						}
+						$(".jjr").html(str);
+						$(".jjr").trigger("liszt:updated");
+					}
+		});
+	});
+	$('.jjr').chosen({search_contains: true,width:"220px"});
+	
+	
+	//计算金额
+	$(".skje1").on('keyup',function(){
+	var reg = $(this).val().match(/\d+\.?\d{0,2}/);
+	var txt = '';
+	if (reg != null) {
+	  txt = reg[0];
+	}
+	$(this).val(txt);
+	getall_money();
+  }).change(function () {
+     $(this).keypress();
+     var v = $(this).val();
+     if (/\.$/.test(v)){
+         $(this).val(v.substr(0, v.length - 1));
+     }
+	 getall_money();
+  });
+  $(".skje2").on('keyup',function(){
+	var reg = $(this).val().match(/\d+\.?\d{0,2}/);
+	var txt = '';
+	if (reg != null) {
+	  txt = reg[0];
+	}
+	$(this).val(txt);
+	getall_money();
+  }).change(function () {
+     $(this).keypress();
+     var v = $(this).val();
+     if (/\.$/.test(v)){
+         $(this).val(v.substr(0, v.length - 1));
+     }
+	 getall_money();
+  });
+  $(".skje3").on('keyup',function(){
+	var reg = $(this).val().match(/\d+\.?\d{0,2}/);
+	var txt = '';
+	if (reg != null) {
+	  txt = reg[0];
+	}
+	$(this).val(txt);
+	getall_money();
+  }).change(function () {
+     $(this).keypress();
+     var v = $(this).val();
+     if (/\.$/.test(v)){
+         $(this).val(v.substr(0, v.length - 1));
+     }
+	 getall_money();
+  });
+  
+  function getall_money(){
+	var skje1 = isNaN(parseFloat($(".skje1").val()))?0:parseFloat($(".skje1").val());
+	var skje2 = isNaN(parseFloat($(".skje2").val()))?0:parseFloat($(".skje2").val());
+	var skje3 = isNaN(parseFloat($(".skje3").val()))?0:parseFloat($(".skje3").val());
+	var ssje = parseFloat(skje1+skje2+skje3).toFixed(2);
+	$(".ssje").val(ssje);
+  }
+  
+  $(".qyje1").on('keyup',function(){
+	var reg = $(this).val().match(/\d+\.?\d{0,2}/);
+	var txt = '';
+	if (reg != null) {
+	  txt = reg[0];
+	}
+	$(this).val(txt);
+	getall_money1();
+  }).change(function () {
+     $(this).keypress();
+     var v = $(this).val();
+     if (/\.$/.test(v)){
+         $(this).val(v.substr(0, v.length - 1));
+     }
+	 getall_money1();
+  });
+  $(".qyje2").on('keyup',function(){
+	var reg = $(this).val().match(/\d+\.?\d{0,2}/);
+	var txt = '';
+	if (reg != null) {
+	  txt = reg[0];
+	}
+	$(this).val(txt);
+	getall_money1();
+  }).change(function () {
+     $(this).keypress();
+     var v = $(this).val();
+     if (/\.$/.test(v)){
+         $(this).val(v.substr(0, v.length - 1));
+     }
+	 getall_money1();
+  });
+  
+  function getall_money1(){
+	var qyje1 = isNaN(parseFloat($(".qyje1").val()))?0:parseFloat($(".qyje1").val());
+	var qyje2 = isNaN(parseFloat($(".qyje2").val()))?0:parseFloat($(".qyje2").val());
+	var zfk = parseFloat(qyje1+qyje2).toFixed(2);
+	$(".zfk").val(zfk);
+  }
+ </script>
+  
+  
+        </div>
+		

@@ -1,0 +1,24 @@
+[ 2016-01-19T02:18:59+08:00 ] ERR: (ThinkException) 无法加载模块:upyun
+[ 2016-01-19T05:24:19+08:00 ] 123.125.71.38 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001736s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.036160s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000361s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.065809s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002236s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.068131s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028379s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.096610s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.098162s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.099866s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.101181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006136s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.102850s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001808s ]
+

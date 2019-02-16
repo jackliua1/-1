@@ -1,0 +1,61 @@
+<include file="Public:head"/>
+<link rel="stylesheet" type="text/css" href="./tpl/User/default/common/css/cymain.css" />
+<div class="content">
+  <div class="cLineB">
+    <h4>注册条款维护</h4>
+  </div>
+
+  <div class="cLine">
+    <div class="ftip" style="margin:0 auto">维护注册条款信息，只有管理员可进行操作</div>
+  </div>       
+  
+  <div class="cLineD"></div>
+
+  <!-- <div class="cLine">
+    <div class="ftip" style="margin:0 auto">高级服务号才能使用此功能</div>
+  </div> -->
+
+  <div class="msgWrap form">
+    <ul id="tags" style="width:100%">
+      <li>
+        <a href="{weiwin::U('Recognition/index')}">会员条款</a> 
+      </li>
+      <li class="selectTag">
+        <a href="{weiwin::U('Recognition/zytk')}">驻场经理条款</a> 
+      </li>
+      <li>
+        <a href="{weiwin::U('Recognition/actk')}">项目总监条款</a> 
+      </li>
+      <div class="clr" style="height:1px;background:#eee;margin-bottom:20px;"></div>
+    </ul>
+  </div>
+
+  <div class="cLine">
+    <div class="pageNavigator left">
+    </div>
+    <div class="clr"></div>
+  </div>
+  <div class="msgWrap bgfc" style=" padding:5px 10px; margin:0">
+    <form class="form" method="post" action="" target="_top" enctype="multipart/form-data">
+      <table class="userinfoArea" style=" margin:20px 0 0 0;" border="0" cellspacing="0" cellpadding="0" width="100%">
+        <thead>
+          <tr>
+            <th valign="top"><label for="title">注册条款：</label></th>
+            <td>
+              <!-- <input type="input" class="px" required="" id="title" value="" name="title" style="width:400px"> 请认真填写生成后不可以编辑！只能删除重建<br>: -->
+              <textarea name="TiaoKuan" style="width:400px;height:300px;border:1px solid #00ffff;resize:none">{weiwin:$content.TiaoKuan}</textarea>
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <input type="hidden" name="ID" value="{weiwin:$content.ID}"/>
+            </th>
+            <td><button type="submit" name="button" class="btnGreen left">修改</button> 
+            </td>
+          </tr>
+        </thead>
+      </table>
+    </form>
+    <div class="clear"></div>
+  </div>
+</div>

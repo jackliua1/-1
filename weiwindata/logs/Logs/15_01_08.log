@@ -1,0 +1,2440 @@
+[ 2015-01-08T02:55:54+08:00 ] 220.181.108.101 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.005111s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005390s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.010948s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.001074s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.060648s ]
+INFO: [ view_template ] --END-- [ RunTime:0.005615s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.066352s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037191s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.103611s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.108421s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.112519s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.115213s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014611s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.118328s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003233s ]
+
+[ 2015-01-08T02:55:54+08:00 ] 123.125.71.26 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003286s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.008758s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000170s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.059471s ]
+INFO: [ view_template ] --END-- [ RunTime:0.008450s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.068052s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038645s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.106773s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.109655s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.113338s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.115983s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012464s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.119365s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003290s ]
+
+[ 2015-01-08T03:04:09+08:00 ] 117.136.47.14 /index.php?g=Wap&m=Agent&a=loupanInfo&code=041f0e5815d17c5734829753e68aa96-&state=308
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.004122s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004374s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.010847s ]
+SQL: SELECT * FROM `wy_xmfx` WHERE ( `id` = 308 ) LIMIT 1   [ RunTime:0.000443s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx_list` [ RunTime:0.009277s ]
+SQL: SELECT * FROM `wy_xmfx_list` WHERE ( `wecha_id` = 'oqsrSjualLjxDW-2koLJ7OrlJsII' ) AND ( `token` = 'jeifef1412084627' ) AND ( `uid` = 34 ) AND ( `mwecha_id` = 'oI5B3uG4lQD8sHReX8F-bEtjryb4' ) LIMIT 1   [ RunTime:0.006468s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.014715s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = 34 ) [ RunTime:0.036568s ]
+SQL: INSERT INTO `wy_xmfx_list` (`token`,`uid`,`mwecha_id`,`wecha_id`) VALUES ('jeifef1412084627','34','oI5B3uG4lQD8sHReX8F-bEtjryb4','oqsrSjualLjxDW-2koLJ7OrlJsII') [ RunTime:0.004711s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.017368s ]
+SQL: UPDATE `wy_xmfx` SET `views`=views+1 WHERE ( `id` = 308 ) [ RunTime:0.005729s ]
+SQL: SELECT `longitude`,`latitude` FROM `wy_lpinfo` WHERE ( `id` = 34 ) LIMIT 1   [ RunTime:0.000335s ]
+SQL: SHOW COLUMNS FROM `wy_product_setting` [ RunTime:0.009841s ]
+SQL: SELECT * FROM `wy_product_setting` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000167s ]
+SQL: SELECT `hascredit`,`hasmoney` FROM `wy_xmfx` WHERE ( `id` = 308 ) LIMIT 1   [ RunTime:0.000285s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = 34 ) LIMIT 1   [ RunTime:0.000527s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.009684s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `ID` = 40 ) LIMIT 1   [ RunTime:0.000343s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-2.880931s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004906s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-2.885955s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035273s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-2.921341s ]
+INFO: Run TokenBuild Behavior [ RunTime:-2.924700s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-2.927766s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-2.930473s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013177s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-2.934813s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004386s ]
+
+[ 2015-01-08T05:04:10+08:00 ] 220.181.108.121 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003250s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003473s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.045391s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000315s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.090112s ]
+INFO: [ view_template ] --END-- [ RunTime:0.006684s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.096889s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038283s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.135255s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.138241s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.142054s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.144878s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013407s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.148774s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003315s ]
+
+[ 2015-01-08T05:04:10+08:00 ] 123.125.71.60 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.004924s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005107s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.041262s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000223s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.088748s ]
+INFO: [ view_template ] --END-- [ RunTime:0.005715s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.094588s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036282s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.130905s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.134246s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.137333s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.140893s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013064s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.144071s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003474s ]
+
+[ 2015-01-08T07:11:16+08:00 ] 113.126.103.110 /index.php?g=Wap&m=Agent&a=index&token=jeifef1412084627&wecha_id=oI5B3uOnKakdyzHgZapUqFeo7Xn4
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003335s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.009220s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `token` = 'jeifef1412084627' ) ORDER BY houseSort desc,id desc LIMIT 0,20   [ RunTime:0.001839s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.008499s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `Wecha_id` = 'oI5B3uOnKakdyzHgZapUqFeo7Xn4' ) AND ( `Token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000689s ]
+SQL: SHOW COLUMNS FROM `wy_share_content` [ RunTime:0.008335s ]
+SQL: SELECT * FROM `wy_share_content` WHERE token='jeifef1412084627' LIMIT 1   [ RunTime:0.000242s ]
+NOTIC: [8] Undefined variable: var D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Common\functions.php 第 234 行.
+NOTIC: [2] array_reverse() [<a href='function.array-reverse'>function.array-reverse</a>]: The argument should be an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Common\functions.php 第 234 行.
+NOTIC: [2] http_build_query() [<a href='function.http-build-query'>function.http-build-query</a>]: Parameter 1 expected to be Array or Object.  Incorrect value given D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Common\functions.php 第 234 行.
+
+[ 2015-01-08T07:11:16+08:00 ] 113.126.103.110 /index.php?&g=Wap&m=Agent&a=ydl&token=jeifef1412084627&wecha_id=oI5B3uOnKakdyzHgZapUqFeo7Xn4
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000887s ]
+SQL: SHOW COLUMNS FROM `wy_agent_rewardinfo` [ RunTime:0.006867s ]
+SQL: SELECT SUM(rewardamount) AS tp_sum FROM `wy_agent_rewardinfo` WHERE wecha_id='oI5B3uOnKakdyzHgZapUqFeo7Xn4' and token='jeifef1412084627' and rewardstatus =0 LIMIT 1   [ RunTime:0.000550s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.007731s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `Wecha_id` = 'oI5B3uOnKakdyzHgZapUqFeo7Xn4' ) AND ( `Token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000259s ]
+SQL: SHOW COLUMNS FROM `wy_share_content` [ RunTime:0.007699s ]
+SQL: SELECT * FROM `wy_share_content` WHERE token='jeifef1412084627' LIMIT 1   [ RunTime:0.000271s ]
+SQL: SHOW COLUMNS FROM `wy_kh` [ RunTime:0.010251s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_kh` WHERE ( `Token` = 'jeifef1412084627' ) AND ( `JJ_id` = 286 ) LIMIT 1   [ RunTime:0.000596s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.008640s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `token` = 'jeifef1412084627' ) ORDER BY houseSort desc,id desc LIMIT 0,20   [ RunTime:0.001576s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.080449s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004903s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.085438s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037635s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.123152s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.126392s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.129412s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.132055s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011655s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.134925s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002961s ]
+
+[ 2015-01-08T07:36:00+08:00 ] 113.122.8.179 /index.php?g=Wap&m=Agent&a=loupanInfo&code=03131a52f153b0789d6d96d79aacc5fk&state=238
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003656s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003914s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.007789s ]
+SQL: SELECT * FROM `wy_xmfx` WHERE ( `id` = 238 ) LIMIT 1   [ RunTime:0.000478s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx_list` [ RunTime:0.007250s ]
+SQL: SELECT * FROM `wy_xmfx_list` WHERE ( `wecha_id` = 'oqsrSjqo0HSowQtRzatnTI_4Uv-8' ) AND ( `token` = 'jeifef1412084627' ) AND ( `uid` = 29 ) AND ( `mwecha_id` = 'oI5B3uApyGvC-cckdnefekjBMMCA' ) LIMIT 1   [ RunTime:0.006686s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.007879s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = 29 ) [ RunTime:0.039490s ]
+SQL: INSERT INTO `wy_xmfx_list` (`token`,`uid`,`mwecha_id`,`wecha_id`) VALUES ('jeifef1412084627','29','oI5B3uApyGvC-cckdnefekjBMMCA','oqsrSjqo0HSowQtRzatnTI_4Uv-8') [ RunTime:0.003600s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.008712s ]
+SQL: UPDATE `wy_xmfx` SET `views`=views+1 WHERE ( `id` = 238 ) [ RunTime:0.004464s ]
+SQL: SELECT `longitude`,`latitude` FROM `wy_lpinfo` WHERE ( `id` = 29 ) LIMIT 1   [ RunTime:0.000473s ]
+SQL: SHOW COLUMNS FROM `wy_product_setting` [ RunTime:0.010449s ]
+SQL: SELECT * FROM `wy_product_setting` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000189s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.007391s ]
+SQL: UPDATE `wy_jjr` SET `credit`=credit+0 WHERE ( `ID` = 120 ) [ RunTime:0.000512s ]
+SQL: UPDATE `wy_xmfx` SET `hascredit`=hascredit+0 WHERE ( `id` = 238 ) [ RunTime:0.000260s ]
+SQL: SELECT `hascredit`,`hasmoney` FROM `wy_xmfx` WHERE ( `id` = 238 ) LIMIT 1   [ RunTime:0.000330s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = 29 ) LIMIT 1   [ RunTime:0.000597s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.008448s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `ID` = 120 ) LIMIT 1   [ RunTime:0.000427s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-3.717031s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004840s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-3.721954s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036560s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-3.758595s ]
+INFO: Run TokenBuild Behavior [ RunTime:-3.761801s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-3.764806s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-3.767874s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012253s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-3.771016s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004296s ]
+
+[ 2015-01-08T07:41:42+08:00 ] 220.181.108.103 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002820s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003006s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.009383s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000219s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.047708s ]
+INFO: [ view_template ] --END-- [ RunTime:0.005200s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.053012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030407s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.083488s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.086187s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.089468s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.092997s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012614s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.096204s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003800s ]
+
+[ 2015-01-08T08:13:25+08:00 ] 119.40.4.186 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021ba0c26a232196ac4fd19e9441ec2K&state=779&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002994s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003232s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.030621s ]
+SQL: SELECT * FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000425s ]
+NOTIC: [8] Undefined index:  openid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 197 行.
+SQL: SHOW COLUMNS FROM `wy_xmfx_list` [ RunTime:0.040124s ]
+SQL: SELECT * FROM `wy_xmfx_list` WHERE ( `wecha_id` = null ) AND ( `token` = 'jeifef1412084627' ) AND ( `uid` = 39 ) AND ( `mwecha_id` = 'oI5B3uOoFcZUPxCEKo1syOV1Tk8Q' ) LIMIT 1   [ RunTime:0.006418s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.040603s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = 39 ) [ RunTime:0.010718s ]
+SQL: INSERT INTO `wy_xmfx_list` (`token`,`uid`,`mwecha_id`,`wecha_id`) VALUES ('jeifef1412084627','39','oI5B3uOoFcZUPxCEKo1syOV1Tk8Q','') [ RunTime:0.006117s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.040963s ]
+SQL: UPDATE `wy_xmfx` SET `views`=views+1 WHERE ( `id` = 779 ) [ RunTime:0.011656s ]
+SQL: SELECT `longitude`,`latitude` FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000341s ]
+SQL: SHOW COLUMNS FROM `wy_product_setting` [ RunTime:0.044922s ]
+SQL: SELECT * FROM `wy_product_setting` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000256s ]
+SQL: SELECT `hascredit`,`hasmoney` FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000423s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000488s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.015570s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `ID` = 216 ) LIMIT 1   [ RunTime:0.000190s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-3.730289s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004477s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-3.734881s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041559s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-3.776530s ]
+INFO: Run TokenBuild Behavior [ RunTime:-3.780117s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-3.784174s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-3.787121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013892s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-3.790580s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003900s ]
+
+[ 2015-01-08T09:12:31+08:00 ] 182.36.109.226 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021ba0c26a232196ac4fd19e9441ec2K&state=779&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004206s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.031556s ]
+SQL: SELECT * FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000531s ]
+NOTIC: [8] Undefined index:  openid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 197 行.
+SQL: SHOW COLUMNS FROM `wy_xmfx_list` [ RunTime:0.039873s ]
+SQL: SELECT * FROM `wy_xmfx_list` WHERE ( `wecha_id` = null ) AND ( `token` = 'jeifef1412084627' ) AND ( `uid` = 39 ) AND ( `mwecha_id` = 'oI5B3uOoFcZUPxCEKo1syOV1Tk8Q' ) LIMIT 1   [ RunTime:0.006563s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.010351s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = 39 ) [ RunTime:0.031875s ]
+SQL: INSERT INTO `wy_xmfx_list` (`token`,`uid`,`mwecha_id`,`wecha_id`) VALUES ('jeifef1412084627','39','oI5B3uOoFcZUPxCEKo1syOV1Tk8Q','') [ RunTime:0.006471s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.009027s ]
+SQL: UPDATE `wy_xmfx` SET `views`=views+1 WHERE ( `id` = 779 ) [ RunTime:0.006530s ]
+SQL: SELECT `longitude`,`latitude` FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000320s ]
+SQL: SHOW COLUMNS FROM `wy_product_setting` [ RunTime:0.021697s ]
+SQL: SELECT * FROM `wy_product_setting` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000248s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.008775s ]
+SQL: UPDATE `wy_jjr` SET `credit`=credit+1 WHERE ( `ID` = 216 ) [ RunTime:0.009217s ]
+SQL: UPDATE `wy_xmfx` SET `hascredit`=hascredit+1 WHERE ( `id` = 779 ) [ RunTime:0.003276s ]
+SQL: SELECT `hascredit`,`hasmoney` FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000336s ]
+SQL: update wy_xmfx set hasmoney=0.9 where id=779 [ RunTime:0.008999s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000961s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.030886s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `ID` = 216 ) LIMIT 1   [ RunTime:0.000387s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-3.877194s ]
+INFO: [ view_template ] --END-- [ RunTime:0.005012s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-3.882306s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038028s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-3.920410s ]
+INFO: Run TokenBuild Behavior [ RunTime:-3.923382s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-3.926364s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-3.929299s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011989s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-3.932515s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003497s ]
+
+[ 2015-01-08T10:06:23+08:00 ] 218.57.37.109 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021ba0c26a232196ac4fd19e9441ec2K&state=779&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003125s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003336s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.036306s ]
+SQL: SELECT * FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000424s ]
+NOTIC: [8] Undefined index:  openid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 197 行.
+SQL: SHOW COLUMNS FROM `wy_xmfx_list` [ RunTime:0.038964s ]
+SQL: SELECT * FROM `wy_xmfx_list` WHERE ( `wecha_id` = null ) AND ( `token` = 'jeifef1412084627' ) AND ( `uid` = 39 ) AND ( `mwecha_id` = 'oI5B3uOoFcZUPxCEKo1syOV1Tk8Q' ) LIMIT 1   [ RunTime:0.006292s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.039576s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = 39 ) [ RunTime:0.030563s ]
+SQL: INSERT INTO `wy_xmfx_list` (`token`,`uid`,`mwecha_id`,`wecha_id`) VALUES ('jeifef1412084627','39','oI5B3uOoFcZUPxCEKo1syOV1Tk8Q','') [ RunTime:0.005732s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.039497s ]
+SQL: UPDATE `wy_xmfx` SET `views`=views+1 WHERE ( `id` = 779 ) [ RunTime:0.007264s ]
+SQL: SELECT `longitude`,`latitude` FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000357s ]
+SQL: SHOW COLUMNS FROM `wy_product_setting` [ RunTime:0.041692s ]
+SQL: SELECT * FROM `wy_product_setting` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000268s ]
+SQL: SELECT `hascredit`,`hasmoney` FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000513s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000463s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.041491s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `ID` = 216 ) LIMIT 1   [ RunTime:0.000245s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-2.778120s ]
+INFO: [ view_template ] --END-- [ RunTime:0.005152s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-2.783375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039595s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-2.823036s ]
+INFO: Run TokenBuild Behavior [ RunTime:-2.825903s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-2.828888s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-2.831412s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011187s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-2.834336s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002895s ]
+
+[ 2015-01-08T10:07:28+08:00 ] 101.226.103.71 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021ba0c26a232196ac4fd19e9441ec2K&state=779&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000841s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001011s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.036030s ]
+SQL: SELECT * FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000391s ]
+NOTIC: [8] Undefined index:  openid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 197 行.
+SQL: SHOW COLUMNS FROM `wy_xmfx_list` [ RunTime:0.039071s ]
+SQL: SELECT * FROM `wy_xmfx_list` WHERE ( `wecha_id` = null ) AND ( `token` = 'jeifef1412084627' ) AND ( `uid` = 39 ) AND ( `mwecha_id` = 'oI5B3uOoFcZUPxCEKo1syOV1Tk8Q' ) LIMIT 1   [ RunTime:0.006538s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.041009s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = 39 ) [ RunTime:0.011163s ]
+SQL: INSERT INTO `wy_xmfx_list` (`token`,`uid`,`mwecha_id`,`wecha_id`) VALUES ('jeifef1412084627','39','oI5B3uOoFcZUPxCEKo1syOV1Tk8Q','') [ RunTime:0.006623s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.044184s ]
+SQL: UPDATE `wy_xmfx` SET `views`=views+1 WHERE ( `id` = 779 ) [ RunTime:0.032877s ]
+SQL: SELECT `longitude`,`latitude` FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000552s ]
+SQL: SHOW COLUMNS FROM `wy_product_setting` [ RunTime:0.040297s ]
+SQL: SELECT * FROM `wy_product_setting` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000277s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.041177s ]
+SQL: UPDATE `wy_jjr` SET `credit`=credit+1 WHERE ( `ID` = 216 ) [ RunTime:0.009535s ]
+SQL: UPDATE `wy_xmfx` SET `hascredit`=hascredit+1 WHERE ( `id` = 779 ) [ RunTime:0.009082s ]
+SQL: SELECT `hascredit`,`hasmoney` FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000324s ]
+SQL: update wy_xmfx set hasmoney=1 where id=779 [ RunTime:0.006551s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000454s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.040476s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `ID` = 216 ) LIMIT 1   [ RunTime:0.000564s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.620882s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000789s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.621717s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020423s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.642241s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.643061s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.643790s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.644257s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002805s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.645156s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000826s ]
+
+[ 2015-01-08T10:07:38+08:00 ] 218.57.37.109 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021ba0c26a232196ac4fd19e9441ec2K&state=779&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001328s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.038139s ]
+SQL: SELECT * FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000388s ]
+NOTIC: [8] Undefined index:  openid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 197 行.
+SQL: SHOW COLUMNS FROM `wy_xmfx_list` [ RunTime:0.038854s ]
+SQL: SELECT * FROM `wy_xmfx_list` WHERE ( `wecha_id` = null ) AND ( `token` = 'jeifef1412084627' ) AND ( `uid` = 39 ) AND ( `mwecha_id` = 'oI5B3uOoFcZUPxCEKo1syOV1Tk8Q' ) LIMIT 1   [ RunTime:0.006044s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.040420s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = 39 ) [ RunTime:0.012526s ]
+SQL: INSERT INTO `wy_xmfx_list` (`token`,`uid`,`mwecha_id`,`wecha_id`) VALUES ('jeifef1412084627','39','oI5B3uOoFcZUPxCEKo1syOV1Tk8Q','') [ RunTime:0.006783s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.038841s ]
+SQL: UPDATE `wy_xmfx` SET `views`=views+1 WHERE ( `id` = 779 ) [ RunTime:0.007344s ]
+SQL: SELECT `longitude`,`latitude` FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000335s ]
+SQL: SHOW COLUMNS FROM `wy_product_setting` [ RunTime:0.041447s ]
+SQL: SELECT * FROM `wy_product_setting` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000199s ]
+SQL: SELECT `hascredit`,`hasmoney` FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000325s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.037250s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `ID` = 216 ) LIMIT 1   [ RunTime:0.000191s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.554153s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000740s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.554972s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016112s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.571152s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.571879s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.572589s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.573067s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002655s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.573922s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000802s ]
+
+[ 2015-01-08T10:13:20+08:00 ] 117.136.9.148 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021ba0c26a232196ac4fd19e9441ec2K&state=779&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003215s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003438s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.036897s ]
+SQL: SELECT * FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000448s ]
+NOTIC: [8] Undefined index:  openid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 197 行.
+SQL: SHOW COLUMNS FROM `wy_xmfx_list` [ RunTime:0.017778s ]
+SQL: SELECT * FROM `wy_xmfx_list` WHERE ( `wecha_id` = null ) AND ( `token` = 'jeifef1412084627' ) AND ( `uid` = 39 ) AND ( `mwecha_id` = 'oI5B3uOoFcZUPxCEKo1syOV1Tk8Q' ) LIMIT 1   [ RunTime:0.006002s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.036320s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = 39 ) [ RunTime:0.022031s ]
+SQL: INSERT INTO `wy_xmfx_list` (`token`,`uid`,`mwecha_id`,`wecha_id`) VALUES ('jeifef1412084627','39','oI5B3uOoFcZUPxCEKo1syOV1Tk8Q','') [ RunTime:0.006461s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.038541s ]
+SQL: UPDATE `wy_xmfx` SET `views`=views+1 WHERE ( `id` = 779 ) [ RunTime:0.007355s ]
+SQL: SELECT `longitude`,`latitude` FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000366s ]
+SQL: SHOW COLUMNS FROM `wy_product_setting` [ RunTime:0.040186s ]
+SQL: SELECT * FROM `wy_product_setting` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000265s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.039145s ]
+SQL: UPDATE `wy_jjr` SET `credit`=credit+1 WHERE ( `ID` = 216 ) [ RunTime:0.011036s ]
+SQL: UPDATE `wy_xmfx` SET `hascredit`=hascredit+1 WHERE ( `id` = 779 ) [ RunTime:0.006014s ]
+SQL: SELECT `hascredit`,`hasmoney` FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000308s ]
+SQL: update wy_xmfx set hasmoney=1.1 where id=779 [ RunTime:0.007057s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000553s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.039860s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `ID` = 216 ) LIMIT 1   [ RunTime:0.000422s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-3.711771s ]
+INFO: [ view_template ] --END-- [ RunTime:0.005058s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-3.716962s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040193s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-3.757203s ]
+INFO: Run TokenBuild Behavior [ RunTime:-3.760108s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-3.763057s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-3.765724s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011307s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-3.768651s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002893s ]
+
+[ 2015-01-08T10:22:35+08:00 ] 175.190.182.97 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021ba0c26a232196ac4fd19e9441ec2K&state=779&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003029s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.040491s ]
+SQL: SELECT * FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000642s ]
+NOTIC: [8] Undefined index:  openid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 197 行.
+SQL: SHOW COLUMNS FROM `wy_xmfx_list` [ RunTime:0.039379s ]
+SQL: SELECT * FROM `wy_xmfx_list` WHERE ( `wecha_id` = null ) AND ( `token` = 'jeifef1412084627' ) AND ( `uid` = 39 ) AND ( `mwecha_id` = 'oI5B3uOoFcZUPxCEKo1syOV1Tk8Q' ) LIMIT 1   [ RunTime:0.006151s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.040268s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = 39 ) [ RunTime:0.011937s ]
+SQL: INSERT INTO `wy_xmfx_list` (`token`,`uid`,`mwecha_id`,`wecha_id`) VALUES ('jeifef1412084627','39','oI5B3uOoFcZUPxCEKo1syOV1Tk8Q','') [ RunTime:0.006176s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.038745s ]
+SQL: UPDATE `wy_xmfx` SET `views`=views+1 WHERE ( `id` = 779 ) [ RunTime:0.010263s ]
+SQL: SELECT `longitude`,`latitude` FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000307s ]
+SQL: SHOW COLUMNS FROM `wy_product_setting` [ RunTime:0.039045s ]
+SQL: SELECT * FROM `wy_product_setting` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000196s ]
+SQL: SELECT `hascredit`,`hasmoney` FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000383s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000383s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.039461s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `ID` = 216 ) LIMIT 1   [ RunTime:0.000287s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-2.744635s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004541s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-2.749270s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042534s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-2.791941s ]
+INFO: Run TokenBuild Behavior [ RunTime:-2.796305s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-2.799662s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-2.802353s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013372s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-2.805416s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003152s ]
+
+[ 2015-01-08T10:27:53+08:00 ] 112.224.17.124 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021ba0c26a232196ac4fd19e9441ec2K&state=779&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002897s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003080s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.035439s ]
+SQL: SELECT * FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000497s ]
+NOTIC: [8] Undefined index:  openid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 197 行.
+SQL: SHOW COLUMNS FROM `wy_xmfx_list` [ RunTime:0.032500s ]
+SQL: SELECT * FROM `wy_xmfx_list` WHERE ( `wecha_id` = null ) AND ( `token` = 'jeifef1412084627' ) AND ( `uid` = 39 ) AND ( `mwecha_id` = 'oI5B3uOoFcZUPxCEKo1syOV1Tk8Q' ) LIMIT 1   [ RunTime:0.006216s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.040705s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = 39 ) [ RunTime:0.012986s ]
+SQL: INSERT INTO `wy_xmfx_list` (`token`,`uid`,`mwecha_id`,`wecha_id`) VALUES ('jeifef1412084627','39','oI5B3uOoFcZUPxCEKo1syOV1Tk8Q','') [ RunTime:0.006344s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.038860s ]
+SQL: UPDATE `wy_xmfx` SET `views`=views+1 WHERE ( `id` = 779 ) [ RunTime:0.007530s ]
+SQL: SELECT `longitude`,`latitude` FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000308s ]
+SQL: SHOW COLUMNS FROM `wy_product_setting` [ RunTime:0.039436s ]
+SQL: SELECT * FROM `wy_product_setting` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000188s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.039246s ]
+SQL: UPDATE `wy_jjr` SET `credit`=credit+1 WHERE ( `ID` = 216 ) [ RunTime:0.029904s ]
+SQL: UPDATE `wy_xmfx` SET `hascredit`=hascredit+1 WHERE ( `id` = 779 ) [ RunTime:0.006041s ]
+SQL: SELECT `hascredit`,`hasmoney` FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000569s ]
+SQL: update wy_xmfx set hasmoney=1.2 where id=779 [ RunTime:0.006222s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000609s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.041798s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `ID` = 216 ) LIMIT 1   [ RunTime:0.000538s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-3.880796s ]
+INFO: [ view_template ] --END-- [ RunTime:0.006675s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-3.887629s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040734s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-3.928391s ]
+INFO: Run TokenBuild Behavior [ RunTime:-3.931456s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-3.935906s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-3.941431s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.017462s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-3.945943s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002990s ]
+
+[ 2015-01-08T10:31:21+08:00 ] 119.187.117.78 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021ba0c26a232196ac4fd19e9441ec2K&state=779&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002996s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.006901s ]
+SQL: SELECT * FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000463s ]
+NOTIC: [8] Undefined index:  openid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 197 行.
+SQL: SHOW COLUMNS FROM `wy_xmfx_list` [ RunTime:0.006257s ]
+SQL: SELECT * FROM `wy_xmfx_list` WHERE ( `wecha_id` = null ) AND ( `token` = 'jeifef1412084627' ) AND ( `uid` = 39 ) AND ( `mwecha_id` = 'oI5B3uOoFcZUPxCEKo1syOV1Tk8Q' ) LIMIT 1   [ RunTime:0.006317s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.007452s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = 39 ) [ RunTime:0.008425s ]
+SQL: INSERT INTO `wy_xmfx_list` (`token`,`uid`,`mwecha_id`,`wecha_id`) VALUES ('jeifef1412084627','39','oI5B3uOoFcZUPxCEKo1syOV1Tk8Q','') [ RunTime:0.002847s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.006377s ]
+SQL: UPDATE `wy_xmfx` SET `views`=views+1 WHERE ( `id` = 779 ) [ RunTime:0.004664s ]
+SQL: SELECT `longitude`,`latitude` FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000430s ]
+SQL: SHOW COLUMNS FROM `wy_product_setting` [ RunTime:0.006353s ]
+SQL: SELECT * FROM `wy_product_setting` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000310s ]
+SQL: SELECT `hascredit`,`hasmoney` FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000305s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000382s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.006803s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `ID` = 216 ) LIMIT 1   [ RunTime:0.000220s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.328201s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004623s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.332911s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023993s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.356982s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.359999s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.362761s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.365708s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012719s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.369912s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003605s ]
+
+[ 2015-01-08T10:39:11+08:00 ] 122.7.238.5 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021ba0c26a232196ac4fd19e9441ec2K&state=779&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003032s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.007803s ]
+SQL: SELECT * FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000504s ]
+NOTIC: [8] Undefined index:  openid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 197 行.
+SQL: SHOW COLUMNS FROM `wy_xmfx_list` [ RunTime:0.008223s ]
+SQL: SELECT * FROM `wy_xmfx_list` WHERE ( `wecha_id` = null ) AND ( `token` = 'jeifef1412084627' ) AND ( `uid` = 39 ) AND ( `mwecha_id` = 'oI5B3uOoFcZUPxCEKo1syOV1Tk8Q' ) LIMIT 1   [ RunTime:0.008375s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.008052s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = 39 ) [ RunTime:0.010096s ]
+SQL: INSERT INTO `wy_xmfx_list` (`token`,`uid`,`mwecha_id`,`wecha_id`) VALUES ('jeifef1412084627','39','oI5B3uOoFcZUPxCEKo1syOV1Tk8Q','') [ RunTime:0.003465s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.007974s ]
+SQL: UPDATE `wy_xmfx` SET `views`=views+1 WHERE ( `id` = 779 ) [ RunTime:0.006264s ]
+SQL: SELECT `longitude`,`latitude` FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000366s ]
+SQL: SHOW COLUMNS FROM `wy_product_setting` [ RunTime:0.009064s ]
+SQL: SELECT * FROM `wy_product_setting` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000181s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.009419s ]
+SQL: UPDATE `wy_jjr` SET `credit`=credit+1 WHERE ( `ID` = 216 ) [ RunTime:0.005994s ]
+SQL: UPDATE `wy_xmfx` SET `hascredit`=hascredit+1 WHERE ( `id` = 779 ) [ RunTime:0.002829s ]
+SQL: SELECT `hascredit`,`hasmoney` FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000323s ]
+SQL: update wy_xmfx set hasmoney=1.3 where id=779 [ RunTime:0.003659s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000379s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.006485s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `ID` = 216 ) LIMIT 1   [ RunTime:0.000312s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-2.656542s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004516s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-2.661145s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031829s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-2.693049s ]
+INFO: Run TokenBuild Behavior [ RunTime:-2.695889s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-2.698766s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-2.701211s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010912s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-2.704072s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002860s ]
+
+[ 2015-01-08T11:06:09+08:00 ] 117.136.37.9 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021ba0c26a232196ac4fd19e9441ec2K&state=779&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003085s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.039381s ]
+SQL: SELECT * FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000752s ]
+NOTIC: [8] Undefined index:  openid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 197 行.
+SQL: SHOW COLUMNS FROM `wy_xmfx_list` [ RunTime:0.041344s ]
+SQL: SELECT * FROM `wy_xmfx_list` WHERE ( `wecha_id` = null ) AND ( `token` = 'jeifef1412084627' ) AND ( `uid` = 39 ) AND ( `mwecha_id` = 'oI5B3uOoFcZUPxCEKo1syOV1Tk8Q' ) LIMIT 1   [ RunTime:0.006890s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.041873s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = 39 ) [ RunTime:0.012485s ]
+SQL: INSERT INTO `wy_xmfx_list` (`token`,`uid`,`mwecha_id`,`wecha_id`) VALUES ('jeifef1412084627','39','oI5B3uOoFcZUPxCEKo1syOV1Tk8Q','') [ RunTime:0.005928s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.040822s ]
+SQL: UPDATE `wy_xmfx` SET `views`=views+1 WHERE ( `id` = 779 ) [ RunTime:0.007631s ]
+SQL: SELECT `longitude`,`latitude` FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000333s ]
+SQL: SHOW COLUMNS FROM `wy_product_setting` [ RunTime:0.041198s ]
+SQL: SELECT * FROM `wy_product_setting` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000194s ]
+SQL: SELECT `hascredit`,`hasmoney` FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000317s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000624s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.040969s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `ID` = 216 ) LIMIT 1   [ RunTime:0.000227s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-2.771258s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004809s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-2.776164s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039341s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-2.815594s ]
+INFO: Run TokenBuild Behavior [ RunTime:-2.818884s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-2.821810s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-2.824296s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011803s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-2.827582s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003085s ]
+
+[ 2015-01-08T11:15:55+08:00 ] 124.131.173.73 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021ba0c26a232196ac4fd19e9441ec2K&state=779&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003078s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.036749s ]
+SQL: SELECT * FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000446s ]
+NOTIC: [8] Undefined index:  openid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 197 行.
+SQL: SHOW COLUMNS FROM `wy_xmfx_list` [ RunTime:0.039182s ]
+SQL: SELECT * FROM `wy_xmfx_list` WHERE ( `wecha_id` = null ) AND ( `token` = 'jeifef1412084627' ) AND ( `uid` = 39 ) AND ( `mwecha_id` = 'oI5B3uOoFcZUPxCEKo1syOV1Tk8Q' ) LIMIT 1   [ RunTime:0.006358s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.039901s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = 39 ) [ RunTime:0.016195s ]
+SQL: INSERT INTO `wy_xmfx_list` (`token`,`uid`,`mwecha_id`,`wecha_id`) VALUES ('jeifef1412084627','39','oI5B3uOoFcZUPxCEKo1syOV1Tk8Q','') [ RunTime:0.007847s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.039457s ]
+SQL: UPDATE `wy_xmfx` SET `views`=views+1 WHERE ( `id` = 779 ) [ RunTime:0.007257s ]
+SQL: SELECT `longitude`,`latitude` FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000409s ]
+SQL: SHOW COLUMNS FROM `wy_product_setting` [ RunTime:0.039042s ]
+SQL: SELECT * FROM `wy_product_setting` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000182s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.039981s ]
+SQL: UPDATE `wy_jjr` SET `credit`=credit+1 WHERE ( `ID` = 216 ) [ RunTime:0.011998s ]
+SQL: UPDATE `wy_xmfx` SET `hascredit`=hascredit+1 WHERE ( `id` = 779 ) [ RunTime:0.034913s ]
+SQL: SELECT `hascredit`,`hasmoney` FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000394s ]
+SQL: update wy_xmfx set hasmoney=1.4 where id=779 [ RunTime:0.007007s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.041250s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `ID` = 216 ) LIMIT 1   [ RunTime:0.000633s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-3.884377s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004713s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-3.889194s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039942s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-3.929262s ]
+INFO: Run TokenBuild Behavior [ RunTime:-3.932306s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-3.935215s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-3.937766s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011282s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-3.940650s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002951s ]
+
+[ 2015-01-08T11:15:56+08:00 ] 140.207.55.79 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000824s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000970s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.022351s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000187s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.052412s ]
+INFO: [ view_template ] --END-- [ RunTime:0.005700s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.058196s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022277s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.080556s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.081245s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.082006s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.082487s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002772s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.083432s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000874s ]
+
+[ 2015-01-08T11:15:56+08:00 ] 140.207.118.16 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003309s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.009352s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000226s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.058749s ]
+INFO: [ view_template ] --END-- [ RunTime:0.005457s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.064334s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037016s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.101404s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.104174s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.108400s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.110933s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012274s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.113798s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003416s ]
+
+[ 2015-01-08T11:15:56+08:00 ] 120.204.201.76 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002595s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002830s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.008117s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000167s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.041749s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004194s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.046059s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023223s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.069413s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.070074s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.070823s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.071389s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002813s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.072272s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000895s ]
+
+[ 2015-01-08T11:15:56+08:00 ] 117.135.149.14 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003031s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.026345s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000182s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.074685s ]
+INFO: [ view_template ] --END-- [ RunTime:0.005013s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.079794s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032886s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.112760s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.115593s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.119421s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.123249s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013800s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.126669s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002954s ]
+
+[ 2015-01-08T11:15:57+08:00 ] 120.204.200.83 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003748s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003975s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.024481s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000166s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.075540s ]
+INFO: [ view_template ] --END-- [ RunTime:0.008016s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.083646s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033846s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.117569s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.120523s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.123621s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.126338s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013210s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.130992s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003941s ]
+
+[ 2015-01-08T11:15:57+08:00 ] 140.207.55.80 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003172s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003359s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.039784s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000214s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.104839s ]
+INFO: [ view_template ] --END-- [ RunTime:0.009933s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.114865s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032953s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.147891s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.151014s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.154154s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.157373s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013209s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.161206s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003342s ]
+
+[ 2015-01-08T11:15:57+08:00 ] 120.204.201.76 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003518s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.008561s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000186s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.050642s ]
+INFO: [ view_template ] --END-- [ RunTime:0.006762s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.057445s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035350s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.092870s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.095865s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.098984s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.101700s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011612s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.104595s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002930s ]
+
+[ 2015-01-08T11:15:57+08:00 ] 140.207.55.79 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002991s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003182s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.008628s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000163s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.059628s ]
+INFO: [ view_template ] --END-- [ RunTime:0.005027s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.064741s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039297s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.104125s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.106965s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.109917s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.112491s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011259s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.115508s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002986s ]
+
+[ 2015-01-08T11:40:13+08:00 ] 221.1.223.2 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021ba0c26a232196ac4fd19e9441ec2K&state=779&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003009s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.041286s ]
+SQL: SELECT * FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000417s ]
+NOTIC: [8] Undefined index:  openid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 197 行.
+SQL: SHOW COLUMNS FROM `wy_xmfx_list` [ RunTime:0.040040s ]
+SQL: SELECT * FROM `wy_xmfx_list` WHERE ( `wecha_id` = null ) AND ( `token` = 'jeifef1412084627' ) AND ( `uid` = 39 ) AND ( `mwecha_id` = 'oI5B3uOoFcZUPxCEKo1syOV1Tk8Q' ) LIMIT 1   [ RunTime:0.006192s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.040242s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = 39 ) [ RunTime:0.027392s ]
+SQL: INSERT INTO `wy_xmfx_list` (`token`,`uid`,`mwecha_id`,`wecha_id`) VALUES ('jeifef1412084627','39','oI5B3uOoFcZUPxCEKo1syOV1Tk8Q','') [ RunTime:0.006560s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.042047s ]
+SQL: UPDATE `wy_xmfx` SET `views`=views+1 WHERE ( `id` = 779 ) [ RunTime:0.008680s ]
+SQL: SELECT `longitude`,`latitude` FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000586s ]
+SQL: SHOW COLUMNS FROM `wy_product_setting` [ RunTime:0.042821s ]
+SQL: SELECT * FROM `wy_product_setting` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000268s ]
+SQL: SELECT `hascredit`,`hasmoney` FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000468s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000626s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.040027s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `ID` = 216 ) LIMIT 1   [ RunTime:0.000242s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-3.943639s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004565s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-3.948293s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041863s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-3.990285s ]
+INFO: Run TokenBuild Behavior [ RunTime:-3.994063s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-3.997602s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-4.000579s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013503s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-4.003923s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003376s ]
+
+[ 2015-01-08T11:50:29+08:00 ] 182.36.83.11 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021ba0c26a232196ac4fd19e9441ec2K&state=779&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003195s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003431s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.038548s ]
+SQL: SELECT * FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000531s ]
+NOTIC: [8] Undefined index:  openid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 197 行.
+SQL: SHOW COLUMNS FROM `wy_xmfx_list` [ RunTime:0.039615s ]
+SQL: SELECT * FROM `wy_xmfx_list` WHERE ( `wecha_id` = null ) AND ( `token` = 'jeifef1412084627' ) AND ( `uid` = 39 ) AND ( `mwecha_id` = 'oI5B3uOoFcZUPxCEKo1syOV1Tk8Q' ) LIMIT 1   [ RunTime:0.006021s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.038674s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = 39 ) [ RunTime:0.012167s ]
+SQL: INSERT INTO `wy_xmfx_list` (`token`,`uid`,`mwecha_id`,`wecha_id`) VALUES ('jeifef1412084627','39','oI5B3uOoFcZUPxCEKo1syOV1Tk8Q','') [ RunTime:0.005957s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.041099s ]
+SQL: UPDATE `wy_xmfx` SET `views`=views+1 WHERE ( `id` = 779 ) [ RunTime:0.008784s ]
+SQL: SELECT `longitude`,`latitude` FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000612s ]
+SQL: SHOW COLUMNS FROM `wy_product_setting` [ RunTime:0.041973s ]
+SQL: SELECT * FROM `wy_product_setting` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000323s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.034057s ]
+SQL: UPDATE `wy_jjr` SET `credit`=credit+1 WHERE ( `ID` = 216 ) [ RunTime:0.011513s ]
+SQL: UPDATE `wy_xmfx` SET `hascredit`=hascredit+1 WHERE ( `id` = 779 ) [ RunTime:0.005978s ]
+SQL: SELECT `hascredit`,`hasmoney` FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000442s ]
+SQL: update wy_xmfx set hasmoney=1.5 where id=779 [ RunTime:0.006234s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000587s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.041188s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `ID` = 216 ) LIMIT 1   [ RunTime:0.000442s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-3.817000s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004772s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-3.821869s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041278s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-3.863255s ]
+INFO: Run TokenBuild Behavior [ RunTime:-3.866225s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-3.869330s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-3.872708s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012858s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-3.876242s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003064s ]
+
+[ 2015-01-08T12:07:41+08:00 ] 140.207.54.73 /index.php/api/jeifef1412084627?signature=b0bf853aa5bdfb8d41936bbde6c411786f75bae2&timestamp=1420690061&nonce=243815718
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.003310s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003514s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.004741s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004180s ]
+SQL: SHOW COLUMNS FROM `wy_userinfo` [ RunTime:0.009750s ]
+SQL: SELECT * FROM `wy_userinfo` WHERE ( `token` = 'jeifef1412084627' ) AND ( `wecha_id` = 'oI5B3uMapgcodJn2sj_3kJ0voZkA' ) LIMIT 1   [ RunTime:0.000340s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/1/2/12bc97489a87eb9fad1d64b61f68dbda.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.012629s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000317s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.011129s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000256s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.008932s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000430s ]
+NOTIC: [2048] Non-static method apiServer::getServerUrl() should not be called statically, assuming $this from incompatible context D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.007800s ]
+SQL: SELECT * FROM `wy_token_open` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000178s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser_message` [ RunTime:0.007962s ]
+SQL: INSERT INTO `wy_wxuser_message` (`ToUserName`,`FromUserName`,`CreateTime`,`MsgType`,`Content`,`MsgId`) VALUES ('gh_c4fefcfc9a96','oI5B3uMapgcodJn2sj_3kJ0voZkA','1420690060','text','西客站鞋城D区27-28门市出租，面积160平米，交通方便，门口就是公交车站牌，价格面议，电话13061599000','6101817345654563681') [ RunTime:0.000367s ]
+NOTIC: [8] Undefined index:  Event D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 119 行.
+NOTIC: [8] Undefined index:  Event D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 122 行.
+NOTIC: [8] Undefined index:  Event D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 125 行.
+NOTIC: [8] Undefined index:  Event D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 127 行.
+NOTIC: [8] Undefined index:  Event D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 144 行.
+NOTIC: [8] Undefined index:  Event D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 146 行.
+SQL: SHOW COLUMNS FROM `wy_api` [ RunTime:0.007821s ]
+SQL: SELECT * FROM `wy_api` WHERE ( `token` = 'jeifef1412084627' ) AND ( `status` = 1 )  [ RunTime:0.000187s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 158 行.
+NOTIC: [8] Undefined variable: api D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 165 行.
+NOTIC: [8] Undefined property:  stdClass::$Head D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 1687 行.
+NOTIC: [8] Trying to get property of non-object D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 1687 行.
+NOTIC: [8] Trying to get property of non-object D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 1688 行.
+NOTIC: [8] Trying to get property of non-object D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 1690 行.
+NOTIC: [8] Undefined property:  stdClass::$Main D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 1692 行.
+NOTIC: [8] Trying to get property of non-object D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 1692 行.
+NOTIC: [8] Trying to get property of non-object D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 1692 行.
+NOTIC: [8] Trying to get property of non-object D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 1693 行.
+
+[ 2015-01-08T12:08:06+08:00 ] 140.207.54.73 /index.php/api/jeifef1412084627?signature=6793b7e6fa63922de186f07fe1731c854f99e0f0&timestamp=1420690086&nonce=40034103
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.003278s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003429s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.004440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003171s ]
+SQL: SHOW COLUMNS FROM `wy_userinfo` [ RunTime:0.009015s ]
+SQL: SELECT * FROM `wy_userinfo` WHERE ( `token` = 'jeifef1412084627' ) AND ( `wecha_id` = 'oI5B3uMapgcodJn2sj_3kJ0voZkA' ) LIMIT 1   [ RunTime:0.000250s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/1/2/12bc97489a87eb9fad1d64b61f68dbda.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.010320s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.009651s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000268s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.006906s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000224s ]
+NOTIC: [2048] Non-static method apiServer::getServerUrl() should not be called statically, assuming $this from incompatible context D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.008878s ]
+SQL: SELECT * FROM `wy_token_open` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000237s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser_message` [ RunTime:0.007738s ]
+SQL: INSERT INTO `wy_wxuser_message` (`ToUserName`,`FromUserName`,`CreateTime`,`MsgType`,`Content`,`MsgId`) VALUES ('gh_c4fefcfc9a96','oI5B3uMapgcodJn2sj_3kJ0voZkA','1420690086','text','4路公交车','6101817457323713388') [ RunTime:0.000408s ]
+NOTIC: [8] Undefined index:  Event D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 119 行.
+NOTIC: [8] Undefined index:  Event D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 122 行.
+NOTIC: [8] Undefined index:  Event D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 125 行.
+NOTIC: [8] Undefined index:  Event D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 127 行.
+NOTIC: [8] Undefined index:  Event D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 144 行.
+NOTIC: [8] Undefined index:  Event D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 146 行.
+SQL: SHOW COLUMNS FROM `wy_api` [ RunTime:0.008518s ]
+SQL: SELECT * FROM `wy_api` WHERE ( `token` = 'jeifef1412084627' ) AND ( `status` = 1 )  [ RunTime:0.000207s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 158 行.
+NOTIC: [8] Undefined variable: api D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 165 行.
+NOTIC: [8] Undefined property:  stdClass::$Head D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 1687 行.
+NOTIC: [8] Trying to get property of non-object D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 1687 行.
+NOTIC: [8] Trying to get property of non-object D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 1688 行.
+NOTIC: [8] Trying to get property of non-object D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 1690 行.
+NOTIC: [8] Undefined property:  stdClass::$Main D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 1692 行.
+NOTIC: [8] Trying to get property of non-object D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 1692 行.
+NOTIC: [8] Trying to get property of non-object D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 1692 行.
+NOTIC: [8] Trying to get property of non-object D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 1693 行.
+
+[ 2015-01-08T12:08:06+08:00 ] 180.153.206.13 /index.php/api/jeifef1412084627
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.003075s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003224s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.005034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003188s ]
+NOTIC: [8] Undefined index:  echostr D:\www\qmyx.wuyelaile.com\weiwincms\Lib\ORG\Wechat.class.php 第 10 行.
+
+[ 2015-01-08T12:33:12+08:00 ] 117.136.37.95 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021ba0c26a232196ac4fd19e9441ec2K&state=779&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003037s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.008620s ]
+SQL: SELECT * FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000647s ]
+NOTIC: [8] Undefined index:  openid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 197 行.
+SQL: SHOW COLUMNS FROM `wy_xmfx_list` [ RunTime:0.007574s ]
+SQL: SELECT * FROM `wy_xmfx_list` WHERE ( `wecha_id` = null ) AND ( `token` = 'jeifef1412084627' ) AND ( `uid` = 39 ) AND ( `mwecha_id` = 'oI5B3uOoFcZUPxCEKo1syOV1Tk8Q' ) LIMIT 1   [ RunTime:0.007172s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.007497s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = 39 ) [ RunTime:0.010071s ]
+SQL: INSERT INTO `wy_xmfx_list` (`token`,`uid`,`mwecha_id`,`wecha_id`) VALUES ('jeifef1412084627','39','oI5B3uOoFcZUPxCEKo1syOV1Tk8Q','') [ RunTime:0.003615s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.009041s ]
+SQL: UPDATE `wy_xmfx` SET `views`=views+1 WHERE ( `id` = 779 ) [ RunTime:0.041787s ]
+SQL: SELECT `longitude`,`latitude` FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000501s ]
+SQL: SHOW COLUMNS FROM `wy_product_setting` [ RunTime:0.009531s ]
+SQL: SELECT * FROM `wy_product_setting` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000273s ]
+SQL: SELECT `hascredit`,`hasmoney` FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000523s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000535s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.009138s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `ID` = 216 ) LIMIT 1   [ RunTime:0.000173s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-3.610322s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004629s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-3.615042s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033751s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-3.648876s ]
+INFO: Run TokenBuild Behavior [ RunTime:-3.651736s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-3.654598s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-3.657095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011019s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-3.660005s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002864s ]
+
+[ 2015-01-08T13:48:55+08:00 ] 122.7.238.39 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021ba0c26a232196ac4fd19e9441ec2K&state=779&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002928s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003115s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.008535s ]
+SQL: SELECT * FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000465s ]
+NOTIC: [8] Undefined index:  openid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 197 行.
+SQL: SHOW COLUMNS FROM `wy_xmfx_list` [ RunTime:0.007138s ]
+SQL: SELECT * FROM `wy_xmfx_list` WHERE ( `wecha_id` = null ) AND ( `token` = 'jeifef1412084627' ) AND ( `uid` = 39 ) AND ( `mwecha_id` = 'oI5B3uOoFcZUPxCEKo1syOV1Tk8Q' ) LIMIT 1   [ RunTime:0.006129s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.007448s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = 39 ) [ RunTime:0.044600s ]
+SQL: INSERT INTO `wy_xmfx_list` (`token`,`uid`,`mwecha_id`,`wecha_id`) VALUES ('jeifef1412084627','39','oI5B3uOoFcZUPxCEKo1syOV1Tk8Q','') [ RunTime:0.003417s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.008436s ]
+SQL: UPDATE `wy_xmfx` SET `views`=views+1 WHERE ( `id` = 779 ) [ RunTime:0.004530s ]
+SQL: SELECT `longitude`,`latitude` FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000307s ]
+SQL: SHOW COLUMNS FROM `wy_product_setting` [ RunTime:0.008484s ]
+SQL: SELECT * FROM `wy_product_setting` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000200s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.010882s ]
+SQL: UPDATE `wy_jjr` SET `credit`=credit+1 WHERE ( `ID` = 216 ) [ RunTime:0.007444s ]
+SQL: UPDATE `wy_xmfx` SET `hascredit`=hascredit+1 WHERE ( `id` = 779 ) [ RunTime:0.025304s ]
+SQL: SELECT `hascredit`,`hasmoney` FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000588s ]
+SQL: update wy_xmfx set hasmoney=1.6 where id=779 [ RunTime:0.003092s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000564s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.006612s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `ID` = 216 ) LIMIT 1   [ RunTime:0.000402s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-2.662593s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004534s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-2.667222s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033674s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-2.700973s ]
+INFO: Run TokenBuild Behavior [ RunTime:-2.703804s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-2.706779s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-2.709328s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011182s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-2.712283s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002944s ]
+
+[ 2015-01-08T15:23:03+08:00 ] 117.136.37.95 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021ba0c26a232196ac4fd19e9441ec2K&state=779&from=singlemessage&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003173s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003373s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.009214s ]
+SQL: SELECT * FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000498s ]
+NOTIC: [8] Undefined index:  openid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 197 行.
+SQL: SHOW COLUMNS FROM `wy_xmfx_list` [ RunTime:0.007123s ]
+SQL: SELECT * FROM `wy_xmfx_list` WHERE ( `wecha_id` = null ) AND ( `token` = 'jeifef1412084627' ) AND ( `uid` = 39 ) AND ( `mwecha_id` = 'oI5B3uOoFcZUPxCEKo1syOV1Tk8Q' ) LIMIT 1   [ RunTime:0.006510s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.007686s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = 39 ) [ RunTime:0.037376s ]
+SQL: INSERT INTO `wy_xmfx_list` (`token`,`uid`,`mwecha_id`,`wecha_id`) VALUES ('jeifef1412084627','39','oI5B3uOoFcZUPxCEKo1syOV1Tk8Q','') [ RunTime:0.004132s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.007177s ]
+SQL: UPDATE `wy_xmfx` SET `views`=views+1 WHERE ( `id` = 779 ) [ RunTime:0.007312s ]
+SQL: SELECT `longitude`,`latitude` FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000591s ]
+SQL: SHOW COLUMNS FROM `wy_product_setting` [ RunTime:0.012805s ]
+SQL: SELECT * FROM `wy_product_setting` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000268s ]
+SQL: SELECT `hascredit`,`hasmoney` FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000475s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000565s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.007459s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `ID` = 216 ) LIMIT 1   [ RunTime:0.000198s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-2.590520s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004505s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-2.595111s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034359s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-2.629639s ]
+INFO: Run TokenBuild Behavior [ RunTime:-2.633718s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-2.637958s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-2.641475s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015225s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-2.644966s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004196s ]
+
+[ 2015-01-08T16:18:02+08:00 ] 111.37.25.166 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021ba0c26a232196ac4fd19e9441ec2K&state=779&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002926s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003111s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.042847s ]
+SQL: SELECT * FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000428s ]
+NOTIC: [8] Undefined index:  openid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 197 行.
+SQL: SHOW COLUMNS FROM `wy_xmfx_list` [ RunTime:0.039291s ]
+SQL: SELECT * FROM `wy_xmfx_list` WHERE ( `wecha_id` = null ) AND ( `token` = 'jeifef1412084627' ) AND ( `uid` = 39 ) AND ( `mwecha_id` = 'oI5B3uOoFcZUPxCEKo1syOV1Tk8Q' ) LIMIT 1   [ RunTime:0.006582s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.042609s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = 39 ) [ RunTime:0.177100s ]
+SQL: INSERT INTO `wy_xmfx_list` (`token`,`uid`,`mwecha_id`,`wecha_id`) VALUES ('jeifef1412084627','39','oI5B3uOoFcZUPxCEKo1syOV1Tk8Q','') [ RunTime:0.193559s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.042358s ]
+SQL: UPDATE `wy_xmfx` SET `views`=views+1 WHERE ( `id` = 779 ) [ RunTime:0.007707s ]
+SQL: SELECT `longitude`,`latitude` FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000634s ]
+SQL: SHOW COLUMNS FROM `wy_product_setting` [ RunTime:0.043868s ]
+SQL: SELECT * FROM `wy_product_setting` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000240s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.040456s ]
+SQL: UPDATE `wy_jjr` SET `credit`=credit+1 WHERE ( `ID` = 216 ) [ RunTime:0.013022s ]
+SQL: UPDATE `wy_xmfx` SET `hascredit`=hascredit+1 WHERE ( `id` = 779 ) [ RunTime:0.010310s ]
+SQL: SELECT `hascredit`,`hasmoney` FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000327s ]
+SQL: update wy_xmfx set hasmoney=1.7 where id=779 [ RunTime:0.006193s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000483s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.039855s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `ID` = 216 ) LIMIT 1   [ RunTime:0.000504s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-4.334745s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004761s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-4.339598s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045514s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-4.385284s ]
+INFO: Run TokenBuild Behavior [ RunTime:-4.388311s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-4.391284s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-4.393852s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011513s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-4.396957s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002963s ]
+
+[ 2015-01-08T17:32:15+08:00 ] 10.13.114.115 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021ba0c26a232196ac4fd19e9441ec2K&state=779&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003622s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.039732s ]
+SQL: SELECT * FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000403s ]
+NOTIC: [8] Undefined index:  openid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 197 行.
+SQL: SHOW COLUMNS FROM `wy_xmfx_list` [ RunTime:0.045525s ]
+SQL: SELECT * FROM `wy_xmfx_list` WHERE ( `wecha_id` = null ) AND ( `token` = 'jeifef1412084627' ) AND ( `uid` = 39 ) AND ( `mwecha_id` = 'oI5B3uOoFcZUPxCEKo1syOV1Tk8Q' ) LIMIT 1   [ RunTime:0.006595s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.041794s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = 39 ) [ RunTime:0.018772s ]
+SQL: INSERT INTO `wy_xmfx_list` (`token`,`uid`,`mwecha_id`,`wecha_id`) VALUES ('jeifef1412084627','39','oI5B3uOoFcZUPxCEKo1syOV1Tk8Q','') [ RunTime:0.008216s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.034177s ]
+SQL: UPDATE `wy_xmfx` SET `views`=views+1 WHERE ( `id` = 779 ) [ RunTime:0.007557s ]
+SQL: SELECT `longitude`,`latitude` FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000491s ]
+SQL: SHOW COLUMNS FROM `wy_product_setting` [ RunTime:0.036456s ]
+SQL: SELECT * FROM `wy_product_setting` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000372s ]
+SQL: SELECT `hascredit`,`hasmoney` FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000783s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000704s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.038800s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `ID` = 216 ) LIMIT 1   [ RunTime:0.000211s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-3.803072s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004647s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-3.807806s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037288s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-3.845248s ]
+INFO: Run TokenBuild Behavior [ RunTime:-3.848421s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-3.851729s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-3.854553s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012412s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-3.857776s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004237s ]
+
+[ 2015-01-08T19:04:48+08:00 ] 119.187.127.131 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021ba0c26a232196ac4fd19e9441ec2K&state=779&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002967s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.019226s ]
+SQL: SELECT * FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.001116s ]
+NOTIC: [8] Undefined index:  openid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 197 行.
+SQL: SHOW COLUMNS FROM `wy_xmfx_list` [ RunTime:0.007837s ]
+SQL: SELECT * FROM `wy_xmfx_list` WHERE ( `wecha_id` = null ) AND ( `token` = 'jeifef1412084627' ) AND ( `uid` = 39 ) AND ( `mwecha_id` = 'oI5B3uOoFcZUPxCEKo1syOV1Tk8Q' ) LIMIT 1   [ RunTime:0.006270s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.009394s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = 39 ) [ RunTime:0.033340s ]
+SQL: INSERT INTO `wy_xmfx_list` (`token`,`uid`,`mwecha_id`,`wecha_id`) VALUES ('jeifef1412084627','39','oI5B3uOoFcZUPxCEKo1syOV1Tk8Q','') [ RunTime:0.009029s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.011657s ]
+SQL: UPDATE `wy_xmfx` SET `views`=views+1 WHERE ( `id` = 779 ) [ RunTime:0.014749s ]
+SQL: SELECT `longitude`,`latitude` FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000600s ]
+SQL: SHOW COLUMNS FROM `wy_product_setting` [ RunTime:0.018679s ]
+SQL: SELECT * FROM `wy_product_setting` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000252s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.013039s ]
+SQL: UPDATE `wy_jjr` SET `credit`=credit+1 WHERE ( `ID` = 216 ) [ RunTime:0.009955s ]
+SQL: UPDATE `wy_xmfx` SET `hascredit`=hascredit+1 WHERE ( `id` = 779 ) [ RunTime:0.006239s ]
+SQL: SELECT `hascredit`,`hasmoney` FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000314s ]
+SQL: update wy_xmfx set hasmoney=1.8 where id=779 [ RunTime:0.009061s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000553s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.008601s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `ID` = 216 ) LIMIT 1   [ RunTime:0.000443s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-2.872347s ]
+INFO: [ view_template ] --END-- [ RunTime:0.006183s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-2.878628s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037844s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-2.916547s ]
+INFO: Run TokenBuild Behavior [ RunTime:-2.919364s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-2.922265s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-2.924755s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011037s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-2.927696s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002908s ]
+
+[ 2015-01-08T19:04:49+08:00 ] 119.187.127.131 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021ba0c26a232196ac4fd19e9441ec2K&state=779&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003010s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.039709s ]
+SQL: SELECT * FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000373s ]
+NOTIC: [8] Undefined index:  openid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 197 行.
+SQL: SHOW COLUMNS FROM `wy_xmfx_list` [ RunTime:0.037994s ]
+SQL: SELECT * FROM `wy_xmfx_list` WHERE ( `wecha_id` = null ) AND ( `token` = 'jeifef1412084627' ) AND ( `uid` = 39 ) AND ( `mwecha_id` = 'oI5B3uOoFcZUPxCEKo1syOV1Tk8Q' ) LIMIT 1   [ RunTime:0.006644s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.041604s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = 39 ) [ RunTime:0.012219s ]
+SQL: INSERT INTO `wy_xmfx_list` (`token`,`uid`,`mwecha_id`,`wecha_id`) VALUES ('jeifef1412084627','39','oI5B3uOoFcZUPxCEKo1syOV1Tk8Q','') [ RunTime:0.007484s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.040735s ]
+SQL: UPDATE `wy_xmfx` SET `views`=views+1 WHERE ( `id` = 779 ) [ RunTime:0.012888s ]
+SQL: SELECT `longitude`,`latitude` FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000353s ]
+SQL: SHOW COLUMNS FROM `wy_product_setting` [ RunTime:0.039518s ]
+SQL: SELECT * FROM `wy_product_setting` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000201s ]
+SQL: SELECT `hascredit`,`hasmoney` FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000322s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000395s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.040442s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `ID` = 216 ) LIMIT 1   [ RunTime:0.000304s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-2.924597s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004527s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-2.929240s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041185s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-2.970481s ]
+INFO: Run TokenBuild Behavior [ RunTime:-2.973449s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-2.976472s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-2.979066s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011411s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-2.982057s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003131s ]
+
+[ 2015-01-08T20:21:50+08:00 ] 119.178.139.112 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021ba0c26a232196ac4fd19e9441ec2K&state=779&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003303s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.042530s ]
+SQL: SELECT * FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000739s ]
+NOTIC: [8] Undefined index:  openid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 197 行.
+SQL: SHOW COLUMNS FROM `wy_xmfx_list` [ RunTime:0.041118s ]
+SQL: SELECT * FROM `wy_xmfx_list` WHERE ( `wecha_id` = null ) AND ( `token` = 'jeifef1412084627' ) AND ( `uid` = 39 ) AND ( `mwecha_id` = 'oI5B3uOoFcZUPxCEKo1syOV1Tk8Q' ) LIMIT 1   [ RunTime:0.009236s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.042422s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = 39 ) [ RunTime:0.028725s ]
+SQL: INSERT INTO `wy_xmfx_list` (`token`,`uid`,`mwecha_id`,`wecha_id`) VALUES ('jeifef1412084627','39','oI5B3uOoFcZUPxCEKo1syOV1Tk8Q','') [ RunTime:0.006039s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.022528s ]
+SQL: UPDATE `wy_xmfx` SET `views`=views+1 WHERE ( `id` = 779 ) [ RunTime:0.008394s ]
+SQL: SELECT `longitude`,`latitude` FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000327s ]
+SQL: SHOW COLUMNS FROM `wy_product_setting` [ RunTime:0.161111s ]
+SQL: SELECT * FROM `wy_product_setting` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000291s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.029638s ]
+SQL: UPDATE `wy_jjr` SET `credit`=credit+1 WHERE ( `ID` = 216 ) [ RunTime:0.014787s ]
+SQL: UPDATE `wy_xmfx` SET `hascredit`=hascredit+1 WHERE ( `id` = 779 ) [ RunTime:0.006808s ]
+SQL: SELECT `hascredit`,`hasmoney` FROM `wy_xmfx` WHERE ( `id` = 779 ) LIMIT 1   [ RunTime:0.000396s ]
+SQL: update wy_xmfx set hasmoney=1.9 where id=779 [ RunTime:0.026269s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = 39 ) LIMIT 1   [ RunTime:0.000499s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.037326s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `ID` = 216 ) LIMIT 1   [ RunTime:0.000612s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-3.138215s ]
+INFO: [ view_template ] --END-- [ RunTime:0.005049s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-3.143357s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042542s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-3.185986s ]
+INFO: Run TokenBuild Behavior [ RunTime:-3.189082s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-3.192139s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-3.194837s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011839s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-3.197934s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003051s ]
+
+[ 2015-01-08T20:47:46+08:00 ] 140.207.54.73 /index.php/api/jeifef1412084627?signature=2b089f992ebe3de68d4014b23552f715d95dcd09&timestamp=1420721264&nonce=463367640
+INFO: [ route_check ] --START--
+INFO: Run CheckRoute Behavior [ RunTime:0.003405s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003594s ]
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:-0.004675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002978s ]
+SQL: SHOW COLUMNS FROM `wy_userinfo` [ RunTime:0.041333s ]
+SQL: SELECT * FROM `wy_userinfo` WHERE ( `token` = 'jeifef1412084627' ) AND ( `wecha_id` = 'oI5B3uMapgcodJn2sj_3kJ0voZkA' ) LIMIT 1   [ RunTime:0.000243s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/1/2/12bc97489a87eb9fad1d64b61f68dbda.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.034242s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000319s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.040376s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000323s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.040950s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000308s ]
+NOTIC: [2048] Non-static method apiServer::getServerUrl() should not be called statically, assuming $this from incompatible context D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.061521s ]
+SQL: SELECT * FROM `wy_token_open` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000286s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser_message` [ RunTime:0.044415s ]
+SQL: INSERT INTO `wy_wxuser_message` (`ToUserName`,`FromUserName`,`CreateTime`,`MsgType`,`Content`,`MsgId`) VALUES ('gh_c4fefcfc9a96','oI5B3uMapgcodJn2sj_3kJ0voZkA','1420721264','text','西客站鞋城D区27-28门市出租，面积160平米，交通方便，门口就是公交车站牌，价格面议，电话13061599000','6101951365814079014') [ RunTime:0.000417s ]
+NOTIC: [8] Undefined index:  Event D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 119 行.
+NOTIC: [8] Undefined index:  Event D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 122 行.
+NOTIC: [8] Undefined index:  Event D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 125 行.
+NOTIC: [8] Undefined index:  Event D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 127 行.
+NOTIC: [8] Undefined index:  Event D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 144 行.
+NOTIC: [8] Undefined index:  Event D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 146 行.
+SQL: SHOW COLUMNS FROM `wy_api` [ RunTime:0.040880s ]
+SQL: SELECT * FROM `wy_api` WHERE ( `token` = 'jeifef1412084627' ) AND ( `status` = 1 )  [ RunTime:0.000215s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 158 行.
+NOTIC: [8] Undefined variable: api D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 165 行.
+NOTIC: [8] Undefined property:  stdClass::$Head D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 1687 行.
+NOTIC: [8] Trying to get property of non-object D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 1687 行.
+NOTIC: [8] Trying to get property of non-object D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 1688 行.
+NOTIC: [8] Trying to get property of non-object D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 1690 行.
+NOTIC: [8] Undefined property:  stdClass::$Main D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 1692 行.
+NOTIC: [8] Trying to get property of non-object D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 1692 行.
+NOTIC: [8] Trying to get property of non-object D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 1692 行.
+NOTIC: [8] Trying to get property of non-object D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Home\WeixinAction.class.php 第 1693 行.
+
+[ 2015-01-08T20:52:26+08:00 ] 112.246.0.21 /index.php?g=Wap&m=Agent&a=index&token=jeifef1412084627&wecha_id=oI5B3uGqOa5uG8oWKCccG6vR00h4
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002823s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002966s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.007409s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `token` = 'jeifef1412084627' ) ORDER BY houseSort desc,id desc LIMIT 0,20   [ RunTime:0.002518s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.007736s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `Wecha_id` = 'oI5B3uGqOa5uG8oWKCccG6vR00h4' ) AND ( `Token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000695s ]
+SQL: SHOW COLUMNS FROM `wy_share_content` [ RunTime:0.007957s ]
+SQL: SELECT * FROM `wy_share_content` WHERE token='jeifef1412084627' LIMIT 1   [ RunTime:0.000271s ]
+NOTIC: [8] Undefined variable: var D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Common\functions.php 第 234 行.
+NOTIC: [2] array_reverse() [<a href='function.array-reverse'>function.array-reverse</a>]: The argument should be an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Common\functions.php 第 234 行.
+NOTIC: [2] http_build_query() [<a href='function.http-build-query'>function.http-build-query</a>]: Parameter 1 expected to be Array or Object.  Incorrect value given D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Common\functions.php 第 234 行.
+
+[ 2015-01-08T20:52:27+08:00 ] 112.246.0.21 /index.php?&g=Wap&m=Agent&a=ydl&token=jeifef1412084627&wecha_id=oI5B3uGqOa5uG8oWKCccG6vR00h4
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000877s ]
+SQL: SHOW COLUMNS FROM `wy_agent_rewardinfo` [ RunTime:0.008128s ]
+SQL: SELECT SUM(rewardamount) AS tp_sum FROM `wy_agent_rewardinfo` WHERE wecha_id='oI5B3uGqOa5uG8oWKCccG6vR00h4' and token='jeifef1412084627' and rewardstatus =0 LIMIT 1   [ RunTime:0.000614s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.007063s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `Wecha_id` = 'oI5B3uGqOa5uG8oWKCccG6vR00h4' ) AND ( `Token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000205s ]
+SQL: SHOW COLUMNS FROM `wy_share_content` [ RunTime:0.006037s ]
+SQL: SELECT * FROM `wy_share_content` WHERE token='jeifef1412084627' LIMIT 1   [ RunTime:0.000188s ]
+SQL: SHOW COLUMNS FROM `wy_kh` [ RunTime:0.007204s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_kh` WHERE ( `Token` = 'jeifef1412084627' ) AND ( `JJ_id` = 183 ) LIMIT 1   [ RunTime:0.000639s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.007799s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `token` = 'jeifef1412084627' ) ORDER BY houseSort desc,id desc LIMIT 0,20   [ RunTime:0.000697s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.073359s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004906s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.078358s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038162s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.116597s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.119511s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.122398s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.124903s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011215s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.127990s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003388s ]
+
+[ 2015-01-08T20:53:25+08:00 ] 112.246.0.21 /index.php?g=Wap&m=Agent&a=credit&token=jeifef1412084627&wecha_id=oI5B3uGqOa5uG8oWKCccG6vR00h4&JJ_id=183
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001112s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.008548s ]
+SQL: select xmfx.id,xmfx.views,xmfx.hascredit,lp.LouPanTitle,xmfx.type,jjr.credit 
+						from wy_xmfx as xmfx left join wy_lpinfo as lp on lp.id=xmfx.uid 
+						left join wy_jjr as jjr on xmfx.jid=jjr.ID 
+						where xmfx.token='jeifef1412084627' and xmfx.jid=183 
+						order by xmfx.id desc [ RunTime:0.001513s ]
+NOTIC: [8] Undefined variable: allcredit D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 618 行.
+NOTIC: [8] Undefined variable: klcredit D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 619 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.035790s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003723s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.039618s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018911s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.058657s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.059484s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.060142s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.060639s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002758s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.061598s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002129s ]
+
+[ 2015-01-08T20:54:31+08:00 ] 112.246.0.21 /index.php?g=Wap&m=Agent&a=loupanInfo&token=jeifef1412084627&wecha_id=oI5B3uGqOa5uG8oWKCccG6vR00h4&id=30
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003240s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.036363s ]
+SQL: SELECT `id` FROM `wy_jjr` WHERE ( `Wecha_id` = 'oI5B3uGqOa5uG8oWKCccG6vR00h4' ) AND ( `Token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000628s ]
+NOTIC: [8] Undefined variable: var D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Common\functions.php 第 234 行.
+NOTIC: [2] array_reverse() [<a href='function.array-reverse'>function.array-reverse</a>]: The argument should be an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Common\functions.php 第 234 行.
+NOTIC: [2] http_build_query() [<a href='function.http-build-query'>function.http-build-query</a>]: Parameter 1 expected to be Array or Object.  Incorrect value given D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Common\functions.php 第 234 行.
+
+[ 2015-01-08T20:54:32+08:00 ] 112.246.0.21 /index.php?&g=Wap&m=Agent&a=weimaoa&token=jeifef1412084627&wecha_id=oI5B3uGqOa5uG8oWKCccG6vR00h4&uid=30&jid=183
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000860s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.036784s ]
+SQL: SELECT `id` FROM `wy_xmfx` WHERE ( `token` = 'jeifef1412084627' ) AND ( `wecha_id` = 'oI5B3uGqOa5uG8oWKCccG6vR00h4' ) AND ( `uid` = 30 ) LIMIT 1   [ RunTime:0.000624s ]
+SQL: UPDATE `wy_xmfx` SET `jid`='183' WHERE ( `id` = 430 ) [ RunTime:0.040012s ]
+
+[ 2015-01-08T20:54:33+08:00 ] 112.246.0.21 /index.php?g=Wap&m=Agent&a=loupanInfo&token=jeifef1412084627&wecha_id=oI5B3uGqOa5uG8oWKCccG6vR00h4&id=30
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000901s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.038788s ]
+SQL: SELECT `id` FROM `wy_jjr` WHERE ( `Wecha_id` = 'oI5B3uGqOa5uG8oWKCccG6vR00h4' ) AND ( `Token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000245s ]
+NOTIC: [8] Undefined variable: var D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Common\functions.php 第 234 行.
+NOTIC: [2] array_reverse() [<a href='function.array-reverse'>function.array-reverse</a>]: The argument should be an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Common\functions.php 第 234 行.
+NOTIC: [2] http_build_query() [<a href='function.http-build-query'>function.http-build-query</a>]: Parameter 1 expected to be Array or Object.  Incorrect value given D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Common\functions.php 第 234 行.
+
+[ 2015-01-08T20:54:33+08:00 ] 112.246.0.21 /index.php?&g=Wap&m=Agent&a=weimaoa&token=jeifef1412084627&wecha_id=oI5B3uGqOa5uG8oWKCccG6vR00h4&uid=30&jid=183
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000746s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000891s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.036075s ]
+SQL: SELECT `id` FROM `wy_xmfx` WHERE ( `token` = 'jeifef1412084627' ) AND ( `wecha_id` = 'oI5B3uGqOa5uG8oWKCccG6vR00h4' ) AND ( `uid` = 30 ) LIMIT 1   [ RunTime:0.000241s ]
+SQL: UPDATE `wy_xmfx` SET `jid`='183' WHERE ( `id` = 430 ) [ RunTime:0.010769s ]
+
+[ 2015-01-08T20:54:39+08:00 ] 112.246.0.21 /index.php?g=Wap&m=Agent&a=loupanInfo&code=031f5b84f1d9cbb091d79651754eaa4o&state=430
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000735s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000896s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.037418s ]
+SQL: SELECT * FROM `wy_xmfx` WHERE ( `id` = 430 ) LIMIT 1   [ RunTime:0.000639s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx_list` [ RunTime:0.030818s ]
+SQL: SELECT * FROM `wy_xmfx_list` WHERE ( `wecha_id` = 'oqsrSjuRMhxdLprbYQMHemhQdLR0' ) AND ( `token` = 'jeifef1412084627' ) AND ( `uid` = 30 ) AND ( `mwecha_id` = 'oI5B3uGqOa5uG8oWKCccG6vR00h4' ) LIMIT 1   [ RunTime:0.002866s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.041701s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = 30 ) LIMIT 1   [ RunTime:0.000502s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.043240s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `ID` = 183 ) LIMIT 1   [ RunTime:0.000629s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-3.705720s ]
+INFO: [ view_template ] --END-- [ RunTime:0.006848s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-3.712649s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033483s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-3.746211s ]
+INFO: Run TokenBuild Behavior [ RunTime:-3.749233s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-3.751992s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-3.754487s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011101s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-3.757446s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002935s ]
+
+[ 2015-01-08T20:56:21+08:00 ] 112.246.0.21 /index.php?g=Wap&m=Agent&a=index&token=jeifef1412084627&wecha_id=oI5B3uGqOa5uG8oWKCccG6vR00h4
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.007076s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `token` = 'jeifef1412084627' ) ORDER BY houseSort desc,id desc LIMIT 0,20   [ RunTime:0.000770s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.007305s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `Wecha_id` = 'oI5B3uGqOa5uG8oWKCccG6vR00h4' ) AND ( `Token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000278s ]
+SQL: SHOW COLUMNS FROM `wy_share_content` [ RunTime:0.006483s ]
+SQL: SELECT * FROM `wy_share_content` WHERE token='jeifef1412084627' LIMIT 1   [ RunTime:0.000189s ]
+NOTIC: [8] Undefined variable: var D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Common\functions.php 第 234 行.
+NOTIC: [2] array_reverse() [<a href='function.array-reverse'>function.array-reverse</a>]: The argument should be an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Common\functions.php 第 234 行.
+NOTIC: [2] http_build_query() [<a href='function.http-build-query'>function.http-build-query</a>]: Parameter 1 expected to be Array or Object.  Incorrect value given D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Common\functions.php 第 234 行.
+
+[ 2015-01-08T20:56:21+08:00 ] 112.246.0.21 /index.php?&g=Wap&m=Agent&a=ydl&token=jeifef1412084627&wecha_id=oI5B3uGqOa5uG8oWKCccG6vR00h4
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000699s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000842s ]
+SQL: SHOW COLUMNS FROM `wy_agent_rewardinfo` [ RunTime:0.007371s ]
+SQL: SELECT SUM(rewardamount) AS tp_sum FROM `wy_agent_rewardinfo` WHERE wecha_id='oI5B3uGqOa5uG8oWKCccG6vR00h4' and token='jeifef1412084627' and rewardstatus =0 LIMIT 1   [ RunTime:0.000248s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.007157s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `Wecha_id` = 'oI5B3uGqOa5uG8oWKCccG6vR00h4' ) AND ( `Token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000299s ]
+SQL: SHOW COLUMNS FROM `wy_share_content` [ RunTime:0.008185s ]
+SQL: SELECT * FROM `wy_share_content` WHERE token='jeifef1412084627' LIMIT 1   [ RunTime:0.000275s ]
+SQL: SHOW COLUMNS FROM `wy_kh` [ RunTime:0.007862s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_kh` WHERE ( `Token` = 'jeifef1412084627' ) AND ( `JJ_id` = 183 ) LIMIT 1   [ RunTime:0.000189s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.007667s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `token` = 'jeifef1412084627' ) ORDER BY houseSort desc,id desc LIMIT 0,20   [ RunTime:0.000779s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.076853s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003037s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.079974s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022422s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.102477s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.103282s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.103987s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.104443s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002710s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.105289s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001944s ]
+
+[ 2015-01-08T20:56:22+08:00 ] 112.65.193.16 /index.php?&g=Wap&m=Agent&a=ydl&token=jeifef1412084627&wecha_id=oI5B3uGqOa5uG8oWKCccG6vR00h4
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000938s ]
+SQL: SHOW COLUMNS FROM `wy_agent_rewardinfo` [ RunTime:0.023777s ]
+SQL: SELECT SUM(rewardamount) AS tp_sum FROM `wy_agent_rewardinfo` WHERE wecha_id='oI5B3uGqOa5uG8oWKCccG6vR00h4' and token='jeifef1412084627' and rewardstatus =0 LIMIT 1   [ RunTime:0.000253s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.039435s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `Wecha_id` = 'oI5B3uGqOa5uG8oWKCccG6vR00h4' ) AND ( `Token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000315s ]
+SQL: SHOW COLUMNS FROM `wy_share_content` [ RunTime:0.038274s ]
+SQL: SELECT * FROM `wy_share_content` WHERE token='jeifef1412084627' LIMIT 1   [ RunTime:0.000190s ]
+SQL: SHOW COLUMNS FROM `wy_kh` [ RunTime:0.040243s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_kh` WHERE ( `Token` = 'jeifef1412084627' ) AND ( `JJ_id` = 183 ) LIMIT 1   [ RunTime:0.000249s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.039824s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `token` = 'jeifef1412084627' ) ORDER BY houseSort desc,id desc LIMIT 0,20   [ RunTime:0.000831s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.218073s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000780s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.218935s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020809s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.239821s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.240544s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.241243s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.241693s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002585s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.242514s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001858s ]
+
+[ 2015-01-08T20:56:35+08:00 ] 112.246.0.21 /index.php?g=Wap&m=Agent&a=loupanInfo&token=jeifef1412084627&wecha_id=oI5B3uGqOa5uG8oWKCccG6vR00h4&id=30
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002844s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.022817s ]
+SQL: SELECT `id` FROM `wy_jjr` WHERE ( `Wecha_id` = 'oI5B3uGqOa5uG8oWKCccG6vR00h4' ) AND ( `Token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000326s ]
+NOTIC: [8] Undefined variable: var D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Common\functions.php 第 234 行.
+NOTIC: [2] array_reverse() [<a href='function.array-reverse'>function.array-reverse</a>]: The argument should be an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Common\functions.php 第 234 行.
+NOTIC: [2] http_build_query() [<a href='function.http-build-query'>function.http-build-query</a>]: Parameter 1 expected to be Array or Object.  Incorrect value given D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Common\functions.php 第 234 行.
+
+[ 2015-01-08T20:56:36+08:00 ] 112.246.0.21 /index.php?&g=Wap&m=Agent&a=weimaoa&token=jeifef1412084627&wecha_id=oI5B3uGqOa5uG8oWKCccG6vR00h4&uid=30&jid=183
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000849s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.035713s ]
+SQL: SELECT `id` FROM `wy_xmfx` WHERE ( `token` = 'jeifef1412084627' ) AND ( `wecha_id` = 'oI5B3uGqOa5uG8oWKCccG6vR00h4' ) AND ( `uid` = 30 ) LIMIT 1   [ RunTime:0.000239s ]
+SQL: UPDATE `wy_xmfx` SET `jid`='183' WHERE ( `id` = 430 ) [ RunTime:0.010494s ]
+
+[ 2015-01-08T20:56:36+08:00 ] 180.153.114.197 /index.php?g=Wap&m=Agent&a=loupanInfo&token=jeifef1412084627&wecha_id=oI5B3uGqOa5uG8oWKCccG6vR00h4&id=30
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000885s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001030s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.011794s ]
+SQL: SELECT `id` FROM `wy_jjr` WHERE ( `Wecha_id` = 'oI5B3uGqOa5uG8oWKCccG6vR00h4' ) AND ( `Token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000174s ]
+NOTIC: [8] Undefined variable: var D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Common\functions.php 第 234 行.
+NOTIC: [2] array_reverse() [<a href='function.array-reverse'>function.array-reverse</a>]: The argument should be an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Common\functions.php 第 234 行.
+NOTIC: [2] http_build_query() [<a href='function.http-build-query'>function.http-build-query</a>]: Parameter 1 expected to be Array or Object.  Incorrect value given D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Common\functions.php 第 234 行.
+
+[ 2015-01-08T20:56:36+08:00 ] 180.153.114.197 /index.php?&g=Wap&m=Agent&a=weimaoa&token=jeifef1412084627&wecha_id=oI5B3uGqOa5uG8oWKCccG6vR00h4&uid=30&jid=183
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001059s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.038858s ]
+SQL: SELECT `id` FROM `wy_xmfx` WHERE ( `token` = 'jeifef1412084627' ) AND ( `wecha_id` = 'oI5B3uGqOa5uG8oWKCccG6vR00h4' ) AND ( `uid` = 30 ) LIMIT 1   [ RunTime:0.000271s ]
+SQL: UPDATE `wy_xmfx` SET `jid`='183' WHERE ( `id` = 430 ) [ RunTime:0.015362s ]
+
+[ 2015-01-08T20:56:36+08:00 ] 112.64.235.249 /index.php?&g=Wap&m=Agent&a=weimaoa&token=jeifef1412084627&wecha_id=oI5B3uGqOa5uG8oWKCccG6vR00h4&uid=30&jid=183
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000736s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000878s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.035232s ]
+SQL: SELECT `id` FROM `wy_xmfx` WHERE ( `token` = 'jeifef1412084627' ) AND ( `wecha_id` = 'oI5B3uGqOa5uG8oWKCccG6vR00h4' ) AND ( `uid` = 30 ) LIMIT 1   [ RunTime:0.000285s ]
+SQL: UPDATE `wy_xmfx` SET `jid`='183' WHERE ( `id` = 430 ) [ RunTime:0.008168s ]
+
+[ 2015-01-08T20:56:38+08:00 ] 112.246.0.21 /index.php?g=Wap&m=Agent&a=loupanInfo&code=0311087300aa75154497397b4c3ad44e&state=430
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000729s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000865s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.037811s ]
+SQL: SELECT * FROM `wy_xmfx` WHERE ( `id` = 430 ) LIMIT 1   [ RunTime:0.000211s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx_list` [ RunTime:0.039818s ]
+SQL: SELECT * FROM `wy_xmfx_list` WHERE ( `wecha_id` = 'oqsrSjuRMhxdLprbYQMHemhQdLR0' ) AND ( `token` = 'jeifef1412084627' ) AND ( `uid` = 30 ) AND ( `mwecha_id` = 'oI5B3uGqOa5uG8oWKCccG6vR00h4' ) LIMIT 1   [ RunTime:0.000249s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.040740s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = 30 ) LIMIT 1   [ RunTime:0.000349s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.041602s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `ID` = 183 ) LIMIT 1   [ RunTime:0.000281s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.417790s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004179s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.422040s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030040s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.452296s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.453549s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.454741s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.455392s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004168s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.456641s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002515s ]
+
+[ 2015-01-08T20:56:58+08:00 ] 180.153.114.197 /index.php?g=Wap&m=Agent&a=loupanInfo
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000761s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000902s ]
+NOTIC: [8] Undefined index:  wecha_id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 305 行.
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 306 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 307 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.038419s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.000324s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000428s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.070570s ]
+INFO: [ view_template ] --END-- [ RunTime:0.006369s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.076999s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033120s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.110242s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.112995s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.115690s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.118196s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010720s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.121073s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002952s ]
+
+[ 2015-01-08T20:58:58+08:00 ] 180.153.214.190 /index.php?&g=Wap&m=Agent&a=ydl&token=jeifef1412084627&wecha_id=oI5B3uGqOa5uG8oWKCccG6vR00h4
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003070s ]
+SQL: SHOW COLUMNS FROM `wy_agent_rewardinfo` [ RunTime:0.038491s ]
+SQL: SELECT SUM(rewardamount) AS tp_sum FROM `wy_agent_rewardinfo` WHERE wecha_id='oI5B3uGqOa5uG8oWKCccG6vR00h4' and token='jeifef1412084627' and rewardstatus =0 LIMIT 1   [ RunTime:0.000294s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.038054s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `Wecha_id` = 'oI5B3uGqOa5uG8oWKCccG6vR00h4' ) AND ( `Token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000228s ]
+SQL: SHOW COLUMNS FROM `wy_share_content` [ RunTime:0.043057s ]
+SQL: SELECT * FROM `wy_share_content` WHERE token='jeifef1412084627' LIMIT 1   [ RunTime:0.000266s ]
+SQL: SHOW COLUMNS FROM `wy_kh` [ RunTime:0.039295s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_kh` WHERE ( `Token` = 'jeifef1412084627' ) AND ( `JJ_id` = 183 ) LIMIT 1   [ RunTime:0.000180s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.042304s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `token` = 'jeifef1412084627' ) ORDER BY houseSort desc,id desc LIMIT 0,20   [ RunTime:0.000720s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.260992s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002927s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.264011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024721s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.288802s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.289608s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.290284s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.290776s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002730s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.291636s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002051s ]
+
+[ 2015-01-08T20:59:13+08:00 ] 119.147.146.189 /index.php?g=Wap&m=Agent&a=loupanInfo&token=jeifef1412084627&wecha_id=oI5B3uGqOa5uG8oWKCccG6vR00h4&id=30
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000952s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.033754s ]
+SQL: SELECT `id` FROM `wy_jjr` WHERE ( `Wecha_id` = 'oI5B3uGqOa5uG8oWKCccG6vR00h4' ) AND ( `Token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000290s ]
+NOTIC: [8] Undefined variable: var D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Common\functions.php 第 234 行.
+NOTIC: [2] array_reverse() [<a href='function.array-reverse'>function.array-reverse</a>]: The argument should be an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Common\functions.php 第 234 行.
+NOTIC: [2] http_build_query() [<a href='function.http-build-query'>function.http-build-query</a>]: Parameter 1 expected to be Array or Object.  Incorrect value given D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Common\functions.php 第 234 行.
+
+[ 2015-01-08T21:02:43+08:00 ] ERR: (ThinkException) 模板不存在[./tpl/Wap/default/Index_index.html]
+[ 2015-01-08T21:02:43+08:00 ] 180.153.163.209 /index.php?g=Wap
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.004320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004595s ]
+SQL: SHOW COLUMNS FROM `wy_userinfo` [ RunTime:0.008035s ]
+SQL: SELECT * FROM `wy_userinfo` WHERE ( `token` = null ) AND ( `wecha_id` = null ) LIMIT 1   [ RunTime:0.000405s ]
+SQL: SHOW COLUMNS FROM `wy_wechat_group_list` [ RunTime:0.008812s ]
+SQL: SELECT * FROM `wy_wechat_group_list` WHERE ( `token` = null ) AND ( `openid` = null ) LIMIT 1   [ RunTime:0.000422s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/5/f/5fe1fc0e0fdbfbaff4ab677cf3a37648.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_home` [ RunTime:0.010456s ]
+SQL: SELECT * FROM `wy_home` WHERE ( `token` = null ) LIMIT 1   [ RunTime:0.000204s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/0/d/0d2c1c12d6393e604b6e35e960614004.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.007423s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = null ) LIMIT 1   [ RunTime:0.000254s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/8/b/8b27330c23d5c53e2409cb5a50d9703d.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_catemenu` [ RunTime:0.008509s ]
+SQL: SELECT * FROM `wy_catemenu` WHERE ( `token` = null ) AND ( `status` = 1 ) ORDER BY orderss desc  [ RunTime:0.000186s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/5/8/5848d5204b5e414e87c386581aa4207f.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_catemenu` [ RunTime:0.006720s ]
+NOTIC: [8] Undefined index:  lpid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\WapAction.class.php 第 80 行.
+SQL: SELECT * FROM `wy_catemenu` WHERE ( `token` = null ) AND ( `status` = 1 ) AND ( `lpid` = null )  [ RunTime:0.000184s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.007142s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 0 ) LIMIT 1   [ RunTime:0.000216s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/e/f/efe21af28ac2c16b2c3515b7a677c7a3.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.009064s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 0 ) LIMIT 1   [ RunTime:0.000190s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/c/1/c12b83863679c53a027170a94c2d1853.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_company` [ RunTime:0.009007s ]
+SQL: SELECT * FROM `wy_company` WHERE ( `token` = null ) AND ( `isbranch` = 0 ) LIMIT 1   [ RunTime:0.000200s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/5/f/5f590e6483487102f9aedcd019d413c0.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_classify` [ RunTime:0.081704s ]
+NOTIC: [8] Undefined index:  lpid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 25 行.
+SQL: SELECT * FROM `wy_classify` WHERE ( `token` = null ) AND ( `status` = 1 ) AND ( `lpid` = null ) ORDER BY sorts desc  [ RunTime:0.003323s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 506 行.
+SQL: SHOW COLUMNS FROM `wy_home` [ RunTime:0.007793s ]
+SQL: SELECT * FROM `wy_home` WHERE ( `token` = null ) LIMIT 1   [ RunTime:0.000252s ]
+SQL: SHOW COLUMNS FROM `wy_kefuonline` [ RunTime:0.008719s ]
+SQL: SELECT * FROM `wy_kefuonline` WHERE ( `token` = null ) LIMIT 1   [ RunTime:0.000288s ]
+SQL: SELECT * FROM `wy_home` WHERE ( `token` = null ) LIMIT 1   [ RunTime:0.000235s ]
+NOTIC: [8] Undefined index:  lpid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.010503s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `token` = null ) LIMIT 1   [ RunTime:0.000543s ]
+SQL: SHOW COLUMNS FROM `wy_flash` [ RunTime:0.080619s ]
+SQL: SELECT * FROM `wy_flash` WHERE ( `token` = null ) AND ( `lpid` = null ) ORDER BY sort asc  [ RunTime:0.002866s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 506 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 99 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined variable: tplinfo D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 136 行.
+NOTIC: [8] Undefined variable: tplinfo D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 137 行.
+NOTIC: [8] Undefined index:  tpltypename D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 170 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+NOTIC: [8] Undefined index:  class D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  class D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  file D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [8] Undefined index:  line D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [4096] Object of class IndexAction could not be converted to string D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Undefined index:  class D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  class D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+
+[ 2015-01-08T21:04:52+08:00 ] 112.240.129.88 /index.php?g=Wap&m=Agent&a=loupanInfo&code=011d849fadfcdd61b46a69a97e96e26V&state=430
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002752s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002903s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.006993s ]
+SQL: SELECT * FROM `wy_xmfx` WHERE ( `id` = 430 ) LIMIT 1   [ RunTime:0.000186s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx_list` [ RunTime:0.006766s ]
+SQL: SELECT * FROM `wy_xmfx_list` WHERE ( `wecha_id` = 'oqsrSjpzXhQTFov_JhO_XmLVuyRw' ) AND ( `token` = 'jeifef1412084627' ) AND ( `uid` = 30 ) AND ( `mwecha_id` = 'oI5B3uGqOa5uG8oWKCccG6vR00h4' ) LIMIT 1   [ RunTime:0.006633s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.007684s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = 30 ) [ RunTime:0.014036s ]
+SQL: INSERT INTO `wy_xmfx_list` (`token`,`uid`,`mwecha_id`,`wecha_id`) VALUES ('jeifef1412084627','30','oI5B3uGqOa5uG8oWKCccG6vR00h4','oqsrSjpzXhQTFov_JhO_XmLVuyRw') [ RunTime:0.004218s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.008299s ]
+SQL: UPDATE `wy_xmfx` SET `views`=views+1 WHERE ( `id` = 430 ) [ RunTime:0.004580s ]
+SQL: SELECT `longitude`,`latitude` FROM `wy_lpinfo` WHERE ( `id` = 30 ) LIMIT 1   [ RunTime:0.000306s ]
+SQL: SHOW COLUMNS FROM `wy_product_setting` [ RunTime:0.008384s ]
+SQL: SELECT * FROM `wy_product_setting` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000186s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.007122s ]
+SQL: UPDATE `wy_jjr` SET `credit`=credit+1 WHERE ( `ID` = 183 ) [ RunTime:0.008414s ]
+SQL: UPDATE `wy_xmfx` SET `hascredit`=hascredit+1 WHERE ( `id` = 430 ) [ RunTime:0.003837s ]
+SQL: SELECT `hascredit`,`hasmoney` FROM `wy_xmfx` WHERE ( `id` = 430 ) LIMIT 1   [ RunTime:0.000581s ]
+SQL: update wy_xmfx set hasmoney=0.2 where id=430 [ RunTime:0.004202s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = 30 ) LIMIT 1   [ RunTime:0.000508s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.008046s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `ID` = 183 ) LIMIT 1   [ RunTime:0.000570s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-1.378909s ]
+INFO: [ view_template ] --END-- [ RunTime:0.005493s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-1.384501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029987s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.414562s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.417682s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.420531s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.423047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011370s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.426055s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003563s ]
+
+[ 2015-01-08T21:05:54+08:00 ] ERR: (ThinkException) 模板不存在[./tpl/Wap/default/Index_index.html]
+[ 2015-01-08T21:05:54+08:00 ] 119.147.146.189 /index.php?g=Wap
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000754s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000892s ]
+SQL: SHOW COLUMNS FROM `wy_userinfo` [ RunTime:0.008873s ]
+SQL: SELECT * FROM `wy_userinfo` WHERE ( `token` = null ) AND ( `wecha_id` = null ) LIMIT 1   [ RunTime:0.000221s ]
+SQL: SHOW COLUMNS FROM `wy_wechat_group_list` [ RunTime:0.009156s ]
+SQL: SELECT * FROM `wy_wechat_group_list` WHERE ( `token` = null ) AND ( `openid` = null ) LIMIT 1   [ RunTime:0.000205s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/5/f/5fe1fc0e0fdbfbaff4ab677cf3a37648.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_home` [ RunTime:0.011965s ]
+SQL: SELECT * FROM `wy_home` WHERE ( `token` = null ) LIMIT 1   [ RunTime:0.000195s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/0/d/0d2c1c12d6393e604b6e35e960614004.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.024515s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = null ) LIMIT 1   [ RunTime:0.000253s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/8/b/8b27330c23d5c53e2409cb5a50d9703d.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_catemenu` [ RunTime:0.041896s ]
+SQL: SELECT * FROM `wy_catemenu` WHERE ( `token` = null ) AND ( `status` = 1 ) ORDER BY orderss desc  [ RunTime:0.000195s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/5/8/5848d5204b5e414e87c386581aa4207f.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_catemenu` [ RunTime:0.040683s ]
+NOTIC: [8] Undefined index:  lpid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\WapAction.class.php 第 80 行.
+SQL: SELECT * FROM `wy_catemenu` WHERE ( `token` = null ) AND ( `status` = 1 ) AND ( `lpid` = null )  [ RunTime:0.000228s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.042948s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 0 ) LIMIT 1   [ RunTime:0.000337s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/e/f/efe21af28ac2c16b2c3515b7a677c7a3.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.041640s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 0 ) LIMIT 1   [ RunTime:0.000202s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/c/1/c12b83863679c53a027170a94c2d1853.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_company` [ RunTime:0.098097s ]
+SQL: SELECT * FROM `wy_company` WHERE ( `token` = null ) AND ( `isbranch` = 0 ) LIMIT 1   [ RunTime:0.000302s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/5/f/5f590e6483487102f9aedcd019d413c0.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_classify` [ RunTime:0.043849s ]
+NOTIC: [8] Undefined index:  lpid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 25 行.
+SQL: SELECT * FROM `wy_classify` WHERE ( `token` = null ) AND ( `status` = 1 ) AND ( `lpid` = null ) ORDER BY sorts desc  [ RunTime:0.000260s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 506 行.
+SQL: SHOW COLUMNS FROM `wy_home` [ RunTime:0.040204s ]
+SQL: SELECT * FROM `wy_home` WHERE ( `token` = null ) LIMIT 1   [ RunTime:0.000341s ]
+SQL: SHOW COLUMNS FROM `wy_kefuonline` [ RunTime:0.041618s ]
+SQL: SELECT * FROM `wy_kefuonline` WHERE ( `token` = null ) LIMIT 1   [ RunTime:0.000272s ]
+SQL: SELECT * FROM `wy_home` WHERE ( `token` = null ) LIMIT 1   [ RunTime:0.000226s ]
+NOTIC: [8] Undefined index:  lpid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.041242s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `token` = null ) LIMIT 1   [ RunTime:0.000765s ]
+SQL: SHOW COLUMNS FROM `wy_flash` [ RunTime:0.044566s ]
+SQL: SELECT * FROM `wy_flash` WHERE ( `token` = null ) AND ( `lpid` = null ) ORDER BY sort asc  [ RunTime:0.000241s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 506 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 99 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined index:  tpltypeid D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 131 行.
+NOTIC: [8] Undefined variable: tplinfo D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 136 行.
+NOTIC: [8] Undefined variable: tplinfo D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 137 行.
+NOTIC: [8] Undefined index:  tpltypename D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\IndexAction.class.php 第 170 行.
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+NOTIC: [8] Undefined index:  class D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  class D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  file D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [8] Undefined index:  line D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [4096] Object of class IndexAction could not be converted to string D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Undefined index:  class D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  class D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+
+[ 2015-01-08T21:07:31+08:00 ] 112.65.193.16 /index.php?&g=Wap&m=Agent&a=ydl&token=jeifef1412084627&wecha_id=oI5B3uGqOa5uG8oWKCccG6vR00h4
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002819s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002972s ]
+SQL: SHOW COLUMNS FROM `wy_agent_rewardinfo` [ RunTime:0.039353s ]
+SQL: SELECT SUM(rewardamount) AS tp_sum FROM `wy_agent_rewardinfo` WHERE wecha_id='oI5B3uGqOa5uG8oWKCccG6vR00h4' and token='jeifef1412084627' and rewardstatus =0 LIMIT 1   [ RunTime:0.000191s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.040079s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `Wecha_id` = 'oI5B3uGqOa5uG8oWKCccG6vR00h4' ) AND ( `Token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000652s ]
+SQL: SHOW COLUMNS FROM `wy_share_content` [ RunTime:0.038781s ]
+SQL: SELECT * FROM `wy_share_content` WHERE token='jeifef1412084627' LIMIT 1   [ RunTime:0.000187s ]
+SQL: SHOW COLUMNS FROM `wy_kh` [ RunTime:0.042899s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_kh` WHERE ( `Token` = 'jeifef1412084627' ) AND ( `JJ_id` = 183 ) LIMIT 1   [ RunTime:0.000269s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.043701s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `token` = 'jeifef1412084627' ) ORDER BY houseSort desc,id desc LIMIT 0,20   [ RunTime:0.002527s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.265663s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004723s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.270475s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036202s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.306756s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.309716s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.312464s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.314995s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010966s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.317832s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002893s ]
+
+[ 2015-01-08T21:15:39+08:00 ] 123.93.196.109 /index.php?g=Wap&m=Agent&a=loupanInfo&code=02154bd45f301099397d7a625827e56T&state=430
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002896s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003079s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.009761s ]
+SQL: SELECT * FROM `wy_xmfx` WHERE ( `id` = 430 ) LIMIT 1   [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx_list` [ RunTime:0.007395s ]
+SQL: SELECT * FROM `wy_xmfx_list` WHERE ( `wecha_id` = 'oqsrSjqdOn1H30jC4thMKwnLFCrE' ) AND ( `token` = 'jeifef1412084627' ) AND ( `uid` = 30 ) AND ( `mwecha_id` = 'oI5B3uGqOa5uG8oWKCccG6vR00h4' ) LIMIT 1   [ RunTime:0.006590s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.007601s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = 30 ) [ RunTime:0.009998s ]
+SQL: INSERT INTO `wy_xmfx_list` (`token`,`uid`,`mwecha_id`,`wecha_id`) VALUES ('jeifef1412084627','30','oI5B3uGqOa5uG8oWKCccG6vR00h4','oqsrSjqdOn1H30jC4thMKwnLFCrE') [ RunTime:0.002889s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.006592s ]
+SQL: UPDATE `wy_xmfx` SET `views`=views+1 WHERE ( `id` = 430 ) [ RunTime:0.005056s ]
+SQL: SELECT `longitude`,`latitude` FROM `wy_lpinfo` WHERE ( `id` = 30 ) LIMIT 1   [ RunTime:0.000312s ]
+SQL: SHOW COLUMNS FROM `wy_product_setting` [ RunTime:0.006241s ]
+SQL: SELECT * FROM `wy_product_setting` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000178s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.006500s ]
+SQL: UPDATE `wy_jjr` SET `credit`=credit+1 WHERE ( `ID` = 183 ) [ RunTime:0.005105s ]
+SQL: UPDATE `wy_xmfx` SET `hascredit`=hascredit+1 WHERE ( `id` = 430 ) [ RunTime:0.003049s ]
+SQL: SELECT `hascredit`,`hasmoney` FROM `wy_xmfx` WHERE ( `id` = 430 ) LIMIT 1   [ RunTime:0.000281s ]
+SQL: update wy_xmfx set hasmoney=0.3 where id=430 [ RunTime:0.003617s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = 30 ) LIMIT 1   [ RunTime:0.000451s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.006771s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `ID` = 183 ) LIMIT 1   [ RunTime:0.000386s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-3.554378s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004692s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-3.559206s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035229s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-3.594525s ]
+INFO: Run TokenBuild Behavior [ RunTime:-3.597667s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-3.600702s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-3.603304s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011734s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-3.606401s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002977s ]
+
+[ 2015-01-08T21:25:31+08:00 ] 144.12.112.225 /index.php?g=Wap&m=Agent&a=loupanInfo&code=0410a986c23274d05bed61cab7fa86aC&state=430
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002955s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003139s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.006435s ]
+SQL: SELECT * FROM `wy_xmfx` WHERE ( `id` = 430 ) LIMIT 1   [ RunTime:0.000647s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx_list` [ RunTime:0.023139s ]
+SQL: SELECT * FROM `wy_xmfx_list` WHERE ( `wecha_id` = 'oqsrSjvCdIkNFT-o1_3q_NIRj3Ag' ) AND ( `token` = 'jeifef1412084627' ) AND ( `uid` = 30 ) AND ( `mwecha_id` = 'oI5B3uGqOa5uG8oWKCccG6vR00h4' ) LIMIT 1   [ RunTime:0.006765s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.040568s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = 30 ) [ RunTime:0.043706s ]
+SQL: INSERT INTO `wy_xmfx_list` (`token`,`uid`,`mwecha_id`,`wecha_id`) VALUES ('jeifef1412084627','30','oI5B3uGqOa5uG8oWKCccG6vR00h4','oqsrSjvCdIkNFT-o1_3q_NIRj3Ag') [ RunTime:0.006461s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.041100s ]
+SQL: UPDATE `wy_xmfx` SET `views`=views+1 WHERE ( `id` = 430 ) [ RunTime:0.007866s ]
+SQL: SELECT `longitude`,`latitude` FROM `wy_lpinfo` WHERE ( `id` = 30 ) LIMIT 1   [ RunTime:0.000424s ]
+SQL: SHOW COLUMNS FROM `wy_product_setting` [ RunTime:0.039864s ]
+SQL: SELECT * FROM `wy_product_setting` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000198s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.039732s ]
+SQL: UPDATE `wy_jjr` SET `credit`=credit+1 WHERE ( `ID` = 183 ) [ RunTime:0.010348s ]
+SQL: UPDATE `wy_xmfx` SET `hascredit`=hascredit+1 WHERE ( `id` = 430 ) [ RunTime:0.006863s ]
+SQL: SELECT `hascredit`,`hasmoney` FROM `wy_xmfx` WHERE ( `id` = 430 ) LIMIT 1   [ RunTime:0.000310s ]
+SQL: update wy_xmfx set hasmoney=0.4 where id=430 [ RunTime:0.005866s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = 30 ) LIMIT 1   [ RunTime:0.000470s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.041407s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `ID` = 183 ) LIMIT 1   [ RunTime:0.000412s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-3.872595s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004536s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-3.877220s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037971s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-3.915270s ]
+INFO: Run TokenBuild Behavior [ RunTime:-3.918250s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-3.921173s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-3.923750s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011362s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-3.926763s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002906s ]
+
+[ 2015-01-08T22:21:14+08:00 ] 144.12.112.225 /index.php?g=Wap&m=Agent&a=loupanInfo&code=0416519c7ca6252b48a42c835d449783&state=430
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002912s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003103s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.006483s ]
+SQL: SELECT * FROM `wy_xmfx` WHERE ( `id` = 430 ) LIMIT 1   [ RunTime:0.000393s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx_list` [ RunTime:0.006557s ]
+SQL: SELECT * FROM `wy_xmfx_list` WHERE ( `wecha_id` = 'oqsrSjvCdIkNFT-o1_3q_NIRj3Ag' ) AND ( `token` = 'jeifef1412084627' ) AND ( `uid` = 30 ) AND ( `mwecha_id` = 'oI5B3uGqOa5uG8oWKCccG6vR00h4' ) LIMIT 1   [ RunTime:0.007528s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.011626s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = 30 ) LIMIT 1   [ RunTime:0.000284s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.009321s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `ID` = 183 ) LIMIT 1   [ RunTime:0.000172s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-3.468199s ]
+INFO: [ view_template ] --END-- [ RunTime:0.005683s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-3.473973s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040886s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-3.515003s ]
+INFO: Run TokenBuild Behavior [ RunTime:-3.518204s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-3.521223s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-3.523900s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011874s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-3.527092s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003386s ]
+
+[ 2015-01-08T22:44:15+08:00 ] 27.211.100.164 /index.php?g=Wap&m=Agent&a=loupanInfo&code=031de5cf42d5102e5662b4e8cf6ad6fa&state=430
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002994s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003193s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.036977s ]
+SQL: SELECT * FROM `wy_xmfx` WHERE ( `id` = 430 ) LIMIT 1   [ RunTime:0.000212s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx_list` [ RunTime:0.039749s ]
+SQL: SELECT * FROM `wy_xmfx_list` WHERE ( `wecha_id` = 'oqsrSjji0LbMmRWABHR1WL1TbEBs' ) AND ( `token` = 'jeifef1412084627' ) AND ( `uid` = 30 ) AND ( `mwecha_id` = 'oI5B3uGqOa5uG8oWKCccG6vR00h4' ) LIMIT 1   [ RunTime:0.007185s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.027907s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = 30 ) [ RunTime:0.019153s ]
+SQL: INSERT INTO `wy_xmfx_list` (`token`,`uid`,`mwecha_id`,`wecha_id`) VALUES ('jeifef1412084627','30','oI5B3uGqOa5uG8oWKCccG6vR00h4','oqsrSjji0LbMmRWABHR1WL1TbEBs') [ RunTime:0.005931s ]
+SQL: SHOW COLUMNS FROM `wy_xmfx` [ RunTime:0.037189s ]
+SQL: UPDATE `wy_xmfx` SET `views`=views+1 WHERE ( `id` = 430 ) [ RunTime:0.007825s ]
+SQL: SELECT `longitude`,`latitude` FROM `wy_lpinfo` WHERE ( `id` = 30 ) LIMIT 1   [ RunTime:0.000401s ]
+SQL: SHOW COLUMNS FROM `wy_product_setting` [ RunTime:0.044113s ]
+SQL: SELECT * FROM `wy_product_setting` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000269s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.043520s ]
+SQL: UPDATE `wy_jjr` SET `credit`=credit+1 WHERE ( `ID` = 183 ) [ RunTime:0.012444s ]
+SQL: UPDATE `wy_xmfx` SET `hascredit`=hascredit+1 WHERE ( `id` = 430 ) [ RunTime:0.007378s ]
+SQL: SELECT `hascredit`,`hasmoney` FROM `wy_xmfx` WHERE ( `id` = 430 ) LIMIT 1   [ RunTime:0.000364s ]
+SQL: update wy_xmfx set hasmoney=0.5 where id=430 [ RunTime:0.006242s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = 30 ) LIMIT 1   [ RunTime:0.000658s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.041379s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `ID` = 183 ) LIMIT 1   [ RunTime:0.000390s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-3.878201s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004904s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-3.883240s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040395s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-3.923751s ]
+INFO: Run TokenBuild Behavior [ RunTime:-3.927374s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-3.930480s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-3.933121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012309s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-3.936158s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003065s ]
+

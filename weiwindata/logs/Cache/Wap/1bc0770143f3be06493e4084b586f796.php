@@ -1,0 +1,211 @@
+<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
+<meta content="telephone=no" name="format-detection">
+<meta name="keywords" content="客带客，买房，看房，房地产">
+<meta name="description" content="客带客是中国领先的房地产综合营运商。公司于2003年6月19日在香港联合交易所主板上市，综合实力居国内领先地位，目前已进入全国四大区域十三个城市，土地储备规模超过1000万平方米，有相当高的市场知名度和品牌影响力。">
+<title></title>
+    <style>
+        .black_overlay{
+            display: none;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            /*background-color: black;*/
+            z-index:1001;
+            -moz-opacity: 0.8;
+            opacity:.80;
+            filter: alpha(opacity=88);
+        }
+        .white_content {
+            display: none;
+            position: absolute;
+            top: 25%;
+            left: 43%;
+            width: 15%;
+            height: 30%;
+            padding: 5px;
+            /*border: 10px solid orange;*/
+            background-color: white;
+            z-index:1002;
+            overflow: auto;
+        }
+		.search_div{
+			margin-top: 10px;
+			text-align: center;
+		}
+		.sear_inp{
+			height: 24px;
+			line-height: 24px;
+			border-radius: 5px;
+			border: none;
+		}
+		.sear_btn{
+			height: 24px;
+			line-height: 24px;
+			border-radius: 5px;
+			border: none;
+			background-color: #2D86E4;
+			color: #fff;
+		}
+    </style>
+    <link href="<?php echo RES;?>/css/nestyle.css" rel="stylesheet" type="text/css">
+<link href="<?php echo RES;?>/css/defstyel.css" rel="stylesheet" type="text/css">
+    <!--<script type="text/javascript" src="<?php echo RES;?>/css/js/jquery-1.11.2.min.js"></script>-->
+    <!--<script type="text/javascript" src="<?php echo RES;?>/css/js/login.js"></script>-->
+
+    <!--<link rel="stylesheet" type="text/css"  href="<?php echo RES;?>/css/css/style.css"/>-->
+</head>
+ 
+
+	<p  class="mid_reg"> </p>
+    <div  class="my_client_mycl">
+   客户到访
+     </div>
+
+<div class="search_div">
+    <form action="<?php echo U('Manager/daofangs',array('token'=>$_GET['token'],'wecha_id'=>$_GET['wecha_id'],'id'=>$list['0']['brokerage_id']));?>" method="post">
+        <input type="tel" name="Tel" placeholder="请输入您的电话" id="tel" class="sear_inp">
+        <input type="submit" value="搜索" class="sear_btn">
+    </form>
+</div>
+    <div class="my_client_">  
+    	<div class="my_client_top">  	
+            <span class="my_client_name" style="width:10%;">姓名</span>
+            <span class="my_client_phone" style="width:30%;">电话</span>
+            <span class="my_client_lp" style="width:30%;">经纪人</span>
+             <!--<span  class="my_client_day" style="color:#666;" >日期</span>-->
+            <span  class="my_client_status" style="width:20%;">时间</span>
+            <!--<span  class="my_client_code" style="width:20%;">二维码</span>-->
+        </div>
+        <?php if($list == null): ?><div class="my_client_cli">
+                您还没有客户哦，赶快推荐您的客户吧
+            </div>
+        <?php else: ?> 
+            <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="my_client_cli" id="daof_" style="display:block">
+                    <span class="my_client_name" style="width:10%;"><?php echo ($vo["Name"]); ?></span>
+                    <span class="my_client_phone" style="width:30%;"><a href="tel:<?php echo ($vo["Tel"]); ?>"><?php echo ($vo["Tel"]); ?></a></span>
+                    <span class="my_client_lp" style="width:30%;"><?php echo ($vo["Name"]); ?></span>
+                     <span  class="my_client_day" ><?php echo (date("Y.m.d",$vo["SrTime"])); ?></span>
+                    <!--<span  class="my_client_status" style="width:20%;">-->
+                   	 <!--<a href="#" class="my_client_a"><?php echo ($vo["salesstatus"]); ?></a>-->
+                    <!--</span>-->
+                    <!--<div class="khxq_zt">-->
+                        <!--<div>1</div>-->
+                        <!--<span class="khxq_zg" style="width:20%;"><?php echo ($vo["salesstatus"]); ?></span>-->
+                    <!--</div>-->
+                    <!--<span  class="my_client_code" style="width:40%;">-->
+                     <!--<form action="<?php echo U('Agent/getWeimas');?>" method="post">-->
+                        <!--<input type="hidden" class="input" id="txt" name="text" value="www.app.com<?php echo U('Zhiye/newcustommodify',array('token'=>$vo['Token'],'id'=>$vo['ID']));?>"-->
+                        <!--/>-->
+                          <!--<input type="hidden" class="input" id="txts" name="texts" value="<?php echo ($vo["ID"]); ?>"-->
+                          <!--/>-->
+<!--&lt;!&ndash;&ndash;&gt;-->
+                      <!--<a href = "<?php echo U('Zhiye/getWeimas',array('token'=>$vo['Token'],'wecha_id'=>$vo['Wecha_id'],'id'=>$vo['ID']));?>"><input type="submit" id="sub_btn" class="btn" value="二维码" /></a>-->
+                     <!--</form>-->
+                   <!--&lt;!&ndash;<a href = "<?php echo U('Zhiye/getWeimas',array('token'=>$vo['Token'],'wecha_id'=>$vo['Wecha_id'],'id'=>$vo['ID']));?>" onclick = "document.getElementById('light').style.display='block';document.getElementById('fade').style.display='block'"><?php echo ($vo["salesstatus"]); ?></a>&ndash;&gt;-->
+        <!--&lt;!&ndash;<input type="hidden" name="name" id="name" value="<?php echo ($vo["ID"]); ?>">&ndash;&gt;-->
+
+                    <!--</span>-->
+                </div><?php endforeach; endif; else: echo "" ;endif; endif; ?>
+        
+    </div>
+<!--<div id="showbox_yxlp" class="showbox_yxlp" style="display:none;" >-->
+    <!--<div class="khxq_fwcj">-->
+        <!--<div id="khxq_close" > </div>-->
+        <!--成交价格-->
+        <!--<form action="<?php echo U('Zhiye/newcusprice',array('token'=>$kh['Token'],'wecha_id'=>$kh['Wecha_id'],'Stutas'=>$vo['id'],'id'=>$kh['ID']));?>" method="post">-->
+            <!--<input type="text" value="<?php echo ($datas["salesvalue"]); ?>"  class="khxq_qian" name="salesvalue" id="salesvalue"/>-->
+            <!--<input type="text" value="<?php echo ($datas["salesvalues"]); ?>"  class="khxq_qian" name="salesvalues" id="salesvalues"/>-->
+            <!--<input type="text" value="0"  class="khxq_qian" name="salesvaluew" id="salesvaluew"/>-->
+            <!--<input type="submit" class="khxq_bc" onclick="return check()" value="保存">-->
+        <!--</form>-->
+    <!--</div>-->
+<!--</div>-->
+<div id="light" class="white_content">
+    <a href = "javascript:void(0)" onclick = "document.getElementById('light').style.display='none';document.getElementById('fade').style.display='none'">X</a>
+    <div>
+        <!--<a href="#" class="my_client_a"><?php echo ($vo["salesstatus"]); ?></a>-->
+    </div>
+</div>
+<div id="fade" class="black_overlay"></div>
+<body>
+</body>
+<script language="javascript">
+
+    window.onload=function(){
+        function GETdiv(id){
+            return document.getElementById(id);
+        }
+        function GETname(name){
+            return document.getElementsByClassName(name);
+        }
+
+        // showbox();
+//        GETdiv("khxq_close").onclick=function(){GETdiv("showbox_yxlp").style.display="none";}
+        // GETdiv("huik").onclick=function(){GETdiv("showbox_yxlp").style.display="block";}
+        // GETdiv("khxq_bc").onclick=function(){GETdiv("showbox_yxlp").style.display="none"; }
+        // GETdiv("huik").style.display="none";  GETdiv("huik_").style.display="block";}
+
+        var getname=GETname("khxq_zt");
+        for(i in  getname){
+            getname[i].onclick=function(){
+                if(this.title=='回款'){
+                    GETdiv("showbox_yxlp").style.display="block";
+                }else{
+                    this.style.display="none";
+                }
+            }
+        }
+
+        //检查表单提交的信息
+        check=function(){
+            var salesvalue=document.getElementById("salesvalue").value;
+            var preg=/^([1-9][\d]{0,7}|0)(\.[\d]{1})?$/;
+            if(!preg.test(rewardamount)){
+                $("#errorinfo").html("请输入正确金额,可精确到小数点后1位");
+                GETdiv("error_box").style.display="block";
+                return false;
+            }
+            if(salesvalue<0){
+                GETdiv("error_box").style.display="block";
+                return false;
+            }
+            if(salesvalues<0){
+                GETdiv("error_box").style.display="block";
+                return false;
+            }
+            if(salesvaluew<0){
+                GETdiv("error_box").style.display="block";
+                return false;
+            }
+            // else{
+            //   return(confirm('请确定您填写的成交价格'));
+            // }
+        }
+    }
+//    $(function() {
+//        $("#sub_btn").click(function() {
+//            var txt = $("#txt").val();
+//            var haslogo = $("#haslogo").attr("checked");
+//            var logo = haslogo ? 1 : 0;
+//            if (txt.length < 1 || txt.length > 200) {
+//                alert("请输入内容！");
+//                return false;
+//            }
+//            $.post("ajax.php", {
+//                    mytxt: encodeURIComponent(txt),
+//                    mylogo: logo
+//                },
+//                function(msg) {
+//                    $("#code").html(msg);
+//                });
+//        });
+//    });
+
+</script>
+</html>

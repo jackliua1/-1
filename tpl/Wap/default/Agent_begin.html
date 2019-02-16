@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" >
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+	<style type="text/css">
+    	body,html{ padding:0px; margin:0px;}
+		#examplesdiv{ height:200px; width:100%; background:#000;  color:#000; white-space:nowrap; overflow:hidden;}
+		#examplesclidivbox{  height:100%; }
+		.divo{ width:25%; float:left; height:100%; text-align:center; line-height:400px; font-size:50px; color:#FFF;  background-repeat:no-repeat; background-position: top center;  background-size:cover; position:relative; }  
+		
+		a.tiaotutiyan{ display:block; position:absolute; top:80%; left:50%; margin-left:-50px; line-height:30px; color:#fff; background-color:#6C6; height:30px; width:100px; text-decoration:none; font-size:16px;  font-family:宋体;  box-shadow:1px 1px 3px -1px #333;}
+    		
+    </style>
+
+
+</head>
+
+<body>  
+	<div id="examplesdiv">
+    	<div id="examplesclidivbox" >
+        	<div style=" background-image:url({weiwin::RES}/images/agent/1.jpg); "  class="divo"> </div>
+        	<div style=" background-image:url({weiwin::RES}/images/agent/2.jpg); "  class="divo"></div>
+        	<div style=" background-image:url({weiwin::RES}/images/agent/3.jpg); "  class="divo"></div>
+        	<div style=" background-image:url({weiwin::RES}/images/agent/4.jpg); "  class="divo">
+            	<a href="{weiwin::U('Agent/index',array('token'=>$_GET['token'],'wecha_id'=>$_GET['wecha_id']))}" class="tiaotutiyan">开始体验</a>
+            </div>
+        </div>
+    
+    </div>
+    
+</body> 
+<script src="{weiwin::RES}/js/moveleft_beta.js" defer="defer"></script>
+</html>

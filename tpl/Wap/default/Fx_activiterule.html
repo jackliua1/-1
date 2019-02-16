@@ -1,0 +1,38 @@
+<!doctype html> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" >
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link href="{weiwin::RES}/css/fx_style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body style="background:url({weiwin::RES}/img/tx_2_bg.jpg) bottom center no-repeat; background-size:cover; background-color:#8f4a5e;  "> 
+	<div class="wait"  >
+    		<span class="kon_t"></span>
+             
+             
+             <div	class="huodongguiz">
+             	<div class="huodongguiz_title">活动规则</div>
+                <div class="hdgz_cli">
+                	<p><span>活动名称:</span>{weiwin:$info.sharename}</p>   
+                	<p><span>活动时间:</span>{weiwin:$info.starttime|date="Y-m-d",###}~{weiwin:$info.endtime|date="Y-m-d",###}</p>   
+                	<p><span>奖励规则:</span>浏览量达到{weiwin:$info.rewardrule}次</p>   
+                	<p><span>奖品数量:</span>{weiwin:$info.rewardnum}份</p>   
+                	<p><span>奖品剩余:</span>{weiwin:$info.rewardnums}份</p> 
+                	<p style="min-height:150px;"><span>活动规则:</span>
+                        <br/>
+                    {weiwin:$info.sharerule}
+                    </p><br clear="all" /> 
+                   <a href="{weiwin::U('Fx/addmyactivite',array('token'=>$_GET['token'],'wecha_id'=>$_GET['wecha_id'],'id'=>$info['id']))}" class="aniu"  style="  float:none;margin:auto; width:80%;">进入活动</a> 
+                
+                </div>
+             </div>
+             
+             <br clear="all" />
+    </div>
+
+
+</body>
+</html>

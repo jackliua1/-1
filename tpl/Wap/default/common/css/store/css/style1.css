@@ -1,0 +1,24 @@
+﻿@charset "utf-8";
+/*科e互联特效基本框架CSS*/
+div {text-align:left}
+a img {border:0}
+
+
+
+
+ 
+ul, ol, li {list-style-type:none;vertical-align:0} 
+
+
+.mBan { overflow: hidden; padding-bottom: 5px; }
+.slideBox{ width:100%; height:auto; position:relative; border:1px solid #ddd;  }
+.slideBox .hd{ height:5px; overflow:hidden; position:absolute; right:0px; bottom:-5px; z-index:1; width:100% }
+.slideBox .hd ul{zoom:1; float:left; width:100%;  }
+.slideBox .hd ul li{ float:left; width:33%; height:15px; line-height:14px; text-align:center; background:#333333; cursor:pointer; }
+.slideBox .hd ul li.on{ background:#EB8123; width:34%; }
+.slideBox .bd{ position:relative; height:100%; z-index:0;   }
+.slideBox .bd ul,.slideBox .bd ul li{width:100%!important}
+.slideBox .bd img{ width:100%; height:auto; display:block;  }
+.mchgImg ul li { float: left; height: 133px; width: 106px; margin-right: 10px; position: relative; }
+.mchgImgName { line-height: 25px; color: #FFF; background: url(../images/imgBg.png) repeat; text-align: center; height: 25px; font-size: 14px; width: 106px; position: absolute; left: 0px; bottom: 0px; }
+/* 效果CSS结束 */

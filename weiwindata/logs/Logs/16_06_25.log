@@ -1,0 +1,50 @@
+[ 2016-06-25T16:30:07+08:00 ] 123.125.71.88 /index.php?g=Wap&m=Agent&a=index&token=jeifef1412084627&wecha_id=oI5B3uFvj5VU7zO-FuwxOrnKXkNI
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003683s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003873s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.096409s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `token` = 'jeifef1412084627' ) ORDER BY houseSort desc,id desc LIMIT 0,20   [ RunTime:0.072948s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.085172s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `Wecha_id` = 'oI5B3uFvj5VU7zO-FuwxOrnKXkNI' ) AND ( `Token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.002408s ]
+SQL: SHOW COLUMNS FROM `wy_share_content` [ RunTime:0.099136s ]
+SQL: SELECT * FROM `wy_share_content` WHERE token='jeifef1412084627' LIMIT 1   [ RunTime:0.000614s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.778399s ]
+INFO: [ view_template ] --END-- [ RunTime:0.076835s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.855352s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.361415s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.216944s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.221209s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.225674s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.229061s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.016449s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.233586s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003446s ]
+
+[ 2016-06-25T21:52:07+08:00 ] 123.125.71.85 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002838s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.098499s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000541s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.469149s ]
+INFO: [ view_template ] --END-- [ RunTime:0.351517s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.820885s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067682s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.888618s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.890175s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.891868s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.893120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006016s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.894774s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001793s ]
+

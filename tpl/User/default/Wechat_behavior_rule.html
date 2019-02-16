@@ -1,0 +1,79 @@
+<include file="Public:head"/>
+<script src="/tpl/static/fushionCharts/JSClass/FusionCharts.js" type="text/javascript"></script>   
+<link rel="stylesheet" type="text/css" href="./tpl/User/default/common/css/cymain.css" />
+<script src="/tpl/static/artDialog/jquery.artDialog.js?skin=default"></script>
+<script src="/tpl/static/artDialog/plugins/iframeTools.js"></script>
+<div class="content">
+         
+          <div class="cLineB">
+              <h4 class="left">基础信息维护</h4>
+                  
+              <div class="clr"></div>
+          </div>
+ <div class="cLineD">
+
+         </div>
+
+          <div class="cLine">
+		    <div class="ftip" style="margin:0 auto">活动规则的制定</div>
+		</div>
+
+		<div class="msgWrap form">
+			<ul id="tags" style="width:100%">
+				
+        <li class="selectTag">
+          <a href="{weiwin::U('Wechat_behavior/rule',array('token'=>$_GET['token']))}">活动细则</a> 
+        </li>
+        <li>
+          <a href="{weiwin::U('Wechat_behavior/salesstatus',array('token'=>$_GET['token']))}">项目销售状态</a> 
+        </li>
+        <!-- <li>
+          <a href="{weiwin::U('Wechat_behavior/rewardparam',array('token'=>$_GET['token']))}">奖励类型设置</a> 
+        </li>
+        <li>
+          <a href="{weiwin::U('Wechat_behavior/rewardinfo',array('token'=>$_GET['token']))}">项目奖励</a> 
+        </li>
+        <li>
+          <a href="{weiwin::U('Wechat_behavior/agenttype',array('token'=>$_GET['token']))}">会员类别</a> 
+        </li>
+        <li>
+          <a href="{weiwin::U('Wechat_behavior/invitationcode',array('token'=>$_GET['token']))}">邀请码</a> 
+        </li>
+        <li>
+          <a href="{weiwin::U('Wechat_behavior/shareindex',array('token'=>$_GET['token']))}">首页分享</a> 
+        </li> -->
+				<div class="clr" style="height:1px;background:#eee;margin-bottom:20px;"></div>
+			</ul>
+		</div>
+
+    <div class="cLine">
+    <div class="pageNavigator left">
+    </div>
+    <div class="clr"></div>
+  </div>
+  <div class="msgWrap bgfc" style=" padding:5px 10px; margin:0">
+    <form class="form" method="post" action="{weiwin::U('Wechat_behavior/ruleHandle',array('token'=>$_GET['token']))}" target="_top" enctype="multipart/form-data">
+      <table class="userinfoArea" style=" margin:20px 0 0 0;" border="0" cellspacing="0" cellpadding="0" width="100%">
+        <thead>
+          <tr>
+            <th valign="top"><label for="title">活动内容</label></th>
+            <td>
+              <!-- <input type="input" class="px" required="" id="title" value="" name="title" style="width:400px"> 请认真填写生成后不可以编辑！只能删除重建<br>: -->
+              <textarea name="content" style="width:400px;height:300px;border:1px solid #00ffff;resize:none">{weiwin:$rule.content}</textarea>
+              
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="hidden" name="id" value="{weiwin:$rule.id}">
+            </td>
+            <td>
+              <button type="submit" name="button" class="btnGreen left">修改</button> 
+            </td>
+          </tr>
+        </thead>
+      </table>
+    </form>
+    <div class="clear"></div>
+  </div>
+</div>

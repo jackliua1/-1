@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="微信邀请函" name="Keywords">
+	<meta content="微信邀请函" name="Description">
+		<meta content="application/xhtml+xml;charset=UTF-8" http-equiv="Content-Type">
+		<meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+		<meta content="no-cache" http-equiv="pragma">
+		<meta content="0" http-equiv="expires">
+		<meta content="phone=no, address=no" name="format-detection">
+		<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <link rel="stylesheet" type="text/css" href="{weiwin::RES}/yaoqing/css.css" media="all" />
+<script type="text/javascript" src="{weiwin::RES}/yaoqing/jQuery.js"></script>
+<script type="text/javascript" src="{weiwin::RES}/yaoqing/comm.js"></script>
+    <title>{weiwin:$Yaoqing['title']}</title>
+</head>
+<body class="meeting">
+	<div class="loadingWrap"><img src="{weiwin::RES}/yaoqing/loading.gif"></div>
+	<div class="faceWrap"><img src="{weiwin::RES}/yaoqing/cover.jpg"></div>
+	<header>
+		<span class="pic"><img src="{weiwin:$Yaoqing['small_pic']}" /></span>
+		<div class="bg">{weiwin:$Yaoqing['title']}</div>
+		<span onClick="musicPlay()" class="music"><img src="{weiwin::RES}/yaoqing/music.png"></span>
+	</header>
+	<section>
+		<div class="clearfix">
+			<?php echo html_entity_decode(htmlspecialchars_decode($Yaoqing['yaoqinginfo'])); ?>   
+		</div>
+		<div class="notic">
+			<p class="tit"></p>
+			<p class="con">{weiwin:$Yaoqing['message']}</p>
+		</div>
+		<ul class="menu">
+			<li>
+				<p class="icon"><span>参加时间</span></p>
+				<p class="con">{weiwin:$Yaoqing['time']}</p>
+			</li>
+			
+
+			<li>
+				<a href="http://map.baidu.com/?latlng={weiwin:$Yaoqing['longitude']},{weiwin:$Yaoqing['latitude']}&title={weiwin:$Yaoqing['address']}&content={weiwin:$Yaoqing['address']}&autoOpen=true&l=" class="tbox">
+					<p class="icon location"><span>点此导航</span></p>
+					<p class="con">{weiwin:$Yaoqing['address']}</p>
+				</a>
+			</li>
+			<li>
+				<a href="tel:{weiwin:$Yaoqing['phone']}">
+					<p class="icon tel"><span>接待电话</span></p>
+					<p class="con">{weiwin:$Yaoqing['phone']}</p>
+				</a>
+			</li>
+		</ul>
+		<div class="goBtns"><span id="bookBtn">我要报名</span><!-- <span id="bookBtn">留言</span> --><span onClick="document.getElementById(&#39;mcover&#39;).style.display=&#39;block&#39;;">分享本帖</span></div>
+	</section>
+	<footer>
+		<p>微邀请</p>
+	</footer>
+	<audio loop="loop" id="media">
+		<source src='{weiwin:$Yaoqing['background_music']}' type='audio/mpeg'>	</audio>
+	<div class="bookWrap" id="booking">
+		<div class="mask"></div>
+		<div class="submitBox">
+			<p class="close"></p>
+			<p class="title">我要报名</p>
+            <form action="index.php?g=Wap&m=Yaoqing&a=add&token={weiwin:$token}&wecha_id={weiwin:$wecha_id}" method="post" id="post_message_1">
+            <input type="hidden" name="id" value="{weiwin:$Yaoqing['id']}" />
+            <input type="hidden" name="thetype" value="2" />
+			<ul>
+				<li>
+					<label>公司</label>
+					<div class="iptWrap"><input type="text" name="company" id="bookCon"></div>
+				</li>
+				<li>
+					<label>姓名</label>
+					<div class="iptWrap"><input type="text" name="name" id="bookName"></div>
+				</li>
+				<li>
+					<label>手机</label>
+					<div class="iptWrap"><input type="text" name="phone" id="bookPhone"></div>
+				</li>
+				<!--
+				<li>
+					<label>上传</label>
+					<div class="iptWrap"><input type="file" name="file" id="bookPhone"></div>
+				</li>-->
+				<li>
+					<label>人数</label>
+					<div class="iptWrap">
+						<select name="number" id="bookCount">
+							<option value="1">1</option>
+						<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+						</select>
+					</div>
+				</li>
+				<input class="sendBtn" type="button" value="提交" id="bookButton" onClick="">
+			</ul>
+            <input type="hidden" name="aid" value="7">
+            <input type="hidden" name="type" value="1">
+            </form>
+		</div>
+	</div>
+	<div id="mcover" onClick="document.getElementById(&#39;mcover&#39;).style.display=&#39;&#39;;" style="display:none;"><img src="{weiwin::RES}/yaoqing/guide.png"></div>
+	<script src="/js/jquery.js"></script>
+    <script src="/js/comm.js"></script>
+</body>
+</html>

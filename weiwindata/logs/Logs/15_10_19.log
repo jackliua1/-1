@@ -1,0 +1,88 @@
+[ 2015-10-19T04:16:38+08:00 ] 183.136.190.40 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.004457s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004802s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.150548s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000504s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php Á¨¨ 69 Ë°å.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.327085s ]
+INFO: [ view_template ] --END-- [ RunTime:0.069373s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.396604s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.123816s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.520557s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.523147s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.525594s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.527810s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009905s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.530582s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002746s ]
+
+[ 2015-10-19T04:16:38+08:00 ] 183.136.190.40 /
+NOTIC: [32] PHP Startup: Unable to load dynamic library 'D:\WebServer\php-5.2.5 (x64)\ext\php_fileinfo.dll' - ’“≤ªµΩ÷∏∂®µƒƒ£øÈ°£
+ Unknown Á¨¨ 0 Ë°å.
+
+[ 2015-10-19T04:39:01+08:00 ] 123.125.71.58 /index.php?g=Wap&m=Agent&a=index&token=jeifef1412084627&wecha_id=oI5B3uFvj5VU7zO-FuwxOrnKXkNI
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001136s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001331s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.036120s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `token` = 'jeifef1412084627' ) ORDER BY houseSort desc,id desc LIMIT 0,20   [ RunTime:0.003745s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.026266s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `Wecha_id` = 'oI5B3uFvj5VU7zO-FuwxOrnKXkNI' ) AND ( `Token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000870s ]
+SQL: SHOW COLUMNS FROM `wy_share_content` [ RunTime:0.027635s ]
+SQL: SELECT * FROM `wy_share_content` WHERE token='jeifef1412084627' LIMIT 1   [ RunTime:0.000593s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php Á¨¨ 69 Ë°å.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.257726s ]
+INFO: [ view_template ] --END-- [ RunTime:0.022025s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.279870s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.177137s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.457087s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.458274s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.459592s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.460577s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004648s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.461855s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001186s ]
+
+[ 2015-10-19T04:39:01+08:00 ] 123.125.71.58 /index.php?g=Wap&m=Agent&a=index&token=jeifef1412084627&wecha_id=oI5B3uFvj5VU7zO-FuwxOrnKXkNI
+NOTIC: [32] PHP Startup: Unable to load dynamic library 'D:\WebServer\php-5.2.5 (x64)\ext\php_fileinfo.dll' - ’“≤ªµΩ÷∏∂®µƒƒ£øÈ°£
+ Unknown Á¨¨ 0 Ë°å.
+
+[ 2015-10-19T05:12:21+08:00 ] 220.181.108.143 /index.php?g=Wap&m=Agent&a=register&token=jeifef1412084627
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001345s ]
+NOTIC: [8] Undefined index:  wecha_id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php Á¨¨ 130 Ë°å.
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.039195s ]
+SQL: SELECT `wxname`,`headerpic` FROM `wy_wxuser` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000211s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php Á¨¨ 69 Ë°å.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.084994s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001702s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.086781s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058689s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.145556s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.146576s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.147729s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.148574s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004110s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.149765s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001264s ]
+NOTIC: [32] PHP Startup: Unable to load dynamic library 'D:\WebServer\php-5.2.5 (x64)\ext\php_fileinfo.dll' - ’“≤ªµΩ÷∏∂®µƒƒ£øÈ°£
+ Unknown Á¨¨ 0 Ë°å.
+
+[ 2015-10-19T06:19:01+08:00 ] ERR: (ThinkException) Êó†Ê≥ïÂä†ËΩΩÊ®°Âùó:upyun
+[ 2015-10-19T07:25:41+08:00 ] ERR: (ThinkException) Êó†Ê≥ïÂä†ËΩΩÊ®°Âùó:agent
+[ 2015-10-19T11:57:05+08:00 ] ERR: (ThinkException) Êó†Ê≥ïÂä†ËΩΩÊ®°Âùó:upyun
+[ 2015-10-19T16:27:05+08:00 ] ERR: (ThinkException) Êó†Ê≥ïÂä†ËΩΩÊ®°Âùó:upyun

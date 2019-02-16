@@ -1,0 +1,198 @@
+[ 2018-11-10T02:44:37+08:00 ] 157.55.39.126 /index.php?g=Duoduo&m=Admin&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001966s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002107s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\js-jifang.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.007272s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003129s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.010469s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046726s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.057282s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.059824s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.061902s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.063534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008170s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.065537s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001992s ]
+
+[ 2018-11-10T07:31:14+08:00 ] 123.59.209.112 /index.php?g=Duoduo&m=Admin&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002176s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002321s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\js-jifang.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.007915s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003080s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.011064s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046604s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.057727s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.059941s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.062073s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.063991s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008359s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.066194s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002267s ]
+
+[ 2018-11-10T08:57:26+08:00 ] 49.66.24.68 /index.php?&g=Wap&m=Agent&a=ydl&token=ynzfui1406882414
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001880s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002008s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\www\js-jifang.com\weiwincms\Lib\Action\WapAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `wy_userinfo` [ RunTime:0.005371s ]
+SQL: SELECT * FROM `wy_userinfo` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `wecha_id` = 'f5a0e0ba3badad06dd7164655d241ba3' ) LIMIT 1   [ RunTime:0.000545s ]
+SQL: SHOW COLUMNS FROM `wy_wechat_group_list` [ RunTime:0.004843s ]
+SQL: SELECT * FROM `wy_wechat_group_list` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `openid` = 'f5a0e0ba3badad06dd7164655d241ba3' ) LIMIT 1   [ RunTime:0.000526s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/e/e/ee20f2c4442ecb2cc8309624583d00f1.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_home` [ RunTime:0.004875s ]
+SQL: SELECT * FROM `wy_home` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000577s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/4/7/4727c3258ec350fbe55a200823142d0c.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_catemenu` [ RunTime:0.005073s ]
+SQL: SELECT * FROM `wy_catemenu` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `status` = 1 ) ORDER BY orderss desc  [ RunTime:0.000521s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/5/c/5c688eb97172111e3217d6600960e392.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_catemenu` [ RunTime:0.003516s ]
+NOTIC: [8] Undefined index:  lpid D:\www\js-jifang.com\weiwincms\Lib\Action\WapAction.class.php 第 127 行.
+SQL: SELECT * FROM `wy_catemenu` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `status` = 1 ) AND ( `lpid` = null )  [ RunTime:0.000566s ]
+SQL: SHOW COLUMNS FROM `wy_company` [ RunTime:0.005280s ]
+SQL: SELECT * FROM `wy_company` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `isbranch` = 0 ) LIMIT 1   [ RunTime:0.000529s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/3/3/33c0276ddfe8a0a78ea18a400890f528.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.004167s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `Token` = 'ynzfui1406882414' ) AND ( `Wecha_id` = 'f5a0e0ba3badad06dd7164655d241ba3' ) LIMIT 1   [ RunTime:0.000484s ]
+SQL: SHOW COLUMNS FROM `wy_agent_rewardinfo` [ RunTime:0.003493s ]
+SQL: SELECT SUM(rewardamount) AS tp_sum FROM `wy_agent_rewardinfo` WHERE wecha_id='f5a0e0ba3badad06dd7164655d241ba3' and token='ynzfui1406882414' and rewardstatus =0 LIMIT 1   [ RunTime:0.000291s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.003329s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `Wecha_id` = 'f5a0e0ba3badad06dd7164655d241ba3' ) AND ( `Token` = 'ynzfui1406882414' ) ORDER BY ID desc LIMIT 1   [ RunTime:0.000310s ]
+SQL: SHOW COLUMNS FROM `wy_brokerage` [ RunTime:0.004205s ]
+SQL: SELECT * FROM `wy_brokerage` WHERE ( `id` = 6 ) LIMIT 1   [ RunTime:0.000558s ]
+SQL: SHOW COLUMNS FROM `wy_share_content` [ RunTime:0.004864s ]
+SQL: SELECT * FROM `wy_share_content` WHERE token='ynzfui1406882414' LIMIT 1   [ RunTime:0.000203s ]
+SQL: SHOW COLUMNS FROM `wy_kh` [ RunTime:0.004388s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_kh` WHERE ( `Token` = 'ynzfui1406882414' ) AND ( `JJ_id` = 340 ) LIMIT 1   [ RunTime:0.000266s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.003697s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `token` = 'ynzfui1406882414' ) ORDER BY houseSort desc,id desc LIMIT 0,20   [ RunTime:0.001225s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\js-jifang.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.145756s ]
+INFO: [ view_template ] --END-- [ RunTime:0.044750s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.190594s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034376s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.225028s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.226640s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.229222s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.231528s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008957s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.234058s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002551s ]
+
+[ 2018-11-10T08:57:26+08:00 ] 49.66.24.68 /index.php?&g=Wap&m=Agent&a=ydl&token=ynzfui1406882414
+NOTIC: [32] PHP Startup: Unable to load dynamic library 'D:\WebServer\php-5.2.5 (x64)\ext\php_fileinfo.dll' - �Ҳ���ָ����ģ�顣
+ Unknown 第 0 行.
+
+[ 2018-11-10T12:02:40+08:00 ] 39.98.58.63 /index.php?g=Duoduo&m=Admin&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002219s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002374s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\js-jifang.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.007579s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003062s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.010727s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043261s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.054048s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.056275s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.060244s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.061996s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009916s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.064056s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002018s ]
+
+[ 2018-11-10T16:03:34+08:00 ] 207.46.13.54 /index.php?g=Duoduo&m=Admin&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001684s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\js-jifang.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.006422s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002664s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.009155s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040452s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.049666s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.051657s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.053591s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.055062s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006987s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.056808s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001752s ]
+
+[ 2018-11-10T16:13:47+08:00 ] 49.66.24.68 /index.php?&g=Wap&m=Agent&a=ydl&token=ynzfui1406882414
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001722s ]
+NOTIC: [8] A session had already been started - ignoring session_start() D:\www\js-jifang.com\weiwincms\Lib\Action\WapAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `wy_userinfo` [ RunTime:0.005426s ]
+SQL: SELECT * FROM `wy_userinfo` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `wecha_id` = 'f5a0e0ba3badad06dd7164655d241ba3' ) LIMIT 1   [ RunTime:0.000236s ]
+SQL: SHOW COLUMNS FROM `wy_wechat_group_list` [ RunTime:0.004713s ]
+SQL: SELECT * FROM `wy_wechat_group_list` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `openid` = 'f5a0e0ba3badad06dd7164655d241ba3' ) LIMIT 1   [ RunTime:0.000145s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/e/e/ee20f2c4442ecb2cc8309624583d00f1.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_home` [ RunTime:0.005365s ]
+SQL: SELECT * FROM `wy_home` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000221s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/4/7/4727c3258ec350fbe55a200823142d0c.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_catemenu` [ RunTime:0.005572s ]
+SQL: SELECT * FROM `wy_catemenu` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `status` = 1 ) ORDER BY orderss desc  [ RunTime:0.000151s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/5/c/5c688eb97172111e3217d6600960e392.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_catemenu` [ RunTime:0.003767s ]
+NOTIC: [8] Undefined index:  lpid D:\www\js-jifang.com\weiwincms\Lib\Action\WapAction.class.php 第 127 行.
+SQL: SELECT * FROM `wy_catemenu` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `status` = 1 ) AND ( `lpid` = null )  [ RunTime:0.000117s ]
+SQL: SHOW COLUMNS FROM `wy_company` [ RunTime:0.006879s ]
+SQL: SELECT * FROM `wy_company` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `isbranch` = 0 ) LIMIT 1   [ RunTime:0.000169s ]
+NOTIC: [2] unlink(./weiwindata/logs/Temp/3/3/33c0276ddfe8a0a78ea18a400890f528.php) [<a href='function.unlink'>function.unlink</a>]: No such file or directory D:\www\js-jifang.com\weiwincms\_Core\Lib\Driver\Cache\CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.004341s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `Token` = 'ynzfui1406882414' ) AND ( `Wecha_id` = 'f5a0e0ba3badad06dd7164655d241ba3' ) LIMIT 1   [ RunTime:0.000134s ]
+SQL: SHOW COLUMNS FROM `wy_agent_rewardinfo` [ RunTime:0.004540s ]
+SQL: SELECT SUM(rewardamount) AS tp_sum FROM `wy_agent_rewardinfo` WHERE wecha_id='f5a0e0ba3badad06dd7164655d241ba3' and token='ynzfui1406882414' and rewardstatus =0 LIMIT 1   [ RunTime:0.000112s ]
+SQL: SHOW COLUMNS FROM `wy_jjr` [ RunTime:0.002620s ]
+SQL: SELECT * FROM `wy_jjr` WHERE ( `Wecha_id` = 'f5a0e0ba3badad06dd7164655d241ba3' ) AND ( `Token` = 'ynzfui1406882414' ) ORDER BY ID desc LIMIT 1   [ RunTime:0.000127s ]
+SQL: SHOW COLUMNS FROM `wy_brokerage` [ RunTime:0.004475s ]
+SQL: SELECT * FROM `wy_brokerage` WHERE ( `id` = 6 ) LIMIT 1   [ RunTime:0.000131s ]
+SQL: SHOW COLUMNS FROM `wy_share_content` [ RunTime:0.005619s ]
+SQL: SELECT * FROM `wy_share_content` WHERE token='ynzfui1406882414' LIMIT 1   [ RunTime:0.000117s ]
+SQL: SHOW COLUMNS FROM `wy_kh` [ RunTime:0.005525s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_kh` WHERE ( `Token` = 'ynzfui1406882414' ) AND ( `JJ_id` = 340 ) LIMIT 1   [ RunTime:0.000120s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.003489s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `token` = 'ynzfui1406882414' ) ORDER BY houseSort desc,id desc LIMIT 0,20   [ RunTime:0.000562s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\js-jifang.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.137894s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002647s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.140594s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030739s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.171398s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.173792s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.177275s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.180028s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011560s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.183041s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002960s ]
+
+[ 2018-11-10T16:13:47+08:00 ] 49.66.24.68 /index.php?&g=Wap&m=Agent&a=ydl&token=ynzfui1406882414
+NOTIC: [32] PHP Startup: Unable to load dynamic library 'D:\WebServer\php-5.2.5 (x64)\ext\php_fileinfo.dll' - �Ҳ���ָ����ģ�顣
+ Unknown 第 0 行.
+

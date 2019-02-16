@@ -1,0 +1,128 @@
+﻿<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>{weiwin:$tpl['wxname']}</title>
+<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<link href="{weiwin::RES}/css/yl/news.css" rel="stylesheet" type="text/css" />
+<LINK rel=stylesheet type=text/css href="{weiwin::RES}/css/allcss/w60.css">
+<SCRIPT type=text/javascript src="{weiwin::RES}/js/v12/jquery-1.7.2.min.js"></SCRIPT>
+<SCRIPT type=text/javascript src="{weiwin::RES}/js/v12/rotate.js"></SCRIPT>
+<SCRIPT type=text/javascript src="{weiwin::RES}/js/v12/jquery.transform.js"></SCRIPT>
+<SCRIPT type=text/javascript src="{weiwin::RES}/css/allcss/iscroll.js"></SCRIPT>
+<script type="text/javascript">
+            var myScroll;
+            function loaded() {
+                myScroll = new iScroll('wrapper', {
+                    snap: true,
+                    momentum: false,
+                    hScrollbar: false,
+                    onScrollEnd: function () {
+                        document.querySelector('#indicator > li.active').className = '';
+                        document.querySelector('#indicator > li:nth-child(' + (this.currPageX+1) + ')').className = 'active';
+                    }
+                });
+             }
+            document.addEventListener('DOMContentLoaded', loaded, false);
+</script>
+<META name=GENERATOR content="MSHTML 9.00.8112.16446">
+</HEAD>
+<BODY id=cate5>
+<!--背景音乐-->
+
+<if condition="$dh['animation'] neq false"><iframe id="iframe_screen" src="./tpl/Wap/default/Index_an{weiwin:$dh.animation}.html" frameborder="0"></iframe></if> <if condition="$homeInfo['musicurl'] neq false">
+
+<include file="Index:music"/>
+
+</if>  
+<DIV class=banner>
+<DIV style="OVERFLOW: hidden" id=wrapper>
+<DIV id=scroller>
+<UL id=thelist>
+<volist name="flash" id="so">
+<LI><P></P><IMG src="{weiwin:$so.img}"> </LI>
+</volist>
+</UL>
+</DIV></DIV>
+<DIV id=nav>
+<DIV id=prev onClick="myScroll.scrollToPage('prev', 0,400,{weiwin:$num-1});return false">← prev </DIV>
+<UL id=indicator>
+<volist name="flash" id="so">
+<LI>{weiwin:$i}</LI>  
+</volist> 
+</UL>
+<DIV id=next onClick="myScroll.scrollToPage('next', 0);return false">next → </DIV>
+</DIV>
+<DIV class=clr></DIV></DIV>
+<UL class=mainmenu>
+<volist name="info" id="vo">
+<LI class=li0><A href="<if condition="$vo['url'] eq ''">{weiwin::U('Wap/Index/lists',array('classid'=>$vo['id'],'token'=>$vo['token']))}<else/>{weiwin:$vo.url}</if>">
+  <DIV class=menubtn>
+  <DIV class=menuimg><IMG src="{weiwin:$vo.img}"> 
+  </DIV>
+  <DIV class=menutitle>{weiwin:$vo.name}</DIV></DIV></A></LI>
+</volist> 
+</UL>
+<div class="clr"></div>
+ <script>
+            var count = document.getElementById("thelist").getElementsByTagName("img").length;	
+            for(i=0;i<count;i++){
+                document.getElementById("thelist").getElementsByTagName("img").item(i).style.cssText = " width:"+document.body.clientWidth+"px";
+            }
+            document.getElementById("scroller").style.cssText = " width:"+document.body.clientWidth*count+"px";
+            setInterval(function(){
+                myScroll.scrollToPage('next', 0,400,count);
+            },3500 );
+            window.onresize = function(){ 
+                for(i=0;i<count;i++){
+                    document.getElementById("thelist").getElementsByTagName("img").item(i).style.cssText = " width:"+document.body.clientWidth+"px";
+                }
+                document.getElementById("scroller").style.cssText = " width:"+document.body.clientWidth*count+"px";
+            } 
+			function dourl(url){
+	window.location.href=url;
+}
+        </script>
+<include file="Index:styleInclude"/>
+<if condition="$kefuonline.info neq false">{weiwin:$kefuonline.info}</if>
+<div class="copyright">
+<if condition="$iscopyright eq 1">
+{weiwin:$homeInfo.copyright}
+<else/>
+{weiwin:$siteCopyright}
+</if>
+</div>
+<section id="Page_wrapper">
+<div id="pNavDemo" class="c-pnav-con">
+<section class="c-p-sec">
+<div class='c-p-pre <eq name="p" value="1"> c-p-grey </eq> '><span class="c-p-p"><em></em></span><a <eq name="p" value="1"><else/>href="{weiwin::C('site_url')}/index.php?g=Wap&m=Index&a=index&classid=<php>echo $_GET['classid'];</php>&token={weiwin:$tpl.token}&p=<php>echo $p-1;</php>"</eq>  >上一页</a></div>
+<div class="c-p-cur">
+<div class="c-p-arrow c-p-down"><span>{weiwin:$p}/{weiwin:$page}</span><span></span></div>
+	<select class="c-p-select" onChange="dourl('{weiwin::C('site_url')}/index.php?g=Wap&m=Index&a=index&classid=<php>echo $_GET['classid'];</php>&token={weiwin:$tpl.token}&p='+this.value)">
+		<?php
+			for($i=1;$i<=$page;$i++){
+				if($i==$p){
+					echo '<option value="'.$i.'" selected>第'.$i.'页</option>';
+				}else{
+					echo '<option value="'.$i.'">第'.$i.'页</option>';
+				}
+			}
+		?>
+	</select>
+</div>
+<div class='c-p-next <eq name="p" value="$page"> c-p-grey </eq>'  >
+<?php
+	if($p<$page){
+		echo '<a href="'.C('site_url').'/index.php?g=Wap&m=Index&a=index&classid='.(int)$_GET['classid'].'&token='.$tpl['token'].'&p='.($p+1).'">';
+	}else{
+		echo '<a>';
+	}
+?>
+下一页</a><span class="c-p-p"><em></em></span></div>
+</section>
+</div>
+</section>
+</BODY>
+</HTML>

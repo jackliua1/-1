@@ -1,0 +1,68 @@
+<include file="Public:head"/>
+<script src="./tpl/User/default/common/js/date/WdatePicker.js"></script>
+<script src="/tpl/static/artDialog/jquery.artDialog.js?skin=default"></script>
+<script src="/tpl/static/artDialog/plugins/iframeTools.js"></script>
+<script src="{weiwin::RES}/js/date/WdatePicker.js"></script>
+ <script src="/tpl/static/upyun.js"></script>
+<div class="content">
+<style>
+.msgWrap .control-group {
+margin-bottom: 20px;
+}
+.msgWrap .control-label {
+text-align: left;
+width: 140px;
+font-weight: bold;
+padding-top: 5px;
+float: left;
+display: block;
+margin-bottom: 5px;
+}
+.msgWrap .controls {
+margin-left: 160px;
+}
+.msgWrap .form-actions {
+padding: 19px 20px 20px 160px;
+margin-top: 20px;
+}
+.span4, .span1, .option, .valid, .input-large{
+	background: url(../images/px.png) repeat-x scroll 0 0 #FFFFFF;
+    border-color: #848484 #E0E0E0 #E0E0E0 #848484;
+    border-style: solid;
+    border-width: 1px;
+	border-radius: 2px 2px 2px 2px;
+	padding:5px;
+	width: 210px;
+}
+</style>
+<div class="cLineB">
+  <h4>充值佣金</h4><a href="javascript:history.back(-1);" class="right btnGrayS vm" style="margin-top:-27px">返回</a>
+ </div> 
+  <div class="msgWrap bgfc">
+  <form action="" method="post" class="form-horizontal form-validate" novalidate="novalidate">
+	
+	<div class="control-group">
+		<label for="lpid" class="control-label">充值项目：</label>
+		<div class="controls">
+			<select name="lpid" >
+		        <volist name="lp" id="lp">
+		          <option value="{weiwin:$lp.id}">{weiwin:$lp.LouPanTitle}</option>
+		        </volist>
+		      </select>
+		</div>
+	</div>
+		<div class="control-group">
+			<label for="money" class="control-label">充值金额：</label>
+			<div class="controls">
+				<input type="text" name="money" id="money" class="span4"><span class="maroon">*</span><span class="help-inline"></span>
+			</div>
+		</div>
+   <div class="form-actions">
+			<button id="bsubmit" type="submit" data-loading-text="提交中..." class="btnGreen">保存</button>　<a href="{weiwin::U('Capital/index',array('token'=>$_GET['token']))}" class="btnGray vm">取消</a>
+		</div>
+</form>
+  </div> 
+ 
+  
+        </div>
+		

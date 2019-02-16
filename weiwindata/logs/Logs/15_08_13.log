@@ -1,0 +1,117 @@
+[ 2015-08-13T10:41:42+08:00 ] 49.80.175.86 /index.php
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003696s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003884s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.161321s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000367s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.218620s ]
+INFO: [ view_template ] --END-- [ RunTime:0.054403s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.273153s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081619s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.354848s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.356722s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.358536s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.360046s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006940s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.361891s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001790s ]
+
+[ 2015-08-13T10:41:42+08:00 ] 49.80.175.86 /index.php
+NOTIC: [32] PHP Startup: Unable to load dynamic library 'D:\WebServer\php-5.2.5 (x64)\ext\php_fileinfo.dll' - �Ҳ���ָ����ģ�顣
+ Unknown 第 0 行.
+
+[ 2015-08-13T10:41:48+08:00 ] 49.80.175.86 /index.php?m=Users&a=checklogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000683s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.122711s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `username` = 'chancle' ) LIMIT 1   [ RunTime:0.000544s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.024949s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000488s ]
+SQL: UPDATE `wy_users` SET `diynum`='0',`connectnum`='0',`activitynum`='0' WHERE ( `id` = 1 ) [ RunTime:0.000304s ]
+SQL: UPDATE `wy_users` SET `lasttime`='1439433708',`lastloginmonth`='8',`lastip`='49.80.175.86' WHERE ( `id` = 1 ) [ RunTime:0.000362s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.216711s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002053s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.218888s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033448s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.252465s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.252933s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.253440s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.253736s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001840s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.254421s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000703s ]
+
+[ 2015-08-13T10:41:49+08:00 ] 49.80.175.86 /index.php?g=User&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000888s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001046s ]
+NOTIC: [2048] Declaration of IndexAction::insert() should be compatible with that of BaseAction::insert() D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\User\IndexAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.002817s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000280s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.002819s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000431s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.071659s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = null ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.001791s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.042933s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = null ) LIMIT 1   [ RunTime:0.000411s ]
+NOTIC: [8] Undefined index:  width D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\UserAction.class.php 第 62 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.003913s ]
+SQL: SELECT * FROM `wy_user_group`  [ RunTime:0.000425s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_wxuser` WHERE ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000443s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `uid` = 1 ) LIMIT 0,25   [ RunTime:0.000879s ]
+SQL: SHOW COLUMNS FROM `wy_diymen_set` [ RunTime:0.066444s ]
+SQL: SELECT * FROM `wy_diymen_set` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.001315s ]
+SQL: SELECT * FROM `wy_diymen_set` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000350s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.307601s ]
+INFO: [ view_template ] --END-- [ RunTime:0.046001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 76 行.
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 77 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.353718s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065075s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.418872s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.419444s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.419936s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.420238s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001931s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.420898s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000633s ]
+
+[ 2015-08-13T18:36:10+08:00 ] 220.181.108.102 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.006348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006549s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.197702s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000344s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.597442s ]
+INFO: [ view_template ] --END-- [ RunTime:0.055386s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.653018s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.500543s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.153640s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.157193s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.160363s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.163018s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013288s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.167169s ]
+INFO: [ view_end ] --END-- [ RunTime:0.005021s ]
+

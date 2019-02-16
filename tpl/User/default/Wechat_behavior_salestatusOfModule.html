@@ -1,0 +1,72 @@
+<include file="Public:head"/>
+<script src="./tpl/User/default/common/js/date/WdatePicker.js"></script>
+<script src="/tpl/static/artDialog/jquery.artDialog.js?skin=default"></script>
+<script src="/tpl/static/artDialog/plugins/iframeTools.js"></script>
+
+ <script src="/tpl/static/upyun.js"></script>
+<div class="content">
+<style>
+.msgWrap .control-group {
+margin-bottom: 20px;
+}
+.msgWrap .control-label {
+text-align: left;
+width: 140px;
+font-weight: bold;
+padding-top: 5px;
+float: left;
+display: block;
+margin-bottom: 5px;
+}
+.msgWrap .controls {
+margin-left: 160px;
+}
+.msgWrap .form-actions {
+padding: 19px 20px 20px 160px;
+margin-top: 20px;
+}
+.span4, .span1, .option, .valid, .input-large{
+	background: url(../images/px.png) repeat-x scroll 0 0 #FFFFFF;
+    border-color: #848484 #E0E0E0 #E0E0E0 #848484;
+    border-style: solid;
+    border-width: 1px;
+	border-radius: 2px 2px 2px 2px;
+	padding:5px;
+	width: 210px;
+}
+</style>
+<div class="cLineB">
+  <h4>修改销售状态</h4><a href="{weiwin::U('Wechat_behavior/salesstatus')}" class="right btnGrayS vm" style="margin-top:-27px">返回</a>
+ </div> 
+  <div class="msgWrap bgfc">
+  <form action="" method="post" class="form-horizontal form-validate" novalidate="novalidate">
+  	<input type="hidden" name="ID" value="{weiwin:$list.ID}">
+	<div class="control-group">
+		<label for="title" class="control-label">状态名称</label>
+		<div class="controls">
+			<input type="text" name="salesstatus" id="title" maxlength="10" class="span4" value="{weiwin:$status.salesstatus}" data-rule-required="true"><span class="maroon">*</span><span class="help-inline"></span>
+		</div>
+	</div>
+	<div class="control-group">
+		<label for="Tel" class="control-label">状态描述：</label>
+		<div class="controls">
+			<input type="text" name="statusinstr" id="statusinstr" class="span4" data-rule-required="true" value="{weiwin:$status.statusinstr}" style="width:500px;">
+			<span class="maroon">*</span><span class="help-inline"></span>
+		</div>
+	</div>
+	<div class="control-group">
+		<label for="Tel" class="control-label">流程排序：</label>
+		<div class="controls">
+			<input type="text" name="sort" id="sort" class="span4" data-rule-required="true" value="{weiwin:$status.sort}" style="width:500px;"><span class="maroon">
+			*</span><span class="help-inline">0-99由小到大排序</span>
+		</div>
+	</div>
+   <div class="form-actions">
+			<button id="bsubmit" type="submit" data-loading-text="提交中..." class="btnGreen">保存</button>　<a href="{weiwin::U('Wechat_behavior/salesstatus')}" class="btnGray vm">取消</a>
+		</div>
+</form>
+  </div> 
+ 
+  
+        </div>
+		

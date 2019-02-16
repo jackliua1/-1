@@ -1,0 +1,57 @@
+<include file="Public:head"/> 
+<link rel="stylesheet" type="text/css" href="{weiwin::RES}/css/cymain.css" />
+<div class="content"  >
+<div class="cLineB">
+<h4 class="left">查看建议 共{weiwin:$count} 条 </h4>
+<div class="searchbar right">
+<!-- <form method="post" action="">
+<input type="text" id="msgSearchInput" class="txt left" placeholder="输入关键词搜索" name="searchkey" value="{weiwin:$key}">
+<input type="submit" value="搜索" id="msgSearchBtn" href="" class="btnGrayS" title="搜索">
+</form> -->
+</div>
+<div class="clr"></div>
+</div>
+
+<div class="cLine">
+<div class="clr"></div>
+
+</div>
+<div class="msgWrap">
+<form method="post" action="" id="info">
+<input name="delall" type="hidden" value="">
+<input name="wxid" type="hidden" value="">
+<table class="ListProduct" border="0" cellspacing="0" cellpadding="0" width="100%">
+<thead>
+<tr>
+<th width="30">留言者</th>
+<th width="50">联系方式</th>
+<th width="120">建议</th>
+</tr>
+</thead>
+<tbody>
+<tr></tr>
+<volist name="jianyi" id="item"> 
+	<tr>
+	<td>{weiwin:$item.username}</td>
+	<td>{weiwin:$item.phone}</td>
+	<td>{weiwin:$item.jianyi}</td>
+	</tr>
+</volist>
+<tr>
+	<td colspan=3 style="text-align:center;">
+		{weiwin:$page}
+	</td>
+</tr>
+</tbody>
+</table>
+</form>
+
+</div>
+<div class="cLine">
+<div class="pageNavigator right">
+<div class="pages">{weiwin:$page}</div>
+</div>
+<div class="clr"></div>
+</div>
+</div>
+<include file="Public:footer"/>

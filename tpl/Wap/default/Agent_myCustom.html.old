@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
+<meta content="telephone=no" name="format-detection">
+<meta name="keywords" content="首创置业，买房，看房，房地产">
+<meta name="description" content="首创置业是中国领先的房地产综合营运商。公司于2003年6月19日在香港联合交易所主板上市，综合实力居国内领先地位，目前已进入全国四大区域十三个城市，土地储备规模超过1000万平方米，有相当高的市场知名度和品牌影响力。">
+<title>首创置业</title>
+
+<link href="{weiwin::RES}/css/defstyel.css" rel="stylesheet" type="text/css">
+</head>
+ 
+
+	<p  class="mid_reg"> </p>
+    <div  class="my_client_mycl">
+     我的客户
+     </div>
+    
+    
+    <div class="my_client_">  
+    	<div class="my_client_top">  	
+            <span class="my_client_name">姓名</span>
+            <span class="my_client_phone">电话</span>
+            <span class="my_client_lp">楼盘意向</span>
+            <span  class="my_client_day" style="color:#666;" >日期</span>
+            <span  class="my_client_status">状态</span>
+        </div>
+        <if condition="$list eq null">
+            <div class="my_client_cli">
+                您还没有客户哦，赶快推荐您的客户吧
+            </div>
+        <else/> 
+            <volist name="list" id="vo">
+            	<div class="my_client_cli">  	
+                    <span class="my_client_name">{weiwin:$vo.Name}</span>
+                    <span class="my_client_phone">{weiwin:$vo.Tel}</span>
+                    <span class="my_client_lp">{weiwin:$vo.LouPanTitle}</span>
+                    <span  class="my_client_day" >{weiwin:$vo.SrTime|date="Y.m.d",###}</span>
+                    <span  class="my_client_status">
+                   	 <a href="#" class="my_client_a">{weiwin:$vo.salesstatus}</a>
+                    </span>
+                </div>
+            </volist>
+        </if>
+        
+    </div>
+
+<body>
+</body>
+</html>

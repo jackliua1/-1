@@ -1,0 +1,24 @@
+[ 2015-12-24T05:11:03+08:00 ] 183.136.190.62 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.004914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005109s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.661110s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000410s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.743977s ]
+INFO: [ view_template ] --END-- [ RunTime:0.199970s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.944066s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.314139s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-1.258286s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.264297s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.266825s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.268815s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012777s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.271211s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002670s ]
+
+[ 2015-12-24T23:18:24+08:00 ] ERR: (ThinkException) 无法加载模块:agent

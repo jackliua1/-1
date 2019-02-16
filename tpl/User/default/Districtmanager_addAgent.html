@@ -1,0 +1,98 @@
+<include file="Public:head"/>
+<script src="./tpl/User/default/common/js/date/WdatePicker.js"></script>
+<script src="/tpl/static/artDialog/jquery.artDialog.js?skin=default"></script>
+<script src="/tpl/static/artDialog/plugins/iframeTools.js"></script>
+
+ <script src="/tpl/static/upyun.js"></script>
+  <script src="{weiwin::RES}/js/jquery-1.7.2.min.js"></script>
+ <script src="{weiwin::RES}/js/Wechat_zhiye_addzhiye.js"></script>
+<div class="content">
+<style>
+.msgWrap .control-group {
+margin-bottom: 20px;
+}
+.msgWrap .control-label {
+text-align: left;
+width: 140px;
+font-weight: bold;
+padding-top: 5px;
+float: left;
+display: block;
+margin-bottom: 5px;
+}
+.msgWrap .controls {
+margin-left: 160px;
+}
+.msgWrap .form-actions {
+padding: 19px 20px 20px 160px;
+margin-top: 20px;
+}
+.span4, .span1, .option, .valid, .input-large{
+	background: url(../images/px.png) repeat-x scroll 0 0 #FFFFFF;
+    border-color: #848484 #E0E0E0 #E0E0E0 #848484;
+    border-style: solid;
+    border-width: 1px;
+	border-radius: 2px 2px 2px 2px;
+	padding:5px;
+	width: 210px;
+}
+span{
+				color:#999;
+				font-size:16px;
+			}
+			.right{
+				color:green;
+				font-size:16px;
+			}
+			.error{
+				color:red;
+				font-size:16px;
+			}
+</style>
+<div class="cLineB">
+  <h4>新增片区经理</h4><a href="{weiwin::U('Districtmanager/index',array('token'=>$token))}" class="right btnGrayS vm" >返回</a>
+ </div> 
+  <div class="msgWrap bgfc">
+  <form action="{weiwin::U('Districtmanager/add',array('token'=>$token))}" method="post" class="form-horizontal form-validate" novalidate="novalidate">
+	<div class="control-group">
+		<label for="title" class="control-label">片区经理姓名：</label>
+		<div class="controls">
+			<input type="text" name="areaName" id="title" maxlength="10" class="span4" value="{weiwin:$lists.areaName}" data-rule-required="true"><span class="maroon">*</span><span class="help-inline"></span>
+		</div>
+	</div>
+	<div class="control-group">
+		<label for="Tel" class="control-label">片区经理手机号：</label>
+		<div class="controls">
+			<input type="text" name="areaTel" id="Tel" class="span4" data-rule-required="true" value="{weiwin:$lists.areaTel}"><span class="maroon">*</span><span class="help-inline"></span>
+		</div>
+	</div>
+	<div class="control-group">
+		<label for="Tel" class="control-label">登录密码：</label>
+		<div class="controls">
+			<input type="password" name="password" id="password" class="span4" data-rule-required="true" value=""><span class="maroon">*</span><span class="help-inline"></span>
+		</div>
+	</div>
+	 
+
+	  <!--<div class="control-group">-->
+		  <!--<label for="usersname" class="control-label">管辖经纪公司：</label>-->
+		  <!--<div class="controls">-->
+			  <!--<select name="usersname" style="height:30px;">-->
+				  <!--<foreach name="list" item="vo">-->
+				  <!--<option   value="{weiwin:$vo.id}">{weiwin:$vo.usersname}</option>-->
+				  <!--</foreach>-->
+			  <!--</select>-->
+		  <!--</div>-->
+	  <!--</div>-->
+	  
+	  
+	<div></div>
+   <div class="form-actions">
+			<button id="bsubmit" type="submit" data-loading-text="提交中..." class="btnGreen">保存</button>　<a href="{weiwin::U('Share/index')}" class="btnGray vm">取消</a>
+		</div>
+</form>
+  </div> 
+ 
+  
+        </div>
+		

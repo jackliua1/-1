@@ -1,0 +1,43 @@
+<!doctype html> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" >
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link href="{weiwin::RES}/css/fx_style.css" rel="stylesheet" type="text/css" /> 
+</head>
+
+<body style="background:url({weiwin::RES}/img/tx_3_bg.jpg) top center no-repeat; background-size:cover;"> 
+	<div class="wait"  >
+    	<div  class="kft_hong">
+        	<img src="{weiwin::RES}/img/sczy.jpg" width="80" > 
+        </div>
+    	<div class="kft_gth">
+        	<a href="{weiwin::U('Fx/ruleinfo',array('token'=>$info['token'],'esid'=>$esid,'id'=>$info['id']))}"><img src="{weiwin::RES}/img/gth.png" width="50" > </a>
+        </div>
+        
+        <div class="kft_cli">
+        	<div class="kft_canyu">
+            	参与人数<br>
+                {weiwin:$countview|default=0}人
+            </div>
+            
+            <div class="kft_titcli">
+            	<span>
+                    <volist name="lparr" id="lp"><if condition="$lp['id'] eq $info['loupanid']">{weiwin:$lp.LouPanTitle}</if></volist>看房团
+                </span><br>
+                {weiwin:$info.starttime|date="Y.m.d",###}
+            </div>
+        </div>
+        
+        <a href="{weiwin::U('Fx/activiteinfo',array('esid'=>$esid,'customwecha_id'=>$customwecha_id,'id'=>$info['id']))}" class="yuyuekf">预约看房</a>
+        
+    </div>
+</body><script language="javascript">
+	var a=document.body.scrollHeight;
+	var b=document.body.clientHeight;
+ 
+	document.body.style.height=(a)+"px";
+</script>
+</html>

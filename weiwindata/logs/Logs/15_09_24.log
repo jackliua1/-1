@@ -1,0 +1,51 @@
+[ 2015-09-24T03:47:23+08:00 ] 183.136.190.62 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.005162s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005472s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.112917s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000478s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php Á¨¨ 69 Ë°å.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.170232s ]
+INFO: [ view_template ] --END-- [ RunTime:0.040152s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.210495s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082144s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.292790s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.295531s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.298197s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.300141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009705s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.302580s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002167s ]
+
+[ 2015-09-24T03:47:23+08:00 ] 183.136.190.62 /
+NOTIC: [32] PHP Startup: Unable to load dynamic library 'D:\WebServer\php-5.2.5 (x64)\ext\php_fileinfo.dll' - ’“≤ªµΩ÷∏∂®µƒƒ£øÈ°£
+ Unknown Á¨¨ 0 Ë°å.
+
+[ 2015-09-24T06:25:11+08:00 ] 121.42.0.39 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002448s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.004929s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000215s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php Á¨¨ 69 Ë°å.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.028535s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002304s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.030929s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023664s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.054668s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.056112s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.057761s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.059054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005954s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.060721s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001785s ]
+
+[ 2015-09-24T19:33:48+08:00 ] ERR: (ThinkException) Êó†Ê≥ïÂä†ËΩΩÊ®°Âùó:map

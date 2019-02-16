@@ -1,0 +1,478 @@
+[ 2018-09-07T16:29:46+08:00 ] 49.80.172.228 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.015448s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015610s ]
+NOTIC: [8] session_start() [<a href='function.session-start'>function.session-start</a>]: ps_files_cleanup_dir: opendir(C:\Windows\Temp\) failed: No error (0) D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Common\functions.php 第 526 行.
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.033759s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000728s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.211827s ]
+INFO: [ view_template ] --END-- [ RunTime:0.100651s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.312577s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074246s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.386894s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.395293s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.399232s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.402435s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.018943s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.405909s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003474s ]
+
+[ 2018-09-07T16:29:51+08:00 ] 49.80.172.228 /index.php?m=Users&a=checklogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001081s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001189s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.006776s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `username` = 'chacnle' ) LIMIT 1   [ RunTime:0.000823s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.065027s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004258s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.069341s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066276s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.135815s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.139819s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.143722s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.145980s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013105s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.148907s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002186s ]
+
+[ 2018-09-07T16:29:53+08:00 ] 49.80.172.228 /index.php?m=Index&a=login
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001059s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.017302s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003304s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.020675s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.099115s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.119858s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.122760s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.127052s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.129271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011668s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.131610s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003280s ]
+
+[ 2018-09-07T16:29:57+08:00 ] 49.80.172.228 /index.php?m=Users&a=checklogin
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000965s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001076s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.015220s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `username` = 'chancle' ) LIMIT 1   [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.016584s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000430s ]
+SQL: UPDATE `wy_users` SET `lasttime`='1536308997',`lastloginmonth`='9',`lastip`='49.80.172.228' WHERE ( `id` = 1 ) [ RunTime:0.000720s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.060235s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003348s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.063653s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016272s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.079982s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.081842s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.083688s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.085458s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007400s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.087446s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002061s ]
+
+[ 2018-09-07T16:29:59+08:00 ] 49.80.172.228 /index.php?g=User&m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000964s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001073s ]
+NOTIC: [2048] Declaration of IndexAction::insert() should be compatible with that of BaseAction::insert() D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\User\IndexAction.class.php 第 2 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.003727s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000137s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.002531s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000334s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.035212s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = null ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.002084s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.002559s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = null ) LIMIT 1   [ RunTime:0.000205s ]
+NOTIC: [8] Undefined index:  width D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\UserAction.class.php 第 62 行.
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.004231s ]
+SQL: SELECT * FROM `wy_user_group`  [ RunTime:0.000344s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_wxuser` WHERE ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000787s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `uid` = 1 ) LIMIT 0,25   [ RunTime:0.000865s ]
+SQL: SHOW COLUMNS FROM `wy_diymen_set` [ RunTime:0.028057s ]
+SQL: SELECT * FROM `wy_diymen_set` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.001902s ]
+SQL: SELECT * FROM `wy_diymen_set` WHERE ( `token` = 'jeifef1412084627' ) LIMIT 1   [ RunTime:0.000222s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.278141s ]
+INFO: [ view_template ] --END-- [ RunTime:0.031942s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 76 行.
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\56f7804e54d354c9c14b7fc522e75478.php 第 77 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.310173s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088019s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.398269s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.400394s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.402349s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.404218s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008751s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.407094s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002221s ]
+
+[ 2018-09-07T16:30:01+08:00 ] 49.80.172.228 /index.php?g=User&m=Function&a=index&id=1&token=ynzfui1406882414
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000994s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001087s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.012741s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000221s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.015783s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000184s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.016377s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = null ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000207s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.015632s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = null ) LIMIT 1   [ RunTime:0.000131s ]
+NOTIC: [8] Undefined index:  width D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\UserAction.class.php 第 62 行.
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000389s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.015235s ]
+SQL: SELECT `id`,`queryname` FROM `wy_token_open` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.024688s ]
+SQL: SELECT `id`,`name` FROM `wy_user_group` WHERE status=1  [ RunTime:0.000606s ]
+SQL: SHOW COLUMNS FROM `wy_function` [ RunTime:0.028539s ]
+SQL: SELECT * FROM `wy_function` WHERE ( `status` = 1 ) AND ( `gid` = 1 )  [ RunTime:0.015859s ]
+SQL: SELECT * FROM `wy_function` WHERE ( `status` = 1 ) AND ( `gid` = 2 )  [ RunTime:0.000399s ]
+SQL: SELECT * FROM `wy_function` WHERE ( `status` = 1 ) AND ( `gid` = 3 )  [ RunTime:0.000339s ]
+SQL: SELECT * FROM `wy_function` WHERE ( `status` = 1 ) AND ( `gid` = 4 )  [ RunTime:0.006761s ]
+SQL: SELECT `wxname`,`wxid`,`headerpic`,`weixin` FROM `wy_wxuser` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000313s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.202245s ]
+INFO: [ view_template ] --END-- [ RunTime:0.015262s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\52858e5695fc543ba4c03ea48eacfeda.php 第 120 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\52858e5695fc543ba4c03ea48eacfeda.php 第 121 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\52858e5695fc543ba4c03ea48eacfeda.php 第 122 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\52858e5695fc543ba4c03ea48eacfeda.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\52858e5695fc543ba4c03ea48eacfeda.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\52858e5695fc543ba4c03ea48eacfeda.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\52858e5695fc543ba4c03ea48eacfeda.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\52858e5695fc543ba4c03ea48eacfeda.php 第 123 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.217604s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.134280s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.351935s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.354485s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.356868s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.358888s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009180s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.361203s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002241s ]
+
+[ 2018-09-07T16:30:06+08:00 ] 49.80.172.228 /index.php?g=User&m=Wechat_behavior&a=rule&token=ynzfui1406882414
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000950s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001087s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.015880s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000174s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.017732s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000220s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.017036s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000514s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.012930s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000554s ]
+NOTIC: [8] Undefined index:  width D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\UserAction.class.php 第 62 行.
+SQL: SHOW COLUMNS FROM `wy_behavior` [ RunTime:0.022323s ]
+SQL: SHOW COLUMNS FROM `wy_lp_rule` [ RunTime:0.015266s ]
+SQL: SELECT * FROM `wy_lp_rule` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000340s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.383471s ]
+INFO: [ view_template ] --END-- [ RunTime:0.035658s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\5420157186efb0825f7c501a8490c3b0.php 第 108 行.
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\5420157186efb0825f7c501a8490c3b0.php 第 109 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\5420157186efb0825f7c501a8490c3b0.php 第 120 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\5420157186efb0825f7c501a8490c3b0.php 第 121 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\5420157186efb0825f7c501a8490c3b0.php 第 122 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\5420157186efb0825f7c501a8490c3b0.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\5420157186efb0825f7c501a8490c3b0.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\5420157186efb0825f7c501a8490c3b0.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\5420157186efb0825f7c501a8490c3b0.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\5420157186efb0825f7c501a8490c3b0.php 第 123 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.419316s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056489s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.475914s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.479280s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.482092s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.484408s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011053s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.487064s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002600s ]
+
+[ 2018-09-07T16:30:08+08:00 ] 49.80.172.228 /index.php?g=User&m=Wechat_behavior&a=salesstatus&token=ynzfui1406882414
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000966s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001063s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.012264s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000136s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.016780s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000200s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.020981s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000296s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.003444s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000159s ]
+NOTIC: [8] Undefined index:  width D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\UserAction.class.php 第 62 行.
+SQL: SHOW COLUMNS FROM `wy_behavior` [ RunTime:0.003595s ]
+SQL: SHOW COLUMNS FROM `wy_agent_status` [ RunTime:0.004214s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_agent_status` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000913s ]
+SQL: SELECT * FROM `wy_agent_status` WHERE ( `token` = 'ynzfui1406882414' ) ORDER BY sort ASC LIMIT 0,20   [ RunTime:0.000344s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.101545s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003344s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\19e2a05d022593a00335ae428ed346f5.php 第 108 行.
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\19e2a05d022593a00335ae428ed346f5.php 第 109 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\19e2a05d022593a00335ae428ed346f5.php 第 120 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\19e2a05d022593a00335ae428ed346f5.php 第 121 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\19e2a05d022593a00335ae428ed346f5.php 第 122 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\19e2a05d022593a00335ae428ed346f5.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\19e2a05d022593a00335ae428ed346f5.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\19e2a05d022593a00335ae428ed346f5.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\19e2a05d022593a00335ae428ed346f5.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\19e2a05d022593a00335ae428ed346f5.php 第 123 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.104956s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.206476s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.311502s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.314823s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.317255s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.319232s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010016s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.321622s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002624s ]
+
+[ 2018-09-07T16:30:11+08:00 ] 49.80.172.228 /index.php?g=User&m=Wechat_behavior&a=rule&token=ynzfui1406882414
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001010s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001119s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.004583s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000942s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.004091s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000224s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.003008s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000225s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.002402s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000237s ]
+NOTIC: [8] Undefined index:  width D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\UserAction.class.php 第 62 行.
+SQL: SHOW COLUMNS FROM `wy_behavior` [ RunTime:0.004744s ]
+SQL: SHOW COLUMNS FROM `wy_lp_rule` [ RunTime:0.009656s ]
+SQL: SELECT * FROM `wy_lp_rule` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000170s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.068553s ]
+INFO: [ view_template ] --END-- [ RunTime:0.007543s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\5420157186efb0825f7c501a8490c3b0.php 第 108 行.
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\5420157186efb0825f7c501a8490c3b0.php 第 109 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\5420157186efb0825f7c501a8490c3b0.php 第 120 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\5420157186efb0825f7c501a8490c3b0.php 第 121 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\5420157186efb0825f7c501a8490c3b0.php 第 122 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\5420157186efb0825f7c501a8490c3b0.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\5420157186efb0825f7c501a8490c3b0.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\5420157186efb0825f7c501a8490c3b0.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\5420157186efb0825f7c501a8490c3b0.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\5420157186efb0825f7c501a8490c3b0.php 第 123 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.076148s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059199s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.135424s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.183659s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.189455s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.195926s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.070134s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.205650s ]
+INFO: [ view_end ] --END-- [ RunTime:0.011482s ]
+
+[ 2018-09-07T16:30:15+08:00 ] 49.80.172.228 /index.php?g=User&m=Wechat_group&a=groups&token=ynzfui1406882414
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.004098s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004219s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.021360s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000156s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.025575s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000197s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.004552s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000253s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.007010s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000119s ]
+NOTIC: [8] Undefined index:  width D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\UserAction.class.php 第 62 行.
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000808s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.004870s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `wy_lpinfo` WHERE token='ynzfui1406882414' LIMIT 1   [ RunTime:0.001331s ]
+SQL: SELECT lp.id as lp_id,lp.token,lp.LouPanTitle,lp.LouPanJieShao,lp.projectinfo,lp.LouPanAddress,houseSort,lp.BeginTime,
+				pro.`code` as pro_code,pro.`name` as pro_name,cit.`code` as cit_code,cit.name as cit_name,are.code as are_code,are.name as are_name from 
+				wy_lpinfo as lp left join wy_province as pro on lp.province=pro.`code` 
+				LEFT JOIN wy_city as cit on lp.city=cit.`code` LEFT JOIN wy_area as are on lp.area=are.`code` 
+				where lp.token='ynzfui1406882414' ORDER BY houseSort DESC LIMIT 0,20 [ RunTime:0.533640s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.745205s ]
+INFO: [ view_template ] --END-- [ RunTime:0.065251s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\bf1552ceedc8718a967cf54353e21571.php 第 108 行.
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\bf1552ceedc8718a967cf54353e21571.php 第 109 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\bf1552ceedc8718a967cf54353e21571.php 第 120 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\bf1552ceedc8718a967cf54353e21571.php 第 121 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\bf1552ceedc8718a967cf54353e21571.php 第 122 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\bf1552ceedc8718a967cf54353e21571.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\bf1552ceedc8718a967cf54353e21571.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\bf1552ceedc8718a967cf54353e21571.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\bf1552ceedc8718a967cf54353e21571.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\bf1552ceedc8718a967cf54353e21571.php 第 123 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.810572s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.177194s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.987812s ]
+INFO: Run TokenBuild Behavior [ RunTime:-1.001666s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-1.016000s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-1.026861s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.054412s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-1.042340s ]
+INFO: [ view_end ] --END-- [ RunTime:0.020720s ]
+
+[ 2018-09-07T16:30:17+08:00 ] 49.80.172.228 /index.php?g=User&m=Wechat_group&a=groupSet
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000962s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001068s ]
+SQL: SHOW COLUMNS FROM `wy_user_group` [ RunTime:0.003877s ]
+SQL: SELECT * FROM `wy_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000145s ]
+SQL: SHOW COLUMNS FROM `wy_users` [ RunTime:0.002512s ]
+SQL: SELECT * FROM `wy_users` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000154s ]
+SQL: SHOW COLUMNS FROM `wy_wxuser` [ RunTime:0.003022s ]
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'ynzfui1406882414' ) AND ( `uid` = 1 ) LIMIT 1   [ RunTime:0.000206s ]
+SQL: SHOW COLUMNS FROM `wy_token_open` [ RunTime:0.014482s ]
+SQL: SELECT `queryname` FROM `wy_token_open` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000126s ]
+NOTIC: [8] Undefined index:  width D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\UserAction.class.php 第 62 行.
+SQL: SELECT * FROM `wy_wxuser` WHERE ( `token` = 'ynzfui1406882414' ) LIMIT 1   [ RunTime:0.000182s ]
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.012104s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\User\Wechat_groupAction.class.php 第 340 行.
+SQL: SELECT lp.id as lp_id,lp.token as token,lp.LouPanTitle,lp.LouPanJieShao,lp.LouPanAddress,
+			lp.LouPanUpLoad,houseSort,lp.BeginTime,lp.projectinfo,lp.longitude,lp.latitude,lp.traffic,
+			lp.video,lp.remark,lp.encourage,lp.commission,lp.link,pro.`code` as pro_code,
+			pro.`name` as pro_name,cit.`code` as cit_code,cit.name as cit_name,
+			are.code as are_code,are.name as are_name from 
+			wy_lpinfo as lp left join wy_province as pro on lp.province=pro.`code` 
+			LEFT JOIN wy_city as cit on lp.city=cit.`code` LEFT JOIN wy_area as are on lp.area=are.`code` 
+			where lp.id=0 and lp.token='ynzfui1406882414' [ RunTime:0.000474s ]
+NOTIC: [8] Undefined index:  type D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\User\Wechat_groupAction.class.php 第 415 行.
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\User\Wechat_groupAction.class.php 第 416 行.
+SQL: SHOW COLUMNS FROM `wy_province` [ RunTime:0.016810s ]
+SQL: SHOW COLUMNS FROM `wy_city` [ RunTime:0.012322s ]
+SQL: SHOW COLUMNS FROM `wy_area` [ RunTime:0.010341s ]
+SQL: SELECT * FROM `wy_province`  [ RunTime:0.000265s ]
+SQL: SELECT * FROM `wy_city` WHERE provincecode=110000  [ RunTime:0.000325s ]
+SQL: SELECT * FROM `wy_area` WHERE citycode=110100  [ RunTime:0.000961s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php 第 69 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.113098s ]
+INFO: [ view_template ] --END-- [ RunTime:0.003122s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 108 行.
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 109 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 120 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 121 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 122 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 123 行.
+NOTIC: [8] Undefined variable: statistics_list D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 123 行.
+NOTIC: [8] Undefined index:  Privince D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 482 行.
+NOTIC: [8] Undefined index:  City D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 483 行.
+NOTIC: [8] Undefined index:  Area D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 484 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 489 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 489 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 489 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 489 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 489 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 489 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 489 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 489 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 489 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 489 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 489 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 489 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 489 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 489 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 489 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 489 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 489 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 489 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 489 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 489 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 489 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 489 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 489 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 489 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 489 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 489 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 489 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 489 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 489 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 489 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 489 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 489 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 489 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 489 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 494 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 501 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 572 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 577 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 581 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 586 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 587 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 593 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 593 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 597 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 602 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 604 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 612 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 616 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 620 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 624 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 629 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 629 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 634 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 638 行.
+NOTIC: [8] Undefined offset:  0 D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 646 行.
+NOTIC: [8] Undefined variable: id D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\User\ad64ce5ea389def83d624c027cf6a89c.php 第 678 行.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.116275s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.228750s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.345097s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.349260s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.351671s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.355675s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015435s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.360644s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004928s ]
+

@@ -1,0 +1,76 @@
+<include file="Public:head"/>
+<div class="content">
+          <div class="cLineB"><h4>邮箱设置</h4></div>
+          <form method="post" action="{weiwin::U('User/Index/upsave')}" enctype="multipart/form-data">
+          <input type="hidden" name="id" value="{weiwin:$info.id}">
+          <div class="msgWrap">
+            <table class="userinfoArea" border="0" cellspacing="0" cellpadding="0" width="100%">
+              <thead>
+			    <tr>
+                  <th><span class="red">*</span>说明：</th>
+                  <td><span class="red">发件邮箱默认是系统发件邮箱,您可以到账号编辑下去设置</span>
+                  </td>
+                </tr>
+			    <tr>
+                  <th><span class="red">*</span>收件邮箱：</th>
+                  <td><input type="text" required="" class="px" name="mailbox" value="{weiwin:$info.mailbox}" tabindex="1" size="25"><span class="red">请填写收件邮箱</span>
+                  </td>
+                </tr>
+				<tr>
+                  <th><span class="red">*</span>商城提醒状态：</th>
+                  <td><input type="radio" value="1" <if condition="$info.shopmail eq 1">checked</if>  id="statu-1"  name="shopmail"/>开启 
+<input type="radio" value="0" <if condition="$info.shopmail eq 0">checked</if>  id="statu-0"  name="shopmail"/>关闭
+                  </td>
+                </tr>
+				<tr>
+                  <th><span class="red">*</span>订餐提醒状态：</th>
+                  <td><input type="radio" value="1" <if condition="$info.dingcanmail eq 1">checked</if>  id="statu-1" name="dingcanmail"/>开启
+ <input type="radio" value="0" <if condition="$info.dingcanmail eq 0">checked</if>  id="statu-0"  name="dingcanmail"/>关闭
+                  </td>
+                </tr>
+				<tr>
+                  <th><span class="red">*</span>点餐提醒状态：</th>
+                  <td><input type="radio" value="1" <if condition="$info.diancanmail eq 1">checked</if>  id="statu-1" name="diancanmail"/>开启
+ <input type="radio" value="0" <if condition="$info.diancanmail eq 0">checked</if>  id="statu-0"  name="diancanmail"/>关闭
+                  </td>
+                </tr>
+				<tr>
+                  <th><span class="red">*</span>预约提醒状态：</th>
+                  <td><input type="radio" value="1" <if condition="$info.yuyuemail eq 1">checked</if>  name="yuyuemail"/>开启 <input type="radio" value="0"  <if condition="$info.yuyuemail eq 0">checked</if> name="yuyuemail"/>关闭
+                  </td>
+                </tr>
+				<tr>
+                  <th><span class="red">*</span>其他提醒状态：</th>
+                  <td><input type="radio" value="1" <if condition="$info.othermail eq 1">checked</if>  id="statu-1" name="othermail"/>开启 <input type="radio" value="0" <if condition="$info.othermail eq 0">checked</if>  id="statu-0" name="othermail"/>关闭
+                  </td>
+                </tr>
+				<div>
+				<input type="hidden" required="" class="px" name="wxname" value="{weiwin:$info.wxname}" tabindex="1" size="25">
+				<input type="hidden" required="" title="无法修改，您可以联系管理员" name="wxid" value="{weiwin:$info.wxid}" class="px" tabindex="1" size="25" style="color:#DDD;">
+				<input type="hidden" required="" name="weixin" value="{weiwin:$info.weixin}" class="px" tabindex="1" size="25">
+				<input type="hidden" class="px" name="headerpic" value="{weiwin:$info.headerpic}" size="60">
+				<input type="hidden" name="token" value="{weiwin:$info.token}" class="px" tabindex="1" size="40">
+				<input type="hidden" class="px" id="province" value="{weiwin:$info.province}" name="province" tabindex="1" size="20">
+				<input id="city" value="{weiwin:$info.city}" type="hidden" name="city" class="px" tabindex="1" size="20">
+				<input type="hidden" required="" class="px" tabindex="1" value="{weiwin:$info.qq}" name="qq" size="25">
+				<input type="hidden" required="" name="wxfans" value="{weiwin:$info.wxfans}" class="px" tabindex="1" size="25">
+				<input type="hidden" required="" name="type" value="{weiwin:$info.typeid}" class="px" tabindex="1" size="25">
+				</div>
+              </thead>
+              
+                <tr>
+                  <td><button type="submit" class="btnGreen" id="saveSetting">保存</button></td>
+                </tr>
+            </table>
+            
+          </div>
+          </form>
+        </div>
+        
+        <div class="clr"></div>
+      </div>
+    </div>
+  </div>
+  <!--底部-->
+  	</div>
+<include file="Public:footer"/>	

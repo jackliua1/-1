@@ -1,0 +1,122 @@
+<include file="Public:head"/>
+<script src="./tpl/User/default/common/js/date/WdatePicker.js"></script>
+<script src="/tpl/static/artDialog/jquery.artDialog.js?skin=default"></script>
+<script src="/tpl/static/artDialog/plugins/iframeTools.js"></script>
+
+ <script src="/tpl/static/upyun.js"></script>
+<div class="content">
+<style>
+.msgWrap .control-group {
+margin-bottom: 20px;
+}
+.msgWrap .control-label {
+text-align: left;
+width: 140px;
+font-weight: bold;
+padding-top: 5px;
+float: left;
+display: block;
+margin-bottom: 5px;
+}
+.msgWrap .controls {
+margin-left: 160px;
+}
+.msgWrap .form-actions {
+padding: 19px 20px 20px 160px;
+margin-top: 20px;
+}
+.span4, .span1, .option, .valid, .input-large{
+	background: url(../images/px.png) repeat-x scroll 0 0 #FFFFFF;
+    border-color: #848484 #E0E0E0 #E0E0E0 #848484;
+    border-style: solid;
+    border-width: 1px;
+	border-radius: 2px 2px 2px 2px;
+	padding:5px;
+	width: 210px;
+}
+</style>
+<div class="cLineB">
+  <h4>佣金信息维护</h4><a href="{weiwin::U('Share/reward',array('token'=>$_GET['token']))}" class="right btnGrayS vm" style="margin-top:-27px">返回</a>
+ </div> 
+  <div class="msgWrap bgfc">
+  <form action="" method="post" class="form-horizontal form-validate" novalidate="novalidate">
+  	<input type="hidden" name="id" value="{weiwin:$list.id}">
+	<!-- <div class="control-group">
+		<label for="customname" class="control-label">客户姓名：</label>
+		<div class="controls">
+			<input type="text" name="customname" id="customname" maxlength="10" class="span4" value="{weiwin:$list.customname}" data-rule-required="true">
+		</div>
+			{weiwin:$list.customname}
+	</div> -->
+	<!-- <div class="control-group">
+		<label for="loupanname" class="control-label">意向项目：</label>
+		<div class="controls">
+			<input type="text" name="loupanname" id="loupanname" class="span4" data-rule-required="true" value="{weiwin:$list.loupanname}" readonly>
+		</div>
+			{weiwin:$list.loupanname}
+	</div> -->
+	<div class="control-group">
+		<label for="Name" class="control-label">会员姓名：</label>
+<!-- 		<div class="controls">
+			<input type="text" name="Name" id="Name" class="span4" data-rule-required="true" value="{weiwin:$list.Name}" readonly>
+		</div>
+ -->			{weiwin:$list.Name}
+	</div>
+<!-- 	<div class="control-group">
+		<label for="statusname" class="control-label">销售状态：</label>
+		<div class="controls">
+			<input type="text" name="statusname" id="statusname" class="span4" data-rule-required="true" value="{weiwin:$list.statusname}" readonly>
+		</div>
+			{weiwin:$list.statusname}
+	</div> -->
+<!-- 	<div class="control-group">
+		<label for="rewardname" class="control-label">奖励名称：</label>
+		<div class="controls">
+			<input type="text" name="rewardname" id="rewardname" class="span4" data-rule-required="true" value="{weiwin:$list.rewardname}" readonly>
+		</div>
+			{weiwin:$list.rewardname}
+	</div> -->
+
+	<div class="control-group">
+		<label for="rewardamount" class="control-label">奖励金额：</label>
+		<!-- <div class="controls">
+			<input type="text" name="rewardamount" id="rewardamount" class="span4" data-rule-required="true" value="{weiwin:$list.rewardamount}" readonly>
+		</div> -->
+			{weiwin:$list.rewardamount}
+	</div>
+	<div class="control-group">
+		<label for="libao" class="control-label">领取状态：</label>
+		<div>
+			<!-- <input type="text" name="userName" id="userName" class="span4" data-rule-required="true" value="{weiwin:$serviceUser.userName}"> -->
+			<!-- <label for="yes"><input type="radio" name="libao" value="1" <if condition="$list['libao'] eq 1">checked</if>>已领取</label>&nbsp;　&nbsp;&nbsp;
+			<label for="no"><input type="radio" name="libao" value="0" <if condition="$list['libao'] eq 0">checked</if>>未领取</label> -->
+			<select name="rewardstatus">
+              	<if condition="$list['rewardstatus'] eq 0">
+              		<option value="0" <if condition="$list['rewardstatus'] eq '0'">selected</if>>获取佣金</option>
+              	<elseif condition="$list['rewardstatus'] eq '-1'"/>
+              		<option value="-1" <if condition="$list['rewardstatus'] eq '0'">selected</if>>购买商品</option>
+              		<option value="-99" <if condition="$list['rewardstatus'] eq '-99'">selected</if>>佣金撤销</option>
+              	<elseif condition="$list['rewardstatus'] eq '-99'"/>
+              		<option value="-99" <if condition="$list['rewardstatus'] eq '-99'">selected</if>>佣金撤销</option>
+              	<else/>
+	              	<option value="2" <if condition="$list['rewardstatus'] eq '2'">selected</if>>取现申请</option>
+	              	<option value="1" <if condition="$list['rewardstatus'] eq '1'">selected</if>>佣金取现</option>
+	              	<option value="-99" <if condition="$list['rewardstatus'] eq '-99'">selected</if>>佣金撤销</option>
+              	</if>
+              		
+			</select>
+		</div>
+	</div>
+	<!-- <div class="control-group">
+		<label for="Mtime" class="control-label">创建日期：</label>
+		<div class="controls">
+			<input type="text" name="Mtime" id="Mtime" class="span4" data-rule-required="true" value="{weiwin:$list.Mtime|date='Y-m-d',###}" readonly>
+		</div>
+	</div> -->
+   <div class="form-actions">
+			<button id="bsubmit" type="submit" data-loading-text="提交中..." class="btnGreen">保存</button>　<a href="{weiwin::U('Share/reward',array('token'=>$_GET['token']))}" class="btnGray vm">取消</a>
+		</div>
+</form>
+  </div> 
+</div>
+

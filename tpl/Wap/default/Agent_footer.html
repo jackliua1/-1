@@ -1,0 +1,83 @@
+<style>
+a {
+    text-decoration: none;
+}
+ul,p{
+	margin:0px;
+	padding:0px;
+}
+.wt_ul1 {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff;
+    z-index: 999;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid #e4e4e4;
+}
+li {
+    list-style: none;
+}
+.wt_li1_a {
+    float: left;
+    width: 33%;
+    height: 60px;
+    text-align: center;
+}
+.wt_ul1 li {
+    position: relative;
+}
+.nav_active p i, .nav_active p span {
+    color: #33ccff;
+}
+.div_footer{
+	margin-bottom:60px;
+}
+</style>
+<div class="div_footer"></div>
+<ul class="wt_ul1">
+	<if condition="ACTION_NAME eq 'ydl'">
+    <li class="wt_li1_a nav_active">
+	<else/>
+	<li class="wt_li1_a">
+	</if>
+        <a href="{weiwin::U('Agent/ydl',array('token'=>$token))}">
+            <p style="margin-top: 10px;">
+				<i class="fa fa-home fa-2x"></i>
+			</p>
+			<p class="wt_p2">
+				<span>首页</span>
+			</p>
+        </a>
+            
+    </li>
+    <if condition="ACTION_NAME eq 'myCustom'">
+    <li class="wt_li1_a nav_active">
+	<else/>
+	<li class="wt_li1_a">
+	</if>
+        <a href="{weiwin::U('Agent/myCustom',array('token'=>$token,'JJ_id'=>$jjrinfo['ID']))}">
+            <p style="margin-top: 10px;">
+                <i class="fa fa-sitemap fa-2x"></i>
+            </p>
+            <p class="wt_p2">
+                <span>我的客户</span>
+            </p>
+        </a>
+    </li>
+    <if condition="ACTION_NAME eq 'myInfo'">
+    <li class="wt_li1_a nav_active">
+	<else/>
+	<li class="wt_li1_a">
+	</if>
+		<a href="{weiwin::U('Agent/myInfo',array('token'=>$token))}">
+			<p style="margin-top: 10px;">
+				<i class="fa fa-user-o fa-2x"></i>
+			</p>
+			<p class="wt_p2">
+				<span>个人中心</span>
+			</p>
+		</a> 
+    </li>
+</ul>

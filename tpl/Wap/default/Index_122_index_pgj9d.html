@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html><head>
+         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>{weiwin:$tpl.wxname}</title>
+        <base href="." />
+        <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="format-detection" content="telephone=no" />
+<link href="{weiwin::RES}/css/allcss/cate{weiwin:$tpl.tpltypeid}_{weiwin:$tpl.color_id}.css" rel="stylesheet" type="text/css" />
+        
+    <!-- <link rel="stylesheet" type="text/css" href="{weiwin::RES}/css/122/common.css" media="all"> -->
+<link rel="stylesheet" type="text/css" href="{weiwin::RES}/css/122/reset.css" media="all">
+<link rel="stylesheet" type="text/css" href="{weiwin::RES}/css/122/font-awesome.css" media="all">
+<!-- <link rel="stylesheet" type="text/css" href="{weiwin::RES}/css/122/home-42.css" media="all"> -->
+<script type="text/javascript" src="{weiwin::RES}/css/116/jQuery.js"></script>
+<script type="text/javascript" src="{weiwin::RES}/css/122/zepto.js"></script>
+<script type="text/javascript" src="{weiwin::RES}/css/122/swipe.js"></script>
+ <style>
+#iframe_screen{
+    background:#fff;
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0;
+    z-index:300000;
+    overflow:hidden;
+}
+</style>
+    <body onselectstart="return true;" ondragstart="return false;">
+    <!--背景音乐-->
+<if condition="$dh['animation'] neq false"><iframe id="iframe_screen" src="./tpl/Wap/default/Index_an{weiwin:$dh.animation}.html" frameborder="0"></iframe></if> <if condition="$homeInfo['musicurl'] neq false">
+<include file="Index:music"/>
+</if>
+        <div class="body" style="width:100%">
+    <section>
+        <!--img src="../images/v32_1.jpg" style="width:100%;" /-->
+        <ul class="list_ul" style="width:100%">
+            <li class="box">
+            <volist name="info" id="vo">
+                <if condition="$i lt 3">    
+            <a href="<if condition="$vo['url'] eq ''">{weiwin::U('Wap/Index/lists',array('classid'=>$vo['id'],'token'=>$vo['token']))}<else/>{weiwin:$vo.url|htmlspecialchars_decode}</if>">
+            <label>{weiwin:$vo.name}</label>
+                    <span>
+                            <img src="{weiwin:$vo.img}" class="icon-file-text" style="width:60px;height:40px;"align="right">
+                        </span>
+                </a>
+                </if>
+            </volist>
+                                       
+            </li>
+            <li class="box">   
+            <volist name="info" id="vo">
+                <if condition="$i eq 3">                           
+            <a href="<if condition="$vo['url'] eq ''">{weiwin::U('Wap/Index/lists',array('classid'=>$vo['id'],'token'=>$vo['token']))}<else/>{weiwin:$vo.url|htmlspecialchars_decode}</if>">
+                                <div class="imgBox fl">
+                        <img src="{weiwin:$vo.img}">
+                    </div>
+                    <label>{weiwin:$vo.name}</label>
+                </a>
+                </if>
+                </volist>
+                </li>
+                <li class="box">
+            <volist name="info" id="vo">
+                <if condition="($i gt 3) and ($i lt 6)">                              
+                <a href="<if condition="$vo['url'] eq ''">{weiwin::U('Wap/Index/lists',array('classid'=>$vo['id'],'token'=>$vo['token']))}<else/>{weiwin:$vo.url|htmlspecialchars_decode}</if>">
+            <label>{weiwin:$vo.name}</label>
+                    <span>
+                            <img src="{weiwin:$vo.img}" class="icon-file-text" style="width:60px;height:40px;"align="right">
+                        </span>
+                </a>
+                </if>
+                </volist>
+                                       
+            </li>
+            <li class="box"> 
+            <volist name="info" id="vo">
+                <if condition="$i eq 6">                          
+            <a href="<if condition="$vo['url'] eq ''">{weiwin::U('Wap/Index/lists',array('classid'=>$vo['id'],'token'=>$vo['token']))}<else/>{weiwin:$vo.url|htmlspecialchars_decode}</if>">
+                                <div class="imgBox fl">
+                        <img src="{weiwin:$vo.img}">
+                    </div>
+                    <label>{weiwin:$vo.name}</label>
+                </a>
+                </if>
+                </volist>
+                </li>       <ul>
+    </ul></ul></section>
+<div class="copyright" style="text-align:center;padding:10px 0">
+<if condition="$iscopyright eq 1">
+{weiwin:$homeInfo.copyright}
+<else/>
+{weiwin:$siteCopyright}
+</if>
+</div>
+</div>
+<include file="Index:styleInclude"/>
+<if condition="$kefuonline.info neq false">{weiwin:$kefuonline.info}</if><include file="$cateMenuFileName"/>   
+	<if condition="ACTION_NAME eq 'index'">
+		<script type="text/javascript">
+			window.shareData = {  
+					"moduleName":"Index",
+					"moduleID": '0',
+					"imgUrl": "{weiwin:$homeInfo.picurl}", 
+					"timeLineLink": "{weiwin::C('site_url')}{weiwin::U(Index/ACTION_NAME,array('token'=>$_GET['token']))}",
+					"sendFriendLink": "{weiwin::C('site_url')}{weiwin::U(Index/ACTION_NAME,array('token'=>$_GET['token']))}",
+					"weiboLink": "{weiwin::C('site_url')}{weiwin::U(Index/ACTION_NAME,array('token'=>$_GET['token']))}",
+					"tTitle": "{weiwin:$homeInfo.title}",
+					"tContent": "{weiwin:$homeInfo.title}"
+				};
+		</script>
+	<else />
+		<script type="text/javascript">
+			window.shareData = {  
+				"moduleName":"Index",
+				"moduleID": '1',
+				"imgUrl": "{weiwin:$homeInfo.picurl}", 
+				"timeLineLink": "{weiwin::C('site_url')}{weiwin::U(Index/ACTION_NAME,array('token'=>$_GET['token'],'classid'=>$_GET['classid']))}",
+				"sendFriendLink": "{weiwin::C('site_url')}{weiwin::U(MODULE_NAME/ACTION_NAME,array('token'=>$_GET['token'],'classid'=>$_GET['classid']))}",
+				"weiboLink": "{weiwin::C('site_url')}{weiwin::U(MODULE_NAME/ACTION_NAME,array('token'=>$_GET['token'],'classid'=>$_GET['classid']))}",
+				"tTitle": "{weiwin:$homeInfo.title}",
+				"tContent": "{weiwin:$homeInfo.title}"
+			};
+		</script>	
+	
+	</if>
+{weiwin:$shareScript}
+</body></html>

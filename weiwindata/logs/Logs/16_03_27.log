@@ -1,0 +1,50 @@
+[ 2016-03-27T04:05:54+08:00 ] 121.42.0.34 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003565s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.139367s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000365s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php ç¬¬ 69 è¡Œ.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.250313s ]
+INFO: [ view_template ] --END-- [ RunTime:0.017466s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.267865s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085926s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.353875s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.355994s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.358163s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.359654s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007637s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.361609s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001944s ]
+
+[ 2016-03-27T04:05:54+08:00 ] 121.42.0.34 /
+NOTIC: [32] PHP Startup: Unable to load dynamic library 'D:\WebServer\php-5.2.5 (x64)\ext\php_fileinfo.dll' - ÕÒ²»µ½Ö¸¶¨µÄÄ£¿é¡£
+ Unknown ç¬¬ 0 è¡Œ.
+
+[ 2016-03-27T09:13:27+08:00 ] 123.125.71.36 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003893s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004117s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.085329s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000213s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php ç¬¬ 69 è¡Œ.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.170678s ]
+INFO: [ view_template ] --END-- [ RunTime:0.038099s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.208917s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.091503s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.300529s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.303279s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.306060s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.308237s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010153s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.310806s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002417s ]
+

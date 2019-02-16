@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- saved from url=(0118)http://dkt.weizhi.in/Wap/Daren/regist/waid/268/uid/159613/wz_time/1410933567/wz_token/2004cf5b542c215ab640eab3553d0606 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title></title>
+<meta charset="utf-8">
+<!-- <link rel="stylesheet" href="http://dkt.weizhi.in/wap/css/mobi.css"> -->
+<link rel="stylesheet" href="{weiwin::RES}/css/mobi.css">
+<link rel="apple-touch-icon-precomposed" href="http://dkt.weizhi.in/wap/img/ico-startup-57x57.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+<meta http-equiv="Cache-Control" content="max-age=0">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="Description" content="首创置业 - 激活社交关系的全民营销工具">
+<meta name="Keywords" content="首创置业,分享达人,全民经纪人,老带新,微应用,互动活动,微信首创置业,全民营销,粉丝达人">
+<link href="{weiwin::RES}/css/defstyel.css" rel="stylesheet" type="text/css">
+</head>
+<body style="background:none; background-color:#0062a4;">
+<section class="main animated fadeInDown">
+	<form action="{weiwin::U('Fx/insert',array('token'=>$_GET['token'],'wecha_id'=>$_GET['wecha_id']))}" method="post">
+	<div class="register-box">
+		<h1 class="register-logo"></h1>
+		<div class="regular register-input">
+			<p class="fn-clear"  ><label for="name"><i class="icon-user" ></i></label><input type="text" class="input" id="name" name="expertname" value="{weiwin:$jjrinfo.Name}" placeholder="请输入姓名"></p>
+			<p class="fn-clear"><label for="phone"><i class="icon-mobile"></i></label><input type="tel" class="input" id="phone" name="expertphone" value="{weiwin:$jjrinfo.Tel}" placeholder="请输入电话"></p>			
+		</div>
+		<p class="register-btn"><input type="submit" value="注册" class="btn" id="J_submitReg" onclick="return abc();"></p>
+		<p class="tips"><a href="{weiwin::U('Fx/expert',array('token'=>$_GET['token'],'wecha_id'=>$_GET['wecha_id']))}" class="txiang_cli_" target="_blank">什么是分享达人?</a></p>
+	</div>
+	</form>
+</section>
+<!-- <script src="{weiwin::RES}/js/mini-full-min.js"></script>
+<script src="{weiwin::RES}/js/mod.base.js"></script> -->
+	<div class="showbox_yxlp"  id="error_box" style="display:none;" >
+        <div class="showbx_error">
+        <a href="#" id="error_a"  onclick="closeboxa('error_box')">×</a> 
+           <div style="clear:both;" id="errorinfo"> 请正确填写注册内容</div>  
+        </div>
+    </div> 
+</body>
+<script type="text/javascript">
+	function showboxa(a){
+            document.getElementById(a).style.display="";
+        }
+    function closeboxa(b){ 
+            document.getElementById(b).style.display="none";    
+        }
+
+    function abc(){
+        var name=document.getElementById("name");
+        var phone=document.getElementById("phone");
+        //姓名
+        if(name.value==""){
+            document.getElementById("errorinfo").innerText="请填写姓名";
+            showboxa("error_box");
+            return false;
+        }
+        //电话
+        var reg=/^[1][3|5|6|7|8]\d{9}$/;
+        if(phone.value==""||!reg.test(phone.value)){
+            document.getElementById("errorinfo").innerText="请填写正确的电话号码";
+            showboxa("error_box");
+            return false;
+        }
+    }
+
+</script>
+</html>

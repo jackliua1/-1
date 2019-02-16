@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
+<meta content="telephone=no" name="format-detection">
+<meta name="keywords" content="首创置业，买房，看房，房地产">
+<meta name="description" content="首创置业是中国领先的房地产综合营运商。公司于2003年6月19日在香港联合交易所主板上市，综合实力居国内领先地位，目前已进入全国四大区域十三个城市，土地储备规模超过1000万平方米，有相当高的市场知名度和品牌影响力。">
+<title></title>
+
+<!-- <link href="{weiwin::RES}/css/defstyel.css" rel="stylesheet" type="text/css"> -->
+<link href="{weiwin::RES}/css/yjstyle.css" rel="stylesheet" type="text/css">
+</head>
+
+ 
+<body >
+
+    <div id="img_" style="overflow:hidden;">
+      <div class="nav" >
+        <span style="display:none;"></span>
+        <span>
+            <p>{weiwin:$allcount}</p>
+            <p>佣金（税前）</p>
+        </span>
+        <span>          
+            <p>{weiwin:$ylcount}</p>
+            <p>已结</p>
+        </span>
+      </div>
+      
+      <div   class="grzya_ wytja_">账目明细<br>
+        <volist name="info" id="vo"> 
+            <!--一条记录开始-->
+            <span class="dfsj">{weiwin:$vo.srtime|date="Y-m-d",###}</span>
+            <span  class="dfren">{weiwin:$vo.customname} {weiwin:$vo.statusname}</span>
+            <span  class="dfqian">+{weiwin:$vo.rewardamount}</span>
+            <!--一条记录结束-->
+        </volist>    
+      </div>  
+
+
+
+    </div>
+    <div id="ads" style=" margin:auto;  width:100%; max-width:640px;text-align:center;    ">
+      <img  src="{weiwin::RES}/img/wocaobg_.png" style=" width:100%;margin-bottom:-4px; float:none;">
+    </div>
+    
+
+</body>     
+
+<script type="text/javascript">
+
+     function duiqi(){
+        var wid=document.body.scrollHeight; 
+          document.getElementById("img_").style.minHeight=wid+"px"; 
+        aa=document.getElementById("ads").offsetHeight; 
+        document.getElementById("ads").style.marginTop=-aa+"px"; 
+    }
+     window.onload=function(){ 
+           duiqi();}
+
+</script>
+</html>

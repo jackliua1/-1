@@ -1,0 +1,80 @@
+<include file="Public:head"/>
+<link rel="stylesheet" type="text/css" href="./tpl/User/default/common/css/cymain.css" />
+
+
+<script src="./tpl/static/artDialog/jquery.artDialog.js?skin=default"></script>
+<script src="./tpl/static/artDialog/plugins/iframeTools.js"></script>
+
+<div class="content">
+          <div class="cLineB"><h4>驻场经理维护</h4></div>
+
+      <div class="msgWrap form">
+        <ul id="tags" style="width:100%">
+          <li>
+            <a href="?g=User&m=Wechat_zhiye&a=index">驻场经理</a> 
+          </li>
+          <li class="selectTag">
+            <a href="?g=User&m=Wechat_zhiye&a=custom">意向客户分配</a> 
+          </li>
+        <!-- <li>
+          <a href="?g=User&m=Message&a=sendHistory">发送记录</a> 
+        </li>
+        <li>
+          <a href="?g=User&m=Message&a=help">帮助说明</a> 
+        </li> -->
+        <div class="clr" style="height:1px;background:#eee;margin-bottom:20px;"></div>
+        </ul>
+      </div>
+          <div class="cLine">
+            <div class="pageNavigator left">
+                <a href="{weiwin::U('Wechat_zhiye/customOfModule',array('token'=>$token))}" class="btnGrayS vm bigbtn">
+                    <img src="tpl/User/default/common/images/text.png" class="vm">修改意向客户信息
+                </a>
+            </div>
+            <div class="clr"></div>
+          </div>
+          <div class="msgWrap">
+          <form method="post" action="" id="info">
+          <input name="delall" type="hidden" value="del">
+           <input name="wxid" type="hidden" value="gh_423dwjkewad">
+            <table class="ListProduct" border="0" cellspacing="0" cellpadding="0" width="100%">
+              <thead>
+             <tr> 
+             <th class="span3">姓名</th>
+              <th class="span3">电话</th>
+              <th class="span1">意向项目</th>
+              <th class="span3">经纪人</th>
+              <th class="span3">客户意向</th>
+              <th class="span3">输入日期</th>
+              <th class="span3">有效日期</th>
+      			</tr>
+			  </thead>
+				<tbody>
+					<if condition="$list eq ''">
+						<tr>
+						<td colspan="6" style="text-align:center; height:30px;"><strong>暂无意向客户信息.</strong></td>
+						</tr>
+					<else/>
+					<volist name="list" id="list">
+						<tr>
+						<td>{weiwin:$list['userName']}@{weiwin:$token}</td>
+						<td><span class="label"> {weiwin:$list['name']}</span></td>
+						<td><if condition="$list['online'] eq 1" ><span style="color:green">在线</span><else/>离线</if></td>
+						<td>
+							<a href="{weiwin::U('ServiceUser/edit',array('id'=>$list['id'],'token'=>$list['token']))}" class="btn">编辑</a>
+							&nbsp;<a href="{weiwin::U('ServiceUser/del',array('id'=>$list['id'],'token'=>$list['token']))}" onclick="return(confirm('确定要删除吗？'))" class="btn">删除</a></a>
+						</td>
+						</tr>
+					</volist>
+					</if>
+				</tbody>
+            </table>
+           </form> 
+          </div>
+          <div class="cLine">
+            <div class="pageNavigator right">
+                 <div class="pages">{weiwin:$page}</div>
+            </div>
+            <div class="clr"></div>
+          </div>
+        </div>  

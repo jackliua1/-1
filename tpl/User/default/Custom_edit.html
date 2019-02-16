@@ -1,0 +1,58 @@
+<include file="Public:head"/>
+<script src="/tpl/static/artDialog/jquery.artDialog.js?skin=default"></script>
+<script src="{weiwin::RES}/js/date/WdatePicker.js"></script>
+<script src="/tpl/static/artDialog/plugins/iframeTools.js"></script>
+
+
+<div class="content" <if condition="session('isQcloud') eq true">style="float:center;"</if>>
+          <div class="cLineB"><h4>编辑达人信息</h4><a href="javascript:history.go(-1);"  class="right btnGrayS vm" style="margin-top:-27px" >返回</a></div>
+         
+          <form method="post"   action="{weiwin::U('Custom/upsave',array('token'=>$_GET['token']))}"  enctype="multipart/form-data" >
+            <input type="hidden" name="id" value="{weiwin:$id}">
+          <div class="msgWrap form">
+            <TABLE class="userinfoArea" border="0" cellSpacing="0" cellPadding="0" width="100%">
+              <THEAD>
+                <TR>
+                  <TH style="width:120px" valign="top"><label for="sharename">活动名称：</label></TH>
+                  <TD>
+                    <input type="text" class="px" id="sharename" value="{weiwin:$info.sharename}"  style="width:280px;" readonly>
+                    <!-- <input type="hidden" class="px" name="sid" value="{weiwin:$info.sid}"> -->
+                  </TD>
+                </TR>
+              </THEAD>
+              <TBODY>
+                 <TR>
+                  <TH style="width:120px" valign="top"><label for="customname">客户姓名：</label></TH>
+                  <TD><input type="text" class="px" id="customname" value="{weiwin:$info.customname}"  name="customname" style="width:280px;"></TD>
+                </TR>
+                 <TR>
+                  <TH style="width:120px" valign="top"><label for="customphone">客户电话：</label></TH>
+                  <TD><input type="text" class="px" id="customphone" value="{weiwin:$info.customphone}"  name="customphone" style="width:280px;"></TD>
+                </TR>
+                 <TR>
+                  <TH style="width:120px" valign="top"><label for="LouPanTitle">预约项目：</label></TH>
+                  <TD><input type="text" class="px" id="LouPanTitle" value="{weiwin:$info.LouPanTitle}"  name="LouPanTitle" style="width:280px;" readonly></TD>
+                </TR> 
+                <TR>
+                  <TH></TH>
+                  <TD><input type="submit" value="保存" name="sbmt" class="btnGreen left">　<a href="{weiwin::U('Custom/index',array('token'=>$_GET['token']))}"  class="btnGray vm">取消</a></TD>
+                </TR>
+              </TBODY>
+            </TABLE>
+            
+          </div>
+          </form>
+          
+        </div>     
+ 
+        <div class="clr"></div>
+      </div>
+    </div>
+  </div> 
+<!--底部-->
+  	</div>
+
+
+<if condition="session('isQcloud') neq true">
+<include file="Public:footer"/>
+</if>

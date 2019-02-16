@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
+<meta content="telephone=no" name="format-detection">
+<meta name="keywords" content="客带客，买房，看房，房地产">
+<meta name="description" content="客带客是中国领先的房地产综合。公司于2003年6月19日在香港联合交易所主板上市，综合实力居国内领先地位，目前已进入全国四大区域十三个城市，土地储备规模超过1000万平方米，有相当高的市场知名度和品牌影响力。">
+<title></title>
+<script type="text/javascript" src="{weiwin::RES}/js/jQuery.js"></script>
+
+<!-- <link href="{weiwin::RES}/css/defstyel.css" rel="stylesheet" type="text/css"> -->
+<link href="{weiwin::RES}/css/yjstyle.css" rel="stylesheet" type="text/css">
+</head>
+
+  <body>
+
+        
+    <a href="{weiwin::U('Agent/register',array('token'=>$_GET['token'],'wecha_id'=>$_GET['wecha_id']))}" class="top">
+        <img src="{weiwin::RES}/img/top.jpg">
+            <span>我要注册</span>
+    </a>
+    <div style="box-shadow: 1px 1px 20px 1px #ddd;">
+    <div class="nav nav_bg">
+        <span>
+            <p>0</p>
+            <p>客户</p>
+        </span>
+        <span>          
+            <p>0</p>
+            <p>佣金</p>
+        </span>
+    </div>
+    
+    
+    <a href="{weiwin::U('Agent/register',array('token'=>$_GET['token'],'wecha_id'=>$_GET['wecha_id']))}"  class="grzya wytja">我要推荐</a>
+    <a href="{weiwin::U('Agent/register',array('token'=>$_GET['token'],'wecha_id'=>$_GET['wecha_id']))}"  class="grzya wdkeh">我的客户<span style="float:right; margin-right:40px;">0</span></a>
+    <a href="{weiwin::U('Agent/register',array('token'=>$_GET['token'],'wecha_id'=>$_GET['wecha_id']))}"  class="grzya wdyongj">我的佣金<span style="float:right; margin-right:40px;">0</span></a>
+    
+    </div>
+<!--     <p class="zsxm">在售项目</p> -->
+    <div id="dady">
+    <volist name="lpinfo" id="vo">
+    <div class="zsxmcli" style="border-radius:5px;">
+     
+        <if condition="$vo['link'] eq ''">
+            <a href="{weiwin::U('Agent/loupanInfo1',array('token'=>$_GET['token'],'wecha_id'=>$_GET['wecha_id'],'id'=>$vo['id']))}">
+        <else/>
+            <a href="{weiwin:$vo.link}">
+        </if> 
+        <!-- <a href="{weiwin::U('Index/index',array('token'=>$_GET['token'],'wecha_id'=>$_GET['wecha_id'],'lpid'=>$vo['id']))}"> -->
+        <img style="width:100%;height:200px;" src="{weiwin:$vo.LouPanUpLoad}" >
+        <div class="fangziname">
+            {weiwin:$vo.LouPanTitle}
+        </div>
+        </a>
+        <div  class="cli " style="margin-top:-25px;margin-bottom:-10px;width:100%;">
+            <span style="display:block;padding:0px 0px 5px 10px;">佣金：<if condition="$vo['commission'] neq ''"><span class='personal_fand'>{weiwin:$vo.commission}</span></if></span>
+            <span style="display:block;padding:0px 0px 5px 10px;">奖励：<if condition="$vo['encourage'] neq ''"><span class='personal_fand'>{weiwin:$vo.encourage}</span></if></span>
+     <!--        <span style="display:block;padding:0px 0px 10px 10px;">备注：<span style="font-weight:100;">{weiwin:$vo.remark}</span></span> -->
+        </div>
+    </div>
+
+    </volist>
+    </div>
+    <input type="hidden" value="{weiwin:$num}" id="num">
+    <p class="personal_bz" style="text-align:center"><span id="ts"></span></p>
+    <p style="width:100%; max-width:640px; margin:auto;"><a href="{weiwin::U('Agent/rule',array('token'=>$_GET['token'],'wecha_id'=>$_GET['wecha_id']))}"  class="grzyboota"> 活动规则</a>  
+        <!-- <a href="#"  class="grzyboota">版权所有：客带客</a> -->
+    </p>
+
+</body>
+<script type="text/javascript">
+    //获取滚动条当前的位置 
+    window.onload=function(){
+        function getScrollTop() { 
+            var scrollTop = 0; 
+            if (document.documentElement && document.documentElement.scrollTop) { 
+                scrollTop = document.documentElement.scrollTop; 
+            }else if (document.body) { 
+                scrollTop = document.body.scrollTop; 
+            } 
+            return scrollTop; 
+        } 
+        
+        //获取当前可是范围的高度 
+        function getClientHeight() { 
+            var clientHeight = 0; 
+            if (document.body.clientHeight && document.documentElement.clientHeight) { 
+                clientHeight = Math.min(document.body.clientHeight, document.documentElement.clientHeight); 
+            }else { 
+                clientHeight = Math.max(document.body.clientHeight, document.documentElement.clientHeight); 
+            } 
+            return clientHeight; 
+        } 
+        
+        //获取文档完整的高度 
+        function getScrollHeight() { 
+            return Math.max(document.body.scrollHeight, document.documentElement.scrollHeight); 
+        } 
+        window.onscroll= function () { 
+            if (getScrollTop() + getClientHeight() == getScrollHeight()) { 
+                var num=document.getElementById('num').value;
+                var url="{weiwin::U('Agent/ajaxlp',array('token'=>$_GET['token'],'wecha_id'=>$_GET['wecha_id']))}";
+                $.ajax({
+                    type:'post',
+                    url:url+"&t="+Math.random(),
+                    dataType:"json",
+                    data:{'num':num},
+                    success: function(datas){
+                                if(datas.status==1){
+                                    //返回的列表个数
+                                    var length=datas.data.length;
+                                    //定义需要显示的字符串
+                                    var str="";
+                                    for(var i=0;i<length;i++){
+                                        var id=parseInt(datas.data[i].id);
+                                        str="<div  class='zsxmcli' style='margin-top:10px;border-radius:5px;'>";
+                                        if(datas.data[i].link){
+                                            str+="<a href='"+datas.data[i].link+"'>";
+                                        }else{
+                                           str+="<a href=\"{weiwin::U('Agent/loupanInfo1',array('token'=>'"+datas.data[i].token+"','wecha_id'=>$_GET['wecha_id'],'id'=>'"+id+"'))}\">"; 
+                                        }
+                                        // str+="<a href=\"{weiwin::U('Index/index',array('token'=>'"+datas.data[i].token+"','wecha_id'=>$_GET['wecha_id'],'lpid'=>'"+id+"'))}\">";
+                                        str+="<img style='width:100%;height:200px;' src='"+datas.data[i].LouPanUpLoad+"'>";
+                                        str+="<div class='fangziname'>"+datas.data[i].LouPanTitle+"</div></a>";
+                                        str+="<div  class='cli'>";
+                                    
+                                        if(datas.data[i].commission){
+                                            str+="<span style='display:block;padding:0px 0px 5px 10px;'>佣金：<span class='personal_fand'>"+datas.data[i].commission+"</span></span>";
+                                        }else{
+                                            str+="<span style='display:block;padding:0px 0px 5px 10px;'>佣金：</span>";
+                                        }
+                                        if(datas.data[i].encourage){
+                                            str+="<span style='display:block;padding:0px 0px 5px 10px;'>奖励：<span class='personal_fand'>"+datas.data[i].encourage+"</span></span>";
+                                        }else{
+                                            str+="<span style='display:block;padding:0px 0px 5px 10px;'>奖励：</span>";
+                                        }
+                                        if(datas.data[i].remark){
+                                            str+="<span style='display:block;padding:0px 0px 10px 10px;'>备注：<span style='font-weight:100'>"+datas.data[i].remark+"</span></span>";
+                                        }else{
+                                           str+="<span style='display:block;padding:0px 0px 10px 10px;'>备注：</span>"; 
+                                        }
+                                        
+                                        str+="</div></div>";
+                                        document.getElementById("dady").innerHTML+=str;
+                                        document.getElementById('num').value=parseInt(length)+parseInt(num);
+                                    }
+                                }
+                              }
+                });
+                     
+            } 
+        
+        }
+    }
+     
+</script>
+</html>

@@ -1,0 +1,51 @@
+[ 2016-01-15T01:54:38+08:00 ] 220.181.108.154 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001333s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.097266s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000225s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php Á¨¨ 69 Ë°å.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.173789s ]
+INFO: [ view_template ] --END-- [ RunTime:0.027518s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.201406s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.200357s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.401850s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.429456s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.432086s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.436650s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.037085s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.439040s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002336s ]
+
+[ 2016-01-15T01:54:38+08:00 ] 220.181.108.154 /
+NOTIC: [32] PHP Startup: Unable to load dynamic library 'D:\WebServer\php-5.2.5 (x64)\ext\php_fileinfo.dll' - ’“≤ªµΩ÷∏∂®µƒƒ£øÈ°£
+ Unknown Á¨¨ 0 Ë°å.
+
+[ 2016-01-15T18:28:09+08:00 ] ERR: (ThinkException) Êó†Ê≥ïÂä†ËΩΩÊ®°Âùó:map
+[ 2016-01-15T20:03:26+08:00 ] 220.181.108.103 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001510s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001654s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.062683s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000266s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php Á¨¨ 69 Ë°å.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.089096s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002453s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.091633s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029505s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.121249s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.122766s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.124539s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.125937s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006228s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.127580s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001771s ]
+

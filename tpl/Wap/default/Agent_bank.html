@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> 
+<meta content="telephone=no" name="format-detection">
+<meta name="keywords" content="首创置业，买房，看房，房地产">
+<meta name="description" content="首创置业是中国领先的房地产综合营运商。公司于2003年6月19日在香港联合交易所主板上市，综合实力居国内领先地位，目前已进入全国四大区域十三个城市，土地储备规模超过1000万平方米，有相当高的市场知名度和品牌影响力。">
+<title></title>
+
+<link href="{weiwin::RES}/css/defstyel.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="{weiwin::RES}/js/jQuery.js"></script>
+</head>
+
+<body  >
+	<p  class="mid_reg">绑定银行卡</p>
+    <form action="#" method="post">
+        <div class="reg_content">
+        <input type="text" name="name" placeholder="请输入您的户名"  value="{weiwin:$info['name']}" class="reg_cone" id="name">
+        <input type="text" name="bankcard" placeholder="请输入您的银行卡号" id="bankcard" onkeyup="this.value=this.value.replace(/[^\d]/g,'')" value="{weiwin:$info['bankcard']}">
+        <input type="text" name="bankname" placeholder="请输入您的银行名称"  value="{weiwin:$info['bankname']}" id="bankname">
+
+        <!-- <input type="hidden" name="typeid" id="typeid" value="">
+        <input type="hidden" name="wecha_id" value="{weiwin:$wecha_id}">
+        <input type="hidden" name="token" value="{weiwin:$token}"> -->
+         
+        <p  class="agreement" style="width:90%; height:40px; text-align:left;">提示</p>       
+        <p class="agreement_content" style="width:90%; text-align:left; ">为了您能快速结佣请提供详细的开户行详情，如招商银行西安曲江支行</p>
+        
+        <input type="submit" id="zhuce" class="zc_but" onclick="return abc()" value="保存">
+        
+     </div>
+     <div class="showbox_yxlp"  id="error_box" style="display:none;" >
+        
+        <div class="showbx_error">
+            
+        <a href="#" id="error_a"  onclick="closeboxa('error_box')">×</a> 
+        
+           <div style="clear:both;" id="errorinfo"> 请正确填写注册内容</div>  
+           
+         </div>
+    </div> 
+    </form>
+    
+</body>
+<script type="text/javascript">
+    abc=function(){
+        var name=document.getElementById('name');
+        var bankcard=document.getElementById("bankcard");
+        var bankname=document.getElementById("bankname");
+
+        if(name.value==""){
+            alert("户名不能为空");
+            return false;
+        }
+        if(bankcard.value==""){
+            alert("卡号不能为空");
+            return false;
+        }
+        if(bankcard.value==""){
+            alert("银行名称不能为空");
+            return false;
+        }
+    }
+</script>
+</html>

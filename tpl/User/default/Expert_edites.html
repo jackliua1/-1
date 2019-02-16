@@ -1,0 +1,70 @@
+<include file="Public:head"/>
+<script src="/tpl/static/artDialog/jquery.artDialog.js?skin=default"></script>
+<script src="{weiwin::RES}/js/date/WdatePicker.js"></script>
+<script src="/tpl/static/artDialog/plugins/iframeTools.js"></script>
+
+
+<div class="content" <if condition="session('isQcloud') eq true">style="float:center;"</if>>
+          <div class="cLineB"><h4>编辑达人参与活动信息</h4><a href="javascript:history.go(-1);"  class="right btnGrayS vm" style="margin-top:-27px" >返回</a></div>
+         
+          <form method="post"   action="{weiwin::U('Expert/upsavees',array('token'=>$_GET['token']))}"  enctype="multipart/form-data" >
+            <input type="hidden" name="id" value="{weiwin:$info.id}">
+          <div class="msgWrap form">
+            <TABLE class="userinfoArea" border="0" cellSpacing="0" cellPadding="0" width="100%">
+              <THEAD>
+                <TR>
+                  <TH style="width:120px" valign="top"><label for="sharename">活动名称：</label></TH>
+                  <TD>
+                    <input type="text" class="px" id="sharename" value="{weiwin:$info.sharename}"  style="width:280px;" readonly>
+                  </TD>
+                </TR>
+              </THEAD>
+              <TBODY>
+                 <TR>
+                  <TH style="width:120px" valign="top"><label for="expertname">达人姓名：</label></TH>
+                  <TD><input type="text" class="px" id="expertname" value="{weiwin:$info.expertname}"  name="expertname" style="width:280px;" readonly></TD>
+                </TR>
+                 <TR>
+                  <TH style="width:120px" valign="top"><label for="expertphone">达人电话：</label></TH>
+                  <TD><input type="text" class="px" id="expertphone" value="{weiwin:$info.expertphone}"  name="expertphone" style="width:280px;" readonly></TD>
+                </TR>
+                 <TR>
+                  <TH style="width:120px" valign="top"><label for="hasreward">获得奖品数量：</label></TH>
+                  <TD><input type="text" class="px" id="hasreward" value="{weiwin:$info.hasreward}"  name="hasreward" style="width:280px;" readonly></TD>
+                </TR>
+                <TR>
+                  <TH style="width:120px" valign="top"><label for="lqreward">已领取数量：</label></TH>
+                  <TD><input type="text" class="px" id="lqreward" value="{weiwin:$info.lqreward}"  name="lqreward" style="width:280px;"></TD>
+                </TR>  
+                <TR>
+                  <TH></TH>
+                  <TD><input type="submit" value="保存" name="sbmt" class="btnGreen left" onclick="return check();">　<a href="{weiwin::U('Expert/index1',array('token'=>$_GET['token']))}"  class="btnGray vm">取消</a></TD>
+                </TR>
+              </TBODY>
+            </TABLE>
+            
+          </div>
+          </form>
+          
+        </div>     
+ 
+        <div class="clr"></div>
+      </div>
+    </div>
+  </div> 
+<!--底部-->
+  	</div>
+<script type="text/javascript">
+  function check(){
+    var hasreward=document.getElementById('hasreward').value;
+    var lqreward=document.getElementById('lqreward').value;
+    if(lqreward>hasreward){
+      alert("领取奖品数大于获得奖品数");
+      return false;
+    }
+  }
+</script>
+
+<if condition="session('isQcloud') neq true">
+<include file="Public:footer"/>
+</if>

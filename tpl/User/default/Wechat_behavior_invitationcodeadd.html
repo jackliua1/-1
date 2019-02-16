@@ -1,0 +1,94 @@
+<include file="Public:head"/>
+<script src="./tpl/User/default/common/js/date/WdatePicker.js"></script>
+<script src="/tpl/static/artDialog/jquery.artDialog.js?skin=default"></script>
+<script src="/tpl/static/artDialog/plugins/iframeTools.js"></script>
+
+ <script src="/tpl/static/upyun.js"></script>
+<div class="content">
+<style>
+.msgWrap .control-group {
+margin-bottom: 20px;
+}
+.msgWrap .control-label {
+text-align: left;
+width: 140px;
+font-weight: bold;
+padding-top: 5px;
+float: left;
+display: block;
+margin-bottom: 5px;
+}
+.msgWrap .controls {
+margin-left: 160px;
+}
+.msgWrap .form-actions {
+padding: 19px 20px 20px 160px;
+margin-top: 20px;
+}
+.span4, .span1, .option, .valid, .input-large{
+	background: url(../images/px.png) repeat-x scroll 0 0 #FFFFFF;
+    border-color: #848484 #E0E0E0 #E0E0E0 #848484;
+    border-style: solid;
+    border-width: 1px;
+	border-radius: 2px 2px 2px 2px;
+	padding:5px;
+	width: 210px;
+}
+</style>
+<div class="cLineB">
+  <h4>新增邀请码</h4><a href="{weiwin::U('Wechat_behavior/invitationcode')}" class="right btnGrayS vm" style="margin-top:-27px">返回</a>
+ </div> 
+  <div class="msgWrap bgfc">
+  <form action="" method="post" class="form-horizontal form-validate" novalidate="novalidate">
+  	<div class="control-group">
+		<label for="title" class="control-label" style="width:160px;">适用项目：</label>
+			<select name="lpid" style="height:30px;">
+				<volist name="lpinfo" id="vo">
+					<option value="{weiwin:$vo['id']}" <if condition="$vo['id'] eq $list['lpid']">selected</if>>{weiwin:$vo['LouPanTitle']}</option>
+				</volist>
+			</select>
+	</div>
+	<div class="control-group">
+		<label for="title" class="control-label" style="width:160px;">适用类型：</label>
+			<label for="zy"><input type="radio" value="0" name="type" id="zy" checked>驻场经理</label>&nbsp;&nbsp;
+			<label for="ac"><input type="radio" value="1" name="type" id="ac">项目总监　</label>&nbsp;&nbsp;
+	</div>
+	<div class="control-group">
+		<label for="SrTime" class="control-label">邀请码：</label>
+		<div class="controls">
+			<input type="text" name="code" id="code" class="span4" data-rule-required="true" >
+			<span class="maroon">*</span><span class="help-inline">请输入6位数的邀请码，字母或数字</span>
+		</div>
+	</div>
+	<div class="control-group">
+		<label for="SrTime" class="control-label">状态：</label>
+		<div class="controls">
+			<label for="no"><input type="radio" value="0" name="status" id="no" checked>无效</label>&nbsp;&nbsp;
+			<label for="yes"><input type="radio" value="1" name="status" id="yes">有效</label>&nbsp;&nbsp;
+		</div>
+	</div>
+	<div class="control-group">
+		<label for="SrTime" class="control-label">有效时间：</label>
+		<div class="controls">
+			<input name="endtime" id="intro" class="px"  rows="5" value="" onClick="WdatePicker()"/>
+		</div>
+	</div>
+	<div class="form-actions">
+		<button id="bsubmit" type="submit" data-loading-text="提交中..." class="btnGreen" onclick="return abc();">生成</button>
+	</div>
+   
+</form>
+  </div> 
+  
+        </div>
+	<script type="text/javascript">
+		abc=function(){
+			var code=document.getElementById('code');
+			var regcode=/^\w{6}$/;
+			if(!regcode.test(code.value)){
+				alert("请正确填写邀请码");
+				return false;
+			}
+		}
+
+	</script>	

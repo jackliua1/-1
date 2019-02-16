@@ -1,0 +1,167 @@
+<include file="Public:head"/>
+<link rel="stylesheet" type="text/css" href="./tpl/User/default/common/css/cymain.css" />
+<link rel="stylesheet" href="tpl/User/default/common/css/tb.css" ></link>
+<script src="./tpl/static/artDialog/jquery.artDialog.js?skin=default"></script>
+<script src="./tpl/static/artDialog/plugins/iframeTools.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/tpl/static/dl/css/chosen.min.css"/>
+<script src="/tpl/static/dl/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="/tpl/static/dl/js/chosen.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<div class="content">
+          <div class="cLineB"><h4>项目总监维护</h4></div>
+			<div class="searchbar right">  
+			<form method="post" action="{weiwin::U('Wechat_zhiye/index',array('token'=>$token))}">
+			  <input type="text" class="txt left" placeholder="输入手机号" name="Tel" value="{weiwin:$Tel}">
+			  <select name="lpid" data-placeholder="选择所属楼盘" id="lpid" style="" class="chosen-select">
+				<option value=""></option>
+				<option value="">全部</option>
+				<volist name="lp" id="vo">
+		          <option value="{weiwin:$vo.ID}" <if condition="$vo[ID] eq $lpid">selected</if>>{weiwin:$vo.LouPanTitle}</option>
+		        </volist>
+				</select>
+				
+			  <input type="submit" value="搜索" id="msgSearchBtn" href="javascript:;" class="btnGrayS" title="搜索">
+			  
+			</form>
+		</div>
+			<div class="msgWrap form">
+				<ul id="tags" style="width:100%">
+					<li class="selectTag">
+						<a href="?g=User&m=Message&a=index">项目总监</a> 
+					</li>
+					<!-- <li>
+						<a href="?g=User&m=Message&a=index2">意向客户分配</a> 
+					</li> -->
+				<div class="clr" style="height:1px;background:#eee;margin-bottom:20px;"></div>
+				</ul>
+			</div>
+
+          <!-- <div class="ftip" style="margin:25px auto 5px auto;">点击“添加图文消息”按钮来选择已经添加过的图文消息</div> -->
+          <div class="cLine">
+            <div class="pageNavigator left">
+                <a href="{weiwin::U('Message/addanchang',array('token'=>$token))}" class="btnGrayS vm bigbtn">
+                    <img src="tpl/User/default/common/images/text.png" class="vm">新增总监
+                </a>
+               <!--  &nbsp;&nbsp;
+                <a class="btnGrayS vm bigbtn" id="import">
+                    <img src="tpl/User/default/common/images/text.png" class="vm">导入案场
+                </a> -->
+
+                 <!--导入-->
+             <script type="text/javascript">
+                $(document).ready(function(){
+                //点击显示div和遮罩
+                $("#import").live("click",function(){
+                 // ShowMask();
+                 ShowDv();
+                });
+                //点击隐藏遮罩和div
+                $("#close").live("click",function(){
+                hide();
+                window.location="{weiwin::U('Message/index')}";
+                });
+                  //点击取消
+                $("#btn_cancels").live("click",function(){
+                hide();
+                }); 
+              });
+
+
+              //显示遮罩
+              function ShowMask ()
+              {
+              //$('body').css("overflow", 'hidden');  
+              $msk=$('<div id=dvMsk><div>');
+              $msk.css({"top":"0","left":"0","position":"absolute","display":"block","width":"400px","height":"100px;","background":"red","zIndex":"500","opacity":"0.3","filter":"Alpha(opacity=30)"});
+              $('body').append($msk); 
+              }
+              //显示div
+              function ShowDv()
+              {
+              $('#showDiv').css({'display':'block','position':'absolute','top':'30%','left':'40%',"zIndex":"500"});
+              }
+              //隐藏遮罩和div
+              function hide()
+              {
+              $("#showDiv").css("display","none");
+              $("#dvMsk").remove();
+              }
+             </script>
+               <div id="showDiv" style="display:none;">
+                 <div id="show_top">
+                  <div id="rig" style="float:right;padding:3px;"><a href="#" id="close" ><img id="delete" src="tpl/User/default/common/images/delete.jpg" width="12px" height="12px"></img></a></div>
+                 </div>
+                 <div class="imtem" style="width:300px;">
+                  <a href="tpl/User/default/common/tmp/项目总监.xls"><button class="btuFile"  id="" style="margin-top:5px;margin-left:10px;padding:5px;">下载模板</button></a>
+                  </div>
+                  <form action="{weiwin::U('Message/excinac',array('token'=>$token))}" method="post" enctype="multipart/form-data">
+                    <input type="hidden" name="leadExcel" value="true">
+                   <center>
+                   <table border="0" style="margin-top:10px;" >
+                    <tr>
+                       <td colspan='2'>
+                        <input type="file" name="inputExcel" size="20"  maxlength="20" /><span style="color:red;">注：只能为.xls</span>
+                       </td>
+                    </tr>
+                    <tr height="50px;">
+                      <td style="text-align:center">
+                          <input type="submit" value="导入数据" style="width:100px; height:30px;" />
+                      </td>
+                      <td style="text-align:center;">
+                         <a href="{weiwin::U('Message/index')}" id="close" ><input type="button" style="width:100px;height:30px;" value="取消" /></a>
+                      </td>
+                    </tr>
+                    </table>
+                  </center>
+                </form>
+              <!-- 导入模块部分结束 -->           
+            </div>
+            <div class="clr"></div>
+          </div>
+           <div class="msgWrap">
+          <form method="post" action="" id="info">
+          <input name="delall" type="hidden" value="del">
+           <input name="wxid" type="hidden" value="gh_423dwjkewad">
+            <table class="ListProduct" border="0" cellspacing="0" cellpadding="0" width="100%">
+              <thead>
+             <tr>                       
+  				<th class="span3">姓名</th>
+  				<th class="span3">手机</th>
+  				<!-- <th class="span1">所属项目</th> -->
+	            <th class="span3">创建日期</th>
+	            <th class="span3">操作</th>
+  			 </tr>
+			  </thead>
+				<tbody>
+					<if condition="$list eq ''">
+						<tr>
+						<td colspan="6" style="text-align:center; height:30px;"><strong>暂无项目总监信息</strong></td>
+						</tr>
+					<else/>
+					<volist name="list" id="list">
+						<tr>
+						<td><span class="label"> {weiwin:$list['Name']}</span></td>
+						<td><span class="label"> {weiwin:$list['Tel']}</span></td>
+						<!-- <td><span class="label"> {weiwin:$list['LouPanTitle']}</span></td> -->
+						<td><span class="label"> {weiwin:$list['addTime']|date='Y-m-d',###}</span></td>
+						<td>
+							<a href="{weiwin::U('Message/edit',array('id'=>$list['ID'],'token'=>$list['Token']))}" class="btn">修改</a>
+							&nbsp;<a href="{weiwin::U('Message/del',array('id'=>$list['ID'],'token'=>$list['Token']))}" onclick="return(confirm('确定要删除吗？'))" class="btn">删除</a></a>
+						</td>
+						</tr>
+					</volist>
+					</if>
+				</tbody>
+            </table>
+           </form> 
+          </div>
+          <div class="cLine">
+            <div class="pageNavigator right">
+                 <div class="pages">{weiwin:$page}</div>
+            </div>
+            <div class="clr"></div>
+          </div>
+        </div> 
+<script>
+	$('.chosen-select').chosen({search_contains: true,width:'200px'});
+  </script>		

@@ -1,0 +1,99 @@
+<include file="Public:head"/>
+<link rel="stylesheet" type="text/css" href="./tpl/User/default/common/css/cymain.css" />
+<div class="content">
+         
+          <div class="cLineB">
+              <h4 class="left">分享活动</h4>
+              <div class="clr"></div>
+          </div>
+<!--  <div class="cLineD">
+
+         </div>
+          <div class="cLine">
+    <div class="ftip" style="margin:0 auto">
+   微信接口不支持删除分组操作，所以添加的时候请您谨慎操作，如需删除请到公众平台删除，本系统会与公众平台同步
+    </div>
+</div> -->
+          
+          <div class="cLine">
+            <div class="pageNavigator left">
+      				<a href="{weiwin::U('Share_activite/add')}" class="btnGrayS vm bigbtn">
+      					<img src="tpl/User/default/common/images/text.png" class="vm">新增活动
+      				</a>
+      				&nbsp;
+      				&nbsp;
+      				<!-- <a href="{weiwin::U('User/Wechat_group/provinceset')}" class="btnGrayS vm bigbtn">
+      					<img src="tpl/User/default/common/images/text.png" class="vm">维护省份
+      				</a> -->
+            </div>
+            <div class="clr"></div>
+          </div>
+          <div class="msgWrap">
+          <form method="post" action="" id="info">
+          <input name="delall" type="hidden" value="del">
+           <input name="wxid" type="hidden" value="gh_423dwjkewad">
+            <table class="ListProduct" border="0" cellspacing="0" cellpadding="0" width="100%">
+              <thead>
+                <tr>
+                  <th>活动名称</th>
+        					<th>所属项目</th>
+        					<th>活动图片</th>
+        					<th>开始时间 </th>
+                  <th>结束时间 </th>
+                  <th>奖品名称 </th>
+                  <th>奖品数量 </th>
+                  <th>状态</th>
+        					<th class="norightborder">操作</th>
+                </tr>
+              </thead>
+              <tbody>
+              <if condition="$list eq null">
+                <tr>
+                  <td colspan="9" style="text-align:center; height:30px;"><strong>暂无分享活动</strong></td>
+                </tr>
+              </if>
+    			   <pigcmslist array="list" foreach="list">
+                <tr>
+                  <td width="100px">{weiwin:$list.sharename}</td>
+                  <td width="100px">
+                    <volist name="lparr" id="vo">
+                      <if condition="$vo['id'] eq $list['loupanid']">
+                        {weiwin:$vo.LouPanTitle}
+                      </if>
+                    </volist>
+                  </td>
+                  <td><div class="cateimg"><img src="{weiwin:$list.shareloge}" class="cateimg_small"  /><img src="{weiwin:$list.shareloge}" class="cateimg_big"  /></div></td>
+                  <td>{weiwin:$list.starttime|date="Y-m-d",###}</td>
+                  <td>{weiwin:$list.endtime|date="Y-m-d",###}</td>
+				          <td>{weiwin:$list.sharereward}</td>
+                  <td>{weiwin:$list.rewardnum}</td>
+                  <td>
+                    <if condition="($list['starttime'] elt $time) && ($list['endtime'] egt $endtime)">
+
+                        <span style="color:green">进行中</span>
+                      <elseif condition="$list['starttime'] gt $time"/>
+                        <span style="color:red">未开始</span>
+                      <else/>
+                        <span style="color:red">已结束</span>
+                    </if>
+                  </td>
+                  <td class="norightborder">
+    						<a href="{weiwin::U('Share_activite/edit',array('id'=>$list['id'],'token'=>$list['token']))}">修改</a>&nbsp;&nbsp;
+                <a href="{weiwin::U('Share_activite/del',array('id'=>$list['id'],'token'=>$list['token']))}"  onclick="return(confirm('确定要删除吗？'))">删除</a>
+    				   </td>
+                </tr>
+      			</pigcmslist>
+                 <tr>
+
+                </tr>
+              </tbody>
+            </table>
+           </form> 
+          </div>
+          <div class="cLine">
+            <div class="pageNavigator right">
+                 <div class="pages">{weiwin:$page}</div>
+            </div>
+            <div class="clr"></div>
+          </div>
+        </div>	

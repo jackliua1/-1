@@ -1,0 +1,75 @@
+<include file="Public:head"/>
+<script src="./tpl/User/default/common/js/date/WdatePicker.js"></script>
+<script src="/tpl/static/artDialog/jquery.artDialog.js?skin=default"></script>
+<script src="/tpl/static/artDialog/plugins/iframeTools.js"></script>
+<script src="{weiwin::RES}/js/date/WdatePicker.js"></script>
+ <script src="/tpl/static/upyun.js"></script>
+<div class="content">
+<style>
+.msgWrap .control-group {
+margin-bottom: 20px;
+}
+.msgWrap .control-label {
+text-align: left;
+width: 140px;
+font-weight: bold;
+padding-top: 5px;
+float: left;
+display: block;
+margin-bottom: 5px;
+}
+.msgWrap .controls {
+margin-left: 160px;
+}
+.msgWrap .form-actions {
+padding: 19px 20px 20px 160px;
+margin-top: 20px;
+}
+.span4, .span1, .option, .valid, .input-large{
+	background: url(../images/px.png) repeat-x scroll 0 0 #FFFFFF;
+    border-color: #848484 #E0E0E0 #E0E0E0 #848484;
+    border-style: solid;
+    border-width: 1px;
+	border-radius: 2px 2px 2px 2px;
+	padding:5px;
+	width: 210px;
+}
+</style>
+<div class="cLineB">
+  <h4>佣金明细</h4><a href="javascript:history.back(-1);" class="right btnGrayS vm" style="margin-top:-27px">返回</a>
+ </div> 
+  <div class="msgWrap bgfc">
+	<table class="ListProduct" border="0" cellspacing="0" cellpadding="0" width="100%">
+              <thead>
+             <tr>                      
+      			<th class="span1">充值项目</th>
+				<th class="span3">充值金额</th>
+				<th class="span3">充值时间</th>
+      			</tr>
+			  </thead>
+				<tbody>
+					<if condition="$list eq ''">
+						<tr>
+						<td colspan="3" style="text-align:center; height:30px;"><strong>暂无充值记录</strong></td>
+						</tr>
+					<else/>
+					<volist name="list" id="list">
+						<tr>
+            <td>{weiwin:$list['LouPanTitle']}</td>
+            <td>{weiwin:$list['money']}</td>
+						<td>{weiwin:$list['createtime']|date='Y-m-d',###}</td>
+						</tr>
+					</volist>
+					</if>
+				</tbody>
+            </table>
+  </div> 
+ 
+  <div class="cLine">
+            <div class="pageNavigator right">
+                 <div class="pages">{weiwin:$page}</div>
+            </div>
+            <div class="clr"></div>
+          </div>
+        </div>
+		

@@ -1,0 +1,177 @@
+<include file="Public:head"/>
+<link rel="stylesheet" type="text/css" href="./tpl/User/default/common/css/cymain.css" />
+<script src="/tpl/static/fushionCharts/JSClass/FusionCharts.js" type="text/javascript"></script>   
+<script src="/tpl/static/artDialog/jquery.artDialog.js?skin=default"></script>
+<script src="/tpl/static/artDialog/plugins/iframeTools.js"></script>
+
+<link rel="stylesheet" href="tpl/User/default/common/css/tb.css" ></link>
+<script src="/tpl/static/dl/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<div class="content">
+          <div class="cLineB"><h4>经纪公司</h4></div>
+
+<!-- <include file="Share:header"/> -->
+
+          <div class="cLine">
+            <div class="pageNavigator left">
+                <a href="{weiwin::U('Brokerage/add',array('token'=>$token))}" class="btnGrayS vm bigbtn">
+                    <img src="tpl/User/default/common/images/text.png" class="vm">添加经纪公司
+                </a>
+                &nbsp;
+				<span href="{weiwin::U('Brokerage/excin',array('token'=>$token))}" class="btnGrayS vm bigbtn" id="import" style="width:auto;">
+                    <img src="tpl/User/default/common/images/text.png" class="vm">导入经纪公司
+                </span>
+                &nbsp;
+                <a href="{weiwin::U('Brokerage/excout',array('token'=>$token))}" class="btnGrayS vm bigbtn">
+                    <img src="/tpl/User/default/common/images/text.png" class="vm">导出经纪公司
+                </a>
+            </div>
+			<!--导入-->
+             <script type="text/javascript">
+                $(document).ready(function(){
+                //点击显示div和遮罩
+                $("#import").on("click",function(){
+                 // ShowMask();
+                 ShowDv();
+                });
+                //点击隐藏遮罩和div
+                $("#close").on("click",function(){
+                hide();
+                window.location="{weiwin::U('Brokerage/index')}";
+                });
+                  //点击取消
+                $("#btn_cancels").on("click",function(){
+                hide();
+                }); 
+              });
+
+
+              //显示遮罩
+              function ShowMask ()
+              {
+              //$('body').css("overflow", 'hidden');  
+              $msk=$('<div id=dvMsk><div>');
+              $msk.css({"top":"0","left":"0","position":"absolute","display":"block","width":"400px","height":"100px;","background":"red","zIndex":"500","opacity":"0.3","filter":"Alpha(opacity=30)"});
+              $('body').append($msk); 
+              }
+              //显示div
+              function ShowDv()
+              {
+              $('#showDiv').css({'display':'block','position':'absolute','top':'30%','left':'40%',"zIndex":"500"});
+              }
+              //隐藏遮罩和div
+              function hide()
+              {
+              $("#showDiv").css("display","none");
+              $("#dvMsk").remove();
+              }
+             </script>
+               <div id="showDiv" style="display:none;">
+                 <div id="show_top">
+                  <div id="rig" style="float:right;padding:3px;"><a href="#" id="close" ><img id="delete" src="tpl/User/default/common/images/delete.jpg" width="12px" height="12px"></img></a></div>
+                 </div>
+                 <div class="imtem" style="width:300px;">
+                  <a href="tpl/User/default/common/tmp/经纪公司.xls"><button class="btuFile"  id="" style="margin-top:5px;margin-left:10px;padding:5px;">下载模板</button></a>
+                  </div>
+                  <form action="{weiwin::U('Brokerage/excin',array('token'=>$token))}" method="post" enctype="multipart/form-data">
+                    <input type="hidden" name="leadExcel" value="true">
+                   <center>
+                   <table border="0" style="margin-top:10px;" >
+                    <tr>
+                       <td colspan='2'>
+                        <input type="file" name="inputExcel" size="20"  maxlength="20" /><span style="color:red;">注：只能为.xls</span>
+                       </td>
+                    </tr>
+                    <tr height="50px;">
+                      <td style="text-align:center">
+                          <input type="submit" value="导入数据" style="width:100px; height:30px;" />
+                      </td>
+                      <td style="text-align:center;">
+                         <a href="javascript:void(0);" id="btn_cancels" ><input type="button" style="width:100px;height:30px;" value="取消" /></a>
+                      </td>
+                    </tr>
+                    </table>
+                  </center>
+                </form>
+              </div>
+              <!-- 导入模块部分结束 -->
+			  
+            <div class="clr"></div>
+          </div>
+          <div class="msgWrap">
+            <form method="post" action="" id="info">
+            <input name="delall" type="hidden" value="del">
+             <input name="wxid" type="hidden" value="gh_423dwjkewad">
+              <table class="ListProduct" border="0" cellspacing="0" cellpadding="0" width="100%">
+                <thead>
+               <tr>                        
+          <th class="span3">经纪公司名称</th>
+          <th class="span1">联系人名称</th>
+          <th class="span3">经纪公司电话</th>
+          <th class="span1">经纪公司地址</th>
+		  <th class="span1">所在区域</th>
+          <th class="span1">片区经理</th>
+          <th class="span1">操作</th>
+        </tr>
+          </thead>
+          <tbody>
+            <if condition="$list eq ''">
+              <tr>
+              <td colspan="6" style="text-align:center; height:30px;"><strong>暂无经纪公司信息.</strong></td>
+              </tr>
+            <else/>
+            <volist name="list" id="list">
+              <tr>
+              <td><span class="label"> {weiwin:$list['usersname']}</span></td>
+              <td>{weiwin:$list['contacts']}</td>
+              <td>{weiwin:$list['tel']}</td>
+              <td>{weiwin:$list['address']}</td>
+			  <td>{weiwin:$list['in_area']}</td>
+                  <td>{weiwin:$list['areaName']}</td>
+              <td>
+                <a href="{weiwin::U('Brokerage/add',array('id'=>$list['id'],'token'=>$token))}" class="btn">编辑</a>
+                &nbsp;<a href="{weiwin::U('Brokerage/del',array('id'=>$list['id'],'token'=>$token))}" onclick="return(confirm('确定要删除吗？'))" class="btn">删除</a></a>
+              </td>
+              </tr>
+            </volist>
+            </if>
+          </tbody>
+              </table>
+             </form> 
+          </div>
+          <div class="cLine">
+            <div class="pageNavigator right">
+                 <div class="pages">{weiwin:$page}</div>
+				 <div class="gopage">
+					<input type="text" class="page_num"/>
+					<span class="">go</span>
+				 <div>
+            </div>
+            <div class="clr"></div>
+          </div>
+		  <style>
+			.pages,.gopage{
+				display:inline-block;
+			}
+			.page_num{
+				margin-left:20px;
+				border:1px solid #000;
+				width:40px;
+				height:24px;
+			}
+			.gopage span{
+				padding:5px 10px;
+				background-color:#0bda5b;
+				color:#fff;
+			}
+		  </style>
+		  <script>
+			$(".gopage span").on('click',function(){
+				var page = $(".page_num").val();
+				var re = /^[1-9][0-9]*$/;
+				if(!re.test(page)){
+					alert("请输入正确的页码");
+				}
+				location.href = "{weiwin::U('Brokerage/index',array('token'=>$token))}&p="+page;
+			});
+		  </script>
+        </div> 

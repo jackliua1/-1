@@ -1,0 +1,370 @@
+<include file="Public:head"/>
+<!-- <include file="ServiceUser:menu"/> -->
+<link rel="stylesheet" type="text/css" href="{weiwin::Common}/default_user_com.css" media="all">
+<link rel="stylesheet" href="tpl/User/default/common/css/tb.css" ></link>
+
+<link rel="stylesheet" type="text/css" href="/tpl/static/dl/css/chosen.min.css"/>
+<script src="/tpl/static/dl/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="/tpl/static/dl/js/chosen.jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<style>
+table tr th.span3{
+	width:60px;
+}
+.span3 span{
+	display: inline-block;
+    width: 80px;
+}
+.span3 .w100{
+    width: 100px;
+}
+</style>
+<div class="content">
+  <div class="cLineB">
+	  <h4 class="left">客户信息管理</h4>
+	   <div class="searchbar right" style="margin-top:20px;">  
+			<form method="post" action="{weiwin::U('ServiceUser/index',array('token'=>$token))}">
+			  <input type="text" class="txt left" placeholder="客户手机号" name="Tel" value="{weiwin:$Tel}">
+			  <select name="lpid" data-placeholder="选择楼盘" id="lpid" style="" class="chosen-select">
+				<option value=""></option>
+				<option value="">全部</option>
+				<volist name="lp" id="vo">
+		          <option value="{weiwin:$vo.ID}" <if condition="$vo[ID] eq $lpid">selected</if>>{weiwin:$vo.LouPanTitle}</option>
+		        </volist>
+				</select>
+				
+			  <input type="submit" value="搜索" id="msgSearchBtn" href="javascript:;" class="btnGrayS" title="搜索">
+			  
+			</form>
+		</div>
+  </div>
+<!-- </div> -->
+      <!-- <div class="msgWrap form">
+        <ul id="tags" style="width:100%">
+          <li class="selectTag">
+            <a href="?g=User&m=ServiceUser&a=index">客户信息</a> 
+          </li>
+          <li>
+            <a href="?g=User&m=ServiceUser&a=index1">导入客户信息</a> 
+          </li>
+        <div class="clr" style="height:1px;background:#eee;margin-bottom:20px;"></div>
+        </ul>
+      </div> -->
+          
+          <div class="cLine" style="width:100%">
+            <div class="pageNavigator left" style="display: contents;">
+                <!-- <a href="{weiwin::U('ServiceUser/add',array('token'=>$token))}" class="btnGrayS vm bigbtn">
+                    <img src="tpl/User/default/common/images/text.png" class="vm">添加客户
+                </a>
+                &nbsp; -->
+                <!--  <span class="btnGrayS vm bigbtn" id="import">
+                    <img src="tpl/User/default/common/images/text.png" class="vm">导入客户
+                </span>
+                &nbsp; -->
+                <a href="{weiwin::U('ServiceUser/outexc',array('token'=>$token,'Tel'=>$Tel,'lpid'=>$lpid))}" class="btnGrayS vm bigbtn">
+                    <img src="tpl/User/default/common/images/text.png" class="vm">导出客户
+                </a> 
+                <!--导入-->
+             <script type="text/javascript">
+                $(document).ready(function(){
+                //点击显示div和遮罩
+                $("#import").live("click",function(){
+                 // ShowMask();
+                 ShowDv();
+                });
+                //点击隐藏遮罩和div
+                $("#close").live("click",function(){
+                hide();
+                window.location="{weiwin::U('ServiceUser/index')}";
+                });
+                  //点击取消
+                $("#btn_cancels").live("click",function(){
+                hide();
+                }); 
+              });
+
+
+              //显示遮罩
+              function ShowMask ()
+              {
+              //$('body').css("overflow", 'hidden');  
+              $msk=$('<div id=dvMsk><div>');
+              $msk.css({"top":"0","left":"0","position":"absolute","display":"block","width":"400px","height":"100px;","background":"red","zIndex":"500","opacity":"0.3","filter":"Alpha(opacity=30)"});
+              $('body').append($msk); 
+              }
+              //显示div
+              function ShowDv()
+              {
+              $('#showDiv').css({'display':'block','position':'absolute','top':'30%','left':'40%',"zIndex":"500"});
+              }
+              //隐藏遮罩和div
+              function hide()
+              {
+              $("#showDiv").css("display","none");
+              $("#dvMsk").remove();
+              }
+             </script>
+               <div id="showDiv" style="display:none;">
+                 <div id="show_top">
+                  <div id="rig" style="float:right;padding:3px;"><a href="#" id="close" ><img id="delete" src="tpl/User/default/common/images/delete.jpg" width="12px" height="12px"></img></a></div>
+                 </div>
+                 <div class="imtem" style="width:300px;">
+                  <a href="tpl/User/default/common/tmp/客户.xls"><button class="btuFile"  id="" style="margin-top:5px;margin-left:10px;padding:5px;">下载模板</button></a>
+                  </div>
+                  <form action="{weiwin::U('ServiceUser/excinkh',array('token'=>$token))}" method="post" enctype="multipart/form-data">
+                    <input type="hidden" name="leadExcel" value="true">
+                   <center>
+                   <table border="0" style="margin-top:10px;" >
+                    <tr>
+                       <td colspan='2'>
+                        <input type="file" name="inputExcel" size="20"  maxlength="20" /><span style="color:red;">注：只能为.xls</span>
+                       </td>
+                    </tr>
+                    <tr height="50px;">
+                      <td style="text-align:center">
+                          <input type="submit" value="导入数据" style="width:100px; height:30px;" />
+                      </td>
+                      <td style="text-align:center;">
+                         <a href="{weiwin::U('ServiceUser/index')}" id="close" ><input type="button" style="width:100px;height:30px;" value="取消" /></a>
+                      </td>
+                    </tr>
+                    </table>
+                  </center>
+                </form>
+              <!-- 导入模块部分结束 -->
+
+            </div>
+            <div class="clr"></div>
+          </div>
+
+          <!-- begin -->
+          <div class="msgWrap" style="overflow-x: scroll;">
+          <form method="post" action="" id="info">
+          <input name="delall" type="hidden" value="del">
+           <input name="wxid" type="hidden" value="gh_423dwjkewad">
+            <table class="ListProduct" border="0" cellspacing="0" cellpadding="0" width="2000px">
+              <thead>
+             <tr>                        
+      				<th class="span3"><span>客户姓名</span></th>
+      				<th class="span3"><span>客户电话</span></th>
+      				<th class="span3"><span>项目名称</span></th>
+      				<th class="span3"><span>驻场经理</span></th>
+					<th class="span3"><span>现场接待人</span></th>
+					<th class="span3"><span>经纪公司</span></th>
+				  <th class="span3"><span>经纪人</span></th>
+				  <th class="span3"><span>经纪人电话</span></th>
+				  <th class="span3"><span>状态</span></th>
+				  
+				  <th class="span3"><span>产品</span></th>
+				  <th class="span3"><span>楼栋号</span></th>
+				  <th class="span3"><span>房号</span></th>
+				  <th class="span3"><span class="w100">合同面积(平方)</span></th>
+				  <th class="span3"><span>合同总价</span></th>
+				  <th class="span3"><span>预约日期</span></th>
+				  <th class="span3"><span>认购日期</span></th>
+				  <th class="span3"><span>签约日期</span></th>
+				  <th class="span3"><span>应收金额</span></th>
+				  <th class="span3"><span>实收金额</span></th>
+				  <th class="span3"><span>收款金额1</span></th>
+				  <th class="span3"><span>收款日期1</span></th>
+				  <th class="span3"><span>收款方式1</span></th>
+				  <th class="span3"><span>客户卡号1</span></th>
+				  <th class="span3"><span class="w100">POS单凭证号1</span></th>
+				  <th class="span3"><span>收据编号1</span></th>
+				  <th class="span3"><span>收款金额2</span></th>
+				  <th class="span3"><span>收款日期2</span></th>
+				  <th class="span3"><span>收款方式2</span></th>
+				  <th class="span3"><span>客户卡号2</span></th>
+				  <th class="span3"><span class="w100">POS单凭证号2</span></th>
+				  <th class="span3"><span>收据编号2</span></th>
+				  <th class="span3"><span>收款金额3</span></th>
+				  <th class="span3"><span>收款日期3</span></th>
+				  <th class="span3"><span>收款方式3</span></th>
+				  <th class="span3"><span>客户卡号3</span></th>
+				  <th class="span3"><span class="w100">POS单凭证号3</span></th>
+				  <th class="span3"><span>收据编号3</span></th>
+				  
+				  <th class="span3"><span>应付金额</span></th>
+				  <th class="span3"><span>中介奖励</span></th>
+				  <th class="span3"><span>请佣金额1</span></th>
+				  <th class="span3"><span>请佣日期1</span></th>
+				  <th class="span3"><span>打款日期1</span></th>
+				  <th class="span3"><span>请佣金额2</span></th>
+				  <th class="span3"><span>请佣日期2</span></th>
+				  <th class="span3"><span>打款日期2</span></th>
+				  <th class="span3"><span>总付款</span></th>
+				  
+				  <th class="span3"><span>是否已付</span></th>
+				  <th class="span3"><span>是否退房</span></th>
+				  <th class="span3"><span>备注</span></th>
+				  
+				  <th class="span3"><span>输入日期</span></th>
+				  <th class="span3"><span>有效日期</span></th>
+				  <th class="span3"><span>操作</span></th>
+      			</tr>
+			  </thead>
+				<tbody>
+					<if condition="$list eq null">
+						<tr>
+						<td colspan="51" style="text-align:center; height:30px;"><strong>暂无客户信息</strong></td>
+						</tr>
+					<else/>
+					<volist name="list" id="list">
+						<tr>
+						<td>{weiwin:$list['Name']}</td>
+            <td><span class="label"> {weiwin:$list['Tel']}</span></td>
+            <td><span class="label"> {weiwin:$list['LouPanTitle']}</span></td>
+            <td>
+              <if condition="$list['zy_name'] eq ''">
+                <span class="label">未分配</span>
+              <else/>
+                <span class="label"> {weiwin:$list['zy_name']}</span>
+              </if>
+            </td>
+			<td><span class="label"> {weiwin:$list['jdname']}</span></td>
+			<td><span class="label"> {weiwin:$list['zjgs']}</span></td>
+            <td><span class="label"> {weiwin:$list['jjr_name']}</span></td>
+            <td><span class="label"> {weiwin:$list['jjrtel']}</span></td>
+			<td><span class="label"> {weiwin:$list['salesstatus']}</span></td>
+			
+			<td><span class="label"> {weiwin:$list['products']}</span></td>
+			<td><span class="label"> {weiwin:$list['ldh']}</span></td>
+            <td><span class="label"> {weiwin:$list['houseno']}</span></td>
+            <td><span class="label"> {weiwin:$list['htmj']}</span></td>
+			<td><span class="label"> {weiwin:$list['htzj']}</span></td>
+			<td><span class="label"> {weiwin:$list['yydate']}</span></td>
+            <td><span class="label"> {weiwin:$list['rgdate']}</span></td>
+            <td><span class="label"> {weiwin:$list['qydate']}</span></td>
+			<td><span class="label"> {weiwin:$list['ysje']}</span></td>
+			<td><span class="label"> {weiwin:$list['ssje']}</span></td>
+            <td><span class="label"> {weiwin:$list['skje1']}</span></td>
+            <td><span class="label"> {weiwin:$list['skrq1']}</span></td>
+			<td><span class="label"> {weiwin:$list['skfs1']}</span></td>
+			<td><span class="label"> {weiwin:$list['khcard1']}</span></td>
+            <td><span class="label"> {weiwin:$list['pos_pzh1']}</span></td>
+            <td><span class="label"> {weiwin:$list['sjnum1']}</span></td>
+			<td><span class="label"> {weiwin:$list['skje2']}</span></td>
+            <td><span class="label"> {weiwin:$list['skrq2']}</span></td>
+			<td><span class="label"> {weiwin:$list['skfs2']}</span></td>
+			<td><span class="label"> {weiwin:$list['khcard2']}</span></td>
+            <td><span class="label"> {weiwin:$list['pos_pzh2']}</span></td>
+            <td><span class="label"> {weiwin:$list['sjnum2']}</span></td>
+			<td><span class="label"> {weiwin:$list['skje3']}</span></td>
+            <td><span class="label"> {weiwin:$list['skrq3']}</span></td>
+			<td><span class="label"> {weiwin:$list['skfs3']}</span></td>
+			<td><span class="label"> {weiwin:$list['khcard3']}</span></td>
+            <td><span class="label"> {weiwin:$list['pos_pzh3']}</span></td>
+            <td><span class="label"> {weiwin:$list['sjnum3']}</span></td>
+			
+			<td><span class="label"> {weiwin:$list['yfje']}</span></td>
+            <td><span class="label"> {weiwin:$list['jjrjl']}</span></td>
+			
+            <td><span class="label"> {weiwin:$list['qyje1']}</span></td>
+            <td><span class="label"> {weiwin:$list['qyrq1']}</span></td>
+            <td><span class="label"> {weiwin:$list['dkrq1']}</span></td>
+			<td><span class="label"> {weiwin:$list['qyje2']}</span></td>
+            <td><span class="label"> {weiwin:$list['qyrq2']}</span></td>
+            <td><span class="label"> {weiwin:$list['dkrq2']}</span></td>
+			<td><span class="label"> {weiwin:$list['zfk']}</span></td>
+			
+			<td><span class="label"> <if condition="$list[isfk] eq 2">是<else/>否</if></span></td>
+			<td><span class="label"> <if condition="$list[istf] eq 2">是<else/>否</if></span></td>
+            <td><span class="label"> {weiwin:$list['remark']}</span></td>
+			
+            <td><span class="label"> {weiwin:$list['SrTime']|date='Y-m-d',###}</span></td>
+            <td>
+              <if condition="$list.yxTime eq 0">
+                <span class="label"></span>
+              <else/>
+                <span class="label"> {weiwin:$list['yxTime']|date='Y-m-d',###}</span>
+              </if>
+            </td>
+						<td>
+							 <a href="{weiwin::U('ServiceUser/edit',array('id'=>$list['ID'],'token'=>$list['Token']))}" class="btn">编辑</a>
+							&nbsp;<a href="{weiwin::U('ServiceUser/del',array('id'=>$list['ID'],'token'=>$list['Token']))}" onclick="return(confirm('确定要删除吗？'))" class="btn">删除</a></a>
+						</td>
+						</tr>
+					</volist>
+					</if>
+				</tbody>
+            </table>
+           </form> 
+          </div>
+          <div class="cLine">
+            <div class="pageNavigator right">
+                 <div class="pages">{weiwin:$page}</div>
+            </div>
+            <div class="clr"></div>
+          </div>
+        </div>  
+		
+	<script>
+	$('.chosen-select').chosen({search_contains: true,width:'200px'});
+  </script>
+        <!-- end -->
+
+
+       <!--  <div class="msgWrap">
+    <form method="post" action="" id="info">
+      <input name="delall" type="hidden" value="del">
+      <input name="wxid" type="hidden" value="gh_423dwjkewad">
+      <table class="ListProduct" border="0" cellspacing="0" cellpadding="0" width="100%">
+        <thead>
+          <tr>                        
+            <th class="span3">姓名</th>
+            <th class="span3">电话</th>
+            <th class="span1">意向项目</th>
+            <th class="span3">推荐人</th>
+            <th class="span3">状态</th>
+            <th class="span3">驻场经理</th>
+            <th class="span3">输入日期</th>
+            <th class="span3">有效日期</th>
+            <th class="span3">操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <if condition="$list eq ''">
+            <tr>
+            <td colspan="6" style="text-align:center; height:30px;"><strong>暂无客户信息.</strong></td>
+            </tr>
+          <else/>
+          <volist name="list" id="list">
+            <tr>
+            <td>{weiwin:$list['Name']}</td>
+            <td><span class="label"> {weiwin:$list['Tel']}</span></td>
+            <td><span class="label"> {weiwin:$list['LouPanTitle']}</span></td>
+            <td><span class="label"> {weiwin:$list['jjr_name']}</span></td>
+            <td><span class="label"> {weiwin:$list['zy_name']}</span></td>
+            <td><span class="label"> {weiwin:$list['Stutas']}</span></td>
+            <td>
+              <if condition="$list['zy_name'] eq ''">
+                <span class="label">未分配</span>
+              <else/>
+                <span class="label"> {weiwin:$list['zy_name']}</span>
+              </if>
+            </td>
+            <td><span class="label"> {weiwin:$list['SrTime']|date='Y-m-d',###}</span></td>
+            <td>
+              <if condition="$list['yxTime'] eq 0">
+                <span class="label">未设置有效期</span>
+              <else/>
+                <span class="label"> {weiwin:$list['yxTime']|date='Y-m-d',###}</span>
+              </if>
+            </td>
+            <td>
+              <a href="{weiwin::U('ServiceUser/edit',array('id'=>$list['ID'],'token'=>$list['Token']))}" class="btn">编辑</a>
+              &nbsp;<a href="{weiwin::U('ServiceUser/del',array('id'=>$list['ID'],'token'=>$list['Token']))}" onclick="return(confirm('确定要删除吗？'))" class="btn">删除</a></a>
+            </td>
+            </tr>
+          </volist>
+          </if>
+        </tbody>
+      </table>
+    </form> 
+  </div>
+  <div class="cLine">
+    <div class="pageNavigator right">
+         <div class="pages">{weiwin:$page}</div>
+    </div>
+    <div class="clr"></div>
+  </div>
+</div> -->

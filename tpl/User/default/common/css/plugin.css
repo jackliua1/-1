@@ -1,0 +1,201 @@
+/*tooltips*/
+.tooltips{
+position:relative;
+z-index:2;
+}
+.tooltips:hover{
+z-index:3;
+background:none; 
+}
+.tooltips span{
+display: none;
+}
+.tooltips span p{
+	margin:0; padding:0
+}
+.tooltips:hover span{ 
+display:block;
+position:absolute;
+top:35px;
+left:5px;
+width:360px;
+border:1px solid #CCC;
+background-color:#fff;
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+border-radius: 6px;
+padding: 10px;
+font-size:12px;
+line-height:22px;
+color:#333;
+}
+.tooltips:hover span:before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 100%;
+    left: 4px;
+    border-width: 0 8px 8px 8px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.1) transparent;    
+}
+.tooltips:hover span:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 100%;
+    left: 6px;
+    border-width: 0 6px 6px 6px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 1) transparent;    
+}
+
+/**/
+
+em.ok{
+	background-color: #1CC200;
+	display:block;
+	-webkit-border-radius:20px;
+	border-radius:20px;
+	color:#FFF;
+	font-size: 12px;
+    line-height: 12px;
+    padding: 4px 8px;
+	text-align:center;
+}
+em.error{
+	background-color: #FF6600;
+	display:block;
+	-webkit-border-radius:20px;
+	border-radius:20px;
+	color:#FFF;
+	font-size: 12px;
+    line-height: 12px;
+    padding: 4px 8px;
+	text-align:center;
+}
+em.no{
+	background-color: #BBBBBB;
+	display:block;
+	-webkit-border-radius:20px;
+	border-radius:20px;
+	color:#FFF;
+	font-size: 12px;
+    line-height: 12px;
+    padding: 4px 8px;
+	text-align:center;
+}
+.alert {
+padding: 8px 35px 0 10px;
+text-shadow: none;
+-webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+-moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+background-color: #f9edbe;
+border: 1px solid #f0c36d;
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+color: #333333;
+margin-top: 5px;
+}
+.alert p {
+margin: 0 0 10px;
+display: block;
+}
+.alert .bold{
+font-weight:bold;
+}
+.msgWrap .control-group {
+margin-bottom: 20px;
+}
+.msgWrap .control-label {
+text-align: left;
+width: 140px;
+font-weight: bold;
+padding-top: 5px;
+float: left;
+display: block;
+margin-bottom: 5px;
+}
+.msgWrap .controls {
+margin-left: 160px;
+}
+.msgWrap .form-actions {
+padding: 19px 20px 20px 160px;
+margin-top: 20px;
+}
+.span4, .span1, .option, .valid, .input-large{
+	background: url(../images/px.png) repeat-x scroll 0 0 #FFFFFF;
+    border-color: #848484 #E0E0E0 #E0E0E0 #848484;
+    border-style: solid;
+    border-width: 1px;
+	border-radius: 2px 2px 2px 2px;
+	padding:5px;
+	width: 210px;
+}
+.input-xxlarge{
+	background: url(../images/px.png) repeat-x scroll 0 0 #FFFFFF;
+    border-color: #848484 #E0E0E0 #E0E0E0 #848484;
+    border-style: solid;
+    border-width: 1px;
+	border-radius: 2px 2px 2px 2px;
+	padding:5px;
+	width: 450px;
+}
+.maroon {
+color: #f30;
+margin-left: 5px;
+}
+input:disabled,textarea:disabled{
+	border:1px solid #ccc;
+	background-color: #eee;
+	color:#666;
+	background-image: none;
+}
+input[disabled], select[disabled], textarea[disabled], input[readonly], select[readonly], textarea[readonly] {
+	border:1px solid #ccc;
+	background-color: #eee;
+	color:#666;
+	background-image: none;
+}
+* html input.disabled{
+	border:1px solid #ccc;
+	background-color: #eee;
+	color:#666;
+	background-image: none;
+}
+* html textarea.disabled{
+	border:1px solid #ccc;
+	background-color: #eee;
+	color:#666;
+	background-image: none;
+}
+.contable tr {
+border: 1px solid #CCCCCC;
+}
+.contable td {
+	padding:10px;
+}
+
+
+
+
+
+.left48 {
+width: 48.5%;display: block;
+float: left;min-height: 30px;-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+margin-right:15px;
+}
+.right48 {
+width: 48.5%;display: block;
+float: right;min-height: 30px;-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+.ListProduct .span5{ width:50px}
+.ListProduct .span2{ width:100px}
+.ListProduct .span3{ width:auto}

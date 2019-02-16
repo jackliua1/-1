@@ -1,0 +1,90 @@
+<!doctype html> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" >
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<link href="{weiwin::RES}/css/fx_style.css" rel="stylesheet" type="text/css" /> 
+</head>
+
+<body style="background:#d4c7bf url({weiwin::RES}/img/xibabg.png) bottom no-repeat  ;  "> 
+	<div class="wait"  > 
+    	<img src="{weiwin::RES}/images/yangtuaaa.jpg" width="100%"> 
+        
+        
+       <a class="jikeyuyue" onclick="showboxa('showbox')">即刻预约</a>
+       <div  class="jikeyuyuetitle">预约之后，会有驻场经理详细为您服务</div>
+       <div  class="xiangmuxiangq">项目详情</div>
+       <div class="loupan_cli">
+        {weiwin:$info.lpinfo|htmlspecialchars_decode} 
+       </div>
+       <br>
+    </div>
+    
+    
+    
+    <div id="showbox" style="display:none;">
+    	<div class="tanc">
+        	<a class="gbaa" onclick="closeboxa('showbox')">X</a>
+            
+         <form action="{weiwin::U('Fx/addcustom')}" method="post">  
+          <span class="tanc_nam">预约项目</span>
+          <span> <input type="checkbox" name="lpid" value="{weiwin:$info.loupanid}" id="chec" checked><label for="chec">{weiwin:$info.LouPanTitle}</label> </span>
+          <span class="tanc_nam">姓名</span>
+          <span><input type="text" name="customname" id="name" style=" width:120px; border:1px solid #ccc; font-size:14px; height:20px; font-weight:100;" ></span>
+          <span class="tanc_nam">手机号</span>
+          <span><input type="text" name="customphone" id="phone" style=" width:120px; border:1px solid #ccc; font-size:14px; height:20px;  font-weight:100; " ></span>
+          <input type="hidden" name="esid" value="{weiwin:$esid}">
+          <input type="hidden" name="customwecha_id" value="{weiwin:$customwecha_id}">
+          <br clear="all"> 
+       	  <input type="submit"  style="display:block;width:150px;height:35px;line-height:35px;background:#ca2d42;text-align:center;color:#fff;margin:auto;margin-top:5px;font-size:18px;font-weight:bold;border-radius:5px; border: none; " onclick="return abc();" value="立即预约">
+        </form>
+        </div> 
+        
+    
+    </div>
+
+    <div class="showbox_yxlp"  id="error_box" style="display:none;" >
+        <div class="showbx_error">
+        <a id="error_a"  onclick="closeboxa('error_box')">×</a> 
+           <div style="clear:both;" id="errorinfo"> 请正确填写注册内容</div>  
+        </div>
+    </div> 
+    <br clear="all">
+</body>
+<script type="text/javascript">
+  function showboxa(a){
+        
+            document.getElementById(a).style.display="";
+        }
+    function closeboxa(b){ 
+            document.getElementById(b).style.display="none";    
+        } 
+
+    function abc(){
+        var name=document.getElementById("name");
+        var phone=document.getElementById("phone");
+        //楼盘是否有选中
+        if(document.getElementById("chec").checked==false){
+          document.getElementById("errorinfo").innerText="请选择预约项目";
+            showboxa("error_box");
+            return false;
+        }
+        //姓名
+        if(name.value==""){
+            document.getElementById("errorinfo").innerText="请填写姓名";
+            showboxa("error_box");
+            return false;
+        }
+        //电话
+        var reg=/^[1][3|5|6|7|8]\d{9}$/;
+        if(phone.value==""||!reg.test(phone.value)){
+            document.getElementById("errorinfo").innerText="请填写正确的电话号码";
+            showboxa("error_box");
+            return false;
+        }
+    } 
+</script>
+
+</html>

@@ -1,0 +1,234 @@
+[ 2016-04-19T03:22:15+08:00 ] 220.181.108.186 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.011440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012842s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.054575s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000380s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php Á¨¨ 69 Ë°å.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.122430s ]
+INFO: [ view_template ] --END-- [ RunTime:0.036301s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.158809s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.115278s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.274199s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.276622s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.278574s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.280089s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007693s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.281975s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002092s ]
+
+[ 2016-04-19T03:22:15+08:00 ] 220.181.108.186 /
+NOTIC: [32] PHP Startup: Unable to load dynamic library 'D:\WebServer\php-5.2.5 (x64)\ext\php_fileinfo.dll' - ’“≤ªµΩ÷∏∂®µƒƒ£øÈ°£
+ Unknown Á¨¨ 0 Ë°å.
+
+[ 2016-04-19T04:31:30+08:00 ] 121.42.0.34 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.005423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005642s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.151024s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000269s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php Á¨¨ 69 Ë°å.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.205531s ]
+INFO: [ view_template ] --END-- [ RunTime:0.026361s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.231985s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059003s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.291108s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.294044s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.296420s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.298337s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009424s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.300629s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002728s ]
+
+[ 2016-04-19T09:55:06+08:00 ] 222.191.132.36 /index.php?g=Wap&m=Agent&a=loupanInfo&sid=9&flag=1&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.004493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005571s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php Á¨¨ 183 Ë°å.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php Á¨¨ 186 Ë°å.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.072442s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.000457s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000423s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php Á¨¨ 69 Ë°å.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.273435s ]
+INFO: [ view_template ] --END-- [ RunTime:0.090019s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php Á¨¨ 22 Ë°å.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php Á¨¨ 139 Ë°å.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.363720s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.124284s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.488069s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.491103s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.493573s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.495512s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009690s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.497885s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002885s ]
+
+[ 2016-04-19T09:55:06+08:00 ] 222.191.132.36 /index.php?g=Wap&m=Agent&a=loupanInfo&sid=9&flag=1&from=timeline&isappinstalled=0
+NOTIC: [32] PHP Startup: Unable to load dynamic library 'D:\WebServer\php-5.2.5 (x64)\ext\php_fileinfo.dll' - ’“≤ªµΩ÷∏∂®µƒƒ£øÈ°£
+ Unknown Á¨¨ 0 Ë°å.
+
+[ 2016-04-19T09:55:06+08:00 ] 117.135.170.67 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000846s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.082881s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000259s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php Á¨¨ 69 Ë°å.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.211977s ]
+INFO: [ view_template ] --END-- [ RunTime:0.031753s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.243828s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089530s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.333459s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.486093s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.491918s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.493295s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.161583s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.495153s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001848s ]
+
+[ 2016-04-19T09:55:06+08:00 ] 140.207.185.123 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001114s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001293s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.006861s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000341s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php Á¨¨ 69 Ë°å.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.088793s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002951s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.091892s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089915s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.181980s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.334280s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.340348s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.341582s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.161254s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.343356s ]
+INFO: [ view_end ] --END-- [ RunTime:0.006681s ]
+
+[ 2016-04-19T09:55:06+08:00 ] 140.207.185.123 /
+NOTIC: [32] PHP Startup: Unable to load dynamic library 'D:\WebServer\php-5.2.5 (x64)\ext\php_fileinfo.dll' - ’“≤ªµΩ÷∏∂®µƒƒ£øÈ°£
+ Unknown Á¨¨ 0 Ë°å.
+
+[ 2016-04-19T09:55:08+08:00 ] 140.207.55.80 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000636s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000781s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.011366s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000208s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php Á¨¨ 69 Ë°å.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.095263s ]
+INFO: [ view_template ] --END-- [ RunTime:0.002871s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.098196s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024764s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.123029s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.126790s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.128464s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.130037s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009614s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.132758s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001929s ]
+
+[ 2016-04-19T09:55:08+08:00 ] 140.207.55.79 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001711s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.011822s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000211s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php Á¨¨ 69 Ë°å.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.143307s ]
+INFO: [ view_template ] --END-- [ RunTime:0.001632s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.145019s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015052s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.160156s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.165287s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.166860s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.168393s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010949s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.171263s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001769s ]
+
+[ 2016-04-19T09:55:26+08:00 ] 222.191.132.36 /index.php?g=Wap&m=Agent&a=loupanInfo&sid=9&flag=1&from=timeline&isappinstalled=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002676s ]
+NOTIC: [8] Undefined index:  id D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php Á¨¨ 183 Ë°å.
+NOTIC: [8] Undefined index:  token D:\www\qmyx.wuyelaile.com\weiwincms\Lib\Action\Wap\AgentAction.class.php Á¨¨ 186 Ë°å.
+SQL: SHOW COLUMNS FROM `wy_lpinfo` [ RunTime:0.005389s ]
+SQL: UPDATE `wy_lpinfo` SET `video`=video+1 WHERE ( `id` = null ) AND ( `token` = null ) [ RunTime:0.000413s ]
+SQL: SELECT * FROM `wy_lpinfo` WHERE ( `id` = null ) AND ( `token` = null ) LIMIT 1   [ RunTime:0.000229s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php Á¨¨ 69 Ë°å.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.049007s ]
+INFO: [ view_template ] --END-- [ RunTime:0.004066s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: url D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php Á¨¨ 22 Ë°å.
+NOTIC: [8] Undefined variable: jjrarr D:\www\qmyx.wuyelaile.com\weiwindata\logs\Cache\Wap\15cb069a79c1a70eb570b5aca2bb66be.php Á¨¨ 139 Ë°å.
+INFO: Run ParseTemplate Behavior [ RunTime:-0.053160s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020658s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.073895s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.075132s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.076395s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.077470s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004777s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.078771s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001686s ]
+
+[ 2016-04-19T17:18:35+08:00 ] 123.125.71.55 /
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.003923s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005106s ]
+SQL: SHOW COLUMNS FROM `wy_links` [ RunTime:0.181179s ]
+SQL: SELECT * FROM `wy_links` WHERE ( `status` = 1 )  [ RunTime:0.000250s ]
+NOTIC: [2] Cannot use a scalar value as an array D:\www\qmyx.wuyelaile.com\weiwincms\_Core\Lib\Core\View.class.php Á¨¨ 69 Ë°å.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.255446s ]
+INFO: [ view_template ] --END-- [ RunTime:0.032585s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.288199s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090030s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.378292s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.380553s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.382737s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.385125s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008759s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.387161s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002186s ]
+
+[ 2016-04-19T17:18:35+08:00 ] 123.125.71.55 /
+NOTIC: [32] PHP Startup: Unable to load dynamic library 'D:\WebServer\php-5.2.5 (x64)\ext\php_fileinfo.dll' - ’“≤ªµΩ÷∏∂®µƒƒ£øÈ°£
+ Unknown Á¨¨ 0 Ë°å.
+
+[ 2016-04-19T20:18:33+08:00 ] ERR: (ThinkException) Êó†Ê≥ïÂä†ËΩΩÊ®°Âùó:upyun

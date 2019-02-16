@@ -1,0 +1,118 @@
+<include file="Public:head"/>
+<link rel="stylesheet" type="text/css" href="./tpl/User/default/common/css/cymain.css" />
+
+
+<script src="./tpl/static/artDialog/jquery.artDialog.js?skin=default"></script>
+<script src="./tpl/static/artDialog/plugins/iframeTools.js"></script>
+<div class="content">
+          <div class="cLineB"><h4>领取佣金操作</h4></div>
+
+			<div class="msgWrap form">
+				<ul id="tags" style="width:100%">
+					<li>
+            <a href="?g=User&m=Share&a=index&token={weiwin:$token}">会员</a> 
+          </li>
+          <li class="selectTag">
+            <a href="?g=User&m=Share&a=reward&token={weiwin:$token}">佣金信息</a> 
+          </li>
+						
+					<div class="clr" style="height:1px;background:#eee;margin-bottom:20px;"></div>
+				</ul>
+			</div> 
+          <div class="msgWrap">
+          <input name="delall" type="hidden" value="del">
+           <input name="wxid" type="hidden" value="gh_423dwjkewad">
+
+         <div style="text-align:left; text-indent:30px; line-height:40px;"> 
+                            <div style="float:left;">
+                              <input type="checkbox" name="all" value="safas" id="all" class="forall"><label for="all" class="foralll">全选</label>
+                             <a id="lqall"  style=" margin-left:10px; " >领取</a>
+                          </div>
+
+
+                            <div  style="float:right;margin-right:20px;">
+
+                              <!-- 搜索 -->
+                            <form action="{weiwin::U('Share/search',array('token'=>$_GET['token']))}" method="post">
+                              <span>
+                                会员：
+                                <input type="text" name="jjrname" placeholder="请输入会员姓名" style="border:1px solid #999; padding-left:5px; border-color:#fff #fff #ccc #fff; outline:none; height:20px;">
+                              </span>
+                              <span>
+                                领取状态：
+                                <select name="rewardstatus" style="border-color:#fff #fff #ccc #fff; outline:none; background:none;  outline:none; " >
+                                  <option value="">--请选择--</option>
+                                  <option value="1">已领取</option>
+                                  <option value="0">未领取</option>
+                                </select>
+                              </span>
+                              <input type="submit" value="搜索"  style="margin-left:10px;border:1px solid #999;background-color:#eee;padding:3px 5px 3px 5px;border-radius:5px;cursor: pointer; " onclick="">
+                            </form>
+                            <!-- 搜索结束 -->
+
+                            </div> 
+                            </div>
+            <table id="sbc" class="ListProduct" border="0" cellspacing="0" cellpadding="0" width="100%">
+            
+              <thead>
+             <tr> 
+              <th>选择</th>
+             <th class="span3">客户姓名</th>
+              <th class="span1">意向项目</th>
+              <th class="span3">会员姓名</th>
+              <th class="span3">销售状态</th>
+              <th class="span3">奖励名称</th>
+              <th class="span3">奖励金额</th>
+              <th class="span3">输入日期</th>
+              <th class="span3">领取状态</th>
+      			</tr>
+			  </thead>
+				<tbody>
+					<if condition="$list eq ''">
+						<tr>
+						  <td colspan="9" style="text-align:center; height:30px;"><strong>暂无意佣金奖励信息</strong></td>
+						</tr>
+					<else/>
+					<volist name="list" id="list">
+						<tr>
+              
+              <td style="text-align:center;">
+                <if condition="$list['rewardstatus'] eq 0">
+                  <input type="checkbox" name="reward" value="{weiwin:$list['id']}" id="oneinfo">
+                <else/>
+                  <input type="checkbox" disabled="true">
+                </if>
+              </td>
+              <label for="oneinfo">
+            <td>{weiwin:$list['customname']}</td>
+            <td>{weiwin:$list['loupanname']}</td>
+            <td>{weiwin:$list['Name']}</td>
+            <td>{weiwin:$list['statusname']}</td>
+            <td>{weiwin:$list['rewardname']}</td>
+            <td>{weiwin:$list['rewardamount']}</td>
+            <td>{weiwin:$list['srtime']|date='Y-m-d',###}</td>
+            </label>
+            <td align="center">
+              <if condition="$list['rewardstatus'] eq 0">
+                <span class="label">
+                  <a href="{weiwin::U('Share/lqone',array('token'=>$list['token'],'id'=>$list['id']))}" class="lingqu">领取</a>
+                </span>
+              <else/>
+                <span class="label">已领取</span>
+              </if>
+            </td>
+						</tr>
+					</volist>
+					</if>
+				</tbody>
+            </table>
+          </div>
+          <div class="cLine">
+            <div class="pageNavigator right">
+                 <div class="pages">{weiwin:$page}</div>
+            </div>
+            <div class="clr"></div>
+          </div>
+        </div>
+
+<script src="{weiwin::RES}/js/share/share.js"></script>
